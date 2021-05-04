@@ -14,8 +14,8 @@
           
           <h3 class="mb-8 text-white leading-relaxed font-light uppercase text-2xl">Creating future with <span class="block font-medium text-4xl">open ecosystems</span></h3>
           <div class="flex flex-row flex-wrap">
-            <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow" href="https://5gmadetogether.konfeo.com/pl/groups">Dołącz do konferencji</a>
-            <a class="inline-block py-4 px-8 mr-6 leading-none text-white underline" v-scroll-to="'#read-more'" href="#read-more">Czytaj więcej</a>
+            <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow" href="https://5gmadetogether.konfeo.com/pl/groups">Register</a>
+            <a class="inline-block py-4 px-8 mr-6 leading-none text-white underline" v-scroll-to="'#read-more'" href="#read-more">Read more</a>
           </div>
         </div>
       </div>
@@ -28,11 +28,11 @@
           <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div class="flex flex-col h-full p-8 rounded">
               <h2 class="text-3xl font-medium font-heading mb-14 flex flex-row items-center uppercase">
-                <svg class="mr-4" width="50px" viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-miterlimit="1.5"><path fill="none" d="M0 0h291.667v291.667H0z"/><clipPath id="a"><path d="M0 0h291.667v291.667H0z"/></clipPath><g clip-path="url(#a)"><path d="M0 145.833h291.667" fill="none" stroke="#11C9D8" stroke-width="16.67"/></g></svg>O konferencji
+                <svg class="mr-4" width="50px" viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-miterlimit="1.5"><path fill="none" d="M0 0h291.667v291.667H0z"/><clipPath id="a"><path d="M0 0h291.667v291.667H0z"/></clipPath><g clip-path="url(#a)"><path d="M0 145.833h291.667" fill="none" stroke="#11C9D8" stroke-width="16.67"/></g></svg>About the conference
               </h2>
-              <p class="mb-8 text-gray-400 leading-relaxed">5G Made Together – pod tym hasłem będziemy rozmawiali o kwestiach technicznych budowy mobilnych sieci przyszłości. Spotkanie podzielone jest na dwie części: debatę oraz workshop, podczas którego eksperci podzielą się swoją wiedzą i doświadczeniami.</p>
-              <p class="mb-8 text-gray-400 leading-relaxed">Debatę „5G Made Together” poświęcimy temu, jak powinien wyglądać w Polsce model budowy i wdrażania sieci piątej generacji. Rozmawiać będziemy m.in. o tym, w jaki sposób wykorzystać budowę 5G w rozwoju polskiej gospodarki oraz krajowych przedsiębiorstw, zwłaszcza rodzimych firm teleinformatycznych, by dać im szansę na to, aby zaistniały na tym rynku. Dyskutować będziemy również o cyberbezpieczeństwie w kontekście sieci nowej generacji.</p>
-              <p class="mb-8 text-gray-400 leading-relaxed">Druga część spotkania to warsztat, na którym bliżej przyjrzymy się modelom sieci 5G.  Głos zabiorą eksperci instytucji, które zaangażowane są w proces budowy sieci piątej generacji oraz przedstawiciele firm technologicznych. Udział w konferencji jest bezpłatny, wymagana jest rejestracja.</p>
+              <p class="mb-8 text-gray-400 leading-relaxed">How is the 5G network being developed around the world? Where does the process take place seamlessly, and where is it delayed? How secure can the 5G network become? Why is Open RAN the model of the future? Is the telecommunications market ready for the upcoming change? Finally, how could the 5G development decision-makers be persuaded to implement the open network model? These are some of the questions to be answered by ICT companies’ experts from around the world during discussion panels and lectures hosted at the international „5G Made Together – creating future with open ecosystems” conference.
+                Participation in the conference is free of charge. Sign up now and listen to the insights of the world’s 5G leaders. Join the discussion!
+              </p>
             </div>
           </div>
           <div class="lg:w-1/2 px-4">
@@ -52,29 +52,29 @@
           
           <div class="lg:w-1/3 px-4 mb-6 relative">
             <h3 class="text-xl my-3 font-semibold font-heading">
-              <count-to ref="countMinute" v-view="viewMinutCount" :startVal="0" :endVal="260" :duration="3000" :autoplay="false" suffix=" Minut" :start="this.checkViewMinutCount"></count-to>
+              <count-to ref="countMinute" v-view="viewMinutCount" :startVal="0" :endVal="260" :duration="3000" :autoplay="false" suffix=" Minutes" :start="this.checkViewMinutCount"></count-to>
             </h3>
-            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+            <p class="text-gray-400 leading-relaxed">The debate and presentations about each part of the value chain: security, virtualisation, OSS/BSS, chipsets and radio units. Additionally MNO, VC and regulators perspective</p>
           </div>
           
           <div class="lg:w-1/3 px-4 mb-6 relative">
             <h3 class="text-xl my-3 font-semibold font-heading">
-              <count-to ref="countPrelegent" v-view="viewPrelegentCount" :startVal="0" :endVal="11" :duration="3000" :autoplay="false" suffix=" Prelegentów"></count-to> 
+              <count-to ref="countPrelegent" v-view="viewPrelegentCount" :startVal="0" :endVal="11" :duration="3000" :autoplay="false" suffix=" Speakers"></count-to> 
             </h3>
-            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+            <p class="text-gray-400 leading-relaxed">Top figures from companies leading in the telecommunication revolution. It includes Deutsche Telekom, VMware, Marvel, and many more. Please check the agenda for the full information. </p>
           </div>
 
           <div class="lg:w-1/3 px-4 mb-6 relative">
             <h3 class="text-xl my-3 font-semibold font-heading">
-              <count-to ref="countDebate" v-view="viewDebateCount" :startVal="0" :endVal="1" :duration="3000" :autoplay="false" suffix=" Debata"></count-to>
+              <count-to ref="countDebate" v-view="viewDebateCount" :startVal="0" :endVal="1" :duration="3000" :autoplay="false" suffix=" Debate"></count-to>
             </h3>
-            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+            <p class="text-gray-400 leading-relaxed">Possibility to listen to what key players in the OpenRAN area think about the future and challenges of the networks of the future.</p>
           </div>
         </div>
       </section>
         
       <section class="py-12 px-4 text-center">
-        <h2 class="text-4xl mb-8 font-semibold font-heading">Transmisja na żywo</h2>
+        <h2 class="text-4xl mb-8 font-semibold font-heading">Watch live here</h2>
         <div class="max-w-2xl mx-auto">
           <iframe class="mx-auto" width="100%" height="315" src="https://www.youtube.com/embed/K-CbHfv7EqA?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -85,19 +85,20 @@
           <h2 class="text-4xl text-center mb-6 font-semibold font-heading">Agenda</h2>
                             
           <ul>
-            <li class="border-b mb-2 pb-2 text-gray-900">10:00 – Wystąpienia wprowadzające&nbsp;(<em>Michał Kanownik, Związek Cyfrowa Polska, Sławomir Pietrzyk, IS-Wireless</em>)</li>
-            <li class="mb-2 pb-2 text-gray-900">10:10 – Debata otwarcia</li>
-            <li class="mb-2 pb-2 text-gray-900">Moderator dyskusji: Wiesław Paluszyński, PTI</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">Uczestnicy: &nbsp;<em>Robert Kośla, dyrektor Departamentu Cyberbezpieczeństwa w KPRM, Mariusz Sulik, dyrektor pionu operacyjnego NASK, Wiesław Łodzikowski – dyrektor działu sieci teleinformatycznych PKN Orlen, Małgorzata Stańczyk, Industry Business Development Executive w IBM, Sławomir Pietrzyk, prezes IS-Wireless, Michał Kanownik, prezes Związku Cyfrowa Polska</em></li>
-            <li class="border-b mb-2 pb-2 text-gray-900">11:00 – “OpenRAN równa się otwarty ekosystem” – IS-Wireless (<em>Aleksandra Chećko, Artur Chmielewski</em>)</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">11:30 – “Zapewnienie bezpieczeństwa w sieciach 5G opartych na wielu dostawcach” (<em>Jordi Mongay Batalla, Politechnika Warszawska</em>)</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">11:50 – “Ekosystem 5G – wyzwania wobec bezpieczeństwa technologicznego” (<em>Mariusz Sulik, Andrzej Rosłonek, NASK)</em></li>
-            <li class="border-b mb-2 pb-2 text-gray-900">12:20 – “Jak budować rdzeń sieci 5G – rozwiązania dla operatorów oraz wdrożeń prywatnych” (<em>Marcin Aronowski, Affirmed Networks</em>)</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">12:40 – “Strategia i rozwiązania HPE dla OpenRAN/vRAN” (<em>Paweł Hałoń, HPE</em>)</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">13:00 – “Orkiestracja 5G w środowisku multidomenowym: wyzwania, standardy, rozwiązania” (<em>Marcin Nowak, Comarch</em>)</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">13:30 – “RAN Intelligent Contoller (RIC) by O-RAN” (<em>Adam Girycki, IS-Wireless</em>)</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">13:50 – “Open RAN Opportunities and Challenges” – an RU Vendor’s Perspective</li>
-            <li class="border-b mb-2 pb-2 text-gray-900">14:20 – “Open Network Edge Services Software” (<em>Piotr Wysocki, Intel</em>)</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">10:00 – Opening</li>
+            <li class="mb-2 pb-2 text-gray-900">10:10 – Debate</li>
+            <li class="mb-2 pb-2 text-gray-900">Discussion moderator:</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Participants:</li>
+            <li class="mb-2 pb-2 text-gray-900">11:00 - “OpenRAN equals open ecosystem” – IS-Wireless (Aleksandra Chećko, Artur Chmielewski)</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">VMware</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Carrier grade OpenRAN - Deutsche Telekom</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Security</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Telco Cloud</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Orchestration in 5G</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Radio heads ready for OpenRAN</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">The role of chipset in open ecosystems</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Infrastructure is a king</li>
+            <li class="border-b mb-2 pb-2 text-gray-900">Private networks regulations</li>
           </ul>
 
         </div>
@@ -120,8 +121,8 @@
     
       <section class="py-12 px-4 text-center">
         <div class="w-full max-w-2xl mx-auto">
-          <h2 class="text-5xl leading-tight font-semibold font-heading mb-4">Dołącz do konferencji</h2>
-          <a class="inline-block py-4 px-8 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow" href="https://5gmadetogether.konfeo.com/pl/groups">Zarejestruj się</a>
+          <h2 class="text-5xl leading-tight font-semibold font-heading mb-4">Join the conference</h2>
+          <a class="inline-block py-4 px-8 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow" href="https://www.tickettailor.com/events/iswireless/518782">REGISTER</a>
         </div>
       </section>
     </div>
