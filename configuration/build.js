@@ -11,7 +11,7 @@ export default {
   /*
     ** Run ESLINT on save
     */
-  extend(config, { isDev , isClient }) {
+  // extend(config, { isDev , isClient }) {
   //   if (isClient && isDev) {
   //     config.devtool = 'inline-source-map';
   //   } else {
@@ -22,28 +22,28 @@ export default {
   //     fs: "empty"
   //   };
 
-  //   if (isClient && !isDev) {
-  //     config.optimization.splitChunks.maxSize = 250000
-  //   }
+    // if (isClient && !isDev) {
+    //   config.optimization.splitChunks.maxSize = 250000
+    // }
 
-  //   if (isDev) {
-  //     config.module.rules.push({
-  //       enforce: "pre",
-  //       test: /\.(js|vue)$/,
-  //       loader: "eslint-loader",
-  //       exclude: /(node_modules)/
-  //     });
-  //   }
+    // if (isDev) {
+    //   config.module.rules.push({
+    //     enforce: "pre",
+    //     test: /\.(js|vue)$/,
+    //     loader: "eslint-loader",
+    //     exclude: /(node_modules)/
+    //   });
+    // }
 
-  //   config.module.rules.push({
-  //     test: /\.(postcss)$/,
-  //     use: [
-  //       'css-loader',
-  //       {
-  //         loader: 'postcss-loader'
-  //       }
-  //     ]
-  //   });
+    // config.module.rules.push({
+    //   test: /\.(postcss)$/,
+    //   use: [
+    //     'css-loader',
+    //     {
+    //       loader: 'postcss-loader'
+    //     }
+    //   ]
+    // });
 
   //   // if (isDev) {
   //   //   config.devtool = isClient ? "eval-source-map" : "inline-source-map";
@@ -64,7 +64,7 @@ export default {
   //   ];
   //   delete vueRule.loader;
   //   delete vueRule.options;
-  },
+  // },
   postcss: {
     plugins: {
       tailwindcss: join(__dirname, '..', 'tailwind.config.js'),

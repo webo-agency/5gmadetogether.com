@@ -1,7 +1,8 @@
 ## ABSOLUTE
 
 # Redirect domain aliases to primary domain
-https://www.5gmadetogether.com/* https://www.5gmadetogether.com/:splat 301!
+http://5gmadetogether.com/* https://www.5gmadetogether.com/:splat 301!
+https://5gmadetogether.com/* https://www.5gmadetogether.com/:splat 301!
 
 ## RELATIVE
 

@@ -6,7 +6,9 @@
   >
     <div class="container mx-auto px-4">
       <footer class="flex flex-wrap items-center justify-between p-4">
-        <div class="w-full lg:w-auto lg:mr-6 mb-4 lg:mb-0 text-center">© 2021 IS-Wireless i/lub firmy z nią powiązane</div>
+        <div class="w-full lg:w-auto lg:mr-6 mb-4 lg:mb-0 text-center">
+          © 2021 IS-Wireless i/lub firmy z nią powiązane
+        </div>
       </footer>
     </div>
   </component>

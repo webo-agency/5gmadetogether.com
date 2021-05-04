@@ -1,18 +1,6 @@
 <template>
   <div class="w-full">
 
-    <div class="container mx-auto px-4"> 
-      <nav class="flex flex-wrap items-center justify-between py-4 md:sticky top-0 z-50 bg-white">
-        <div class="navbar-menu flex flex-wrap order-1 lg:order-1 flex-row items-center">Organizator <img class="h-12 mx-4" src="~/assets/img/ISW_-_logo_kolor.png" alt="">
-
-          <img class="hidden h-12 mx-4" src="~/assets/img/CP_logo_kolor_3.png" alt="">
-          <img class="hidden h-12 mx-4" src="~/assets/img/PTI.png" alt="">
-
-        </div>
-        <div class="navbar-menu block order-4 lg:order-3 lg:text-right"><a class="inline-block py-4 px-8 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow my-4 lg:my-0" href="https://5gmadetogether.konfeo.com/pl/groups">Zarejestruj się</a></div>
-      </nav>
-    </div>
-
     <section class="py-48 px-4 text-center relative lg:mx-16">
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <img class="absolute lg:rounded w-full h-full inset-0 z-auto object-cover" src="~/assets/img/5GMadetogether_conference_big.jpg" alt="">
@@ -77,17 +65,23 @@
         <div class="flex flex-wrap -mx-4 -mb-6">
           
           <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-xl my-3 font-semibold font-heading">260 Minut</h3>
+            <h3 class="text-xl my-3 font-semibold font-heading">
+              <count-to ref="countMinute" v-view="viewMinutCount" :startVal="0" :endVal="260" :duration="3000" :autoplay="false" suffix=" Minut" :start="this.checkViewMinutCount"></count-to>
+            </h3>
             <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
           </div>
           
           <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-xl my-3 font-semibold font-heading">11 Prelegentów</h3>
+            <h3 class="text-xl my-3 font-semibold font-heading">
+              <count-to ref="countPrelegent" v-view="viewPrelegentCount" :startVal="0" :endVal="11" :duration="3000" :autoplay="false" suffix=" Prelegentów"></count-to> 
+            </h3>
             <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
           </div>
 
           <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-xl my-3 font-semibold font-heading">1 Debata</h3>
+            <h3 class="text-xl my-3 font-semibold font-heading">
+              <count-to ref="countDebate" v-view="viewDebateCount" :startVal="0" :endVal="1" :duration="3000" :autoplay="false" suffix=" Debata"></count-to>
+            </h3>
             <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
           </div>
         </div>
@@ -150,7 +144,54 @@
 
 <script>  
   export default {
-    
+    data: function() {
+      return {
+        checkViewMinutCount: false,
+      };
+    },
+    watch: { 
+      checkViewMinutCount: function(newVal, oldVal) { // watch it
+        console.log('Prop changed: ', newVal, ' | was: ', oldVal)
+      }
+    },
+    methods: {
+      viewMinutCount (e){
+        if(e.type == 'enter'){
+           this.$refs.countMinute.start();
+        }
+
+        if(e.type == 'exit'){
+           this.$refs.countMinute.reset();
+        }
+      },
+      viewPrelegentCount (e){
+        if(e.type == 'enter'){
+           this.$refs.countPrelegent.start();
+        }
+
+        if(e.type == 'exit'){
+           this.$refs.countPrelegent.reset();
+        }
+      },
+      viewDebateCount (e){
+        if(e.type == 'enter'){
+           this.$refs.countDebate.start();
+        }
+
+        if(e.type == 'exit'){
+           this.$refs.countDebate.reset();
+        }
+      },
+      viewHandler (e) {
+          console.log(e.type) // 'enter', 'exit', 'progress'
+          console.log(e.percentInView) // 0..1 how much element overlap the viewport
+          console.log(e.percentTop) // 0..1 position of element at viewport 0 - above , 1 - below
+          console.log(e.percentCenter) // 0..1 position the center of element at viewport 0 - center at viewport top, 1 - center at viewport bottom
+          console.log(e.scrollPercent) // 0..1 current scroll position of page
+          console.log(e.scrollValue) // 0..1 last scroll value (change of page scroll offset)
+          console.log(e.target.rect) // element.getBoundingClientRect() result
+      }
+    }
   };
 </script>
 

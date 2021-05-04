@@ -33,8 +33,8 @@ export const getters = {}
 
 export const actions = {
   async nuxtServerInit({ dispatch }, { env }) {
-    await WPAPI.discover( `${env.API_URL}${env.API_AFFIX}` ).then(function(wp){
-      return true;
+    // await WPAPI.discover( `${env.API_URL}${env.API_AFFIX}` ).then(function(wp){
+    //   return true;
 /*
       return Promise.all([
         new Promise((resolve) => {
@@ -80,6 +80,6 @@ export const actions = {
           })
         })
       ]);*/
-    });
+    // });
   },
 }

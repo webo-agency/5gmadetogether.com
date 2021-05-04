@@ -151,7 +151,7 @@ export default [
   {
     src: 'wp-nuxt', 
     options:  {
-      discover: true,
+      discover: false,
       endpoint: `${process.env.API_URL}${process.env.API_AFFIX}`
     },
   },
