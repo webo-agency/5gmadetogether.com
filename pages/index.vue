@@ -103,7 +103,7 @@
         </div>
       </section>
     </div>
-    <div class="py-24 px-4 text-center relative lg:mx-16">
+    <div class="py-24 px-4 text-left relative lg:mx-16">
       <section class="py-8 px-4">
         <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-row items-center uppercase z-50 relative">
           <svg
@@ -181,16 +181,16 @@
 
         <picture>
           <source
-            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpeg?webp')"
+            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021 (1).jpeg?webp')"
             type="image/webp"
           >
           <source
-            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpeg')"
+            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021 (1).jpeg')"
             type="image/jpeg"
           >
           <img 
             class="absolute w-full h-full object-cover inset-0"
-            :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpeg')" 
+            :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021 (1).jpeg')" 
             alt=""
           >
         </picture>
