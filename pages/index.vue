@@ -93,9 +93,9 @@
         </div>
       </section>
     </div>
-    <div class="py-48 px-4 text-center relative lg:mx-16">
+    <div class="py-24 px-4 text-center relative lg:mx-16">
       <section class="py-8 px-4">
-        <h2 class="text-3xl font-medium font-heading mb-14 flex flex-row items-center uppercase">
+        <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-row items-center uppercase z-50 relative">
           <svg
             class="mr-4"
             width="50px"
@@ -115,15 +115,10 @@
           /></g></svg>Conference in numbers
         </h2>
 
-        <div class="relative flex flex-wrap -mx-4 -mb-6">
-          <img 
-            :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
-            alt="" 
-            class="absolute w-full h-full opacity-20 object-cover"
-          >
+        <div class="flex flex-wrap -mx-4 -mb-6 relative z-50">
 
           <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-black text-xl my-3 font-semibold font-heading text-4xl">
+            <h3 class="text-white text-xl my-3 font-semibold font-heading text-4xl">
               <count-to
                 ref="countMinute"
                 v-view="viewMinutCount"
@@ -134,13 +129,13 @@
                 suffix=" Minutes"
               />
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-white leading-relaxed">
               The debate and presentations about each part of the value chain: security, virtualisation, OSS/BSS, chipsets and radio units. Additionally MNO, VC and regulators perspective
             </p>
           </div>
           
           <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-black text-xl my-3 font-semibold font-heading text-4xl">
+            <h3 class="text-white text-xl my-3 font-semibold font-heading text-4xl">
               <count-to
                 ref="countPrelegent"
                 v-view="viewPrelegentCount"
@@ -151,13 +146,13 @@
                 suffix=" Speakers"
               /> 
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-white leading-relaxed">
               Top figures from companies leading in the telecommunication revolution. It includes Deutsche Telekom, VMware, Marvel, and many more. Please check the agenda for the full information.
             </p>
           </div>
 
           <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-black text-xl my-3 font-semibold font-heading text-4xl">
+            <h3 class="text-white text-xl my-3 font-semibold font-heading text-4xl">
               <count-to
                 ref="countDebate"
                 v-view="viewDebateCount"
@@ -168,11 +163,17 @@
                 suffix=" Debate"
               />
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-white leading-relaxed">
               Possibility to listen to what key players in the OpenRAN area think about the future and challenges of the networks of the future.
             </p>
           </div>
         </div>
+
+        <img 
+          :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
+          alt="" 
+          class="absolute w-full h-full opacity-20 object-cover inset-0"
+        >
       </section>
     </div>
     
