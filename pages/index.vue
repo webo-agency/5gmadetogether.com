@@ -181,16 +181,16 @@
 
         <picture>
           <source
-            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
+            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpeg?webp')"
             type="image/webp"
           >
           <source
-            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg')"
+            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpeg')"
             type="image/jpeg"
           >
           <img 
-            class="absolute w-full h-full opacity-20 object-cover inset-0"
-            :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
+            class="absolute w-full h-full object-cover inset-0"
+            :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpeg')" 
             alt=""
           >
         </picture>
@@ -366,7 +366,7 @@
       </section> -->
     </div>
 
-    <section class="relative py-12 px-4 text-center lg:mx-16">
+    <section class="relative py-24 px-4 text-center lg:mx-16">
       <div class="relative w-full max-w-2xl mx-auto z-50">
         <h2 class="text-white text-5xl leading-tight font-semibold font-heading mb-4">
           Join the conference
