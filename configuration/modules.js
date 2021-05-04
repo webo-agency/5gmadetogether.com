@@ -51,10 +51,10 @@ export default [
       inlineImageLimit: 1000,
       handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
       optimizeImages: true,
-      optimizeImagesInDev: true,
+      optimizeImagesInDev: false,
       defaultImageLoader: 'img-loader',
       mozjpeg: {
-        quality: 85
+        quality: 70
       },
       optipng: false,
       pngquant: {
@@ -62,7 +62,7 @@ export default [
         quality: [0.65, 0.8]
       },
       webp: {
-        quality: 85
+        quality: 70
       }
     }
   },

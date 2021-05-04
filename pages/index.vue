@@ -82,11 +82,21 @@
           <div class="lg:w-1/2 px-4">
             <div class="flex flex-wrap -m-2">
               <div class="p-2">
-                <img
-                  class="rounded shadow h-auto object-cover"
-                  src="~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg"
-                  alt=""
-                >
+                <picture>
+                  <source
+                    :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg?webp')"
+                    type="image/webp"
+                  >
+                  <source
+                    :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')"
+                    type="image/jpeg"
+                  >
+                  <img 
+                    class="rounded shadow h-auto object-cover"
+                    :src="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')" 
+                    alt=""
+                  >
+                </picture>
               </div>
             </div>
           </div>
@@ -169,11 +179,21 @@
           </div>
         </div>
 
-        <img 
-          :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
-          alt="" 
-          class="absolute w-full h-full opacity-20 object-cover inset-0"
-        >
+        <picture>
+          <source
+            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
+            type="image/webp"
+          >
+          <source
+            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg')"
+            type="image/jpeg"
+          >
+          <img 
+            class="absolute w-full h-full opacity-20 object-cover inset-0"
+            :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
+            alt=""
+          >
+        </picture>
       </section>
     </div>
     
@@ -344,19 +364,37 @@
           </div>
         </div>
       </section>
-    
-      <section class="py-12 px-4 text-center">
-        <div class="w-full max-w-2xl mx-auto">
-          <h2 class="text-5xl leading-tight font-semibold font-heading mb-4">
-            Join the conference
-          </h2>
-          <a
-            class="inline-block py-4 px-8 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow"
-            href="https://www.tickettailor.com/events/iswireless/518782"
-          >REGISTER</a>
-        </div>
-      </section>
     </div>
+    
+    <section class="relative py-12 px-4 text-center lg:mx-16">
+      <div class="relative w-full max-w-2xl mx-auto z-50">
+        <h2 class="text-white text-5xl leading-tight font-semibold font-heading mb-4">
+          Join the conference
+        </h2>
+        <a
+          class="text-white inline-block py-4 px-8 leading-none bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow"
+          href="https://www.tickettailor.com/events/iswireless/518782"
+        >REGISTER</a>
+      </div>
+
+      <div class="absolute lg:rounded w-full h-full inset-0 z-0 bg-blue-200">
+        <picture>
+          <source
+            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
+            type="image/webp"
+          >
+          <source
+            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg')"
+            type="image/jpeg"
+          >
+          <img 
+            class="absolute lg:rounded w-full h-full inset-0 z-auto object-cover" 
+            :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
+            alt=""
+          >
+        </picture>
+      </div>
+    </section>
   </div>
 </template>
 
