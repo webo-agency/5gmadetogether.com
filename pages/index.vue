@@ -83,8 +83,8 @@
             <div class="flex flex-wrap -m-2">
               <div class="p-2">
                 <img
-                  class="rounded shadow h-full object-cover"
-                  src="~/assets/img/office.jpg"
+                  class="rounded shadow h-auto object-cover"
+                  src="~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg"
                   alt=""
                 >
               </div>
@@ -368,7 +368,7 @@
       };
     },
     methods: {
-      updateLiveURL (e){
+      updateLiveURL (){
         return this.liveURL;
       },
       youtubeUpdateSrc (){
