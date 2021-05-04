@@ -1,27 +1,27 @@
-import {
-  isEmpty as _isEmpty
-} from 'lodash'
+// import {
+//   isEmpty as _isEmpty
+// } from 'lodash'
 
-const filterWords = ['yoast_head', 'meta', '{}'];
+// const filterWords = ['yoast_head', 'meta', '{}'];
 
-const filterData = obj => {
-  Object.keys(obj).forEach(key => {
-    if(typeof obj[key] == 'string'){
-      obj[key] = obj[key].replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/sg, "");
-    }
+// const filterData = obj => {
+//   Object.keys(obj).forEach(key => {
+//     if(typeof obj[key] == 'string'){
+//       obj[key] = obj[key].replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/sg, "");
+//     }
 
-    if (
-      _isEmpty(key) ||
-      RegExp(filterWords.join('|')).test(key) ||
-      obj[key] == null ||
-      typeof obj[key] == 'undefined' ||
-      (Array.isArray(obj[key]) && !obj[key].length) ||
-      obj[key] == '' ||
-      obj[key] == []
-    ) { delete obj[key] } // delete
-    else if (obj[key] && typeof obj[key] === "object") filterData(obj[key]); // recurse
-  });
-};
+//     if (
+//       _isEmpty(key) ||
+//       RegExp(filterWords.join('|')).test(key) ||
+//       obj[key] == null ||
+//       typeof obj[key] == 'undefined' ||
+//       (Array.isArray(obj[key]) && !obj[key].length) ||
+//       obj[key] == '' ||
+//       obj[key] == []
+//     ) { delete obj[key] } // delete
+//     else if (obj[key] && typeof obj[key] === "object") filterData(obj[key]); // recurse
+//   });
+// };
 
 export const state = () => ({
   
