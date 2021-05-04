@@ -179,6 +179,8 @@
           </div>
         </div>
 
+        <div class="bg-blue-600 absolute inset-0 w-full h-full z-10 opacity-40" style=""></div>
+
         <picture>
           <source
             :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021 (1).jpeg?webp')"
