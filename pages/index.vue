@@ -50,7 +50,8 @@
           </div>
         </div>
       </section>
-        
+    </div>
+    <div class="py-48 px-4 text-center relative lg:mx-16">
       <section class="py-8 px-4">
         <h2 class="text-3xl font-medium font-heading mb-14 flex flex-row items-center uppercase">
           <svg class="mr-4" width="50px" viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-miterlimit="1.5"><path fill="none" d="M0 0h291.667v291.667H0z"/><clipPath id="a"><path d="M0 0h291.667v291.667H0z"/></clipPath><g clip-path="url(#a)"><path d="M0 145.833h291.667" fill="none" stroke="#11C9D8" stroke-width="16.67"/></g></svg>Conference in numbers
@@ -66,7 +67,7 @@
 
           <div class="lg:w-1/3 px-4 mb-6 relative">
             <h3 class="text-black text-xl my-3 font-semibold font-heading text-4xl">
-              <count-to ref="countMinute" v-view="viewMinutCount" :startVal="0" :endVal="260" :duration="3000" :autoplay="false" suffix=" Minutes" :start="this.checkViewMinutCount"></count-to>
+              <count-to ref="countMinute" v-view="viewMinutCount" :startVal="0" :endVal="260" :duration="3000" :autoplay="false" suffix=" Minutes"></count-to>
             </h3>
             <p class="text-gray-400 leading-relaxed">The debate and presentations about each part of the value chain: security, virtualisation, OSS/BSS, chipsets and radio units. Additionally MNO, VC and regulators perspective</p>
           </div>
@@ -86,11 +87,16 @@
           </div>
         </div>
       </section>
-        
+    </div>
+    
+    <div class="container mx-auto px-4">
       <section class="py-12 px-4 text-center">
         <h2 class="text-4xl mb-8 font-semibold font-heading">Watch live here</h2>
         <div class="mx-auto aspect-w-16 aspect-h-9">
-          <iframe class="mx-auto w-full h-full" width="100%" height="100%" src="https://www.youtube.com/embed/K-CbHfv7EqA?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <a v-show="!iframeYoutubeSrc" href="https://www.youtube.com/watch?v=K-CbHfv7EqA" class="absolute inset-0 z-50">
+            <img src="http://img.youtube.com/vi/K-CbHfv7EqA/maxresdefault.jpg" class="w-full h-full object-cover" alt=""/>
+          </a>
+          <iframe v-view="youtubeUpdateSrc" class="mx-auto w-full h-full" width="100%" height="100%" :src="iframeYoutubeSrc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
         
@@ -154,15 +160,17 @@
   export default {
     data: function() {
       return {
-        checkViewMinutCount: false,
+        iframeYoutubeSrc: '',
+        liveURL: 'https://www.youtube.com/embed/K-CbHfv7EqA?controls=0',
       };
     },
-    watch: { 
-      checkViewMinutCount: function(newVal, oldVal) { // watch it
-        console.log('Prop changed: ', newVal, ' | was: ', oldVal)
-      }
-    },
     methods: {
+      updateLiveURL (e){
+        return this.liveURL;
+      },
+      youtubeUpdateSrc (){
+        this.iframeYoutubeSrc = this.liveURL;
+      },
       viewMinutCount (e){
         if(e.type == 'enter'){
            this.$refs.countMinute.start();
