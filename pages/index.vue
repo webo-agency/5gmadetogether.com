@@ -179,7 +179,7 @@
           </div>
         </div>
 
-        <div class="bg-blue-600 absolute inset-0 w-full h-full z-10 opacity-40" style=""></div>
+        <div class="bg-blue-600 absolute inset-0 w-full h-full z-10 opacity-80" style=""></div>
 
         <picture>
           <source
