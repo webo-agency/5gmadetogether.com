@@ -40,100 +40,18 @@ export default [
     }
   },
   {
-    src: "@aceforth/nuxt-netlify",
-    options: {
-      mergeSecurityHeaders: true,
-      headers: {
-        '/static/*': [
-          'Cache-Control: public, max-age=31557600',
-        ],
-        '/static/*.css': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/*.js': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/img/*': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/img/*.gif': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/img/*.png': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/img/*.jpg': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/img/*.jpeg': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/img/*.svg': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*.webp': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*.woff': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*.woff2': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*.eot': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*.ttf': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/static/fonts/*.otf': [
-          'Cache-Control: public, max-age=31557600'
-        ],
-        '/favicon.ico': [
-          'Cache-Control: public, max-age=604800'
-        ]
-      }
-    }
-  },
-  {
-    src: "nuxt-netlify-http2-server-push",
-    options: {
-      resources: [
-        { path: 'favicon.ico', as: 'image', crossorigin: 'anonymous' },
-        { path: 'static/*.js', as: 'script', crossorigin: 'anonymous' },
-        { path: 'static/*.css', as: 'style', crossorigin: 'anonymous' },
-        { path: 'static/images/img/*.gif', as: 'image', crossorigin: 'anonymous' },
-        { path: 'static/fonts/*.woff', as: 'font', type: 'font/woff', crossorigin: 'anonymous' },
-        { path: 'static/fonts/*.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
-      ]
-    }
-  },
-  {
     src: '@nuxtjs/tailwindcss',
     options: {
       jit: true
     }
   },
   { 
-    src: '@nuxtjs/markdownit',
-    options:  {
-      preset: 'default',
-      linkify: true,
-      breaks: true,
-      injected: true,
-      html: true
-    }
-  },
-  { 
     src: '@aceforth/nuxt-optimized-images',
     options:  {
-      inlineImageLimit: -1,
+      inlineImageLimit: 1000,
       handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
       optimizeImages: true,
-      optimizeImagesInDev: false,
+      optimizeImagesInDev: true,
       defaultImageLoader: 'img-loader',
       mozjpeg: {
         quality: 85

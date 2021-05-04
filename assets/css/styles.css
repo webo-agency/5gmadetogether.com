@@ -1,6 +1,6 @@
 html,
 body{
-    /* @apply text-primary; */
+   
 }
 
 .text-overflow{
@@ -9,10 +9,31 @@ body{
     text-overflow: ellipsis;
 }
 
-*[disabled] {
-    display: none !important;
+.time-dash{
+    @apply whitespace-nowrap;
+    @apply mr-4;
 }
 
-.list-dash{
-    list-style-type: none;
+.time-dash:after{
+    content: '—';
+    @apply ml-4;
+}
+
+.animate-border {
+    @apply relative;
+}
+
+.animate-border:after {
+    content: '';
+    @apply absolute;
+    width: 0;
+    height: 1px;
+    @apply bg-gray-500;
+    bottom: -1px;
+    left: 0;
+    transition: all 2s;
+}
+
+.animate-border.view-in:after{
+    width: 100%;
 }
