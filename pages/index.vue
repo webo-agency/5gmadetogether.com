@@ -316,7 +316,7 @@
         </div>
       </section>
         
-      <section class="pt-8 px-4 text-center hidden">
+      <!-- <section class="pt-8 px-4 text-center hidden">
         <div class="max-w-2xl mx-auto mb-8">
           <h2 class="text-4xl leading-tight mb-6 font-semibold font-heading">
             Organizatorzy i patroni
@@ -363,9 +363,9 @@
             >
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
-    
+
     <section class="relative py-12 px-4 text-center lg:mx-16">
       <div class="relative w-full max-w-2xl mx-auto z-50">
         <h2 class="text-white text-5xl leading-tight font-semibold font-heading mb-4">
