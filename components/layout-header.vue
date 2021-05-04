@@ -6,16 +6,20 @@
   >
     <nav class="flex flex-wrap items-center justify-between py-4 md:sticky top-0 z-50 bg-white">
       <div class="navbar-menu flex flex-wrap order-1 lg:order-1 flex-row items-center">
-        Organizer <img class="h-12 mx-4" src="~/assets/img/ISW_-_logo_kolor.png?inline" alt="">
+        Organizer <img
+          class="h-12 mx-4"
+          src="~/assets/img/ISW_-_logo_kolor.png?inline"
+          alt=""
+        >
 
         <!-- <img class="hidden h-12 mx-4" src="~/assets/img/CP_logo_kolor_3.png" alt=""> -->
         <!-- <img class="hidden h-12 mx-4" src="~/assets/img/PTI.png" alt=""> -->
-
       </div>
       <div class="navbar-menu block order-4 lg:order-3 lg:text-right">
         <a 
-          class="inline-block text-gray-400 leading-none text-white underscore font-semibold mx-8 my-4 lg:my-0 underline" 
-          v-scroll-to="'#agenda'" href="#agenda"
+          v-scroll-to="'#agenda'" 
+          class="inline-block text-gray-400 leading-none text-white underscore font-semibold mx-8 my-4 lg:my-0 underline"
+          href="#agenda"
         >
           Agenda
         </a>

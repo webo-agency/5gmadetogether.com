@@ -6,7 +6,7 @@
   >
     <div class="flex flex-wrap items-center justify-between p-4">
       <div class="w-full lg:w-auto lg:mr-6 mb-4 lg:mb-0 text-center">
-        © {{ this.copyrightDate }} IS-Wireless
+        © {{ copyrightDate }} IS-Wireless
       </div>
     </div>
   </component>
