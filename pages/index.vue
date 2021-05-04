@@ -35,7 +35,7 @@
         <div class="flex flex-wrap -mx-4">
           <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div class="flex flex-col h-full tablet:p-8 rounded">
-              <h2 class="text-xl tablet:text-xl tablet-narrow:text-3xl font-medium font-heading mb-14 flex flex-row items-center uppercase">
+              <h2 class="text-xl md:text-xl lg:text-3xl font-medium font-heading mb-14 flex flex-row items-center uppercase">
                 <svg class="mr-4" width="50px" viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-miterlimit="1.5"><path fill="none" d="M0 0h291.667v291.667H0z"/><clipPath id="a"><path d="M0 0h291.667v291.667H0z"/></clipPath><g clip-path="url(#a)"><path d="M0 145.833h291.667" fill="none" stroke="#11C9D8" stroke-width="16.67"/></g></svg>About the conference
               </h2>
               <p class="mb-8 text-gray-400 leading-relaxed">How is the 5G network being developed around the world? Where does the process take place seamlessly, and where is it delayed? How secure can the 5G network become? Why is Open RAN the model of the future? Is the telecommunications market ready for the upcoming change? Finally, how could the 5G development decision-makers be persuaded to implement the open network model? These are some of the questions to be answered by ICT companies’ experts from around the world during discussion panels and lectures hosted at the international „5G Made Together – creating future with open ecosystems” conference.
