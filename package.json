@@ -37,7 +37,6 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "lodash": "^4.17.21",
-    "netlify-cli": "^3.25.1",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.15.3",
     "nuxt-bugsnag": "^4.2.2",
