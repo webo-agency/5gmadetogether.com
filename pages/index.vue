@@ -15,21 +15,7 @@
           <h3 class="mb-8 text-white leading-relaxed font-light uppercase text-2xl">Creating future with <span class="block font-medium text-4xl">open ecosystems</span></h3>
           <div class="flex flex-row flex-wrap">
             <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow" href="https://5gmadetogether.konfeo.com/pl/groups">Dołącz do konferencji</a>
-            <a class="inline-block py-4 px-8 mr-6 leading-none text-white underline" href="#read-more">Czytaj więcej</a>
-            <!-- <script>
-              (function($) {
-
-              $(document).ready(function(){
-
-              $("a[href='#read-more']").click(function() {
-                $("html, body").animate({ scrollTop: $('#read-more').position().top }, 1000);
-                return false;
-              });
-
-              });
-
-              })(jQuery);
-            </script> -->
+            <a class="inline-block py-4 px-8 mr-6 leading-none text-white underline" v-scroll-to="'#read-more'" href="#read-more">Czytaj więcej</a>
           </div>
         </div>
       </div>

@@ -156,6 +156,12 @@ export default [
     },
   },
   {
+    src: 'vue-scrollto/nuxt', 
+    options:  {
+      duration: 300 
+    },
+  },
+  {
     src: 'nuxt-spa-store-init'
   }
 ]
