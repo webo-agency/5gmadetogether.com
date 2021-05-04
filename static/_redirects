@@ -1,0 +1,10 @@
+## ABSOLUTE
+
+# Redirect domain aliases to primary domain
+https://www.5gmadetogether.com/* https://www.5gmadetogether.com/:splat 301!
+
+## RELATIVE
+
+# 404 page
+#--------------------------------------------------------------------
+/* /404.html 404

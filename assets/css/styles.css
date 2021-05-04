@@ -1,0 +1,18 @@
+html,
+body{
+    /* @apply text-primary; */
+}
+
+.text-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+*[disabled] {
+    display: none !important;
+}
+
+.list-dash{
+    list-style-type: none;
+}

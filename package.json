@@ -1,0 +1,97 @@
+{
+  "name": "5gmadetogether.com",
+  "description": "Conference website",
+  "license": "GPLv3",
+  "private": true,
+  "homepage": "https://www.5gmadetogether.com",
+  "bugs": {
+    "url": "https://github.com/webo-agency/5gmadetogether.com/issues"
+  },
+  "contributors": [
+    {
+      "name": "Patryk Padus",
+      "email": "patryk.padus@webo.agency",
+      "url": "https://www.webo.agency"
+    },
+    {
+      "name": "Maciej Zawadzki",
+      "email": "maciej.zawadzki@webo.agency",
+      "url": "https://www.webo.agency"
+    }
+  ],
+  "dependencies": {
+    "@aceforth/nuxt-netlify": "^1.1.0",
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@bugsnag/plugin-vue": "^7.9.2",
+    "@nuxt/components": "^2.1.8",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/google-tag-manager": "^2.3.2",
+    "@nuxtjs/markdownit": "^2.0.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/tailwindcss": "^4.0.3",
+    "acorn-dynamic-import": "^4.0.0",
+    "axios": "^0.21.1",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.11.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "lodash": "^4.17.21",
+    "netlify-cli": "^3.25.1",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.15.3",
+    "nuxt-bugsnag": "^4.2.2",
+    "nuxt-compress": "^5.0.0",
+    "nuxt-i18n": "^6.26.0",
+    "nuxt-netlify-http2-server-push": "^0.1.3",
+    "nuxt-polyfill": "^1.0.3",
+    "nuxt-spa-store-init": "^1.2.1",
+    "postcss-nested": "^5.0.5",
+    "postcss-responsive-type": "^1.0.0",
+    "vue": "^2.6.12",
+    "vue-in-viewport-directive": "^2.0.2",
+    "vue-resize-directive": "^1.2.0",
+    "vue-scrollactive": "^0.9.3",
+    "vue2-animate": "^2.1.4",
+    "webfontloader": "^1.6.28",
+    "webp-loader": "^0.6.0",
+    "workbox-sw": "file:local-override/workbox-sw",
+    "wp-nuxt": "^1.0.28",
+    "wpapi": "^1.2.1",
+    "wpapi-extensions": "^1.0.10"
+  },
+  "scripts": {
+    "start": "nuxt build && nuxt",
+    "dev": "nuxt dev",
+    "dev-debug": "cross-env NODE_ENV=debug node --inspect-brk node_modules/.bin/nuxt",
+    "build": "nuxt build",
+    "analyze": "nuxt build --analyze",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "precommit": "npm run lint",
+    "deploy-test": "cross-env NODE_ENV=production node --inspect-brk node_modules/.bin/nuxt generate",
+    "deploy": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 node_modules/.bin/nuxt build --target static && node_modules/.bin/nuxt generate"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.25.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-tailwind": "^0.2.1",
+    "eslint-plugin-vue": "^7.9.0",
+    "puppeteer": "^9.1.0",
+    "vue-svg-inline-loader": "^2.1.2"
+  },
+  "browserslist": [
+    "> 5%"
+  ]
+}

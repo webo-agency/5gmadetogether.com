@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js is-old is-stop" {{ HTML_ATTRS }}>
+    <head>
+        <script id="init">
+          document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, 'js').replace(/\bis-stop\b/g, 'is-running');
+          if (typeof Object.defineProperty !== "undefined") {
+            document.documentElement.className = document.documentElement.className.replace(/\bis-old\b/g, '');
+          } else {document.getElementsByTagName("head")[0].innerHTML += ("<script src=\"" + window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '') + "/old.js\" type=\"text" + "/" + "javascript\"><" + "/" + "script>");}
+          document.getElementById("init").remove();
+        </script>
+        {{ HEAD }}
+        <style>
+            .js.is-running:before,
+            .is-stop:before{
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 1;
+                background-color: #000000;
+                z-index: 8500;
+                /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 167 50'%3E %3Cpath fill='%23fff' d='M155.235 46.637v3.356L139.27 50c-5.102 0-9.243-4.142-9.243-9.243V22.27c0-5.102 4.141-9.243 9.243-9.243h18.488c5.1 0 9.243 4.14 9.243 9.243v15.96h-3.36V23.95c-.003-4.148-3.416-7.561-7.564-7.563h-15.125c-4.149.001-7.562 3.415-7.563 7.563v15.126c.002 4.148 3.414 7.56 7.563 7.56h14.284zm-56.61-33.604l15.966-.008c5.102 0 9.243 4.143 9.243 9.243v18.487c0 5.104-4.141 9.243-9.243 9.243H96.103c-5.1 0-9.243-4.14-9.243-9.243V-.232h3.36v39.307c.003 4.148 3.416 7.56 7.564 7.562h15.125c4.148 0 7.562-3.414 7.563-7.562V23.95c-.002-4.148-3.415-7.561-7.563-7.562H98.625v-3.355zm-17.957 36.96L52.936 50c-5.1 0-9.242-4.142-9.242-9.243V22.27c0-5.102 4.141-9.243 9.243-9.243h18.487c5.102 0 9.243 4.14 9.243 9.243v15.96H55.459V34.87h21.847V23.95c-.002-4.148-3.414-7.561-7.563-7.563H54.62c-4.148.001-7.562 3.415-7.563 7.563v15.126c.002 4.148 3.415 7.56 7.563 7.56h26.049v3.357zM28.258 50h-1.329v-3.38c4.006-.173 7.204-3.482 7.21-7.544V13.027h3.356l.005 27.73c0 5.102-4.14 9.244-9.243 9.244V50zM3.36 13.026l.001 6.05v20c.006 4.062 3.204 7.37 7.208 7.545L9.244 50C4.14 50 0 45.858 0 40.757l.006-27.73h3.355zM18.75 50H9.244l1.326-3.38h4.82l-.002-11.749h3.355l.007 15.13V50z'/%3E %3C/svg%3E"); */
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-size: 75vw 75vh;
+            }
+
+            .js.is-running:after,
+            .is-stop:after{
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 1;
+                z-index: 9000;
+                /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 167 50'%3E %3Cpath fill='%2316ab86' d='M163.64 50h-5.044v-8.404H167v5.041A3.364 3.364 0 0 1 163.64 50z'/%3E %3C/svg%3E"); */
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 50%;
+                background-size: 75vw 75vh;
+            }
+
+            .js.is-running:not(.is-stop):before,
+            .js.is-running:not(.is-stop):after{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s linear 0.5s,opacity 0.3s linear 0.3s;
+            }
+
+            .js.is-running:after{
+                animation: app-pulse 1s infinite;
+                animation-direction: alternate-reverse;
+            }
+
+
+            @-webkit-keyframes app-pulse {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes app-pulse {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body {{ BODY_ATTRS }}>
+        {{ APP }}
+    </body>
+</html>
