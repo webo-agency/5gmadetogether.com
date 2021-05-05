@@ -243,76 +243,64 @@
               v-view.once
               class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
             >
-              <time class="time-dash">10:00</time><span>Opening</span>
+              <time class="time-dash">10:00</time>
+              <span>Opening</span>
             </li>
             <li
               v-view.once
               class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
             >
-              <time class="time-dash">10:10</time><span>Debate<br>
-                Discussion moderator:<br>
-                Participants:
+              <time class="time-dash">10:10</time>
+              <span>Debate<br>
+                Participants: Marvel, CableFree, VMware, EU telecommunications regulator, IS-Wireless, MNO representatives<br>
+                Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
               </span>
             </li>
             <li
               v-view.once
               class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
             >
-              <time class="time-dash">11:00</time><span>"OpenRAN equals open ecosystem" – IS-Wireless (<em itemprop="name">Aleksandra Chećko</em>, <em itemprop="name">Artur Chmielewski</em>)</span>
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              VMware
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Carrier grade OpenRAN - Deutsche Telekom
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Security
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Telco Cloud
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Orchestration in 5G
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Radio heads ready for OpenRAN
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              The role of chipset in open ecosystems
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Infrastructure is a king
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
-            >
-              Private networks regulations
+              <time class="time-dash">11:00</time>
+              <span>Conference<br>
+                <ol class="list-disc">
+                  <li>
+                    OpenRAN 2.0 - IS-Wireless - <em itemprop="name">Sławomir Pietrzyk</em>, CEO
+                  </li>
+                  <li>
+                    Radio heads ready for OpenRAN - Cablefree - <em itemprop="name">Stephen Patrick</em>, CEO
+                  </li>
+                  <li>
+                    The role of chipset in open ecosystems - Marvel - <em itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
+                  </li>
+                  <li>
+                    Telecommunication of the future - the VC perspective - Bitspiration Booster - <em itemprop="name">Wojciech Burkot</em>, CEO
+                  </li>
+                  <li>
+                    Virtual networks - VMware
+                  </li>
+                  <li>
+                    OpenRAN ready servers - HPE
+                  </li>
+                  <li>
+                    Orchestration in 5G - Comarch
+                  </li>
+                  <li>
+                    Security in OpenRAN - to be announced soon
+                  </li>
+                  <li>
+                    Telco cloud - to be announced soon
+                  </li>
+                  <li>
+                    Carrier grade OpenRAN - MNO - to be announced soon
+                  </li>
+                  <li>
+                    Infrastructure is a king - to be announced soon
+                  </li>
+                  <li>
+                    Private networks regulations - European regulator - to be announced soon
+                  </li>
+                </ol>
+              </span>
             </li>
           </ol>
         </div>
