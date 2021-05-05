@@ -42,7 +42,7 @@ export default [
   {
     src: '@nuxtjs/tailwindcss',
     options: {
-      jit: true
+      jit: false
     }
   },
   { 
