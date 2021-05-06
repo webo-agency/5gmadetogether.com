@@ -27,9 +27,10 @@
               v-html="require('~/assets/logo/5g-made-together.svg?include')"
             />
             
-            <h1 class="mb-8 text-white leading-relaxed font-light uppercase text-2xl">
+            <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-2xl">
               Creating future with <span class="block font-medium text-4xl">open ecosystems</span>
             </h1>
+            <time datetime="2021-05-27T10:00Z" class="block text-white mb-8 text-xl font-bold">May 27th, 2021 | 10 am CET</time>
           </header>
           <div class="flex flex-row flex-wrap">
             <a
@@ -165,7 +166,7 @@
               /> 
             </h3>
             <p class="text-white leading-relaxed">
-              Top figures from companies leading in the telecommunication revolution. It includes Deutsche Telekom, VMware, Marvel, and many more. Please check the agenda for the full information.
+              Top figures from companies leading in the telecommunication revolution. It includes leading MNOs, VMware, Marvel, and many more. Please check the agenda for the full information.
             </p>
           </div>
 
@@ -401,7 +402,7 @@
     data: function() {
       return {
         iframeYoutubeSrc: '',
-        liveURL: ''//'https://www.youtube.com/embed/K-CbHfv7EqA?controls=0',
+        liveURL: 'https://www.youtube.com/embed/zFb9grZxnXE',
       };
     },
     methods: {

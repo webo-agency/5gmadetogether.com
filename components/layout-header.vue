@@ -17,13 +17,6 @@
       </div>
       <div class="navbar-menu block order-4 lg:order-3 lg:text-right">
         <a 
-          v-scroll-to="'#agenda'" 
-          class="inline-block text-gray-400 leading-none text-white underscore font-semibold mx-8 my-4 lg:my-0 underline"
-          href="#agenda"
-        >
-          Agenda
-        </a>
-        <a 
           class="inline-block py-4 px-8 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow my-4 lg:my-0" 
           href="https://www.tickettailor.com/events/iswireless/518782"
         >
