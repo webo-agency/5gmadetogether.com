@@ -73,11 +73,12 @@
                   stroke-width="16.67"
                 /></g></svg>About the conference
               </h2>
-              <ul class="mb-8 text-gray-400 leading-relaxed">
+              <ul class="mb-8 text-gray-400 leading-relaxed list-disc ml-4">
                 <li>How is the 5G network being developed around the world?</li>
                 <li>Where does the process take place seamlessly, and where is it delayed?</li>
                 <li>How secure can the 5G network become? Why is Open RAN the model of the future?</li>
-                <li>Is the telecommunications market ready for the upcoming change? Finally, how could the 5G development decision-makers be persuaded to implement the open network model?</li>
+                <li>Is the telecommunications market ready for the upcoming change?</li>
+                <li>Finally, how could the 5G development decision-makers be persuaded to implement the open network model?</li>
               </ul>
               <p class="mb-8 text-gray-400 leading-relaxed">
                 These are some of the questions to be answered by ICT companies’ experts from around the world during discussion panels and lectures hosted at the international „5G Made Together – creating future with open ecosystems” conference.
@@ -185,22 +186,24 @@
             </p>
           </div>
         </div>
-
-        <picture>
-          <source
-            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg?webp')"
-            type="image/webp"
-          >
-          <source
-            :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')"
-            type="image/jpeg"
-          >
-          <img 
-            class="absolute w-full h-full object-cover inset-0"
-            :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')" 
-            alt=""
-          >
-        </picture>
+       
+        <div class="absolute inset-0 overflow-hidden">
+          <picture>
+            <source
+              :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg?webp')"
+              type="image/webp"
+            >
+            <source
+              :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')"
+              type="image/jpeg"
+            >
+            <img 
+              class="absolute h-auto w-full"
+              :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')" 
+              alt=""
+            >
+          </picture>
+        </div>
       </section>
     </div>
     
@@ -212,11 +215,11 @@
         <div class="mx-auto aspect-w-16 aspect-h-9">
           <a
             v-show="!iframeYoutubeSrc"
-            href="https://www.youtube.com/watch?v=K-CbHfv7EqA"
+            href="https://www.youtube.com/channel/UCazzOCF3mycmFp-6vKt9Myg"
             class="absolute inset-0 z-50"
           >
             <img
-              src="http://img.youtube.com/vi/K-CbHfv7EqA/maxresdefault.jpg"
+              :src="require('~/assets/img/YT_Player_1920x1080.jpg')" 
               class="w-full h-full object-cover"
               alt=""
             >
@@ -281,7 +284,7 @@
                     Telecommunication of the future - the VC perspective - Bitspiration Booster - <em itemprop="name">Wojciech Burkot</em>, CEO
                   </li>
                   <li>
-                    Virtual networks - VMware - <em itemprop="name">Lorcan Burke</em>, Director RAN
+                    Accelerating OpenRAN ecosystem - VMware - <em itemprop="name">Lorcan Burke</em>, Director RAN
                   </li>
                   <li>
                     OpenRAN ready servers - HPE
@@ -398,7 +401,7 @@
     data: function() {
       return {
         iframeYoutubeSrc: '',
-        liveURL: 'https://www.youtube.com/embed/K-CbHfv7EqA?controls=0',
+        liveURL: ''//'https://www.youtube.com/embed/K-CbHfv7EqA?controls=0',
       };
     },
     methods: {
