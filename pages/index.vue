@@ -199,7 +199,7 @@
               type="image/jpeg"
             >
             <img 
-              class="absolute h-auto w-full"
+              class="absolute w-full object-cover h-full"
               :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')" 
               alt=""
             >
