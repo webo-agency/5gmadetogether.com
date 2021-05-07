@@ -288,6 +288,12 @@
                     Accelerating OpenRAN ecosystem - VMware - <em itemprop="name">Lorcan Burke</em>, Director RAN
                   </li>
                   <li>
+                    Building next generation edge - Tambora Systems - <em itemprop="name">Anand Uppili</em>, CEO
+                  </li>
+                  <li>
+                    Telco Cloud - The importance of a horizontal platform - IBM - <em itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
+                  </li>
+                  <li>
                     OpenRAN ready servers - HPE
                   </li>
                   <li>
