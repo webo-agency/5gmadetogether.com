@@ -35,7 +35,7 @@
           <div class="flex flex-row flex-wrap">
             <a
               class="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow"
-              href="https://5gmadetogether.konfeo.com/pl/groups"
+              href="https://www.tickettailor.com/events/iswireless/518782"
             >Register</a>
             <a
               v-scroll-to="'#read-more'"
