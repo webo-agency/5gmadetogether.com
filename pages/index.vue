@@ -261,7 +261,7 @@
             >
               <time class="time-dash">10:10</time>
               <span>Debate<br>
-                Participants: Marvel, IBM, VMware, EU telecommunications regulator, IS-Wireless, MNO representatives<br>
+                Participants: Marvel, IBM, VMware, EU telecommunications regulator, IS-Wireless<br>
                 Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
               </span>
             </li>
@@ -272,6 +272,9 @@
               <time class="time-dash">11:00</time>
               <span>Conference<br>
                 <ol class="list-disc ml-6">
+                  <li>
+                    Deutsche Telekom
+                  </li>
                   <li>
                     OpenRAN 2.0 - IS-Wireless - <em itemprop="name">Sławomir Pietrzyk</em>, CEO
                   </li>
