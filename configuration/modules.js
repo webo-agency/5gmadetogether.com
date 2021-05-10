@@ -12,6 +12,78 @@ export default [
     },
   },
   {
+    src:  'nuxt-rfg-icon', 
+    options: { 
+      rfg: {
+        "design": {
+          "ios": {
+            "pictureAspect": "backgroundAndMargin",
+            "backgroundColor": "#ffffff",
+            "margin": "28%",
+            "assets": {
+              "ios6AndPriorIcons": true,
+              "ios7AndLaterIcons": true,
+              "precomposedIcons": true,
+              "declareOnlyDefaultIcon": true
+            },
+            "appName": "5GMadeTogether"
+          },
+          "desktopBrowser": {
+            "design": "background",
+            "backgroundColor": "#ffffff",
+            "backgroundRadius": 0.45,
+            "imageScale": 0.8
+          },
+          "windows": {
+            "pictureAspect": "whiteSilhouette",
+            "backgroundColor": "#223168",
+            "onConflict": "override",
+            "assets": {
+              "windows80Ie10Tile": true,
+              "windows10Ie11EdgeTiles": {
+                "small": true,
+                "medium": true,
+                "big": true,
+                "rectangle": true
+              }
+            },
+            "appName": "5GMadeTogether"
+          },
+          "androidChrome": {
+            "pictureAspect": "backgroundAndMargin",
+            "margin": "17%",
+            "backgroundColor": "#ffffff",
+            "themeColor": "#ffffff",
+            "manifest": {
+              "name": "5GMadeTogether",
+              "display": "standalone",
+              "orientation": "notSet",
+              "onConflict": "override",
+              "declared": true
+            },
+            "assets": {
+              "legacyIcon": false,
+              "lowResolutionIcons": false
+            }
+          },
+          "safariPinnedTab": {
+            "pictureAspect": "blackAndWhite",
+            "threshold": 26.875,
+            "themeColor": "#223168"
+          }
+        },
+        "settings": {
+          "compression": 2,
+          "scalingAlgorithm": "Lanczos",
+          "errorOnImageTooSmall": false,
+          "readmeFile": false,
+          "htmlCodeFile": false,
+          "usePathAsIs": false
+        }
+      }
+    }
+  },
+  {
     src: "@nuxtjs/axios",
     // options: {}
   },
@@ -33,8 +105,8 @@ export default [
       manifest: {
         display: 'browser'
       },
-      // iconSrc: "~/assets/symbol.png",
       icon: {
+        source: "~/assets/symbol.png",
         sizes: [512, 192, 380]
       },
     }
