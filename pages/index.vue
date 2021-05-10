@@ -382,7 +382,7 @@
         >REGISTER</a>
       </div>
 
-      <div class="absolute lg:rounded w-full h-full inset-0 z-0 bg-blue-200">
+      <div class="absolute lg:rounded-t w-full h-full inset-0 z-0 bg-blue-200">
         <picture>
           <source
             :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
@@ -393,11 +393,20 @@
             type="image/jpeg"
           >
           <img 
-            class="absolute lg:rounded w-full h-full inset-0 z-auto object-cover" 
+            class="absolute lg:rounded-t w-full h-full inset-0 z-auto object-cover" 
             :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
             alt=""
           >
         </picture>
+      </div>
+    </section>
+
+    <section class="relative py-8 px-4 text-center lg:mx-16 bg-gray-100 flex flex-wrap justify-around rounded-b">
+      <div class="block my-2">
+        <strong>Contact organisers:</strong> <a href="mailto:r.sanecki@is-wireless.com">r.sanecki@is-wireless.com</a>
+      </div>
+      <div class="block my-2">
+        <strong>Press contact:</strong> <a href="mailto:media@is-wireless.com"> media@is-wireless.com</a>
       </div>
     </section>
   </div>
