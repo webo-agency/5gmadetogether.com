@@ -51,12 +51,12 @@ export default [
           },
           "androidChrome": {
             "pictureAspect": "backgroundAndMargin",
-            "margin": "17%",
+            "margin": "25%",
             "backgroundColor": "#ffffff",
             "themeColor": "#ffffff",
             "manifest": {
               "name": "5GMadeTogether",
-              "display": "standalone",
+              "display": "minimal-ui",
               "orientation": "notSet",
               "onConflict": "override",
               "declared": true
@@ -103,7 +103,7 @@ export default [
     options: {
       workbox: {},
       manifest: {
-        display: 'browser'
+        display: 'minimal-ui'
       },
       icon: {
         source: "~/assets/symbol.png",
