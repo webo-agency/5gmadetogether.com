@@ -261,7 +261,7 @@
             >
               <time class="time-dash">10:10</time>
               <span>Debate<br>
-                Participants: Marvel, CableFree, VMware, EU telecommunications regulator, IS-Wireless, MNO representatives<br>
+                Participants: Marvel, IBM, VMware, EU telecommunications regulator, IS-Wireless, MNO representatives<br>
                 Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
               </span>
             </li>
@@ -301,9 +301,6 @@
                   </li>
                   <li>
                     Security in OpenRAN - to be announced soon
-                  </li>
-                  <li>
-                    Telco cloud - to be announced soon
                   </li>
                   <li>
                     Carrier grade OpenRAN - MNO - to be announced soon
