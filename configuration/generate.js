@@ -1,4 +1,4 @@
 export default {
   dir: "public",
-  fallback: "404.html"
+  fallback: false//"404.html"
 }
