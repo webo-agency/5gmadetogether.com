@@ -40,7 +40,7 @@
     "lodash": "^4.17.21",
     "lqip-loader": "^2.2.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.15.3",
+    "nuxt": "^2.15.5",
     "nuxt-bugsnag": "^4.2.2",
     "nuxt-compress": "^5.0.0",
     "nuxt-i18n": "^6.26.0",
