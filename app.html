@@ -5,7 +5,7 @@
           document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, 'js').replace(/\bis-stop\b/g, 'is-running');
           if (typeof Object.defineProperty !== "undefined") {
             document.documentElement.className = document.documentElement.className.replace(/\bis-old\b/g, '');
-          } else {document.getElementsByTagName("head")[0].innerHTML += ("<script src=\"" + window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '') + "/old.js\" type=\"text" + "/" + "javascript\"><" + "/" + "script>");}
+          } else {document.getElementsByTagName("head")[0].innerHTML += ("<script src=\"/old.js\" type=\"text" + "/" + "javascript\"><" + "/" + "script>");}
           document.getElementById("init").remove();
         </script>
         {{ HEAD }}
