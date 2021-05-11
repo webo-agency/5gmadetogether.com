@@ -61,7 +61,7 @@
     "webfontloader": "^1.6.28",
     "webp-loader": "^0.6.0",
     "wp-nuxt": "^1.0.28",
-    "wpapi": "^1.2.1",
+    "wpapi": "^1.2.2",
     "wpapi-extensions": "^1.0.10"
   },
   "scripts": {
