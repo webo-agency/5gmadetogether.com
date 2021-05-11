@@ -39,6 +39,9 @@ export default {
    ** Modulesc
    */
   modules: module.default,
+  gtm: {
+    id: 'GTM-WKQLB65'
+  },
   wp: {
     sitemap: false
   },

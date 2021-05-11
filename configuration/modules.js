@@ -113,11 +113,7 @@ export default [
   },
   {
     src: '@nuxtjs/gtm',
-    options: {
-      gtm: {
-        id: 'GTM-WKQLB65'
-      }
-    }
+    options: {}
   },
   {
     src: '@nuxtjs/tailwindcss',
