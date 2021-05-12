@@ -166,7 +166,7 @@
               /> 
             </h3>
             <p class="text-white leading-relaxed">
-              Top figures from companies leading in the telecommunication revolution. It includes Deutsche Telekom, VMware, Marvel, and many more. Please check the agenda for the full information.
+              Top figures from companies leading the telecommunication revolution. It includes HPE, IBM, CableFree, VMware, Comarch, Tambora and more. Please check the agenda for the full information.
             </p>
           </div>
 
@@ -183,7 +183,7 @@
               />
             </h3>
             <p class="text-white leading-relaxed">
-              Possibility to listen to what key players in the OpenRAN area think about the future and challenges of the networks of the future.
+              Meet top experts in the Open RAN area and check what they think about the networks of the future. They will share perspectives of such companies like: Deutsche Telekom, IBM, Marvel, VMware and IS-Wireless.
             </p>
           </div>
         </div>
@@ -355,9 +355,6 @@
                   </li>
                   <li>
                     Security in OpenRAN - to be announced soon
-                  </li>
-                  <li>
-                    Carrier grade OpenRAN - MNO - to be announced soon
                   </li>
                   <li>
                     Infrastructure is a king - to be announced soon
