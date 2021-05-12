@@ -166,7 +166,7 @@
               /> 
             </h3>
             <p class="text-white leading-relaxed">
-              Top figures from companies leading in the telecommunication revolution. It includes leading MNOs, VMware, Marvel, and many more. Please check the agenda for the full information.
+              Top figures from companies leading in the telecommunication revolution. It includes Deutsche Telekom, VMware, Marvel, and many more. Please check the agenda for the full information.
             </p>
           </div>
 
@@ -252,25 +252,36 @@
               v-view.once
               class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
             >
-              <time class="time-dash">10:00</time>
-              <span>Opening</span>
+              <time datetime="2021-05-27T10:00Z" class="time-dash">10:00 AM</time>
+              <span class="uppercase">Opening</span>
             </li>
             <li
               v-view.once
               class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
             >
-              <time class="time-dash">10:10</time>
-              <span>Debate<br>
-                Participants: Deutsche Telekom, Marvel, IBM, VMware, EU telecommunications regulator, IS-Wireless<br>
-                Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
-              </span>
+              <time class="time-dash">10:10 AM</time>
+              <div>
+                <span class="block mb-1 uppercase">Debate</span>
+                <span>Participants:</span> 
+                  <ol class="list-disc ml-6 mb-4">
+                    <li><em class="font-bold" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
+                    <li><em class="font-bold" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
+                    <li><em class="font-bold" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing, Marvel</li>
+                    <li><em class="font-bold" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
+                    <li><em class="font-bold" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
+                  </ol>
+                <span>
+                  Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
+                </span>
+              </div>
             </li>
             <li
               v-view.once
               class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
             >
-              <time class="time-dash">11:00</time>
-              <span>Conference<br>
+              <time datetime="2021-05-27T11:00Z" class="time-dash">11:00 AM</time>
+              <div>
+                <span class="block mb-1 uppercase">Conference</span>
                 <ol class="list-disc ml-6">
                   <li>
                     OpenRAN 2.0 - IS-Wireless - <em itemprop="name">Sławomir Pietrzyk</em>, CEO
@@ -312,7 +323,14 @@
                     Private networks regulations - European regulator - to be announced soon
                   </li>
                 </ol>
-              </span>
+              </div>
+            </li>
+            <li
+              v-view.once
+              class="flex flex-row mb-2 pb-2 text-gray-900"
+            >
+              <time datetime="2021-05-27T15:00Z" class="time-dash">3:00 PM</time>
+              <span class="uppercase">Closing remarks</span>
             </li>
           </ol>
         </div>
