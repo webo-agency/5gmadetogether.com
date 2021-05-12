@@ -4,20 +4,17 @@
     :class="mainClass"
     class="container mx-auto px-4"
   >
-    <nav class="flex flex-wrap items-center justify-between py-4 md:sticky top-0 z-50 bg-white">
-      <div class="navbar-menu flex flex-wrap order-1 lg:order-1 flex-row items-center">
-        Organizer <img
-          class="h-12 mx-4"
+    <nav class="flex flex-wrap items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
+      <div class="navbar-menu flex flex-wrap order-1 desktop:order-1 flex-row items-center">
+        <span class="block mb-4">Organizer</span> <img
+          class="h-auto w-32 mx-4 mb-4 max-w-full"
           src="~/assets/img/ISW_-_logo_kolor.png?inline"
-          alt=""
+          alt="IS-Wirelles"
         >
-
-        <!-- <img class="hidden h-12 mx-4" src="~/assets/img/CP_logo_kolor_3.png" alt=""> -->
-        <!-- <img class="hidden h-12 mx-4" src="~/assets/img/PTI.png" alt=""> -->
       </div>
-      <div class="navbar-menu block order-4 lg:order-3 lg:text-right">
+      <div class="navbar-menu block order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto tablet:mx-0">
         <a 
-          class="inline-block py-4 px-8 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow my-4 lg:my-0" 
+          class="inline-block py-4 px-2 phone:px-8 leading-none text-white text-xs phone:text-base bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow my-4 desktop:my-0 w-full phone:w-48 tablet:w-auto text-center w-max-full" 
           href="https://www.tickettailor.com/events/iswireless/518782"
         >
           Register

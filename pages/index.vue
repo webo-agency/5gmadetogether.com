@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <section class="py-48 px-4 text-center relative lg:mx-16">
+    <section class="py-24 tablet:py-48 px-8 phablet:px-4 text-center relative desktop:mx-16">
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
           <source
@@ -12,14 +12,14 @@
             type="image/jpeg"
           >
           <img 
-            class="absolute lg:rounded w-full h-full inset-0 z-auto object-cover" 
+            class="absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
             :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
             alt=""
           >
         </picture>
       </div>
 
-      <div class="w-full md:px-12 lg:px-48 mr-auto">
+      <div class="w-full phone-wide:px-12 tablet:px-24 desktop:px-48 mr-auto">
         <div class="relative max-w-2xl z-10 ml-0 text-left">
           <header>
             <div
@@ -27,19 +27,20 @@
               v-html="require('~/assets/logo/5g-made-together.svg?include')"
             />
             
-            <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-2xl">
-              Creating future with <span class="block font-medium text-4xl">open ecosystems</span>
+            <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-xs phone:text-xl tablet:text-2xl">
+              Creating future with <span class="block font-medium text-xs phone:text-3xl tablet:text-4xl">open ecosystems</span>
             </h1>
             <time datetime="2021-05-27T10:00Z" class="block text-white mb-8 text-xl font-bold">May 27th, 2021 | 10 am CET</time>
           </header>
-          <div class="flex flex-row flex-wrap">
+          <div class="flex items-start justify-start flex-col tablet:flex-row flex-wrap">
             <a
-              class="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow"
+              class="inline-block py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow text-center mb-4 tablet:mb-0"
               href="https://www.tickettailor.com/events/iswireless/518782"
             >Register</a>
+          
             <a
               v-scroll-to="'#read-more'"
-              class="inline-block py-4 px-8 mr-6 leading-none text-white underline"
+              class="inline-block py-4 px-0 tablet:px-8 mr-6 leading-none text-white underline"
               href="#read-more"
             >Read more</a>
           </div>
@@ -47,74 +48,73 @@
       </div>
     </section>
         
-    <div class="container mx-auto px-4">
-      <section
-        id="read-more"
-        class="py-12 px-4"
-      >
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <div class="flex flex-col h-full tablet:p-8 rounded">
-              <h2 class="text-xl md:text-xl lg:text-3xl font-medium font-heading mb-14 flex flex-row items-center uppercase">
-                <svg
-                  class="mr-4"
-                  width="50px"
-                  viewBox="0 0 292 292"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  stroke-miterlimit="1.5"
-                ><path
-                  fill="none"
-                  d="M0 0h291.667v291.667H0z"
-                /><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
-                  d="M0 145.833h291.667"
-                  fill="none"
-                  stroke="#11C9D8"
-                  stroke-width="16.67"
-                /></g></svg>About the conference
-              </h2>
-              <ul class="mb-8 text-gray-400 leading-relaxed list-disc ml-4">
-                <li>How is the 5G network being developed around the world?</li>
-                <li>Where does the process take place seamlessly, and where is it delayed?</li>
-                <li>How secure can the 5G network become? Why is Open RAN the model of the future?</li>
-                <li>Is the telecommunications market ready for the upcoming change?</li>
-                <li>Finally, how could the 5G development decision-makers be persuaded to implement the open network model?</li>
-              </ul>
-              <p class="mb-8 text-gray-400 leading-relaxed">
-                These are some of the questions to be answered by ICT companies’ experts from around the world during discussion panels and lectures hosted at the international „5G Made Together – creating future with open ecosystems” conference.
-                <br>
-                Participation in the conference is free of charge. Sign up now and listen to the insights of the world’s 5G leaders. Join the discussion!
-              </p>
-            </div>
+    <section
+      id="read-more"
+      class="phablet:container mx-auto phablet:px-8 pt-12 phablet:py-12"
+    >
+      <div class="flex flex-wrap phablet:px-4 phablet:-mx-4">
+        <div class="w-full desktop:w-1/2 px-8 phablet:px-4 mb-8 desktop:mb-0">
+          <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
+            <h2 class="text-3xl font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-left uppercase">
+              <svg
+                class="mr-4"
+                width="50px"
+                viewBox="0 0 292 292"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                stroke-miterlimit="1.5"
+              ><path
+                fill="none"
+                d="M0 0h291.667v291.667H0z"
+              /><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
+                d="M0 145.833h291.667"
+                fill="none"
+                stroke="#11C9D8"
+                stroke-width="16.67"
+              /></g></svg>About the conference
+            </h2>
+            <ul class="mb-7 text-gray-900 leading-relaxed list-disc ml-4">
+              <li class="mb-2">How is the 5G network being developed around the world?</li>
+              <li class="mb-2">Where does the process take place seamlessly, and where is it delayed?</li>
+              <li class="mb-2">How secure can the 5G network become? Why is Open RAN the model of the future?</li>
+              <li class="mb-2">Is the telecommunications market ready for the upcoming change?</li>
+              <li class="mb-2">Finally, how could the 5G development decision-makers be persuaded to implement the open network model?</li>
+            </ul>
+            <p class="mb-8 text-gray-900 leading-relaxed">
+              These are some of the questions to be answered by ICT companies’ experts from around the world during discussion panels and lectures hosted at the international „5G Made Together – creating future with open ecosystems” conference.
+              <br>
+              Participation in the conference is free of charge. Sign up now and listen to the insights of the world’s 5G leaders. Join the discussion!
+            </p>
           </div>
-          <div class="lg:w-1/2 px-4">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2">
-                <picture>
-                  <source
-                    :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg?webp')"
-                    type="image/webp"
-                  >
-                  <source
-                    :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')"
-                    type="image/jpeg"
-                  >
-                  <img 
-                    class="rounded shadow h-auto object-cover"
-                    :src="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')" 
-                    alt=""
-                  >
-                </picture>
-              </div>
+        </div>
+        <div class="desktop:w-1/2 phablet:px-4">
+          <div class="flex flex-wrap phablet:-m-2">
+            <div class="phablet:p-2">
+              <picture>
+                <source
+                  :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg?webp')"
+                  type="image/webp"
+                >
+                <source
+                  :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')"
+                  type="image/jpeg"
+                >
+                <img 
+                  class="phablet:rounded shadow h-auto object-cover"
+                  :src="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')" 
+                  alt=""
+                >
+              </picture>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <div class="py-24 px-4 text-left relative lg:mx-16">
+      </div>
+    </section>
+    
+    <div class="py-24 px-4 text-left relative desktop:mx-16">
       <section class="py-8 px-4">
-        <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-row items-center uppercase z-50 relative">
+        <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-center uppercase z-50 relative">
           <svg
             class="mr-4"
             width="50px"
@@ -136,11 +136,11 @@
 
         <div class="flex flex-wrap -mx-4 -mb-6 relative z-50">
 
-          <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-white text-xl my-3 font-semibold font-heading text-4xl">
+          <div class="desktop:w-1/3 px-4 mb-6 relative">
+            <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
                 ref="countMinute"
-                v-view="viewMinutCount"
+                v-view.once="viewMinutCount"
                 :start-val="0"
                 :end-val="300"
                 :duration="3000"
@@ -153,11 +153,11 @@
             </p>
           </div>
           
-          <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-white text-xl my-3 font-semibold font-heading text-4xl">
+          <div class="desktop:w-1/3 px-4 mb-6 relative">
+            <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
                 ref="countPrelegent"
-                v-view="viewPrelegentCount"
+                v-view.once="viewPrelegentCount"
                 :start-val="0"
                 :end-val="12"
                 :duration="3000"
@@ -170,11 +170,12 @@
             </p>
           </div>
 
-          <div class="lg:w-1/3 px-4 mb-6 relative">
-            <h3 class="text-white text-xl my-3 font-semibold font-heading text-4xl">
+          <div class="desktop:w-1/3 px-4 mb-6 relative">
+            <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
+                class="text-highlight"
                 ref="countDebate"
-                v-view="viewDebateCount"
+                v-view.once="viewDebateCount"
                 :start-val="0"
                 :end-val="1"
                 :duration="3000"
@@ -293,26 +294,26 @@
           <ol>
             <li
               v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
+              class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
             >
               <time datetime="2021-05-27T10:00Z" class="time-dash">10:00 AM</time>
               <span class="uppercase">Opening</span>
             </li>
             <li
               v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
+              class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
             >
               <time class="time-dash">10:10 AM</time>
-              <div>
-                <span class="block mb-1 uppercase">Debate</span>
-                <span>Participants:</span> 
-                  <ol class="list-disc ml-6 mb-4">
-                    <li><em class="font-bold" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
-                    <li><em class="font-bold" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
-                    <li><em class="font-bold" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing, Marvel</li>
-                    <li><em class="font-bold" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
-                    <li><em class="font-bold" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
-                  </ol>
+              <span class="block mb-1 uppercase">Debate</span>
+              <div class="ml-0 phablet:ml-28">
+                <span class="block mb-2 phablet:mb-0">Participants:</span> 
+                <ol class="list-disc ml-6 mb-4">
+                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
+                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
+                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing, Marvel</li>
+                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
+                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
+                </ol>
                 <span>
                   Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
                 </span>
@@ -320,46 +321,46 @@
             </li>
             <li
               v-view.once
-              class="animate-border flex flex-row border-b mb-2 pb-2 text-gray-900"
+              class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
             >
               <time datetime="2021-05-27T11:00Z" class="time-dash">11:00 AM</time>
-              <div>
-                <span class="block mb-1 uppercase">Conference</span>
+              <span class="block mb-1 uppercase">Conference</span>
+              <div class="ml-0 phablet:ml-28">
                 <ol class="list-disc ml-6">
-                  <li>
-                    Accelerating OpenRAN ecosystem - VMware - <em class="font-bold" itemprop="name">Lorcan Burke</em>, Director RAN
+                  <li class="mb-2 phablet:mb-0">
+                    Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN
                   </li>
-                  <li>
-                    Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
+                  <li class="mb-2 phablet:mb-0">
+                    Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
                   </li>
-                  <li>
-                    The role of chipset in open ecosystems - Marvel - <em class="font-bold" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
+                  <li class="mb-2 phablet:mb-0">
+                    The role of chipset in open ecosystems - Marvel - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
                   </li>
-                  <li>
-                    Building next generation edge - Tambora Systems - <em class="font-bold" itemprop="name">Anand Uppili</em>, CEO
+                  <li class="mb-2 phablet:mb-0">
+                    Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO
                   </li>
-                  <li>
-                    OpenRAN 2.0 - IS-Wireless - <em class="font-bold" itemprop="name">Sławomir Pietrzyk</em>, CEO
+                  <li class="mb-2 phablet:mb-0">
+                    OpenRAN 2.0 - IS-Wireless - <em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO
                   </li>
-                  <li>
-                    Radio heads ready for OpenRAN - Cablefree - <em class="font-bold" itemprop="name">Stephen Patrick</em>, CEO
+                  <li class="mb-2 phablet:mb-0">
+                    Radio heads ready for OpenRAN - Cablefree - <em class="font-bold whitespace-nowrap" itemprop="name">Stephen Patrick</em>, CEO
                   </li>
-                  <li>
-                    Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold" itemprop="name">Wojciech Burkot</em>, CEO
+                  <li class="mb-2 phablet:mb-0">
+                    Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO
                   </li>
-                  <li>
+                  <li class="mb-2 phablet:mb-0">
                     OpenRAN ready servers - HPE
                   </li>
-                  <li>
+                  <li class="mb-2 phablet:mb-0">
                     Orchestration in 5G - Comarch
                   </li>
-                  <li>
+                  <li class="mb-2 phablet:mb-0">
                     Security in OpenRAN - to be announced soon
                   </li>
                   <li>
                     Infrastructure is a king - to be announced soon
                   </li>
-                  <li>
+                  <li class="mb-2 phablet:mb-0">
                     Private networks regulations - European regulator - to be announced soon
                   </li>
                 </ol>
@@ -367,7 +368,7 @@
             </li>
             <li
               v-view.once
-              class="flex flex-row mb-2 pb-2 text-gray-900"
+              class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
             >
               <time datetime="2021-05-27T15:00Z" class="time-dash">3:00 PM</time>
               <span class="uppercase">Closing remarks</span>
@@ -426,7 +427,7 @@
       </section> -->
     </div>
 
-    <section class="relative py-24 px-4 text-center lg:mx-16">
+    <section class="relative py-24 px-4 text-center desktop:mx-16">
       <div class="relative w-full max-w-2xl mx-auto z-50">
         <h2 class="text-white text-5xl leading-tight font-semibold font-heading mb-4">
           Join the conference
@@ -437,7 +438,7 @@
         >REGISTER</a>
       </div>
 
-      <div class="absolute lg:rounded-t w-full h-full inset-0 z-0 bg-blue-200">
+      <div class="absolute desktop:rounded-t w-full h-full inset-0 z-0 bg-blue-200">
         <picture>
           <source
             :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
@@ -448,7 +449,7 @@
             type="image/jpeg"
           >
           <img 
-            class="absolute lg:rounded-t w-full h-full inset-0 z-auto object-cover" 
+            class="absolute desktop:rounded-t w-full h-full inset-0 z-auto object-cover" 
             :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
             alt=""
           >
@@ -456,7 +457,7 @@
       </div>
     </section>
 
-    <section class="relative py-8 px-4 text-center lg:mx-16 bg-gray-100 flex flex-wrap justify-around rounded-b">
+    <section class="relative py-8 px-4 text-center desktop:mx-16 bg-gray-100 flex flex-wrap justify-around rounded-b">
       <div class="block my-2">
         <strong>Contact organisers:</strong> <a href="mailto:r.sanecki@is-wireless.com">r.sanecki@is-wireless.com</a>
       </div>

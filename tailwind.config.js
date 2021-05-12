@@ -25,15 +25,20 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
       screens: {
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
-          xl: '1280px',
-          '2xl': '1536px',
+        'phone': '320px',
+        'phone-wide': '480px',
+        'phablet': '560px',
+        'tablet-small': '640px',
+        'tablet': '768px',
+        'tablet-wide': '1024px',
+        'desktop': '1248px',
+        'desktop-wide': '1440px',
+        'full-hd': '1680px',
       },
       colors: {
           current: 'currentColor',
           transparent: 'transparent',
+          highlight: '#11C9D8',
       
           black: '#000',
           white: '#fff',
