@@ -142,7 +142,7 @@
                 ref="countMinute"
                 v-view="viewMinutCount"
                 :start-val="0"
-                :end-val="260"
+                :end-val="300"
                 :duration="3000"
                 :autoplay="false"
                 suffix=" Minutes"
@@ -159,7 +159,7 @@
                 ref="countPrelegent"
                 v-view="viewPrelegentCount"
                 :start-val="0"
-                :end-val="11"
+                :end-val="12"
                 :duration="3000"
                 :autoplay="false"
                 suffix=" Speakers"
@@ -210,7 +210,7 @@
     
     <div class="container mx-auto px-4">
       <section class="py-12 px-4 text-center">
-        <h2 class="text-4xl mb-8 font-semibold font-heading">
+        <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           Watch live here
         </h2>
         <div class="mx-auto aspect-w-16 aspect-h-9">
@@ -237,13 +237,56 @@
           />
         </div>
       </section>
-        
+      
+      <!-- <section class="py-12 px-4 text-center">
+        <h2 class="text-3xl font-medium font-heading mb-2 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">Speakers at 5G Made Together Conference</h2>
+        <div class="flex flex-wrap -mx-8">
+          <div class="md:w-1/3 p-8 mb-4 mx-auto">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/icon/user.jpg')"  alt="">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Karen Filippelli</h3>
+            <span>Regional Manager</span>
+            <p class="mt-4 text-gray-400 leading-relaxed">Advisor to many institutions (SFI CONNECT research centre on future networks, ESB, Dublin City, Sligo County Council, HSE,  Telecom Infra Project. Formerly Chief Commercial Officer, Taoglas Digital Strategy. Was a Founder and ThinkSmarter Analytics, Cisco’s Global CTO for Mobility, Founder and CEO for Adaptive Mobile Security, Ericsson CTO for Vodafone, General and Venture Partner for a Swiss VC and held many operational positions at Nortel.</p>
+          </div> -->
+          <!--           
+          <div class="md:w-1/3 p-8 mb-4 md:border-l">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/male_avatar.svg" alt="">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Darryl Philbin</h3>
+            <span>Marketing Director</span>
+            <p class="mt-4 text-gray-400 leading-relaxed">The warehouse is not a piece of cake, man. I started there as an Assistant and finally got a promotion to the Marketing Director.</p>
+          </div>
+          <div class="md:w-1/3 p-8 mb-4 md:border-l">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/female_avatar.svg" alt="">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Kelly Kapoor</h3>
+            <span>Customer Service</span>
+            <p class="mt-4 text-gray-400 leading-relaxed">I work for Dunder Mifflin for a few years now. I learned a lot. You know, one person department is not easy to manage.</p>
+          </div>
+          <div class="md:w-1/3 mb-4 p-8">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/female_avatar.svg" alt="">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Karen Filippelli</h3>
+            <span>Regional Manager</span>
+            <p class="mt-4 text-gray-400 leading-relaxed">Started as a Sales representative at Stamford branch, moved to Scranton. All of us left as soon as possible except for Andy.</p>
+          </div>
+          <div class="md:w-1/3 mb-4 p-8 md:border-l">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/male_avatar.svg" alt="">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Darryl Philbin</h3>
+            <span>Marketing Director</span>
+            <p class="mt-4 text-gray-400 leading-relaxed">The warehouse is not a piece of cake, man. I started there as an Assistant and finally got a promotion to the Marketing Director.</p>
+          </div>
+          <div class="md:w-1/3 mb-4 p-8 md:border-l">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/female_avatar.svg" alt="">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Kelly Kapoor</h3>
+            <span>Customer Service</span>
+            <p class="mt-4 text-gray-400 leading-relaxed">I work for Dunder Mifflin for a few years now. I learned a lot. You know, one person department is not easy to manage.</p>
+          </div> -->
+        <!-- </div>
+      </section> -->
+
       <section
         id="agenda"
         class="py-12 px-4"
       >
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl text-center mb-6 font-semibold font-heading">
+          <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
             Agenda
           </h2>
 
@@ -284,25 +327,25 @@
                 <span class="block mb-1 uppercase">Conference</span>
                 <ol class="list-disc ml-6">
                   <li>
-                    OpenRAN 2.0 - IS-Wireless - <em itemprop="name">Sławomir Pietrzyk</em>, CEO
+                    Accelerating OpenRAN ecosystem - VMware - <em class="font-bold" itemprop="name">Lorcan Burke</em>, Director RAN
                   </li>
                   <li>
-                    Radio heads ready for OpenRAN - Cablefree - <em itemprop="name">Stephen Patrick</em>, CEO
+                    Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
                   </li>
                   <li>
-                    The role of chipset in open ecosystems - Marvel - <em itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
+                    The role of chipset in open ecosystems - Marvel - <em class="font-bold" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
                   </li>
                   <li>
-                    Telecommunication of the future - the VC perspective - Bitspiration Booster - <em itemprop="name">Wojciech Burkot</em>, CEO
+                    Building next generation edge - Tambora Systems - <em class="font-bold" itemprop="name">Anand Uppili</em>, CEO
                   </li>
                   <li>
-                    Accelerating OpenRAN ecosystem - VMware - <em itemprop="name">Lorcan Burke</em>, Director RAN
+                    OpenRAN 2.0 - IS-Wireless - <em class="font-bold" itemprop="name">Sławomir Pietrzyk</em>, CEO
                   </li>
                   <li>
-                    Building next generation edge - Tambora Systems - <em itemprop="name">Anand Uppili</em>, CEO
+                    Radio heads ready for OpenRAN - Cablefree - <em class="font-bold" itemprop="name">Stephen Patrick</em>, CEO
                   </li>
                   <li>
-                    Telco Cloud - The importance of a horizontal platform - IBM - <em itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
+                    Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold" itemprop="name">Wojciech Burkot</em>, CEO
                   </li>
                   <li>
                     OpenRAN ready servers - HPE
