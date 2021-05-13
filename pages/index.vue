@@ -27,10 +27,10 @@
               v-html="require('~/assets/logo/5g-made-together.svg?include')"
             />
             
-            <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-xs phone:text-xl tablet:text-2xl">
-              Creating future with <span class="block font-medium text-xs phone:text-3xl tablet:text-4xl">open ecosystems</span>
+            <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-xs phone:text-base tablet:text-2xl">
+              Creating future with <span class="block font-medium text-base phone:text-2xl tablet:text-4xl">open ecosystems</span>
             </h1>
-            <time datetime="2021-05-27T10:00Z" class="block text-white mb-8 text-xl font-bold">May 27th, 2021 | 10 am CET</time>
+            <time datetime="2021-05-27T10:00Z" class="block text-white mb-8 text-base phone:text-base desktop:text-xl font-bold">May 27th, 2021 | 10 am CET</time>
           </header>
           <div class="flex items-start justify-start flex-col tablet:flex-row flex-wrap">
             <a
@@ -184,7 +184,7 @@
               />
             </h3>
             <p class="text-white leading-relaxed">
-              Meet top experts in the Open RAN area and check what they think about the networks of the future. They will share perspectives of such companies like: Deutsche Telekom, IBM, Marvel, VMware and IS-Wireless.
+              Meet top experts in the Open RAN area and check what they think about the networks of the future. They will share perspectives of such companies like: Deutsche Telekom, IBM, Marvell, VMware and IS-Wireless.
             </p>
           </div>
         </div>
@@ -247,8 +247,8 @@
             <h3 class="text-xl mb-1 font-semibold font-heading">Karen Filippelli</h3>
             <span>Regional Manager</span>
             <p class="mt-4 text-gray-400 leading-relaxed">Advisor to many institutions (SFI CONNECT research centre on future networks, ESB, Dublin City, Sligo County Council, HSE,  Telecom Infra Project. Formerly Chief Commercial Officer, Taoglas Digital Strategy. Was a Founder and ThinkSmarter Analytics, Cisco’s Global CTO for Mobility, Founder and CEO for Adaptive Mobile Security, Ericsson CTO for Vodafone, General and Venture Partner for a Swiss VC and held many operational positions at Nortel.</p>
-          </div> -->
-          <!--           
+          </div>
+                    
           <div class="md:w-1/3 p-8 mb-4 md:border-l">
             <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/male_avatar.svg" alt="">
             <h3 class="text-xl mb-1 font-semibold font-heading">Darryl Philbin</h3>
@@ -278,8 +278,8 @@
             <h3 class="text-xl mb-1 font-semibold font-heading">Kelly Kapoor</h3>
             <span>Customer Service</span>
             <p class="mt-4 text-gray-400 leading-relaxed">I work for Dunder Mifflin for a few years now. I learned a lot. You know, one person department is not easy to manage.</p>
-          </div> -->
-        <!-- </div>
+          </div>
+        </div>
       </section> -->
 
       <section
@@ -310,7 +310,6 @@
                 <ol class="list-disc ml-6 mb-4">
                   <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
                   <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
-                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing, Marvel</li>
                   <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
                   <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
                 </ol>
@@ -334,7 +333,7 @@
                     Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
                   </li>
                   <li class="mb-2 phablet:mb-0">
-                    The role of chipset in open ecosystems - Marvel - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
+                    The role of chipset in open ecosystems - Marvell - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
                   </li>
                   <li class="mb-2 phablet:mb-0">
                     Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO
@@ -349,10 +348,10 @@
                     Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO
                   </li>
                   <li class="mb-2 phablet:mb-0">
-                    OpenRAN ready servers - HPE
-                  </li>
+                    Digitalising Industry: 5G Network orchestration with O-RAN and Edge Computing for industry verticals - Comarch - <em class="font-bold whitespace-nowrap" itemprop="name">Łukasz Mendyk</em>, Senior Solution Manager
+                  </li>                  
                   <li class="mb-2 phablet:mb-0">
-                    Orchestration in 5G - Comarch
+                    OpenRAN ready servers - HPE
                   </li>
                   <li class="mb-2 phablet:mb-0">
                     Security in OpenRAN - to be announced soon
