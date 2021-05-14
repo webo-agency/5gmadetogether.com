@@ -37,10 +37,3 @@ body{
 .animate-border.view-in:after{
     width: 100%;
 }
-
-@media (min-width: 320px){
-    .phone\:break-words {
-        overflow-wrap: break-word;
-        word-break: break-word;
-    }
-}

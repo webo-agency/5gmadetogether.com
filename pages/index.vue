@@ -48,11 +48,8 @@
       </div>
     </section>
         
-    <section
-      id="read-more"
-      class="phablet:container mx-auto phablet:px-8 pt-12 phablet:py-12"
-    >
-      <div class="flex flex-wrap phablet:px-4 phablet:-mx-4">
+    <section class="container pt-12 phablet:py-12" id="read-more">
+      <div class="flex flex-wrap phablet:-mx-4">
         <div class="w-full desktop:w-1/2 px-8 phablet:px-4 mb-8 desktop:mb-0">
           <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
             <h2 class="text-3xl font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-left uppercase">
@@ -74,7 +71,7 @@
                 stroke-width="16.67"
               /></g></svg>About the conference
             </h2>
-            <ul class="mb-7 text-gray-900 leading-relaxed list-disc ml-4">
+            <ul class="mb-7 text-gray-900 leading-relaxed list-disc ml-6">
               <li class="mb-2">How is the 5G network being developed around the world?</li>
               <li class="mb-2">Where does the process take place seamlessly, and where is it delayed?</li>
               <li class="mb-2">How secure can the 5G network become? Why is Open RAN the model of the future?</li>
@@ -112,29 +109,31 @@
       </div>
     </section>
     
-    <div class="py-24 px-4 text-left relative desktop:mx-16">
-      <section class="py-8 px-4">
-        <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-center uppercase z-50 relative">
-          <svg
-            class="mr-4"
-            width="50px"
-            viewBox="0 0 292 292"
-            xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            stroke-miterlimit="1.5"
-          ><path
-            fill="none"
-            d="M0 0h291.667v291.667H0z"
-          /><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
-            d="M0 145.833h291.667"
-            fill="none"
-            stroke="#11C9D8"
-            stroke-width="16.67"
-          /></g></svg>Conference in numbers
-        </h2>
+    <section class="desktop:mx-16 py-8">
+      <div class="py-24 text-left relative">
+        <div class="container">
+          <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-center uppercase z-50 relative">
+            <svg
+              class="mr-4"
+              width="50px"
+              viewBox="0 0 292 292"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              stroke-miterlimit="1.5"
+            ><path
+              fill="none"
+              d="M0 0h291.667v291.667H0z"
+            /><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
+              d="M0 145.833h291.667"
+              fill="none"
+              stroke="#11C9D8"
+              stroke-width="16.67"
+            /></g></svg>Conference in numbers
+          </h2>
+        </div>
 
-        <div class="flex flex-wrap -mx-4 -mb-6 relative z-50">
+        <div class="container flex flex-wrap -mb-6 relative z-50">
 
           <div class="desktop:w-1/3 px-4 mb-6 relative">
             <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
@@ -200,17 +199,17 @@
               type="image/jpeg"
             >
             <img 
-              class="absolute w-full object-cover h-full"
+              class="absolute w-full object-cover h-full rounded"
               :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')" 
               alt=""
             >
           </picture>
         </div>
-      </section>
-    </div>
-    
-    <div class="container mx-auto px-4">
-      <section class="py-12 px-4 text-center">
+      </div>
+    </section>
+
+    <section class="container py-12 text-center">
+      <div class="">
         <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           Watch live here
         </h2>
@@ -228,7 +227,7 @@
           </a>
           <iframe
             v-view="youtubeUpdateSrc"
-            class="mx-auto w-full h-full"
+            class="mx-auto w-full h-full rounded"
             width="100%"
             height="100%"
             :src="iframeYoutubeSrc"
@@ -237,207 +236,179 @@
             allowfullscreen
           />
         </div>
-      </section>
+      </div>
+    </section>
       
-      <!-- <section class="py-12 px-4 text-center">
-        <h2 class="text-3xl font-medium font-heading mb-2 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">Speakers at 5G Made Together Conference</h2>
-        <div class="flex flex-wrap -mx-8">
-          <div class="md:w-1/3 p-8 mb-4 mx-auto">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/icon/user.jpg')"  alt="">
-            <h3 class="text-xl mb-1 font-semibold font-heading">Karen Filippelli</h3>
-            <span>Regional Manager</span>
-            <p class="mt-4 text-gray-400 leading-relaxed">Advisor to many institutions (SFI CONNECT research centre on future networks, ESB, Dublin City, Sligo County Council, HSE,  Telecom Infra Project. Formerly Chief Commercial Officer, Taoglas Digital Strategy. Was a Founder and ThinkSmarter Analytics, Cisco’s Global CTO for Mobility, Founder and CEO for Adaptive Mobile Security, Ericsson CTO for Vodafone, General and Venture Partner for a Swiss VC and held many operational positions at Nortel.</p>
+    <section class="desktop:mx-16 bg-gray-100 relative py-8 text-center rounded">
+      <div class="container flex flex-wrap justify-around">
+        <h2 class="text-3xl font-medium font-heading my-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
+          Speakers at 5G Made Together Conference
+        </h2>
+        <div class="flex flex-wrap">
+
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 mx-auto border-b tablet:border-b-0">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lorcan_Burke.jpg')"  alt="Lorcan Burke">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Lorcan Burke</h3>
+            <span>Director RAN, VMware</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              Advisor to many institutions inc. SFI CONNECT research centre on future networks, ESB, Dublin City, Sligo County Council, HSE, Telecom Infra Project. Formerly Chief Commercial Officer at Taoglas Digital Strategy. Was a Founder of ThinkSmarter Analytics, Cisco’s Global CTO for Mobility, Founder of Adaptive Mobile Security, Ericsson CTO for Vodafone, General and Venture Partner for a Swiss VC and held many operational positions at Nortel.
+            </p>
           </div>
                     
-          <div class="md:w-1/3 p-8 mb-4 md:border-l">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/male_avatar.svg" alt="">
-            <h3 class="text-xl mb-1 font-semibold font-heading">Darryl Philbin</h3>
-            <span>Marketing Director</span>
-            <p class="mt-4 text-gray-400 leading-relaxed">The warehouse is not a piece of cake, man. I started there as an Assistant and finally got a promotion to the Marketing Director.</p>
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l border-b tablet:border-b-0">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Franz_Seiser.jpg')" alt="Franz Seiser">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Franz Seiser</h3>
+            <span>Vice President Access Disaggregation Deutsche Telekom AG</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              Franz in his role is in charge to drive the development and implementation of innovative, flexible and efficient network architectures for DT; he has a very strong focus on open RAN, leading DT’s efforts to develop it towards a competitive deployable solution. Prior to this role, Franz held various management positions in the area of mobile core network, infrastructure cloud and mobile network architecture in DT headquarters.
+            </p>
           </div>
-          <div class="md:w-1/3 p-8 mb-4 md:border-l">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/female_avatar.svg" alt="">
-            <h3 class="text-xl mb-1 font-semibold font-heading">Kelly Kapoor</h3>
-            <span>Customer Service</span>
-            <p class="mt-4 text-gray-400 leading-relaxed">I work for Dunder Mifflin for a few years now. I learned a lot. You know, one person department is not easy to manage.</p>
-          </div>
-          <div class="md:w-1/3 mb-4 p-8">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/female_avatar.svg" alt="">
-            <h3 class="text-xl mb-1 font-semibold font-heading">Karen Filippelli</h3>
-            <span>Regional Manager</span>
-            <p class="mt-4 text-gray-400 leading-relaxed">Started as a Sales representative at Stamford branch, moved to Scranton. All of us left as soon as possible except for Andy.</p>
-          </div>
-          <div class="md:w-1/3 mb-4 p-8 md:border-l">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/male_avatar.svg" alt="">
-            <h3 class="text-xl mb-1 font-semibold font-heading">Darryl Philbin</h3>
-            <span>Marketing Director</span>
-            <p class="mt-4 text-gray-400 leading-relaxed">The warehouse is not a piece of cake, man. I started there as an Assistant and finally got a promotion to the Marketing Director.</p>
-          </div>
-          <div class="md:w-1/3 mb-4 p-8 md:border-l">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" src="placeholders-2-0/pictures/female_avatar.svg" alt="">
-            <h3 class="text-xl mb-1 font-semibold font-heading">Kelly Kapoor</h3>
-            <span>Customer Service</span>
-            <p class="mt-4 text-gray-400 leading-relaxed">I work for Dunder Mifflin for a few years now. I learned a lot. You know, one person department is not easy to manage.</p>
-          </div>
-        </div>
-      </section> -->
 
-      <section
-        id="agenda"
-        class="py-12 px-4"
-      >
-        <div class="max-w-3xl mx-auto">
-          <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
-            Agenda
-          </h2>
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 desktop:border-l border-b tablet:border-b-0">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Stephen_Patrick.jpg')" alt="Stephen Patrick">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Stephen Patrick</h3>
+            <span>Stephen Patrick is CEO & founder of CableFree: Wireless Excellence.</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              After studying at Cambridge University, Stephen gained wide-ranging experience in wireless technology and design consultancy. Having founded the company in 1996, Stephen has become well known as pioneer of high capacity wireless communication technology, with several "world first" achievements within the industry. Stephen has co-authored several published academic papers in collaborative academic-industrial projects. CableFree products include 4G & 5G radios and wireless backhaul infrastructure and are deployed in over 85 countries worldwide.
+            </p>
+          </div>
 
-          <ol>
-            <li
-              v-view.once
-              class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
-            >
-              <time datetime="2021-05-27T10:00Z" class="time-dash">10:00 AM</time>
-              <span class="uppercase">Opening</span>
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row flex-wrap tablet:flex-nowrap border-b mb-2 pb-2 text-gray-900 view-in"
-            >
-              <time class="time-dash">10:05 AM</time>
-              <span class="block mb-1">Cyber security aspects in Open RAN - The Chancellery of the <strong>Prime Minister of Poland</strong>, <em class="font-bold whitespace-nowrap" itemprop="name">Robert Kośla</em>, Director of Department of Cybersecurity</span>
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
-            >
-              <time class="time-dash">10:10 AM</time>
-              <span class="block mb-1 uppercase">Debate</span>
-              <div class="ml-0 phablet:ml-28">
-                <span class="block mb-2 phablet:mb-0">Participants:</span> 
-                <ol class="list-disc ml-6 mb-4">
-                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
-                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
-                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
-                  <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
-                </ol>
-                <span>
-                  Moderator: <em class="font-bold whitespace-nowrap" itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
-                </span>
-              </div>
-            </li>
-            <li
-              v-view.once
-              class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
-            >
-              <time datetime="2021-05-27T11:00Z" class="time-dash">11:00 AM</time>
-              <span class="block mb-1 uppercase">Conference</span>
-              <div class="ml-0 phablet:ml-28">
-                <ol class="list-disc ml-6">
-                  <li class="mb-2 phablet:mb-0">
-                    Open Networks & Vendor Diversification in the UK - Ofcom - <em class="font-bold whitespace-nowrap" itemprop="name">Simon Burley</em>, Principal, Emerging Technology
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    The role of chipset in open ecosystems - Marvell - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    OpenRAN 2.0 - IS-Wireless - <em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Radio heads ready for OpenRAN - Cablefree - <em class="font-bold whitespace-nowrap" itemprop="name">Stephen Patrick</em>, CEO
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Digitalising Industry: 5G Network orchestration with O-RAN and Edge Computing for industry verticals - Comarch - <em class="font-bold whitespace-nowrap" itemprop="name">Łukasz Mendyk</em>, Senior Solution Manager
-                  </li>                  
-                  <li class="mb-2 phablet:mb-0">
-                    OpenRAN ready servers - HPE
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Security in OpenRAN - to be announced soon
-                  </li>
-                  <li>
-                    Infrastructure is a king - to be announced soon
-                  </li>
-                  <li class="mb-2 phablet:mb-0">
-                    Private networks regulations - European regulator - to be announced soon
-                  </li>
-                </ol>
-              </div>
-            </li>
-            <li
-              v-view.once
-              class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
-            >
-              <time datetime="2021-05-27T15:00Z" class="time-dash">3:00 PM</time>
-              <span class="uppercase">Closing remarks</span>
-            </li>
-          </ol>
-        </div>
-      </section>
-        
-      <!-- <section class="pt-8 px-4 text-center hidden">
-        <div class="max-w-2xl mx-auto mb-8">
-          <h2 class="text-4xl leading-tight mb-6 font-semibold font-heading">
-            Organizatorzy i patroni
-          </h2>
-          <p class="text-gray-400 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          </p>
-        </div>
-        <div class="flex flex-wrap -mx-8">
-          <div class="w-1/2 md:w-1/6 px-8 mb-8 flex items-center justify-center">
-            <img
-              src="~/assets/img/ISW_-_logo_kolor.png"
-              alt=""
-            >
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 tablet:border-l desktop:border-l-0 border-b tablet:border-b-0">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Simon_Burley.jpg')" alt="Simon Burley">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Simon Burley</h3>
+            <span>Principal, Emerging Technology</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              Simon is a new member of the Emerging Technology team within Ofcom, the UK’s independent regulator for communications services. With a career spanning over 20 years working for RAN infrastructure providers and a mobile operator, Simon’s expertise covers the architectural vision, design and deployment of all leading radio access technologies. He now leads the technology workstreams on vendor diversification within Ofcom which includes the SmartRAN Open Network Interoperability Centre (SONIC) - a joint programme of work with the Digital Catapult  
+            </p>
           </div>
-          <div class="w-1/2 md:w-1/6 px-8 mb-8 flex items-center justify-center">
-            <img
-              src="~/assets/img/CP_logo_kolor_3.png"
-              alt=""
-            >
+
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 desktop:border-l border-b tablet:border-b-0">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/John_Schimpf.jpg')" alt="John Schimpf">
+            <h3 class="text-xl mb-1 font-semibold font-heading">John Schimpf</h3>
+            <span>John Schimpf is Senior Director, Product Marketing, Wireless Solutions in Marvell’s Processor Business Group.</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              John is responsible for product management, product marketing and customer and partner relationships for Marvell’s portfolio of LTE and 5G RAN solutions. John joined Marvell by way of the acquisition of Cavium, Inc. Prior to joining Cavium, John held a similar position at Wavesat, Inc., a developer of 4G wireless baseband processors for mobile devices. Over a 25 year career, John has held product management, product marketing and business development positions in semiconductor IP, fabless chip and systems companies, including Silicon Graphics, 3DLabs and Virage Logic. John has a B.S. in Mechanical Engineering from the University of Maine.
+            </p>
           </div>
-          <div class="w-1/2 md:w-1/6 px-8 mb-8 flex items-center justify-center">
-            <img
-              src="~/assets/img/PTI.png"
-              alt=""
-            >
-          </div>
-          <div class="w-1/2 md:w-1/6 px-8 mb-8 flex items-center justify-center">
-            <img
-              src="~/assets/img/isb-tech.png"
-              alt=""
-            >
-          </div>
-          <div class="w-1/2 md:w-1/6 px-8 mb-8 flex items-center justify-center">
-            <img
-              src="~/assets/img/narodowe-centrum-badan-i-rozwoju.png"
-              alt=""
-            >
-          </div>
-          <div class="w-1/2 md:w-1/6 px-8 mb-8 flex items-center justify-center">
-            <img
-              src="~/assets/img/telix-pl.png"
-              alt=""
-            >
+
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l">
+            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lukasz_Mendyk.jpg')" alt="Łukasz Mendyk">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Łukasz Mendyk</h3>
+            <span>Senior Solution Manager, Comarch</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              Łukasz specializes in solutions based on the concept of intent-driven fulfillment and orchestration, as well as on innovative concepts such as software-defined networking (SDN), network function virtualization (NFV) and end-to-end orchestrion of 5G networks with O-RAN and based on distributed cloud
+            </p>
           </div>
         </div>
-      </section> -->
-    </div>
+      </div>
+    </section>
+
+    <section
+      id="agenda"
+      class="container py-12"
+    >
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
+          Agenda
+        </h2>
+
+        <ol>
+          <li
+            v-view.once
+            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
+          >
+            <time datetime="2021-05-27T10:00Z" class="time-dash">10:00 AM</time>
+            <span class="uppercase">Opening</span>
+          </li>
+          <li
+            v-view.once
+            class="animate-border flex flex-row flex-wrap tablet:flex-nowrap border-b mb-2 pb-2 text-gray-900 view-in"
+          >
+            <time class="time-dash">10:05 AM</time>
+            <span class="block mb-1">Cyber security aspects in Open RAN - The Chancellery of the <strong>Prime Minister of Poland</strong>, <em class="font-bold whitespace-nowrap" itemprop="name">Robert Kośla</em>, Director of Department of Cybersecurity</span>
+          </li>
+          <li
+            v-view.once
+            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
+          >
+            <time class="time-dash">10:10 AM</time>
+            <span class="block mb-1 uppercase">Debate</span>
+            <div class="ml-0 phablet:ml-28">
+              <span class="block mb-2 phablet:mb-0">Participants:</span> 
+              <ol class="list-disc ml-6 mb-4">
+                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
+                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
+                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
+                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
+              </ol>
+              <span>
+                Moderator: <em class="font-bold whitespace-nowrap" itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
+              </span>
+            </div>
+          </li>
+          <li
+            v-view.once
+            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
+          >
+            <time datetime="2021-05-27T11:00Z" class="time-dash">11:00 AM</time>
+            <span class="block mb-1 uppercase">Conference</span>
+            <div class="ml-0 phablet:ml-28">
+              <ol class="list-disc ml-6">
+                <li class="mb-2 phablet:mb-0">
+                  Open Networks & Vendor Diversification in the UK - Ofcom - <em class="font-bold whitespace-nowrap" itemprop="name">Simon Burley</em>, Principal, Emerging Technology
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  The role of chipset in open ecosystems - Marvell - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  OpenRAN 2.0 - IS-Wireless - <em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Radio heads ready for OpenRAN - Cablefree - <em class="font-bold whitespace-nowrap" itemprop="name">Stephen Patrick</em>, CEO
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Digitalising Industry: 5G Network orchestration with O-RAN and Edge Computing for industry verticals - Comarch - <em class="font-bold whitespace-nowrap" itemprop="name">Łukasz Mendyk</em>, Senior Solution Manager
+                </li>                  
+                <li class="mb-2 phablet:mb-0">
+                  OpenRAN ready servers - HPE
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Security in OpenRAN - to be announced soon
+                </li>
+                <li>
+                  Infrastructure is a king - to be announced soon
+                </li>
+                <li class="mb-2 phablet:mb-0">
+                  Private networks regulations - European regulator - to be announced soon
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li
+            v-view.once
+            class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
+          >
+            <time datetime="2021-05-27T15:00Z" class="time-dash">3:00 PM</time>
+            <span class="uppercase">Closing remarks</span>
+          </li>
+        </ol>
+      </div>
+    </section>
 
     <section class="relative py-24 px-4 text-center desktop:mx-16">
-      <div class="relative w-full max-w-2xl mx-auto z-50">
+      <div class="container relative w-full mx-auto z-50">
         <h2 class="text-white text-5xl leading-tight font-semibold font-heading mb-4">
           Join the conference
         </h2>
@@ -466,12 +437,14 @@
       </div>
     </section>
 
-    <section class="relative py-8 px-4 text-center desktop:mx-16 bg-gray-100 flex flex-wrap justify-around rounded-b">
-      <div class="block my-2">
-        <strong>Contact organisers:</strong> <a href="mailto:r.sanecki@is-wireless.com">r.sanecki@is-wireless.com</a>
-      </div>
-      <div class="block my-2">
-        <strong>Press contact:</strong> <a href="mailto:media@is-wireless.com"> media@is-wireless.com</a>
+    <section class="relative py-8 px-4 text-center desktop:mx-16 bg-gray-100 rounded-b">
+      <div class="container flex flex-wrap justify-around">
+        <div class="my-2">
+          <strong>Contact organisers:</strong> <a href="mailto:r.sanecki@is-wireless.com">r.sanecki@is-wireless.com</a>
+        </div>
+        <div class="my-2">
+          <strong>Press contact:</strong> <a href="mailto:media@is-wireless.com"> media@is-wireless.com</a>
+        </div>
       </div>
     </section>
   </div>

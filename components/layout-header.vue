@@ -2,7 +2,7 @@
   <component
     :is="mainTag"
     :class="mainClass"
-    class="container mx-auto px-4"
+    class="container"
   >
     <nav class="flex flex-wrap items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
       <div class="navbar-menu flex flex-wrap order-1 desktop:order-1 flex-row items-center">
@@ -12,7 +12,7 @@
           alt="IS-Wirelles"
         >
       </div>
-      <div class="navbar-menu block order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto tablet:mx-0">
+      <div class="navbar-menu block order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
         <a 
           class="inline-block py-4 px-2 phone:px-8 leading-none text-white text-xs phone:text-base bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow my-4 desktop:my-0 w-full phone:w-48 tablet:w-auto text-center w-max-full" 
           href="https://www.tickettailor.com/events/iswireless/518782"

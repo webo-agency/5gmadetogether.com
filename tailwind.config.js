@@ -55,42 +55,6 @@ module.exports = {
               800: '#1f2937',
               900: '#111827',
           },
-          red: {
-              50: '#fef2f2',
-              100: '#fee2e2',
-              200: '#fecaca',
-              300: '#fca5a5',
-              400: '#f87171',
-              500: '#ef4444',
-              600: '#dc2626',
-              700: '#b91c1c',
-              800: '#991b1b',
-              900: '#7f1d1d',
-          },
-          yellow: {
-              50: '#fffbeb',
-              100: '#fef3c7',
-              200: '#fde68a',
-              300: '#fcd34d',
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309',
-              800: '#92400e',
-              900: '#78350f',
-          },
-          green: {
-              50: '#ecfdf5',
-              100: '#d1fae5',
-              200: '#a7f3d0',
-              300: '#6ee7b7',
-              400: '#34d399',
-              500: '#10b981',
-              600: '#059669',
-              700: '#047857',
-              800: '#065f46',
-              900: '#064e3b',
-          },
           blue: {
               50: '#eff6ff',
               100: '#dbeafe',
@@ -102,42 +66,6 @@ module.exports = {
               700: '#1d4ed8',
               800: '#1e40af',
               900: '#1e3a8a',
-          },
-          indigo: {
-              50: '#eef2ff',
-              100: '#e0e7ff',
-              200: '#c3dafe',
-              300: '#a5b4fc',
-              400: '#818cf8',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
-              800: '#3730a3',
-              900: '#312e81',
-          },
-          purple: {
-              50: '#f5f3ff',
-              100: '#ede9fe',
-              200: '#ddd6fe',
-              300: '#c4b5fd',
-              400: '#a78bfa',
-              500: '#8b5cf6',
-              600: '#7c3aed',
-              700: '#6d28d9',
-              800: '#5b21b6',
-              900: '#4c1d95',
-          },
-          pink: {
-              50: '#fdf2f8',
-              100: '#fce7f3',
-              200: '#fbcfe8',
-              300: '#f9a8d4',
-              400: '#f472b6',
-              500: '#ec4899',
-              600: '#db2777',
-              700: '#be185d',
-              800: '#9d174d',
-              900: '#831843',
           },
       },
       spacing: {
@@ -229,7 +157,10 @@ module.exports = {
           inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
           none: 'none',
       },
-      container: {},
+      container: {
+        center: true,
+        padding: '1rem',
+      },
       cursor: {
           auto: 'auto',
           DEFAULT: 'default',
@@ -587,8 +518,36 @@ module.exports = {
       wordBreak: ['responsive'],
       zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  corePlugins: {},
+  corePlugins: {
+    container: false
+  },
   plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          'width': '100%',
+          'max-width': '100%',
+          'margin-left': 'auto',
+          'margin-right': 'auto',
+          'padding-left': '1rem',
+          'padding-right': '1rem',
+          '@screen phone': {
+            // maxWidth: '640px',
+          },
+          '@screen tablet': {
+            // maxWidth: '768px',
+            'padding-left': '4rem',
+            'padding-right': '4rem',
+          },
+          '@screen desktop': {
+            maxWidth: '1440px',
+          },
+          '@screen full-hd': {
+            // maxWidth: '1920px',
+          },
+        }
+      })
+    },
     require('@tailwindcss/aspect-ratio'),
   ],
 }
