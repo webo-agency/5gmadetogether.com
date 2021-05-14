@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <section class="py-24 tablet:py-48 px-8 phablet:px-4 text-center relative desktop:mx-16">
+    <section class="py-24 tablet:py-48 px-4 phablet:px-4 text-center relative desktop:mx-16">
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
           <source
@@ -19,7 +19,7 @@
         </picture>
       </div>
 
-      <div class="w-full phone-wide:px-12 tablet:px-24 desktop:px-48 mr-auto">
+      <div class="w-full tablet:px-24 desktop:px-48 mr-auto">
         <div class="relative max-w-2xl z-10 ml-0 text-left">
           <header>
             <div
@@ -50,7 +50,7 @@
         
     <section class="container pt-12 phablet:py-12" id="read-more">
       <div class="flex flex-wrap phablet:-mx-4">
-        <div class="w-full desktop:w-1/2 px-8 phablet:px-4 mb-8 desktop:mb-0">
+        <div class="w-full desktop:w-1/2 phablet:px-4 mb-8 desktop:mb-0">
           <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
             <h2 class="text-3xl font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-left uppercase">
               <svg
@@ -133,9 +133,9 @@
           </h2>
         </div>
 
-        <div class="container flex flex-wrap -mb-6 relative z-50">
+        <div class="container flex flex-wrap relative z-50">
 
-          <div class="desktop:w-1/3 px-4 mb-6 relative">
+          <div class="desktop:w-1/3 desktop:pr-4 mb-6 relative">
             <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
                 ref="countMinute"
@@ -152,7 +152,7 @@
             </p>
           </div>
           
-          <div class="desktop:w-1/3 px-4 mb-6 relative">
+          <div class="desktop:w-1/3 desktop:px-4 mb-6 relative">
             <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
                 ref="countPrelegent"
@@ -169,7 +169,7 @@
             </p>
           </div>
 
-          <div class="desktop:w-1/3 px-4 mb-6 relative">
+          <div class="desktop:w-1/3 desktop:pl-4 mb-6 relative">
             <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
                 class="text-highlight"
@@ -213,7 +213,7 @@
         <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           Watch live here
         </h2>
-        <div class="mx-auto aspect-w-16 aspect-h-9">
+        <div class="mx-auto aspect-w-16 aspect-h-9 shadow-2xl mb-12">
           <a
             v-show="!iframeYoutubeSrc"
             href="https://www.youtube.com/channel/UCazzOCF3mycmFp-6vKt9Myg"
@@ -247,7 +247,7 @@
         <div class="flex flex-wrap">
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 mx-auto border-b tablet:border-b-0">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lorcan_Burke.jpg')"  alt="Lorcan Burke">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lorcan_Burke.jpg')"  alt="Lorcan Burke">
             <h3 class="text-xl mb-1 font-semibold font-heading">Lorcan Burke</h3>
             <span>Director RAN, VMware</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
@@ -256,7 +256,7 @@
           </div>
                     
           <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l border-b tablet:border-b-0">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Franz_Seiser.jpg')" alt="Franz Seiser">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Franz_Seiser.jpg')" alt="Franz Seiser">
             <h3 class="text-xl mb-1 font-semibold font-heading">Franz Seiser</h3>
             <span>Vice President Access Disaggregation Deutsche Telekom AG</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
@@ -265,7 +265,7 @@
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 desktop:border-l border-b tablet:border-b-0">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Stephen_Patrick.jpg')" alt="Stephen Patrick">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Stephen_Patrick.jpg')" alt="Stephen Patrick">
             <h3 class="text-xl mb-1 font-semibold font-heading">Stephen Patrick</h3>
             <span>Stephen Patrick is CEO & founder of CableFree: Wireless Excellence.</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
@@ -274,7 +274,7 @@
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 tablet:border-l desktop:border-l-0 border-b tablet:border-b-0">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Simon_Burley.jpg')" alt="Simon Burley">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Simon_Burley.jpg')" alt="Simon Burley">
             <h3 class="text-xl mb-1 font-semibold font-heading">Simon Burley</h3>
             <span>Principal, Emerging Technology</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
@@ -283,7 +283,7 @@
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 desktop:border-l border-b tablet:border-b-0">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/John_Schimpf.jpg')" alt="John Schimpf">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/John_Schimpf.jpg')" alt="John Schimpf">
             <h3 class="text-xl mb-1 font-semibold font-heading">John Schimpf</h3>
             <span>John Schimpf is Senior Director, Product Marketing, Wireless Solutions in Marvell’s Processor Business Group.</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
@@ -292,7 +292,7 @@
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l">
-            <img class="w-1/3 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lukasz_Mendyk.jpg')" alt="Łukasz Mendyk">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lukasz_Mendyk.jpg')" alt="Łukasz Mendyk">
             <h3 class="text-xl mb-1 font-semibold font-heading">Łukasz Mendyk</h3>
             <span>Senior Solution Manager, Comarch</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
