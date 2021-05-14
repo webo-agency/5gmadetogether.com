@@ -249,7 +249,8 @@
           <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 mx-auto border-b tablet:border-b-0">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lorcan_Burke.jpg')"  alt="Lorcan Burke">
             <h3 class="text-xl mb-1 font-semibold font-heading">Lorcan Burke</h3>
-            <span>Director RAN, VMware</span>
+            <span class="block font-bold">Director RAN</span>
+            <span class="block">VMware</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
               Advisor to many institutions inc. SFI CONNECT research centre on future networks, ESB, Dublin City, Sligo County Council, HSE, Telecom Infra Project. Formerly Chief Commercial Officer at Taoglas Digital Strategy. Was a Founder of ThinkSmarter Analytics, Cisco’s Global CTO for Mobility, Founder of Adaptive Mobile Security, Ericsson CTO for Vodafone, General and Venture Partner for a Swiss VC and held many operational positions at Nortel.
             </p>
@@ -258,7 +259,8 @@
           <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l border-b tablet:border-b-0">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Franz_Seiser.jpg')" alt="Franz Seiser">
             <h3 class="text-xl mb-1 font-semibold font-heading">Franz Seiser</h3>
-            <span>Vice President Access Disaggregation Deutsche Telekom AG</span>
+            <span class="block font-bold">Vice President Access Disaggregation</span>
+            <span class="block">Deutsche Telekom AG</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
               Franz in his role is in charge to drive the development and implementation of innovative, flexible and efficient network architectures for DT; he has a very strong focus on open RAN, leading DT’s efforts to develop it towards a competitive deployable solution. Prior to this role, Franz held various management positions in the area of mobile core network, infrastructure cloud and mobile network architecture in DT headquarters.
             </p>
@@ -267,34 +269,38 @@
           <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 desktop:border-l border-b tablet:border-b-0">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Stephen_Patrick.jpg')" alt="Stephen Patrick">
             <h3 class="text-xl mb-1 font-semibold font-heading">Stephen Patrick</h3>
-            <span>Stephen Patrick is CEO & founder of CableFree: Wireless Excellence.</span>
+            <span class="block font-bold">CEO & founder</span>
+            <span class="block">CableFree: Wireless Excellence</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
-              After studying at Cambridge University, Stephen gained wide-ranging experience in wireless technology and design consultancy. Having founded the company in 1996, Stephen has become well known as pioneer of high capacity wireless communication technology, with several "world first" achievements within the industry. Stephen has co-authored several published academic papers in collaborative academic-industrial projects. CableFree products include 4G & 5G radios and wireless backhaul infrastructure and are deployed in over 85 countries worldwide.
+              After studying at Cambridge University, Stephen gained wide-ranging experience in wireless technology and design consultancy. Having founded the company in 1996, Stephen has become well known as pioneer of high capacity wireless communication technology, with several "world first" achievements within the industry. Stephen has co-authored several published academic papers in collaborative academic-industrial projects.
             </p>
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 tablet:border-l desktop:border-l-0 border-b tablet:border-b-0">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Simon_Burley.jpg')" alt="Simon Burley">
             <h3 class="text-xl mb-1 font-semibold font-heading">Simon Burley</h3>
-            <span>Principal, Emerging Technology</span>
+            <span class="block font-bold">Principal, Emerging Technology</span>
+            <span class="block">Ofcom</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
-              Simon is a new member of the Emerging Technology team within Ofcom, the UK’s independent regulator for communications services. With a career spanning over 20 years working for RAN infrastructure providers and a mobile operator, Simon’s expertise covers the architectural vision, design and deployment of all leading radio access technologies. He now leads the technology workstreams on vendor diversification within Ofcom which includes the SmartRAN Open Network Interoperability Centre (SONIC) - a joint programme of work with the Digital Catapult  
+              With a career spanning over 20 years working for RAN infrastructure providers and a mobile operator, Simon’s expertise covers the architectural vision, design and deployment of all leading radio access technologies. He now leads the technology workstreams on vendor diversification within Ofcom which includes the SmartRAN Open Network Interoperability Centre (SONIC) - a joint programme of work with the Digital Catapult.
             </p>
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 desktop:border-l border-b tablet:border-b-0">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/John_Schimpf.jpg')" alt="John Schimpf">
             <h3 class="text-xl mb-1 font-semibold font-heading">John Schimpf</h3>
-            <span>John Schimpf is Senior Director, Product Marketing, Wireless Solutions in Marvell’s Processor Business Group.</span>
+            <span class="block font-bold">Senior Director, Product Marketing, Wireless Solutions</span>
+            <span class="block">Marvell</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
-              John is responsible for product management, product marketing and customer and partner relationships for Marvell’s portfolio of LTE and 5G RAN solutions. John joined Marvell by way of the acquisition of Cavium, Inc. Prior to joining Cavium, John held a similar position at Wavesat, Inc., a developer of 4G wireless baseband processors for mobile devices. Over a 25 year career, John has held product management, product marketing and business development positions in semiconductor IP, fabless chip and systems companies, including Silicon Graphics, 3DLabs and Virage Logic. John has a B.S. in Mechanical Engineering from the University of Maine.
+              John is responsible for product management, product marketing and customer and partner relationships for Marvell’s portfolio of LTE and 5G RAN solutions. Over a 25 year career, John has held product management, product marketing and business development positions in semiconductor IP, fabless chip and systems companies, including Silicon Graphics, 3DLabs and Virage Logic. John has a B.S. in Mechanical Engineering from the University of Maine.
             </p>
           </div>
 
           <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Lukasz_Mendyk.jpg')" alt="Łukasz Mendyk">
             <h3 class="text-xl mb-1 font-semibold font-heading">Łukasz Mendyk</h3>
-            <span>Senior Solution Manager, Comarch</span>
+            <span class="block font-bold">Senior Solution Manager</span>
+            <span class="block">Comarch</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
               Łukasz specializes in solutions based on the concept of intent-driven fulfillment and orchestration, as well as on innovative concepts such as software-defined networking (SDN), network function virtualization (NFV) and end-to-end orchestrion of 5G networks with O-RAN and based on distributed cloud
             </p>
