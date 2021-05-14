@@ -301,6 +301,13 @@
             </li>
             <li
               v-view.once
+              class="animate-border flex flex-row flex-wrap tablet:flex-nowrap border-b mb-2 pb-2 text-gray-900 view-in"
+            >
+              <time class="time-dash">10:05 AM</time>
+              <span class="block mb-1">Cyber security aspects in Open RAN - The Chancellery of the <strong>Prime Minister of Poland</strong>, <em class="font-bold whitespace-nowrap" itemprop="name">Robert Kośla</em>, Director of Department of Cybersecurity</span>
+            </li>
+            <li
+              v-view.once
               class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
             >
               <time class="time-dash">10:10 AM</time>
@@ -314,7 +321,7 @@
                   <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
                 </ol>
                 <span>
-                  Moderator: <em itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
+                  Moderator: <em class="font-bold whitespace-nowrap" itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
                 </span>
               </div>
             </li>
@@ -326,6 +333,9 @@
               <span class="block mb-1 uppercase">Conference</span>
               <div class="ml-0 phablet:ml-28">
                 <ol class="list-disc ml-6">
+                  <li class="mb-2 phablet:mb-0">
+                    Open Networks & Vendor Diversification in the UK - Ofcom - <em class="font-bold whitespace-nowrap" itemprop="name">Simon Burley</em>, Principal, Emerging Technology
+                  </li>
                   <li class="mb-2 phablet:mb-0">
                     Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN
                   </li>
