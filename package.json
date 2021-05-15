@@ -43,7 +43,7 @@
     "nuxt": "^2.15.3",
     "nuxt-bugsnag": "^4.2.2",
     "nuxt-compress": "^5.0.0",
-    "nuxt-i18n": "^6.26.0",
+    "nuxt-i18n": "^6.27.0",
     "nuxt-polyfill": "^1.0.3",
     "nuxt-rfg-icon": "^0.6.4",
     "nuxt-spa-store-init": "^1.2.1",
