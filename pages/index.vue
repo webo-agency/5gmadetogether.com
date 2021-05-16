@@ -305,6 +305,17 @@
               Łukasz specializes in solutions based on the concept of intent-driven fulfillment and orchestration, as well as on innovative concepts such as software-defined networking (SDN), network function virtualization (NFV) and end-to-end orchestrion of 5G networks with O-RAN and based on distributed cloud
             </p>
           </div>
+
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l">
+            <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Robert_Kosla.jpg')" alt="Robert Kośla">
+            <h3 class="text-xl mb-1 font-semibold font-heading">Robert Kośla</h3>
+            <span class="block font-bold">Director – Department of Cybersecurity</span>
+            <span class="block">The Chancellery of The Prime Minister - Poland</span>
+            <p class="mt-4 text-gray-900 leading-relaxed">
+              Robert manages the Department of Cybersecurity in The Chancellery of The Prime Minister, e.g. continuing development of the National Cybersecurity System, building secure Cloud Computing ecosystem in Poland and supporting the Government Plenipotentiary for Cybersecurity and Cybersecurity Committee. Previously: Director of the National Security and Defense sector at Microsoft, Head of Department of Cybersecurity at the Ministry of Digital Affairs in Poland and Deputy Director of the Communication and Information Security Bureau in the Office of State Protection, and Deputy Director of the ICT Security Department in the Internal Security Agency.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
