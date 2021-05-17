@@ -17,6 +17,7 @@ body{
 .time-dash:after{
     content: '—';
     @apply ml-4;
+    @apply float-right;
 }
 
 .animate-border {

@@ -1,12 +1,10 @@
 export const state = () => ({
-    data: {
-
-    }
+    
 });
 
 export const getters = {
-    getFooterData: ($state) => {
-        return $state.data
+    getData: ($state) => {
+        return $state
     }
 }
 
