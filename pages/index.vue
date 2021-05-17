@@ -332,23 +332,23 @@
         <ol>
           <li
             v-view.once
-            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
+            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900"
           >
             <time datetime="2021-05-27T10:00Z" class="time-dash">10:00 AM</time>
             <span class="uppercase">Opening</span>
           </li>
           <li
             v-view.once
-            class="animate-border flex flex-row flex-wrap tablet:flex-nowrap border-b mb-2 pb-2 text-gray-900 view-in"
+            class="animate-border flex flex-row flex-wrap tablet:flex-nowrap border-b mb-2 pb-2 text-gray-900"
           >
             <time class="time-dash">10:05 AM</time>
             <span class="block mb-1">Cyber security aspects in Open RAN - The Chancellery of the <strong>Prime Minister of Poland</strong>, <em class="font-bold whitespace-nowrap" itemprop="name">Robert Kośla</em>, Director of Department of Cybersecurity</span>
           </li>
           <li
             v-view.once
-            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
+            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900"
           >
-            <time class="time-dash">10:10 AM</time>
+            <time class="time-dash">10:20 AM</time>
             <span class="block mb-1 uppercase">Debate</span>
             <div class="ml-0 phablet:ml-28">
               <span class="block mb-2 phablet:mb-0">Participants:</span> 
@@ -365,59 +365,59 @@
           </li>
           <li
             v-view.once
-            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900 view-in"
+            class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
           >
             <time datetime="2021-05-27T11:00Z" class="time-dash">11:00 AM</time>
             <span class="block mb-1 uppercase">Conference</span>
-            <div class="ml-0 phablet:ml-28">
-              <ol class="list-disc ml-6">
-                <li class="mb-2 phablet:mb-0">
-                  Open Networks & Vendor Diversification in the UK - Ofcom - <em class="font-bold whitespace-nowrap" itemprop="name">Simon Burley</em>, Principal, Emerging Technology
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  The role of chipset in open ecosystems - Marvell - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  OpenRAN 2.0 - IS-Wireless - <em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Radio heads ready for OpenRAN - Cablefree - <em class="font-bold whitespace-nowrap" itemprop="name">Stephen Patrick</em>, CEO
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Digitalising Industry: 5G Network orchestration with O-RAN and Edge Computing for industry verticals - Comarch - <em class="font-bold whitespace-nowrap" itemprop="name">Łukasz Mendyk</em>, Senior Solution Manager
-                </li>                  
-                <li class="mb-2 phablet:mb-0">
-                  OpenRAN ready servers - HPE
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Security in OpenRAN - to be announced soon
-                </li>
-                <li>
-                  Infrastructure is a king - to be announced soon
-                </li>
-                <li class="mb-2 phablet:mb-0">
-                  Private networks regulations - European regulator - to be announced soon
-                </li>
-              </ol>
-            </div>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T11:00Z">11:00&nbsp;AM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T11:20Z" class="time-dash">11.20&nbsp;AM</time>
+            <span class="block mb-1">OpenRAN 2.0 - IS-Wireless - <em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T11:20Z">11:20&nbsp;AM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T11:40Z" class="time-dash">11.40&nbsp;AM</time>
+            <span class="block mb-1">Open Networks & Vendor Diversification in the UK - Ofcom - <em class="font-bold whitespace-nowrap" itemprop="name">Simon Burley</em>, Principal, Emerging Technology</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T11:40Z">11:40&nbsp;AM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T12:00Z" class="time-dash">12.00&nbsp;PM</time>
+            <span class="block mb-1">Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T12:00Z">12:00&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T12:20Z" class="time-dash">12.20&nbsp;PM</time>
+            <span class="block mb-1">Radio heads ready for OpenRAN - Cablefree - <em class="font-bold whitespace-nowrap" itemprop="name">Stephen Patrick</em>, CEO</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T12:20Z">12:20&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T12:40Z" class="time-dash">12:40&nbsp;PM</time>
+            <span class="block mb-1">OpenRAN ready servers - HPE</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T12:40Z">12:40&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T13:00Z" class="time-dash">1:00&nbsp;PM</time>
+            <span class="block mb-1">Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T13:00Z">1:00&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T13:00Z" class="time-dash">1:20&nbsp;PM</time>
+            <span class="block mb-1">Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T13:20Z">1:20&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T13:40Z" class="time-dash">1:40&nbsp;PM</time>
+            <span class="block mb-1">Digitalising Industry: 5G Network orchestration with O-RAN and Edge Computing for industry verticals - Comarch - <em class="font-bold whitespace-nowrap" itemprop="name">Łukasz Mendyk</em>, Senior Solution Manager</span>
+          </li>
+          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
+            <time datetime="2021-05-27T13:40Z">1:40&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T14:00Z" class="time-dash">2:00&nbsp;PM</time>
+            <span class="block mb-1">The role of chipset in open ecosystems - Marvell - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing</span>
+          </li>
+          <li 
+            class="animate-border border-b flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900"
+            v-view.once
+          >
+            <time datetime="2021-05-27T14:00Z">2:00&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T14:20Z" class="time-dash">2:20&nbsp;PM</time>
+            <span class="block mb-1">Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO</span>
           </li>
           <li
             v-view.once
             class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
           >
-            <time datetime="2021-05-27T15:00Z" class="time-dash">3:00 PM</time>
+            <time datetime="2021-05-27T15:00Z" class="time-dash">2:30 PM</time>
             <span class="uppercase">Closing remarks</span>
           </li>
         </ol>
