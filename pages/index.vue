@@ -306,7 +306,7 @@
             </p>
           </div>
 
-          <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 tablet:border-l">
+          <div class="w-full tablet:w-1/2 desktop:w-1/3 mb-4 p-8 mx-auto">
             <img class="w-32 mx-auto mb-4 rounded-full" :src="require('~/assets/people/Robert_Kosla.jpg')" alt="Robert Kośla">
             <h3 class="text-xl mb-1 font-semibold font-heading">Robert Kośla</h3>
             <span class="block font-bold">Director – Department of Cybersecurity</span>
