@@ -4,12 +4,12 @@
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
           <source
-            :srcSet="`${frontPageData.hero_background.url}`"
+            :srcSet="frontPageData.hero_background.url"
             type="image/jpeg"
           >
           <img 
             class="absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
-            :src="`${frontPageData.hero_background.url}`" 
+            :src="frontPageData.hero_background.url" 
             alt=""
           >
         </picture>

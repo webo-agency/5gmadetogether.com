@@ -143,7 +143,7 @@ export default [
     }
   },
   { 
-    src: 'nuxt-image-extractor',
+    src: 'nuxt-magpie',
     options: {
       baseUrl: process.env.API_URL,
       path: '/_images',

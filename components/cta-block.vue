@@ -17,17 +17,16 @@
     <div class="absolute desktop:rounded-t w-full h-full inset-0 z-0 bg-blue-200">
       <picture>
         <source
-          :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
-          type="image/webp"
-        >
-        <source
-          :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg')"
+          :srcSet="generalData.cta_background.url"
           type="image/jpeg"
         >
         <img 
           class="absolute desktop:rounded-t w-full h-full inset-0 z-auto object-cover" 
-          :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
-          alt=""
+          :src="generalData.cta_background.url" 
+          :alt="generalData.cta_background.alt"
+          :title="generalData.cta_background.title"
+          :width="generalData.cta_background.width"
+          :height="generalData.cta_background.height"
         >
       </picture>
     </div>
