@@ -200,13 +200,13 @@
 
           <div v-for="(person, index) in frontPageData.section_panel_person" :key="index" 
             class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 border-l-0 tablet:border-b-0"
-            :class="'' +
-              ' ' + (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : '') +
-              ' ' + (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0') +
-              ' ' + (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0') +
-              ' ' + (index % 2 == 0 ? '' : 'tablet:border-l') +
-              ' ' + (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l') +
-              ' '
+            :class="String.prototype.concat('',
+              ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
+              ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
+              ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
+              ' ', (index % 2 == 0 ? '' : 'tablet:border-l'),
+              ' ', (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l'),
+              ' ')
             "
           >
             <img class="w-32 mx-auto mb-4 rounded-full" :src="person.section_panel_person_avatar.url" alt="Lorcan Burke">
@@ -235,15 +235,15 @@
             v-view.once
             v-for="(appointment, index) in frontPageData.section_agenda_appointment" :key="index"
             class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
-            :class="'' +
-              ' ' + (appointment.section_agenda_appointment_border && index < frontPageData.section_agenda_appointment.length-1 ? 'animate-border border-b' : '') +
-              ' ' + (!appointment.section_agenda_appointment_title ? 'tablet:flex-nowrap' : '') +
-              ' '
+            :class="String.prototype.concat('',
+              ' ',(appointment.section_agenda_appointment_border && index < frontPageData.section_agenda_appointment.length-1 ? 'animate-border border-b' : ''),
+              ' ',(!appointment.section_agenda_appointment_title ? 'tablet:flex-nowrap' : ''),
+              ' ')
             "
           >
             <span v-if="appointment.section_agenda_appointment_time != '' && !appointment.section_agenda_appointment_time_end" class="block time-dash flex-none uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time></span>
             <span v-if="appointment.section_agenda_appointment_time != '' && appointment.section_agenda_appointment_time_end" class="block time-dash flex-none w-48 uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time>&nbsp;-&nbsp;<time :datetime="appointment.section_agenda_appointment_time_end | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time></span>
-            <span class="uppercase" v-if="appointment.section_agenda_appointment_title != ''">{{ appointment.section_agenda_appointment_title }}</span>
+            <span class="block mb-1 uppercase" v-if="appointment.section_agenda_appointment_title != ''">{{ appointment.section_agenda_appointment_title }}</span>
             <span 
               class="block mb-1 agenda-content" 
               v-if="appointment.section_agenda_appointment_topic != ''" 
