@@ -142,6 +142,14 @@ export default [
       }
     }
   },
+  { 
+    src: 'nuxt-image-extractor',
+    options: {
+      baseUrl: process.env.API_URL,
+      path: '/_images',
+      extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp', 'svg'],
+    }
+  },
   {
     src: 'wp-nuxt', 
     options:  {
