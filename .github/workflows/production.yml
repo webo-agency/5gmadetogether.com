@@ -3,6 +3,7 @@ name: Public workflow
 
 on:
   repository_dispatch:
+    types: [externall-deploy]
 
 jobs:
   build:
