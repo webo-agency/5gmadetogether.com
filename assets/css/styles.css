@@ -38,3 +38,50 @@ body{
 .animate-border.view-in:after{
     width: 100%;
 }
+
+.title h2,
+.content h2{
+    @apply flex;
+    @apply text-3xl;
+    @apply font-medium;
+    @apply font-heading;
+    @apply mb-14;
+    @apply flex-col;
+    @apply flex-wrap;
+    @apply phone:flex-row;
+    @apply items-center;
+    @apply uppercase;
+}
+
+.title h2::before,
+.content h2::before{
+    content: url('~/assets/icon/dash.svg');
+    height: 50px;
+    width: 50px;
+    @apply mr-4;
+}
+
+.content ul{
+    @apply mb-7 text-gray-900 leading-relaxed list-disc ml-6;
+}
+
+.content ul li{
+    @apply mb-2;
+}
+
+.content ul p{
+    @apply mb-8 text-gray-900 leading-relaxed;
+}
+
+.agenda-content em{
+    @apply font-bold whitespace-nowrap;
+}
+
+.agenda-content ol{
+    @apply list-disc ml-6 mb-4;
+}
+
+.agenda-content ol li{
+    @apply mb-2 phablet:mb-0;
+}
+

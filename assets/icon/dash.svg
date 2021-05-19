@@ -1,0 +1,16 @@
+<svg
+  width="50px"
+  viewBox="0 0 292 292"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-miterlimit="1.5"
+><path
+  fill="none"
+  d="M0 0h291.667v291.667H0z"
+/><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
+  d="M0 145.833h291.667"
+  fill="none"
+  stroke="#11C9D8"
+  stroke-width="16.67"
+/></g></svg>

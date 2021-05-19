@@ -24,16 +24,41 @@ const filterData = obj => {
 };
 
 export const state = () => ({
-
+  hero_background: {
+    url : ''
+  },
+  section_count_block_first: {
+    block_first_count: 0,
+    block_first_count_prefix: '',
+    block_first_description: ''
+  },
+  section_count_block_second: {
+    block_second_count: 0,
+    block_second_count_prefix: '',
+    block_second_description: ''
+  },
+  section_count_block_third: {
+    block_third_count: 0,
+    block_third_count_prefix: '',
+    block_third_description: ''
+  },
 });
 
 export const mutations = {
   save($state, data) {
     filterData(data);
     
-    let _tmpData = data.acf;
+    let tmpDataPage = data;
+    let dataACF = data.acf;
+    
+    let tmpData = {
+      ...tmpDataPage,
+      ...dataACF
+    };
 
-    Object.assign($state, _tmpData);
+    delete tmpData.acf;
+
+    Object.assign($state, tmpData);
 }};
 
 export const getters = {

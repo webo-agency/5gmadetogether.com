@@ -4,19 +4,17 @@
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
           <source
-            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg?webp')"
-            type="image/webp"
-          >
-          <source
-            :srcSet="require('~/assets/img/5GMadetogether_conference_big.jpg')"
+            :srcSet="`${frontPageData.hero_background.url}`"
             type="image/jpeg"
           >
           <img 
             class="absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
-            :src="require('~/assets/img/5GMadetogether_conference_big.jpg')" 
+            :src="`${frontPageData.hero_background.url}`" 
             alt=""
           >
         </picture>
+        
+         {{ frontPageData.hero_background.url }}
       </div>
 
       <div class="w-full tablet:px-24 desktop:px-48 mr-auto">
@@ -41,8 +39,8 @@
             <a
               v-scroll-to="'#read-more'"
               class="inline-block py-4 px-0 tablet:px-8 mr-6 leading-none text-white underline"
-              href="#read-more"
-            >Read more</a>
+              :href="frontPageData.link_read_more"
+            >{{ frontPageData.link_read_more_title }}</a>
           </div>
         </div>
       </div>
@@ -52,37 +50,7 @@
       <div class="flex flex-wrap phablet:-mx-4">
         <div class="w-full desktop:w-1/2 phablet:px-4 mb-8 desktop:mb-0">
           <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
-            <h2 class="text-3xl font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-left uppercase">
-              <svg
-                class="mr-4"
-                width="50px"
-                viewBox="0 0 292 292"
-                xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                stroke-miterlimit="1.5"
-              ><path
-                fill="none"
-                d="M0 0h291.667v291.667H0z"
-              /><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
-                d="M0 145.833h291.667"
-                fill="none"
-                stroke="#11C9D8"
-                stroke-width="16.67"
-              /></g></svg>About the conference
-            </h2>
-            <ul class="mb-7 text-gray-900 leading-relaxed list-disc ml-6">
-              <li class="mb-2">How is the 5G network being developed around the world?</li>
-              <li class="mb-2">Where does the process take place seamlessly, and where is it delayed?</li>
-              <li class="mb-2">How secure can the 5G network become? Why is Open RAN the model of the future?</li>
-              <li class="mb-2">Is the telecommunications market ready for the upcoming change?</li>
-              <li class="mb-2">Finally, how could the 5G development decision-makers be persuaded to implement the open network model?</li>
-            </ul>
-            <p class="mb-8 text-gray-900 leading-relaxed">
-              These are some of the questions to be answered by ICT companies’ experts from around the world during discussion panels and lectures hosted at the international „5G Made Together – creating future with open ecosystems” conference.
-              <br>
-              Participation in the conference is free of charge. Sign up now and listen to the insights of the world’s 5G leaders. Join the discussion!
-            </p>
+            <div class="content" v-html="frontPageData.content.rendered"></div>
           </div>
         </div>
         <div class="desktop:w-1/2 phablet:px-4">
@@ -111,25 +79,9 @@
     
     <section class="desktop:mx-16 py-8">
       <div class="py-24 text-left relative">
-        <div class="container">
-          <h2 class="text-3xl text-white font-medium font-heading mb-14 flex flex-col flex-wrap phone:flex-row items-center uppercase z-50 relative">
-            <svg
-              class="mr-4"
-              width="50px"
-              viewBox="0 0 292 292"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              stroke-miterlimit="1.5"
-            ><path
-              fill="none"
-              d="M0 0h291.667v291.667H0z"
-            /><clipPath id="a"><path d="M0 0h291.667v291.667H0z" /></clipPath><g clip-path="url(#a)"><path
-              d="M0 145.833h291.667"
-              fill="none"
-              stroke="#11C9D8"
-              stroke-width="16.67"
-            /></g></svg>{{ frontPageData.section_count_title }}
+        <div class="container title">
+          <h2 class=" text-white z-50 relative">
+            {{ frontPageData.section_count_title }}
           </h2>
         </div>
 
@@ -252,7 +204,8 @@
               ' ' + (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : '') +
               ' ' + (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0') +
               ' ' + (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0') +
-              ' ' + (index % 3 == 0 ? '' : 'tablet:border-l') +
+              ' ' + (index % 2 == 0 ? '' : 'tablet:border-l') +
+              ' ' + (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l') +
               ' '
             "
           >
@@ -280,93 +233,23 @@
         <ol>
           <li
             v-view.once
-            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900"
-          >
-            <span class="block time-dash flex-none"><time datetime="2021-05-27T10:00Z">10:00 AM</time></span>
-            <span class="uppercase">Opening</span>
-          </li>
-          <li
-            v-view.once
-            class="animate-border flex flex-row flex-wrap tablet:flex-nowrap border-b mb-2 pb-2 text-gray-900"
-          >
-            <span class="block time-dash flex-none"><time>10:05 AM</time></span>
-            <span class="block mb-1">Cyber security aspects in Open RAN - The Chancellery of the <strong>Prime Minister of Poland</strong>, <em class="font-bold whitespace-nowrap" itemprop="name">Robert Kośla</em>, Director of Department of Cybersecurity</span>
-          </li>
-          <li
-            v-view.once
-            class="animate-border flex flex-row flex-wrap border-b mb-2 pb-2 text-gray-900"
-          >
-            <span class="block time-dash flex-none"><time>10:20 AM</time></span>
-            <span class="block mb-1 uppercase">Debate</span>
-            <div class="ml-0 phablet:ml-28">
-              <span class="block mb-2 phablet:mb-0">Participants:</span> 
-              <ol class="list-disc ml-6 mb-4">
-                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Franz Seiser</em>, Vice President, Access Disaggregation, Deutsche Telekom</li>
-                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador, IBM</li>
-                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN, VMware</li>
-                <li class="mb-2 phablet:mb-0"><em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO, IS-Wireless</li>
-              </ol>
-              <span>
-                Moderator: <em class="font-bold whitespace-nowrap" itemprop="name">Petar Popovski</em>, Aalborg University in Denmark<br>
-              </span>
-            </div>
-          </li>
-          <li
-            v-view.once
+            v-for="(appointment, index) in frontPageData.section_agenda_appointment" :key="index"
             class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
+            :class="'' +
+              ' ' + (appointment.section_agenda_appointment_border && index < frontPageData.section_agenda_appointment.length-1 ? 'animate-border border-b' : '') +
+              ' ' + (!appointment.section_agenda_appointment_title ? 'tablet:flex-nowrap' : '') +
+              ' '
+            "
           >
-            <span class="block time-dash flex-none"><time datetime="2021-05-27T11:00Z">11:00 AM</time></span>
-            <span class="block mb-1 uppercase">Conference</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T11:00Z">11:00&nbsp;AM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T11:20Z">11.20&nbsp;AM</time></span>
-            <span class="block mb-1">OpenRAN 2.0 - IS-Wireless - <em class="font-bold whitespace-nowrap" itemprop="name">Sławomir Pietrzyk</em>, CEO</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T11:20Z">11:20&nbsp;AM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T11:40Z">11.40&nbsp;AM</time></span>
-            <span class="block mb-1">Open Networks & Vendor Diversification in the UK - Ofcom - <em class="font-bold whitespace-nowrap" itemprop="name">Simon Burley</em>, Principal, Emerging Technology</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T11:40Z">11:40&nbsp;AM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T12:00Z">12.00&nbsp;PM</time></span>
-            <span class="block mb-1">Accelerating OpenRAN ecosystem - VMware - <em class="font-bold whitespace-nowrap" itemprop="name">Lorcan Burke</em>, Director RAN</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T12:00Z">12:00&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T12:20Z">12.20&nbsp;PM</time></span>
-            <span class="block mb-1">Radio heads ready for OpenRAN - Cablefree - <em class="font-bold whitespace-nowrap" itemprop="name">Stephen Patrick</em>, CEO</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T12:20Z">12:20&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T12:40Z">12:40&nbsp;PM</time></span>
-            <span class="block mb-1">OpenRAN ready servers - HPE</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T12:40Z">12:40&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T13:00Z">1:00&nbsp;PM</time></span>
-            <span class="block mb-1">Building next generation edge - Tambora Systems - <em class="font-bold whitespace-nowrap" itemprop="name">Anand Uppili</em>, CEO</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T13:00Z">1:00&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T13:00Z">1:20&nbsp;PM</time></span>
-            <span class="block mb-1">Telco Cloud - The importance of a horizontal platform - IBM - <em class="font-bold whitespace-nowrap" itemprop="name">Zygmunt A. Lozinski</em>, Senior Technical Staff Member, Master Inventor, Quantum Ambassador</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T13:20Z">1:20&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T13:40Z">1:40&nbsp;PM</time></span>
-            <span class="block mb-1">Digitalising Industry: 5G Network orchestration with O-RAN and Edge Computing for industry verticals - Comarch - <em class="font-bold whitespace-nowrap" itemprop="name">Łukasz Mendyk</em>, Senior Solution Manager</span>
-          </li>
-          <li class="flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900">
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T13:40Z">1:40&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T14:00Z">2:00&nbsp;PM</time></span>
-            <span class="block mb-1">The role of chipset in open ecosystems - Marvell - <em class="font-bold whitespace-nowrap" itemprop="name">John Schimpf</em>, Senior Director, Product Marketing</span>
-          </li>
-          <li 
-            class="animate-border border-b flex flex-row flex-wrap tablet:flex-nowrap mb-2 pb-2 text-gray-900"
-            v-view.once
-          >
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T14:00Z">2:00&nbsp;PM</time>&nbsp;-&nbsp;<time datetime="2021-05-27T14:20Z">2:20&nbsp;PM</time></span>
-            <span class="block mb-1">Telecommunication of the future - the VC perspective - Bitspiration Booster - <em class="font-bold whitespace-nowrap" itemprop="name">Wojciech Burkot</em>, CEO</span>
-          </li>
-          <li
-            v-view.once
-            class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
-          >
-            <span class="block time-dash flex-none w-48"><time datetime="2021-05-27T15:00Z">2:30 PM</time></span>
-            <span class="uppercase">Closing remarks</span>
+            <span v-if="appointment.section_agenda_appointment_time != '' && !appointment.section_agenda_appointment_time_end" class="block time-dash flex-none uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time></span>
+            <span v-if="appointment.section_agenda_appointment_time != '' && appointment.section_agenda_appointment_time_end" class="block time-dash flex-none w-48 uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time>&nbsp;-&nbsp;<time :datetime="appointment.section_agenda_appointment_time_end | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time></span>
+            <span class="uppercase" v-if="appointment.section_agenda_appointment_title != ''">{{ appointment.section_agenda_appointment_title }}</span>
+            <span 
+              class="block mb-1 agenda-content" 
+              v-if="appointment.section_agenda_appointment_topic != ''" 
+              :class="appointment.section_agenda_appointment_title ? 'ml-0 phablet:ml-28' : ''"
+              v-html="appointment.section_agenda_appointment_topic">              
+            </span>
           </li>
         </ol>
       </div>
@@ -397,6 +280,27 @@
         iframeYoutubeSrc: '',
         liveURL: '',
       };
+    },
+    filters: {
+      dateConvert: function (time) {
+        if (!time) return ''
+        
+        time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+
+        if (time.length > 1) { // If time format correct
+          time = time.slice (1);  // Remove full string match value
+          time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
+          time[0] = +time[0] % 12 || 12; // Adjust hours
+        }
+
+        time[3] = ' '; //remove seconds
+
+        return time.join ('');
+      },
+      dateStandardConvert: function (time) {
+        if (!time) return ''
+        return time.concat('2021-05-27T',time.slice(0, -3),'Z');
+      }
     },
     created() {
       this.liveURL = this.frontPageData.section_live_embed;
