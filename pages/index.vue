@@ -3,6 +3,10 @@
     <section class="py-24 tablet:py-48 px-4 phablet:px-4 text-center relative desktop:mx-16">
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
+          <source 
+            :srcSet="frontPageData.hero_background.url.concat('.webp')"
+            type="image/webp"
+          >
           <source
             :srcSet="frontPageData.hero_background.url"
             type="image/jpeg"
@@ -143,17 +147,20 @@
         <div class="absolute inset-0 overflow-hidden">
           <picture>
             <source
-              :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg?webp')"
+              :srcSet="frontPageData.section_count_background.url.concat('.webp')"
               type="image/webp"
             >
             <source
-              :srcSet="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')"
+              :srcSet="frontPageData.section_count_background.url"
               type="image/jpeg"
             >
             <img 
               class="absolute w-full object-cover h-full rounded"
-              :src="require('~/assets/img/network_coference_5g_made_together_is-wireless_2021.jpg')" 
-              alt=""
+              :src="frontPageData.section_count_background.url"
+              :alt="frontPageData.section_count_background.alt"
+              :title="frontPageData.section_count_background.title"
+              :width="frontPageData.section_count_background.width"
+              :height="frontPageData.section_count_background.height"
             >
           </picture>
         </div>
