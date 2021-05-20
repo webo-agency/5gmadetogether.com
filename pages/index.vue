@@ -255,7 +255,7 @@
             "
           >
             <span v-if="appointment.section_agenda_appointment_time != '' && !appointment.section_agenda_appointment_time_end" class="block time-dash flex-none uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time></span>
-            <span v-if="appointment.section_agenda_appointment_time != '' && appointment.section_agenda_appointment_time_end" class="block time-dash flex-none w-48 uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time>&nbsp;-&nbsp;<time :datetime="appointment.section_agenda_appointment_time_end | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time></span>
+            <span v-if="appointment.section_agenda_appointment_time != '' && appointment.section_agenda_appointment_time_end" class="block time-dash flex-none w-48 uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time>&nbsp;-&nbsp;<time :datetime="appointment.section_agenda_appointment_time_end | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time></span>
             <span class="block mb-1 uppercase" v-if="appointment.section_agenda_appointment_title != ''">{{ appointment.section_agenda_appointment_title }}</span>
             <span 
               class="block mb-1 agenda-content" 
