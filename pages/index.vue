@@ -4,7 +4,7 @@
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
           <source 
-            :srcSet="frontPageData.hero_background.url.concat('.webp')"
+            :srcSet="frontPageData.hero_background.url.slice(0, -4).concat('.webp')"
             type="image/webp"
           >
           <source
@@ -147,7 +147,7 @@
         <div class="absolute inset-0 overflow-hidden">
           <picture>
             <source
-              :srcSet="frontPageData.section_count_background.url.concat('.webp')"
+              :srcSet="frontPageData.section_count_background.url.slice(0, -4).concat('.webp')"
               type="image/webp"
             >
             <source
