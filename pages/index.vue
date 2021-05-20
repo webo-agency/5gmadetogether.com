@@ -144,7 +144,7 @@
           </div>
         </div>
        
-        <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden overlay">
           <picture>
             <source
               :srcSet="frontPageData.section_count_background.url.slice(0, -4).concat('.webp')"
@@ -216,7 +216,13 @@
               ' ')
             "
           >
-            <img class="w-32 mx-auto mb-4 rounded-full" :src="person.section_panel_person_avatar.url" alt="Lorcan Burke">
+            <img class="w-32 mx-auto mb-4 rounded-full" 
+              :src="person.section_panel_person_avatar.sizes.medium" 
+              :width="person.section_panel_person_avatar.sizes['medium-width']" 
+              :height="person.section_panel_person_avatar.sizes['medium-height']" 
+              :alt="person.section_panel_person_avatar.alt" 
+              :title="person.section_panel_person_avatar.title"
+            >
             <h3 class="text-xl mb-1 font-semibold font-heading">{{ person.section_panel_person_name }}</h3>
             <span class="block font-bold">{{ person.section_panel_person_office }}</span>
             <span class="block">{{ person.section_panel_person_company }}</span>
