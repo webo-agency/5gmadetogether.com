@@ -142,12 +142,43 @@ export default [
       }
     }
   },
+  {
+    src: '@nuxtjs/robots',
+    options:  {
+      UserAgent: '*',
+      Allow: '/',
+      Sitemap: `${process.env.DOMAIN}/sitemap.xml`
+    }
+  },
+  {
+    src: '@nuxtjs/sitemap',
+    options:  {
+      hostname: `${process.env.DOMAIN}`,
+      filter({ routes }) {
+          return routes.map(route => {
+              // object containing [routeName]: [priority] pairs
+              const priorities = {
+                  index: 1,
+                  about: 0.6,
+              }
+              
+              // assign priority by route name or default (.5)
+              return { 
+                ...route, 
+                priority: priorities[route.name] || 0.5,
+                lastmod: new Date()
+              }
+          })
+      },
+      gzip: true
+    }
+  },
   { 
     src: 'nuxt-magpie',
     options: {
-      baseUrl: process.env.API_URL,
-      path: '/_images',
-      extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp', 'svg'],
+      baseUrl: `${process.env.API_URL}/wp-content`,
+      path: '/files',
+      extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp', 'svg', 'xml'],
     }
   },
   {
