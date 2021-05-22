@@ -46,6 +46,7 @@
         
         if(data != ''){
           removeEmpty(data[0]);
+          data[0].head_tags_title = new Array();
           data[0].head_tags_link = new Array();
           data[0].head_tags_script = new Array();
           data[0].head_tags_meta = new Array();
@@ -53,6 +54,9 @@
           data[0].head_tags.forEach(
             function(item){
               switch(item['tag']){
+                case 'title':
+                  data[0].head_tags_title.push(item.content);
+                  break;
                 case 'link':
                   data[0].head_tags_link.push(item.attributes);
                   break;
@@ -85,6 +89,7 @@
     },
     head() {
       return {
+        title: this.api.head_tags_title,
         meta: this.api.head_tags_meta,
         script: this.api.head_tags_script,
         link: this.api.head_tags_link,

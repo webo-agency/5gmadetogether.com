@@ -331,6 +331,7 @@
     },
     head() {
       return {
+        title: this.frontPageData.head_tags_title,
         meta: this.frontPageData.head_tags_meta,
         script: this.frontPageData.head_tags_script,
         link: this.frontPageData.head_tags_link,

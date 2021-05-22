@@ -48,6 +48,7 @@ export const mutations = {
   save($state, data) {
     filterData(data);
 
+    data.head_tags_title = new Array();
     data.head_tags_link = new Array();
     data.head_tags_script = new Array();
     data.head_tags_meta = new Array();
@@ -55,6 +56,9 @@ export const mutations = {
     data.head_tags.forEach(
       function(item){
         switch(item['tag']){
+          case 'title':
+            data.head_tags_title.push(item.content);
+            break;
           case 'link':
             data.head_tags_link.push(item.attributes);
             break;
