@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import { forEach } from 'lodash';
   const removeEmpty = obj => {
     Object.keys(obj).forEach(key => {
       if (

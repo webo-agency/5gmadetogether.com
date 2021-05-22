@@ -7,7 +7,8 @@
     <nav class="flex flex-wrap items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
       <div class="navbar-menu flex flex-wrap order-1 desktop:order-1 flex-row items-center">
         <span class="block mb-4">{{ generalData.header_text_before }}</span> <img
-          v-for="(logo, index) in generalData.header_logo" :key="index"
+          v-for="(logo, index) in generalData.header_logo"
+          :key="index"
           class="h-auto w-32 mx-4 mb-4 max-w-full"
           :src="`${logo.header_logo_image.sizes['post-thumbnail']}`"
           :title="`${logo.header_logo_image.title}`"

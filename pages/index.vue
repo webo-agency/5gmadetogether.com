@@ -18,7 +18,7 @@
           >
         </picture>
         
-         {{ frontPageData.hero_background.url }}
+        {{ frontPageData.hero_background.url }}
       </div>
 
       <div class="w-full tablet:px-24 desktop:px-48 mr-auto">
@@ -32,7 +32,10 @@
             <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-xs phone:text-base tablet:text-2xl">
               {{ frontPageData.hero_title }} <span class="block font-medium text-base phone:text-2xl tablet:text-4xl">{{ frontPageData.hero_subtitle }}</span>
             </h1>
-            <time datetime="2021-05-27T10:00Z" class="block text-white mb-8 text-base phone:text-base desktop:text-xl font-bold">{{ frontPageData.hero_time_title }}</time>
+            <time
+              datetime="2021-05-27T10:00Z"
+              class="block text-white mb-8 text-base phone:text-base desktop:text-xl font-bold"
+            >{{ frontPageData.hero_time_title }}</time>
           </header>
           <div class="flex items-start justify-start flex-col tablet:flex-row flex-wrap">
             <a
@@ -50,11 +53,17 @@
       </div>
     </section>
         
-    <section class="container pt-12 phablet:py-12" id="read-more">
+    <section
+      id="read-more"
+      class="container pt-12 phablet:py-12"
+    >
       <div class="flex flex-wrap phablet:-mx-4">
         <div class="w-full desktop:w-1/2 phablet:px-4 mb-8 desktop:mb-0">
           <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
-            <div class="content" v-html="frontPageData.content.rendered"></div>
+            <div
+              class="content"
+              v-html="frontPageData.content.rendered"
+            />
           </div>
         </div>
         <div class="desktop:w-1/2 phablet:px-4">
@@ -90,7 +99,6 @@
         </div>
 
         <div class="container flex flex-wrap relative z-50">
-
           <div class="desktop:w-1/3 desktop:pr-4 mb-6 relative">
             <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
@@ -128,9 +136,9 @@
           <div class="desktop:w-1/3 desktop:pl-4 mb-6 relative">
             <h3 class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl">
               <count-to
-                class="text-highlight"
                 ref="countDebate"
                 v-view.once="viewDebateCount"
+                class="text-highlight"
                 :start-val="0"
                 :end-val="parseInt(frontPageData.section_count_block_third.block_third_count)"
                 :duration="3000"
@@ -204,26 +212,30 @@
           {{ frontPageData.section_panel }}
         </h2>
         <div class="flex flex-wrap justify-center">
-
-          <div v-for="(person, index) in frontPageData.section_panel_person" :key="index" 
+          <div
+            v-for="(person, index) in frontPageData.section_panel_person"
+            :key="index" 
             class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 border-l-0 tablet:border-b-0"
             :class="String.prototype.concat('',
-              ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
-              ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
-              ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
-              ' ', (index % 2 == 0 ? '' : 'tablet:border-l'),
-              ' ', (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l'),
-              ' ')
+                                            ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
+                                            ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
+                                            ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
+                                            ' ', (index % 2 == 0 ? '' : 'tablet:border-l'),
+                                            ' ', (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l'),
+                                            ' ')
             "
           >
-            <img class="w-32 mx-auto mb-4 rounded-full" 
+            <img
+              class="w-32 mx-auto mb-4 rounded-full" 
               :src="person.section_panel_person_avatar.sizes.medium" 
               :width="person.section_panel_person_avatar.sizes['medium-width']" 
               :height="person.section_panel_person_avatar.sizes['medium-height']" 
               :alt="person.section_panel_person_avatar.alt" 
               :title="person.section_panel_person_avatar.title"
             >
-            <h3 class="text-xl mb-1 font-semibold font-heading">{{ person.section_panel_person_name }}</h3>
+            <h3 class="text-xl mb-1 font-semibold font-heading">
+              {{ person.section_panel_person_name }}
+            </h3>
             <span class="block font-bold">{{ person.section_panel_person_office }}</span>
             <span class="block">{{ person.section_panel_person_company }}</span>
             <p class="mt-4 text-gray-900 leading-relaxed">
@@ -245,24 +257,34 @@
 
         <ol>
           <li
+            v-for="(appointment, index) in frontPageData.section_agenda_appointment"
+            :key="index"
             v-view.once
-            v-for="(appointment, index) in frontPageData.section_agenda_appointment" :key="index"
             class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
             :class="String.prototype.concat('',
-              ' ',(appointment.section_agenda_appointment_border && index < frontPageData.section_agenda_appointment.length-1 ? 'animate-border border-b' : ''),
-              ' ',(!appointment.section_agenda_appointment_title ? 'tablet:flex-nowrap' : ''),
-              ' ')
+                                            ' ',(appointment.section_agenda_appointment_border && index < frontPageData.section_agenda_appointment.length-1 ? 'animate-border border-b' : ''),
+                                            ' ',(!appointment.section_agenda_appointment_title ? 'tablet:flex-nowrap' : ''),
+                                            ' ')
             "
           >
-            <span v-if="appointment.section_agenda_appointment_time != '' && !appointment.section_agenda_appointment_time_end" class="block time-dash flex-none uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time></span>
-            <span v-if="appointment.section_agenda_appointment_time != '' && appointment.section_agenda_appointment_time_end" class="block time-dash flex-none w-48 uppercase"><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time>&nbsp;-&nbsp;<time :datetime="appointment.section_agenda_appointment_time_end | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time></span>
-            <span class="block mb-1 uppercase" v-if="appointment.section_agenda_appointment_title != ''">{{ appointment.section_agenda_appointment_title }}</span>
+            <span
+              v-if="appointment.section_agenda_appointment_time != '' && !appointment.section_agenda_appointment_time_end"
+              class="block time-dash flex-none uppercase"
+            ><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time></span>
+            <span
+              v-if="appointment.section_agenda_appointment_time != '' && appointment.section_agenda_appointment_time_end"
+              class="block time-dash flex-none w-48 uppercase"
+            ><time :datetime="appointment.section_agenda_appointment_time | dateStandardConvert">{{ appointment.section_agenda_appointment_time | dateConvert }}</time>&nbsp;-&nbsp;<time :datetime="appointment.section_agenda_appointment_time_end | dateStandardConvert">{{ appointment.section_agenda_appointment_time_end | dateConvert }}</time></span>
+            <span
+              v-if="appointment.section_agenda_appointment_title != ''"
+              class="block mb-1 uppercase"
+            >{{ appointment.section_agenda_appointment_title }}</span>
             <span 
-              class="block mb-1 agenda-content" 
               v-if="appointment.section_agenda_appointment_topic != ''" 
+              class="block mb-1 agenda-content" 
               :class="appointment.section_agenda_appointment_title ? 'ml-0 phablet:ml-28' : ''"
-              v-html="appointment.section_agenda_appointment_topic">              
-            </span>
+              v-html="appointment.section_agenda_appointment_topic"
+            />
           </li>
         </ol>
       </div>
@@ -273,6 +295,33 @@
 <script>  
   export default {
     name: "FrontPage",
+    filters: {
+      dateConvert: function (time) {
+        if (!time) return ''
+        
+        time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+
+        if (time.length > 1) { // If time format correct
+          time = time.slice (1);  // Remove full string match value
+          time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
+          time[0] = +time[0] % 12 || 12; // Adjust hours
+        }
+
+        time[3] = ' '; //remove seconds
+
+        return time.join ('');
+      },
+      dateStandardConvert: function (time) {
+        if (!time) return ''
+        return time.concat('2021-05-27T',time.slice(0, -3),'Z');
+      }
+    },
+    data: function() {
+      return {
+        iframeYoutubeSrc: '',
+        liveURL: '',
+      };
+    },
     async fetch ({ app, store }) {
   
       await app.$wp.namespace( 'wuxt' ).v1().frontPage().then(function(data){
@@ -294,33 +343,6 @@
       generalData() {
         return this.$store.getters['general/getData']
       },
-    },
-    data: function() {
-      return {
-        iframeYoutubeSrc: '',
-        liveURL: '',
-      };
-    },
-    filters: {
-      dateConvert: function (time) {
-        if (!time) return ''
-        
-        time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
-
-        if (time.length > 1) { // If time format correct
-          time = time.slice (1);  // Remove full string match value
-          time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
-          time[0] = +time[0] % 12 || 12; // Adjust hours
-        }
-
-        time[3] = ' '; //remove seconds
-
-        return time.join ('');
-      },
-      dateStandardConvert: function (time) {
-        if (!time) return ''
-        return time.concat('2021-05-27T',time.slice(0, -3),'Z');
-      }
     },
     created() {
       this.liveURL = this.frontPageData.section_live_embed;

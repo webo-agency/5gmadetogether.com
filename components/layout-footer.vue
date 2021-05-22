@@ -7,8 +7,11 @@
 
     <section class="relative py-8 px-4 text-center desktop:mx-16 bg-gray-100 rounded-b">
       <div class="container flex flex-wrap justify-around">
-
-        <div class="my-2" v-for="entry in generalData.footer_contact" :key="entry.person.footer_contact_email_link">
+        <div
+          v-for="entry in generalData.footer_contact"
+          :key="entry.person.footer_contact_email_link"
+          class="my-2"
+        >
           <strong>{{ entry.person.footer_contact_email_title }} </strong> <a :href="'mailto:' + entry.person.footer_contact_email_link">{{ entry.person.footer_contact_email_link_title }}</a>
         </div>
       </div>
@@ -26,6 +29,12 @@
 <script>
   export default {
     name: "LayoutFooter",
+    filters: {
+      insertActualDate: function (value) {
+        if (!value) return ''
+        return value.replace(/%s/g, new Date().getFullYear() < 2022 ? '2021' : '2021 ~ ' + new Date().getFullYear());
+      }
+    },
     props: {
       mainTag: {
         type: String,
@@ -36,12 +45,6 @@
         type: String,
         default: "",
         required: false
-      }
-    },
-    filters: {
-      insertActualDate: function (value) {
-        if (!value) return ''
-        return value.replace(/%s/g, new Date().getFullYear() < 2022 ? '2021' : '2021 ~ ' + new Date().getFullYear());
       }
     },
     computed: {
