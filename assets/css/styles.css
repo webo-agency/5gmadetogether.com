@@ -39,6 +39,7 @@ body{
     width: 100%;
 }
 
+.title h1,
 .title h2,
 .content h2{
     @apply flex;
@@ -53,6 +54,7 @@ body{
     @apply uppercase;
 }
 
+.title h1::before,
 .title h2::before,
 .content h2::before{
     content: url('~/assets/icon/dash.svg');

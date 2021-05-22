@@ -280,6 +280,13 @@
       }); 
 
     },
+    head() {
+      return {
+        meta: this.frontPageData.head_tags_meta,
+        script: this.frontPageData.head_tags_script,
+        link: this.frontPageData.head_tags_link,
+      }
+    },
     computed: {
       frontPageData() {
         return this.$store.getters['homepage/getData']

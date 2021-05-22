@@ -47,6 +47,26 @@ export const state = () => ({
 export const mutations = {
   save($state, data) {
     filterData(data);
+
+    data.head_tags_link = new Array();
+    data.head_tags_script = new Array();
+    data.head_tags_meta = new Array();
+
+    data.head_tags.forEach(
+      function(item){
+        switch(item['tag']){
+          case 'link':
+            data.head_tags_link.push(item.attributes);
+            break;
+          case 'script':
+            item.attributes.content = item.content;
+            data.head_tags_script.push(item.attributes);
+            break;
+          case 'meta':
+            data.head_tags_meta.push(item.attributes);
+            break;
+        }
+      });
     
     let tmpDataPage = data;
     let dataACF = data.acf;
