@@ -19,7 +19,24 @@
   export default {
     head: {},
     mounted() {
-      // this.$bugsnag.notify(new Error('Test'), { severity: 'info' });
-    }
+      const gdprCookie = this.$cookies.get('gdpr');
+      if(!gdprCookie){
+        this.$toast.show({
+          title: 'Toast with actions',
+          message: 'Cookies are used to improve experience',
+          primary: { label: 'Accept', action: () => this.$cookies.set('gdpr', true) },
+          timeout: false,
+          containerClasses: "",
+        });
+
+         this.$toast.show({
+          title: 'Toast with actions',
+          message: 'Cookies are used to improve experience',
+          primary: { label: 'Accept', action: () => this.$cookies.set('gdpr', true) },
+          timeout: false,
+          containerClasses: "",
+        });
+      }
+    },
   };
 </script>

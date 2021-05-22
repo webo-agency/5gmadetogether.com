@@ -88,6 +88,10 @@ export default [
     // options: {}
   },
   {
+    src: "cookie-universal-nuxt",
+    // options: { alias: process.env.NAME }
+  },
+  {
     src: "nuxt-compress",
     options: {
       gzip: {
@@ -96,6 +100,19 @@ export default [
       brotli: {
         threshold: 10240
       }
+    }
+  },
+  {
+    src: 'nuxt-tailvue',
+    options: {
+      all: true, 
+      toast: { 
+        defaultProps: { 
+          timeout: 10,
+          progress: false,
+          classToast: 'bg-white'
+        },
+      } 
     }
   },
   {

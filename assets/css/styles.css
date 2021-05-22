@@ -95,3 +95,7 @@ body{
     opacity: 0.7;
     background-color: #000;
 }
+
+#toasts{
+    @apply top-auto;
+}

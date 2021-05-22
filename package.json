@@ -34,6 +34,7 @@
     "acorn-dynamic-import": "^4.0.0",
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
+    "cookie-universal-nuxt": "^2.1.4",
     "core-js": "^3.12.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
@@ -50,6 +51,7 @@
     "nuxt-polyfill": "^1.0.3",
     "nuxt-rfg-icon": "^0.6.4",
     "nuxt-spa-store-init": "^1.2.1",
+    "nuxt-tailvue": "^1.0.90",
     "postcss-nested": "^5.0.5",
     "postcss-responsive-type": "^1.0.0",
     "responsive-loader": "^2.3.0",
@@ -86,6 +88,7 @@
     "npm": ">=5.0.0"
   },
   "devDependencies": {
+    "@nuxt/types": "^2.13.2",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.26.0",
