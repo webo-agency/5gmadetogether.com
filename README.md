@@ -1,8 +1,6 @@
-# 5gmadetogether.com - Frontend template
+# 5gmadetogether.com
 
-Frontend version conference website
-
-Happy hacking :)
+Conference website
 
 ---
 
