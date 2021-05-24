@@ -103,24 +103,6 @@ export default [
     }
   },
   {
-    src: 'nuxt-tailvue',
-    options: {
-      all: true, 
-      toast: { 
-        defaults: {
-          containerClasses: [ 
-            'z-40', 'fixed', 'inset-0', 'flex', 'flex-col-reverse', 'items-end', 'justify-center', 'px-4', 'py-6', 'pointer-events-none', 'sm:p-6', 'sm:items-end', 'sm:justify-end'
-           ]
-        },
-        defaultProps: { 
-          timeout: 10,
-          progress: false,
-          classToast: 'bg-white'
-        },
-      } 
-    }
-  },
-  {
     src: "@nuxtjs/pwa",
     options: {
       workbox: {},

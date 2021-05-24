@@ -18,9 +18,14 @@
     </section>
 
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-between p-4">
-        <div class="text-xs w-full lg:w-auto lg:mr-6 text-center">
+      <div class="flex flex-wrap items-between justify-between p-4">
+        <div class="text-xs w-auto lg:w-auto lg:mr-6 text-center">
           {{ generalData.copyright | insertActualDate }}
+        </div>
+        <div class="flex text-xs">
+          <nuxt-link class="uppercase" to="/license">License</nuxt-link>
+          <span class="block mx-2">|</span>
+          <nuxt-link class="uppercase" to="/privacy-policy">Privacy Policy</nuxt-link>
         </div>
       </div>
     </div>

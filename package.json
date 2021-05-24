@@ -51,7 +51,6 @@
     "nuxt-polyfill": "^1.0.3",
     "nuxt-rfg-icon": "^0.6.4",
     "nuxt-spa-store-init": "^1.2.1",
-    "nuxt-tailvue": "^1.0.90",
     "postcss-nested": "^5.0.5",
     "postcss-responsive-type": "^1.0.0",
     "responsive-loader": "^2.3.0",

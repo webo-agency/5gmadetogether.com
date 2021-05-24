@@ -1,6 +1,7 @@
 import { join } from 'path'
 
 export default {
+  publicPath: "/static/",
   extractCSS: true,
   cssSourceMap: false,
   babel: {
@@ -39,9 +40,6 @@ export default {
     sourceMap: false,
     extractComments: {
       filename: 'LICENSES',
-      banner: () => {
-        return false;
-      },
     },
     terserOptions: { 
       output: {
