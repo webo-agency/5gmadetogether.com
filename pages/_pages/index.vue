@@ -35,7 +35,7 @@
   };
 
   export default {
-    async asyncData ({ app , params, payload }) {
+    async asyncData ({ app , error, params, payload }) {
 
       if (payload && payload.data && payload.data.acf && payload.data.acf.page_title && payload.data.acf.page_image) {
         return { 
@@ -44,7 +44,7 @@
       } else {
         let data = await app.$wp.pages().slug(params.pages);
         
-        if(data != ''){
+        if(data != '' && data.length != 0){
           removeEmpty(data[0]);
           data[0].head_tags_title = new Array();
           data[0].head_tags_link = new Array();
@@ -74,16 +74,7 @@
             api: data[0],
           }
         } else {
-          return { 
-            api: {
-              title: {
-                rendered: ''
-              },
-              content: {
-                rendered: ''
-              }
-            },
-          }
+          error({ statusCode: 404, message: 'Post not found' })
         }
       }
     },

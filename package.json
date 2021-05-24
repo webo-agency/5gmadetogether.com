@@ -30,6 +30,7 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/tailwindcss": "^4.1.2",
+    "@nuxtjs/toast": "^3.3.1",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "acorn-dynamic-import": "^4.0.0",
     "axios": "^0.21.1",

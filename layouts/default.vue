@@ -18,15 +18,10 @@
 <script>
   export default {
     head: {},
-    mounted() {
+    mounted() {       
       const gdprCookie = this.$cookies.get('gdpr');
       if(!gdprCookie){
-        this.$toast.show({
-          title: 'Toast with actions',
-          message: 'Cookies are used to improve experience',
-          primary: { label: 'Accept', action: () => this.$cookies.set('gdpr', true) },
-          timeout: false,
-        });
+        this.$toast.global.gdpr();
       }
     },
   };

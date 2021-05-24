@@ -32,8 +32,7 @@ export const mutations = {}
 export const getters = {}
 
 export const actions = {
-  async nuxtServerInit({ dispatch }, { env }) {
-    
+  async nuxtServerInit({ dispatch }, { app, env }) {
     await WPAPI.discover( `${env.API_URL}${env.API_AFFIX}` ).then(function(wp){
       return Promise.all([
         new Promise((resolve) => {

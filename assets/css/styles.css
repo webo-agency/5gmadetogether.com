@@ -96,6 +96,25 @@ body{
     background-color: #000;
 }
 
-#toasts{
-    @apply top-auto;
+.gdpr.toasted-container.bottom-right{
+    right: 20px;
+    bottom: 20px;
+}
+
+.gdpr .gdpr-inner,
+.gdpr .gdpr-inner.toasted{
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 13rem;
+    justify-content: space-between;
+}
+
+.gdpr.toasted-container .gdpr-inner.toasted .action{
+    margin: 0;
+}
+
+.gdpr .gdpr-inner.toasted .primary .action, 
+.gdpr .gdpr-inner.toasted.toasted-primary .action{
+    color: #fff;
 }

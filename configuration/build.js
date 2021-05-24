@@ -38,13 +38,6 @@ export default {
     parallel: true,
     cache: false,
     sourceMap: false,
-    extractComments: {
-      filename: 'LICENSES.html',
-    },
-    terserOptions: { 
-      output: {
-        comments: /^\**!|@preserve|@license|@cc_on/,
-      }
-    }
+    extractComments: false
   }
 }
