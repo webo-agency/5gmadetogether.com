@@ -39,7 +39,7 @@ export default {
     cache: false,
     sourceMap: false,
     extractComments: {
-      filename: 'LICENSES',
+      filename: 'LICENSES.html',
     },
     terserOptions: { 
       output: {
