@@ -17,7 +17,7 @@
       v-if="api.content.rendered"
       v-html="api.content.rendered"
     />
-    <iframe src="/static/LICENSES" width="560" height="315" class="border-0 mb-12" title="File with licenses"></iframe>
+    <iframe src="/static/LICENSES.html" width="560" height="315" class="border-0 mb-12" title="File with licenses"></iframe>
   </div>
 </template>
 
