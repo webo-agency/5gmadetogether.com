@@ -116,7 +116,7 @@ export default [
                 text : 'Accept',
                 class: 'uppercase inline-block py-2 px-4 leading-none bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow',
                 onClick : (e, toastObject) => {
-                    this.$cookies.set('gdpr', {
+                    window.$nuxt.$cookies.set('gdpr', {
                       path: '/',
                       maxAge: 60 * 60 * 24 * 7
                     });
