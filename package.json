@@ -91,7 +91,7 @@
     "@nuxt/types": "^2.13.2",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^7.26.0",
+    "eslint": "^7.27.0",
     "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-node": "^11.1.0",
