@@ -51,11 +51,13 @@
       @apply absolute;
       @apply uppercase;
       @apply cursor-pointer;
-      /* @apply bg-gray-100; */
-      /* box-shadow: 0 0 9px 9px theme('colors.gray.100'); */
-       background-image: linear-gradient(theme('colors.transparent'), theme('colors.gray.100') 80%, theme('colors.gray.100'));
+      background-image: linear-gradient(
+        theme('colors.transparent'), 
+        theme('colors.gray.100') 80%, 
+        theme('colors.gray.100')
+      );
       font-size: 12px;
-      bottom: 0;
+      @apply bottom-0;
       @apply w-full;
       @apply h-full;
       z-index: -1;

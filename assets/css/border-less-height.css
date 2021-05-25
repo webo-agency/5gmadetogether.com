@@ -1,0 +1,31 @@
+.border-less-height{
+  @apply relative;
+}
+
+.border-less-height:before,
+.border-less-height:after{
+  content: '';
+  @apply absolute;
+  @apply h-full;
+  background-image: linear-gradient(
+    theme('colors.gray.100'),
+    theme('colors.gray.100') 24%,
+    theme('colors.transparent') 25%, 
+    theme('colors.transparent') 75%,
+    theme('colors.gray.100') 76%,
+    theme('colors.gray.100')
+  );
+  width: 2px;
+  @apply top-0;
+  @apply bottom-0;
+}
+
+.border-less-height:before{
+  left: -2px;
+  right: auto;
+}
+
+.border-less-height:after{
+  left: auto;
+  right: -2px;
+}

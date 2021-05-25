@@ -1,0 +1,18 @@
+.animate-border {
+  @apply relative;
+}
+
+.animate-border:after {
+  content: '';
+  @apply absolute;
+  width: 0;
+  height: 1px;
+  @apply bg-gray-400;
+  bottom: -1px;
+  left: 0;
+  transition: all 2s;
+}
+
+.animate-border.view-in:after{
+  width: 100%;
+}

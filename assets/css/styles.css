@@ -1,42 +1,7 @@
-html,
-body{
-   
-}
-
 .text-overflow{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.time-dash{
     @apply whitespace-nowrap;
-    @apply mr-4;
-}
-
-.time-dash:after{
-    content: '—';
-    @apply ml-4;
-    @apply float-right;
-}
-
-.animate-border {
-    @apply relative;
-}
-
-.animate-border:after {
-    content: '';
-    @apply absolute;
-    width: 0;
-    height: 1px;
-    @apply bg-gray-400;
-    bottom: -1px;
-    left: 0;
-    transition: all 2s;
-}
-
-.animate-border.view-in:after{
-    width: 100%;
+    @apply overflow-hidden;
+    @apply overflow-ellipsis;
 }
 
 .title h1,
@@ -89,9 +54,9 @@ body{
 
 .overlay:after{
     content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    background-color: #000;
+    @apply absolute;
+    @apply w-full;
+    @apply h-full;
+    @apply opacity-70;
+    background-color: theme('colors.black');
 }

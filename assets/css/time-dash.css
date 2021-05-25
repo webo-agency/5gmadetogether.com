@@ -1,0 +1,10 @@
+.time-dash{
+  @apply whitespace-nowrap;
+  @apply mr-4;
+}
+
+.time-dash:after{
+  content: '—';
+  @apply ml-4;
+  @apply float-right;
+}

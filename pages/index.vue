@@ -212,20 +212,22 @@
         <div class="w-full block flex-wrap justify-center">
           <client-only>
             <div class="swiper-container" v-swiper="swiperOptionsObject" :loadtheme="false">
-              <!-- Additional required wrapper -->
+
               <div class="swiper-wrapper">
                 <div
                   v-for="(person, index) in frontPageData.section_panel_person"
                   :key="index" 
-                  class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 tablet:border-l"
+                  class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 border-less-height"
                   :class="String.prototype.concat('',
                                                   ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
                                                   ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
                                                   ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
-                                                  ' ', (index == frontPageData.section_panel_person.length ? '' : 'tablet:border-r'),
+                                                  ' ', ((index % 3 == 0 || index == 0 || index == 13 || index == 12 || index == 14) ? 'tablet:border-l' : ''),
+                                                  ' ', ((index == 8 || index == 11 || index == 12) ? '' : 'tablet:border-r'),
                                                   ' ')
                   "
                 >
+                {{index}}
                   <img
                     class="w-32 mx-auto mb-4 rounded-full" 
                     :src="person.section_panel_person_avatar.sizes.medium" 
