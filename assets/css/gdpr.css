@@ -34,5 +34,6 @@
   .gdpr .gdpr-inner.toasted{
     max-width: none;
     flex-direction: row-reverse;
+    border-radius: 0;
   }
 }
