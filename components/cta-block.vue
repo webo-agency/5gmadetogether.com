@@ -22,7 +22,7 @@
         >
         <img 
           class="absolute desktop:rounded-t w-full h-full inset-0 z-auto object-cover" 
-          :src="generalData.cta_background.url" 
+          :srcset="generalData.cta_background.url" 
           :alt="generalData.cta_background.alt"
           :title="generalData.cta_background.title"
           :width="generalData.cta_background.width"

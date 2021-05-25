@@ -13,7 +13,7 @@
           >
           <img 
             class="absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
-            :src="frontPageData.hero_background.url" 
+            :srcset="frontPageData.hero_background.url" 
             alt=""
           >
         </picture>
@@ -78,7 +78,7 @@
                 >
                 <img 
                   class="phablet:rounded shadow h-auto object-cover"
-                  :src="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')" 
+                  :srcset="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')" 
                   alt=""
                 >
               </picture>
@@ -162,7 +162,7 @@
             >
             <img 
               class="absolute w-full object-cover h-full rounded"
-              :src="frontPageData.section_count_background.url"
+              :srcset="frontPageData.section_count_background.url"
               :alt="frontPageData.section_count_background.alt"
               :title="frontPageData.section_count_background.title"
               :width="frontPageData.section_count_background.width"
