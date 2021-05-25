@@ -21,3 +21,18 @@
 .gdpr .gdpr-inner.toasted.toasted-primary .action{
   color: #fff;
 }
+
+@media only screen and (max-width: 600px){
+  .gdpr.toasted-container.bottom-right{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  .gdpr .gdpr-inner,
+  .gdpr .gdpr-inner.toasted{
+    max-width: none;
+    flex-direction: row-reverse;
+  }
+}
