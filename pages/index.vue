@@ -211,8 +211,11 @@
         </h2>
         <div class="w-full block flex-wrap justify-center">
           <client-only>
-            <div class="swiper-container" v-swiper="swiperOptionsObject" :loadtheme="false">
-
+            <div
+              v-swiper="swiperOptionsObject"
+              class="swiper-container"
+              :loadtheme="false"
+            >
               <div class="swiper-wrapper">
                 <div
                   v-for="(person, index) in frontPageData.section_panel_person"
@@ -248,7 +251,7 @@
                 </div>
               </div>
 
-              <div class="swiper-scrollbar"></div>
+              <div class="swiper-scrollbar" />
             </div>
           </client-only>
         </div>

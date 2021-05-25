@@ -23,7 +23,12 @@
           {{ generalData.copyright | insertActualDate }}
         </div>
         <div class="flex text-xs">
-          <nuxt-link class="uppercase" to="/privacy-policy">Privacy Policy</nuxt-link>
+          <nuxt-link
+            class="uppercase"
+            to="/privacy-policy"
+          >
+            Privacy Policy
+          </nuxt-link>
         </div>
       </div>
     </div>

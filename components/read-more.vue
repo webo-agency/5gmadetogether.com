@@ -8,18 +8,22 @@
       class="h-32 w-full"
       :class="open ? 'h-auto' : 'h-32'"
     >
-      <slot></slot>
+      <slot />
       <div 
         v-show="open"
         class="uppercase text-xs mt-2 cursor-pointer text-highlight"
-        v-on:click="open = !open"
-      >Hide</div>
+        @click="open = !open"
+      >
+        Hide
+      </div>
     </div>
     <div 
       class="more-show absolute h-32 top-auto w-full z-10 flex items-end justify-center bottom-0 text-xs uppercase pb-1 cursor-pointer text-highlight"
       :class="open ? 'hidden' : ''" 
-      v-on:click="open = !open"
-    >Read more</div>
+      @click="open = !open"
+    >
+      Read more
+    </div>
   </component>
 </template>
 <script>
