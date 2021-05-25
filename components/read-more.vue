@@ -5,19 +5,19 @@
     class="relative overflow-hidden"
   >
     <div 
-      class="h-24 w-full"
-      :class="open ? 'h-auto' : 'h-24'"
+      class="h-32 w-full"
+      :class="open ? 'h-auto' : 'h-32'"
     >
       <slot></slot>
       <div 
         v-show="open"
-        class="underline"
+        class="uppercase text-xs mt-2 cursor-pointer text-highlight"
         v-on:click="open = !open"
       >Hide</div>
     </div>
     <div 
-      class="more-show top-auto w-full z-10 flex items-end justify-center bottom-0 text-xs uppercase pb-1"
-      :class="open ? 'hidden' : 'absolute h-24'" 
+      class="more-show absolute h-32 top-auto w-full z-10 flex items-end justify-center bottom-0 text-xs uppercase pb-1 cursor-pointer text-highlight"
+      :class="open ? 'hidden' : ''" 
       v-on:click="open = !open"
     >Read more</div>
   </component>
@@ -51,12 +51,13 @@
       @apply absolute;
       @apply uppercase;
       @apply cursor-pointer;
-      background: rgb(229, 231, 235);
-      box-shadow: 0 0 9px 9px rgb(229 231 235);
+      /* @apply bg-gray-100; */
+      /* box-shadow: 0 0 9px 9px theme('colors.gray.100'); */
+       background-image: linear-gradient(theme('colors.transparent'), theme('colors.gray.100') 80%, theme('colors.gray.100'));
       font-size: 12px;
-      width: 90%;
       bottom: 0;
-      height: 25px;
+      @apply w-full;
+      @apply h-full;
       z-index: -1;
   }
 </style>
