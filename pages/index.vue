@@ -17,8 +17,6 @@
             alt=""
           >
         </picture>
-        
-        {{ frontPageData.hero_background.url }}
       </div>
 
       <div class="w-full tablet:px-24 desktop:px-48 mr-auto">
@@ -219,13 +217,12 @@
                 <div
                   v-for="(person, index) in frontPageData.section_panel_person"
                   :key="index" 
-                  class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0"
+                  class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 tablet:border-l"
                   :class="String.prototype.concat('',
                                                   ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
                                                   ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
                                                   ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
-                                                  ' ', (index % 2 == 0 ? '' : 'tablet:border-l'),
-                                                  ' ', (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l'),
+                                                  ' ', (index == frontPageData.section_panel_person.length ? '' : 'tablet:border-r'),
                                                   ' ')
                   "
                 >
@@ -242,13 +239,14 @@
                   </h3>
                   <span class="block font-bold">{{ person.section_panel_person_office }}</span>
                   <span class="block">{{ person.section_panel_person_company }}</span>
-                  <p class="mt-4 text-gray-900 leading-relaxed">
-                    {{ person.section_panel_person_description }}
-                  </p>
+                  <read-more>
+                    <p class="mt-4 text-gray-900 leading-relaxed">
+                      {{ person.section_panel_person_description }}
+                    </p>
+                  </read-more>
                 </div>
               </div>
 
-              <!-- If we need scrollbar -->
               <div class="swiper-scrollbar"></div>
             </div>
           </client-only>
@@ -353,7 +351,6 @@
             },
             '1024': {
               slidesPerView: 3,
-              spaceBetween: 0,
               slidesPerGroup: 3,
               slidesPerColumn: 2,
               slidesPerColumnFill: 'row',
@@ -384,40 +381,6 @@
       generalData() {
         return this.$store.getters['general/getData']
       },
-      carouselSettings(){
-        return {
-          "dots": false,
-          "arrows": false,
-          "slidesPerRow": 3,
-          "infinite": false,
-          "speed": 500,
-          "initialSlide": 0,
-          "responsive": [
-            {
-              "breakpoint": 1024,
-              "settings": {
-                "slidesPerRow": 3,
-                "rows": 2,
-              }
-            },
-            {
-              "breakpoint": 600,
-              "settings": {
-                "slidesPerRow": 3,
-                "rows": 2,
-                "initialSlide": 2
-              }
-            },
-            {
-              "breakpoint": 480,
-              "settings": {
-                "slidesToShow": 1,
-                "slidesPerRow": 1,
-              }
-            }
-          ]
-        }
-      }
     },
     created() {
       this.liveURL = this.frontPageData.section_live_embed;
