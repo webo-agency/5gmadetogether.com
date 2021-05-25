@@ -211,37 +211,47 @@
         <h2 class="text-3xl font-medium font-heading my-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           {{ frontPageData.section_panel }}
         </h2>
-        <div class="flex flex-wrap justify-center">
-          <div
-            v-for="(person, index) in frontPageData.section_panel_person"
-            :key="index" 
-            class="w-full tablet:w-1/2 desktop:w-1/3 p-8 mb-4 border-l-0 tablet:border-b-0"
-            :class="String.prototype.concat('',
-                                            ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
-                                            ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
-                                            ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
-                                            ' ', (index % 2 == 0 ? '' : 'tablet:border-l'),
-                                            ' ', (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l'),
-                                            ' ')
-            "
-          >
-            <img
-              class="w-32 mx-auto mb-4 rounded-full" 
-              :src="person.section_panel_person_avatar.sizes.medium" 
-              :width="person.section_panel_person_avatar.sizes['medium-width']" 
-              :height="person.section_panel_person_avatar.sizes['medium-height']" 
-              :alt="person.section_panel_person_avatar.alt" 
-              :title="person.section_panel_person_avatar.title"
-            >
-            <h3 class="text-xl mb-1 font-semibold font-heading">
-              {{ person.section_panel_person_name }}
-            </h3>
-            <span class="block font-bold">{{ person.section_panel_person_office }}</span>
-            <span class="block">{{ person.section_panel_person_company }}</span>
-            <p class="mt-4 text-gray-900 leading-relaxed">
-              {{ person.section_panel_person_description }}
-            </p>
-          </div>
+        <div class="w-full block flex-wrap justify-center">
+          <client-only>
+            <div class="swiper-container" v-swiper="swiperOptionsObject" :loadtheme="false">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <div
+                  v-for="(person, index) in frontPageData.section_panel_person"
+                  :key="index" 
+                  class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0"
+                  :class="String.prototype.concat('',
+                                                  ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
+                                                  ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
+                                                  ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
+                                                  ' ', (index % 2 == 0 ? '' : 'tablet:border-l'),
+                                                  ' ', (index % 3 == 0 ? 'desktop:border-l-0' : 'desktop:border-l'),
+                                                  ' ')
+                  "
+                >
+                  <img
+                    class="w-32 mx-auto mb-4 rounded-full" 
+                    :src="person.section_panel_person_avatar.sizes.medium" 
+                    :width="person.section_panel_person_avatar.sizes['medium-width']" 
+                    :height="person.section_panel_person_avatar.sizes['medium-height']" 
+                    :alt="person.section_panel_person_avatar.alt" 
+                    :title="person.section_panel_person_avatar.title"
+                  >
+                  <h3 class="text-xl mb-1 font-semibold font-heading">
+                    {{ person.section_panel_person_name }}
+                  </h3>
+                  <span class="block font-bold">{{ person.section_panel_person_office }}</span>
+                  <span class="block">{{ person.section_panel_person_company }}</span>
+                  <p class="mt-4 text-gray-900 leading-relaxed">
+                    {{ person.section_panel_person_description }}
+                  </p>
+                </div>
+              </div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </client-only>
         </div>
       </div>
     </section>
@@ -293,8 +303,13 @@
 </template>
 
 <script>  
+  import { directive } from "vue-awesome-swiper";
+
   export default {
     name: "FrontPage",
+    directives: {
+      swiper: directive,
+    },
     filters: {
       dateConvert: function (time) {
         if (!time) return ''
@@ -320,6 +335,31 @@
       return {
         iframeYoutubeSrc: '',
         liveURL: '',
+        swiperOptionsObject: {
+          spaceBetween: 0,
+          direction: 'horizontal',
+          pagination: false,
+          loop: false,
+          navigation: false,
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+          breakpoints: {  
+            '320': {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              slidesPerColumn: 1,
+              slidesPerColumnFill : 'column',
+            },
+            '1024': {
+              slidesPerView: 3,
+              spaceBetween: 0,
+              slidesPerGroup: 3,
+              slidesPerColumn: 2,
+              slidesPerColumnFill: 'row',
+            },
+          },
+        },
       };
     },
     async fetch ({ app, store }) {
@@ -344,6 +384,40 @@
       generalData() {
         return this.$store.getters['general/getData']
       },
+      carouselSettings(){
+        return {
+          "dots": false,
+          "arrows": false,
+          "slidesPerRow": 3,
+          "infinite": false,
+          "speed": 500,
+          "initialSlide": 0,
+          "responsive": [
+            {
+              "breakpoint": 1024,
+              "settings": {
+                "slidesPerRow": 3,
+                "rows": 2,
+              }
+            },
+            {
+              "breakpoint": 600,
+              "settings": {
+                "slidesPerRow": 3,
+                "rows": 2,
+                "initialSlide": 2
+              }
+            },
+            {
+              "breakpoint": 480,
+              "settings": {
+                "slidesToShow": 1,
+                "slidesPerRow": 1,
+              }
+            }
+          ]
+        }
+      }
     },
     created() {
       this.liveURL = this.frontPageData.section_live_embed;
