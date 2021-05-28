@@ -90,7 +90,7 @@
     "npm": ">=5.0.0"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.13.2",
+    "@nuxt/types": "^2.15.6",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.27.0",
