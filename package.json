@@ -36,7 +36,7 @@
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "cookie-universal-nuxt": "^2.1.4",
-    "core-js": "^3.12.1",
+    "core-js": "^3.13.0",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
