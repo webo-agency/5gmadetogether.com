@@ -16,11 +16,11 @@
       class="content mb-12"
       v-html="libraryData.content.rendered"
     />
-    <ol class="content">
+    <ol class="content flex flex-wrap tablet:-mx-4">
       <li                   
         v-for="(presentation, index) in libraryData.embed_presentation"
         :key="index" 
-        class="mb-12"
+        class="mb-12 tablet:w-1/2 desktop:w-1/3 tablet:px-4"
       >
         <h2>{{ presentation.embed_presentation_title }}</h2>
         <p>{{ presentation.embed_presentation_description }}</p>
@@ -85,10 +85,14 @@
   }
 
   .content.content >>> h2{
-    @apply text-xl;
-    @apply mb-2;
+      @apply text-xl;
+      @apply mb-2;
   }
 
+  .content.content >>> h2:before{
+    @apply hidden;
+  }
+  
   .content.content >>> p{
       @apply mb-8;
   }
