@@ -22,8 +22,6 @@
         :key="index" 
         class="mb-12 w-full tablet:w-1/2 desktop:w-1/3 tablet:px-4"
       >
-        <h2>{{ presentation.embed_presentation_title }}</h2>
-        <p>{{ presentation.embed_presentation_description }}</p>
         <div class="relative aspect-w-16 aspect-h-9">
           <iframe 
             :src="presentation.embed_presentation_url" 
@@ -34,6 +32,8 @@
             allowfullscreen>
           </iframe>
         </div>
+        <h2>{{ presentation.embed_presentation_title }}</h2>
+        <p>{{ presentation.embed_presentation_description }}</p>
       </li>
     </ol>
   </div>
