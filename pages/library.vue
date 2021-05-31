@@ -57,8 +57,8 @@
   export default {
     async fetch ({ app , store }) {
 
-      await app.$wp.pages().slug('library').then(function(data){
-        store.commit('library/save', data[0]);
+      await app.$wp.pages().id(172).then(function(data){
+        store.commit('library/save', data);
       });
 
     },
