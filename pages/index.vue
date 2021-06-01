@@ -36,10 +36,10 @@
             >{{ frontPageData.hero_time_title }}</time>
           </header>
           <div class="flex items-start justify-start flex-col tablet:flex-row flex-wrap">
-            <a
+            <!-- <a
               class="inline-block py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow text-center mb-4 tablet:mb-0"
               :href="generalData.event_url"
-            >{{ generalData.event_title }}</a>
+            >{{ generalData.event_title }}</a> -->
           
             <a
               v-scroll-to="'#read-more'"
