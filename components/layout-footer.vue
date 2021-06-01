@@ -3,7 +3,7 @@
     :is="mainTag"
     :class="mainClass"
   >
-    <cta-block />
+    <!-- <cta-block /> -->
 
     <section class="relative py-8 px-4 text-center desktop:mx-16 bg-gray-100 rounded-b">
       <div class="container flex flex-wrap justify-around">
