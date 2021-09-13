@@ -173,7 +173,7 @@
       </div>
     </section>
 
-    <section class="container py-12 text-center hidden">
+    <section class="container py-12 text-center">
       <div class="">
         <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           {{ frontPageData.section_live_title }}
