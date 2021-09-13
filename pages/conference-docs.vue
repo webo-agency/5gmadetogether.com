@@ -29,8 +29,8 @@
             height="356"
             :title="presentation.embed_presentation_title"
             class="absolute inset-0 w-full h-full"
-            allowfullscreen>
-          </iframe>
+            allowfullscreen 
+          />
         </div>
         <h2>{{ presentation.embed_presentation_title }}</h2>
         <p>{{ presentation.embed_presentation_description }}</p>
@@ -40,20 +40,6 @@
 </template>
 
 <script>
-  const removeEmpty = obj => {
-    Object.keys(obj).forEach(key => {
-      if (
-        key == '' ||
-        obj[key] == null ||
-        typeof obj[key] == 'undefined' ||
-        (Array.isArray(obj[key]) && !obj[key].length) ||
-        obj[key] == '' ||
-        obj[key] == []
-      ) { delete obj[key] } // delete
-      else if (obj[key] && typeof obj[key] === "object") removeEmpty(obj[key]); // recurse
-    });
-  };
-
   export default {
     async fetch ({ app , store }) {
 
@@ -62,11 +48,6 @@
       });
 
     },
-    computed: {
-      libraryData() {
-        return this.$store.getters['library/getData']
-      },
-    },
     head() {
       return {
         title: this.libraryData.head_tags_title,
@@ -74,6 +55,11 @@
         script: this.libraryData.head_tags_script,
         link: this.libraryData.head_tags_link,
       }
+    },
+    computed: {
+      libraryData() {
+        return this.$store.getters['library/getData']
+      },
     }
   };
 </script>
