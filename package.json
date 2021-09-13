@@ -37,10 +37,6 @@
     "babel-polyfill": "6.26.0",
     "cookie-universal-nuxt": "2.1.5",
     "core-js": "3.17.3",
-    "imagemin-gifsicle": "7.0.0",
-    "imagemin-mozjpeg": "9.0.0",
-    "imagemin-pngquant": "9.0.2",
-    "imagemin-svgo": "10.0.0",
     "lodash": "4.17.21",
     "lqip-loader": "2.2.1",
     "normalize.css": "8.0.1",
@@ -90,6 +86,8 @@
     "npm": ">=5.0.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@nuxt/image": "^0.6.0",
     "@nuxt/types": "2.15.8",
     "babel-eslint": "10.1.0",
     "cross-env": "7.0.3",
@@ -102,6 +100,8 @@
     "eslint-plugin-standard": "5.0.0",
     "eslint-plugin-tailwind": "0.2.1",
     "eslint-plugin-vue": "7.17.0",
+    "postcss": "^8.3.6",
+    "postcss-functions": "^4.0.2",
     "puppeteer": "10.2.0",
     "vue-svg-inline-loader": "2.1.2"
   },

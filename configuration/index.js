@@ -42,6 +42,9 @@ export default {
   gtm: {
     id: 'GTM-WKQLB65'
   },
+  image: {
+    domains: [API_URL]
+  },
   wp: {
     sitemap: false
   },
@@ -89,5 +92,8 @@ export default {
    */
   generate: generate.default,
   target: 'static',
+  buildModules: [
+    '@nuxt/image',
+  ],
   telemetry: false
 };

@@ -163,6 +163,10 @@ export default [
       jit: false
     }
   },
+  {
+    src: '@nuxt/image',
+    options: {}
+  },
   { 
     src: '@aceforth/nuxt-optimized-images',
     options:  {
