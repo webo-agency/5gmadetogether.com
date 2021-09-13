@@ -39,7 +39,7 @@ module.exports = {
           current: 'currentColor',
           transparent: 'transparent',
           highlight: '#11C9D8',
-          primary: '##00dee0',
+          primary: '#00dee0',
           primaryDark: '#02cbce',
           black: '#000',
           white: '#fff',
@@ -108,6 +108,8 @@ module.exports = {
       },
       backgroundColor: theme => ({
           ...theme('colors'),
+          primary: '##00dee0',
+          primaryDark: '#02cbce',
           body: '#fff',
       }),
       backgroundPosition: {
