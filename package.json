@@ -35,7 +35,7 @@
     "acorn-dynamic-import": "^4.0.0",
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
-    "cookie-universal-nuxt": "^2.1.4",
+    "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.17.3",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
