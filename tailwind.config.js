@@ -39,7 +39,7 @@ module.exports = {
           current: 'currentColor',
           transparent: 'transparent',
           highlight: '#11C9D8',
-          primary: '#00dee0',
+
           primaryDark: '#02cbce',
           black: '#000',
           white: '#fff',
@@ -56,6 +56,7 @@ module.exports = {
               800: '#1f2937',
               900: '#111827',
           },
+
           blue: {
               50: '#eff6ff',
               100: '#dbeafe',
