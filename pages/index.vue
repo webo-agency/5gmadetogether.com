@@ -37,7 +37,7 @@
           </header>
           <div class="flex items-start justify-start flex-col tablet:flex-row flex-wrap">
             <a
-              class="inline-block py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-white bg-primary hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
+              class="inline-block py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-white bg-primaryNormal hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
               :href="generalData.event_url"
             >{{ generalData.event_title }}</a>
           
