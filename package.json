@@ -86,8 +86,8 @@
     "npm": ">=5.0.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "@nuxt/image": "^0.6.0",
+    "@fullhuman/postcss-purgecss": "4.0.3",
+    "@nuxt/image": "0.6.0",
     "@nuxt/types": "2.15.8",
     "babel-eslint": "10.1.0",
     "cross-env": "7.0.3",
@@ -100,8 +100,8 @@
     "eslint-plugin-standard": "5.0.0",
     "eslint-plugin-tailwind": "0.2.1",
     "eslint-plugin-vue": "7.17.0",
-    "postcss": "^8.3.6",
-    "postcss-functions": "^4.0.2",
+    "postcss": "8.3.6",
+    "postcss-functions": "4.0.2",
     "puppeteer": "10.2.0",
     "vue-svg-inline-loader": "2.1.2"
   },
