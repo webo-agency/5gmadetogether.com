@@ -3,7 +3,7 @@
 
 # Nuxt generate
 dist
-public
+# public # Temporary
 
 sw.*
 

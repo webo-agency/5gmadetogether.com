@@ -1,0 +1,29 @@
+{
+  "name": "5gmadetogether",
+  "short_name": "5gmadetogether",
+  "icons": [
+    {
+      "src": "/static/icons/icon_512x512.9ee763.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/icons/icon_192x192.9ee763.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/icons/icon_380x380.9ee763.png",
+      "sizes": "380x380",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?standalone=true",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "lang": "en"
+}
