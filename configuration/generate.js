@@ -1,5 +1,5 @@
 export default {
-  dir: "public",
+  dir: "docs",
   fallback: "404.html",
   routes: [
     '/privacy-policy',
