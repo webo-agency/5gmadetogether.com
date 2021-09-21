@@ -102,7 +102,7 @@
     "eslint-plugin-vue": "7.17.0",
     "postcss": "8.3.6",
     "postcss-functions": "4.0.2",
-    "puppeteer": "10.2.0",
+    "puppeteer": "10.4.0",
     "vue-svg-inline-loader": "2.1.2"
   },
   "browserslist": [
