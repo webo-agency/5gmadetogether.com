@@ -187,7 +187,7 @@
             <img
               :src="require('~/assets/img/YT_Player_1920x1080.jpg')" 
               class="w-full h-full object-cover"
-              alt=""
+              alt="Youtube"
             >
           </a>
           <iframe
