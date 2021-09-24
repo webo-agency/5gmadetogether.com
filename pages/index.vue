@@ -185,7 +185,7 @@
             class="absolute inset-0 z-50"
           >
             <img
-              :src="require('~/assets/img/YT_Player_1920x1080.jpg')" 
+              :src="frontPageData.section_live_thumbnail" 
               class="w-full h-full object-cover"
               alt="Youtube"
             >
