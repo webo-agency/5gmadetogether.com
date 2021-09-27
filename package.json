@@ -36,7 +36,7 @@
     "axios": "0.21.4",
     "babel-polyfill": "6.26.0",
     "cookie-universal-nuxt": "2.1.5",
-    "core-js": "3.18.0",
+    "core-js": "3.18.1",
     "lodash": "4.17.21",
     "lqip-loader": "2.2.1",
     "normalize.css": "8.0.1",
@@ -100,7 +100,7 @@
     "eslint-plugin-standard": "5.0.0",
     "eslint-plugin-tailwind": "0.2.1",
     "eslint-plugin-vue": "7.18.0",
-    "postcss": "8.3.7",
+    "postcss": "8.3.8",
     "postcss-functions": "4.0.2",
     "puppeteer": "10.4.0",
     "vue-svg-inline-loader": "2.1.2"
