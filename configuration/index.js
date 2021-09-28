@@ -7,6 +7,7 @@ import * as generate from './generate.js';
 import * as css from './css.js';
 import * as manifest from './manifest.js';
 import * as build from './build.js';
+import * as axios from 'axios';
 
 process.noDeprecation = true;
 
@@ -100,25 +101,21 @@ export default {
     generate: {
       done(generator, errors) {
         if(process.env.DISCORD_NOTIFY){
-          
-          fetch(
-            process.env.DISCORD_NOTIFY,
+        
+          axios.post(process.env.DISCORD_NOTIFY, 
+            JSON.stringify({
+              // the username to be displayed
+              username: 'Cloudflare Pages',
+              // contents of the message to be sent
+              content: 'Site deployed!',
+              // embeds to be sent
+            }),
             {
-              method: 'post',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                // the username to be displayed
-                username: 'webhook',
-                // the avatar to be displayed
-                avatar_url:
-                  'https://raw.githubusercontent.com/rdimascio/icons/master/icons/github.svg',
-                // contents of the message to be sent
-                content: 'Site deployed!',
-                // embeds to be sent
-              }),
-            }
+             method: 'post',
+             headers: {
+              'Content-Type': 'application/json',
+             }
+            },
           );
         }
       }
