@@ -2,8 +2,7 @@
 .nuxt
 
 # Nuxt generate
-dist
-public
+public/
 
 sw.*
 
@@ -89,7 +88,6 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/

@@ -305,7 +305,7 @@
 </template>
 
 <script>  
-  import { directive } from "vue-awesome-swiper";
+  import { directive } from "~/package/vue-awesome-swiper/dist/vue-awesome-swiper.js";
 
   export default {
     name: "FrontPage",
