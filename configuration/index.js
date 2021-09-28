@@ -115,7 +115,7 @@ export default {
                 avatar_url:
                   'https://raw.githubusercontent.com/rdimascio/icons/master/icons/github.svg',
                 // contents of the message to be sent
-                content: 'Site deployed! More |'.concat(JSON.parse(errors)).concat('|'),
+                content: 'Site deployed!',
                 // embeds to be sent
               }),
             }
