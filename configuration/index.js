@@ -95,5 +95,33 @@ export default {
   buildModules: [
     '@nuxt/image',
   ],
-  telemetry: false
+  telemetry: false,
+  hooks: {
+    generate: {
+      done(generator, errors) {
+        if(process.env.DISCORD_NOTIFY){
+          
+          fetch(
+            process.env.DISCORD_NOTIFY,
+            {
+              method: 'post',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                // the username to be displayed
+                username: 'webhook',
+                // the avatar to be displayed
+                avatar_url:
+                  'https://raw.githubusercontent.com/rdimascio/icons/master/icons/github.svg',
+                // contents of the message to be sent
+                content: 'Site deployed! More |'.concat(JSON.parse(errors)).concat('|'),
+                // embeds to be sent
+              }),
+            }
+          );
+        }
+      }
+    }
+  }
 };
