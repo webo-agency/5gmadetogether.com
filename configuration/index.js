@@ -99,7 +99,7 @@ export default {
   telemetry: false,
   hooks: {
     generate: {
-      done(generator, errors) {
+      done() {
         if(process.env.DISCORD_NOTIFY){
         
           axios.post(process.env.DISCORD_NOTIFY, 
