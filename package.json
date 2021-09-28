@@ -75,8 +75,8 @@
     "dev-debug": "cross-env NODE_ENV=debug node --inspect-brk node_modules/.bin/nuxt",
     "build": "nuxt build --modern=server",
     "analyze": "nuxt build --analyze",
-    "lint": "eslint --ext .js,.vue --ignore-pattern 'package/*' --ignore-path package/ .gitignore .",
-    "lint-fix": "eslint --ext .js,.vue --ignore-pattern 'package/*' --ignore-path package/ .gitignore . --fix",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "precommit": "npm run lint",
     "deploy-test": "cross-env NODE_ENV=production node --inspect-brk node_modules/.bin/nuxt generate -m",
     "deploy": "nuxt generate"
