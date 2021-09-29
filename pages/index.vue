@@ -185,9 +185,9 @@
             class="absolute inset-0 z-50"
           >
             <img
-              :src="require('~/assets/img/YT_Player_1920x1080.jpg')" 
+              :src="frontPageData.section_live_thumbnail" 
               class="w-full h-full object-cover"
-              alt=""
+              alt="Youtube"
             >
           </a>
           <iframe
@@ -305,7 +305,7 @@
 </template>
 
 <script>  
-  import { directive } from "vue-awesome-swiper";
+  import { directive } from "~/package/vue-awesome-swiper/dist/vue-awesome-swiper.js";
 
   export default {
     name: "FrontPage",

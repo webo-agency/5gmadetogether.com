@@ -7,6 +7,7 @@ import * as generate from './generate.js';
 import * as css from './css.js';
 import * as manifest from './manifest.js';
 import * as build from './build.js';
+import * as axios from 'axios';
 
 process.noDeprecation = true;
 
@@ -95,5 +96,29 @@ export default {
   buildModules: [
     '@nuxt/image',
   ],
-  telemetry: false
+  telemetry: false,
+  hooks: {
+    generate: {
+      done() {
+        if(process.env.DISCORD_NOTIFY){
+        
+          axios.post(process.env.DISCORD_NOTIFY, 
+            JSON.stringify({
+              // the username to be displayed
+              username: 'Cloudflare Pages',
+              // contents of the message to be sent
+              content: 'Site deployed!',
+              // embeds to be sent
+            }),
+            {
+             method: 'post',
+             headers: {
+              'Content-Type': 'application/json',
+             }
+            },
+          );
+        }
+      }
+    }
+  }
 };
