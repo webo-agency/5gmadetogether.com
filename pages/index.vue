@@ -340,12 +340,10 @@
         swiperOptionsObject: {
           spaceBetween: 0,
           direction: 'horizontal',
-          pagination: false,
+          pagination: true,
           loop: false,
-          navigation: false,
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
+          navigation: true,
+          scrollbar: false,
           breakpoints: {  
             '320': {
               slidesPerView: 1,
