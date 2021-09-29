@@ -1,5 +1,5 @@
 export default [
-  'swiper/swiper.min.css',
+  'swiper/swiper-bundle.min.css',
   '~/assets/css/gdpr.css',
   '~/assets/css/animate-border.css',
   '~/assets/css/border-less-height.css',
