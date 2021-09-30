@@ -79,6 +79,7 @@
     "lint-fix": "eslint --ext .js,.vue . --fix",
     "precommit": "npm run lint",
     "deploy-test": "cross-env NODE_ENV=production node --inspect-brk node_modules/.bin/nuxt generate -m",
+    "preinstall": "cd package/vue-awesome-swiper && npm i && npm run build",
     "deploy": "nuxt generate"
   },
   "engines": {
