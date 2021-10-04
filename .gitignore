@@ -2,7 +2,7 @@
 .nuxt
 
 # Nuxt generate
-public/
+public
 
 sw.*
 
