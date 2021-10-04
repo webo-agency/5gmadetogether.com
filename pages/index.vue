@@ -210,85 +210,87 @@
           {{ frontPageData.section_panel }}
         </h2>
         <div class="w-full block flex-wrap justify-center">
-          <div
-            v-swiper="swiperOptionsObject"
-            class="swiper-container"
-            :loadtheme="false"
-          >
-            <div class="swiper-wrapper">
-              <div
-                v-for="(person, index) in frontPageData.section_panel_person"
-                :key="index" 
-                class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 border-less-height"
-                :class="String.prototype.concat('',
-                                                ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
-                                                ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
-                                                ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
-                                                ' ', ((index % 3 == 0 || index == 0 || index == 13 || index == 12 || index == 14) ? 'tablet:border-l' : ''),
-                                                ' ', ((index == 8 || index == 11 || index == 12) ? '' : 'tablet:border-r'),
-                                                ' ')
-                "
-              >
-                <img
-                  class="w-32 mx-auto mb-4 rounded-full" 
-                  :src="person.section_panel_person_avatar.sizes.medium" 
-                  :width="person.section_panel_person_avatar.sizes['medium-width']" 
-                  :height="person.section_panel_person_avatar.sizes['medium-height']" 
-                  :alt="person.section_panel_person_avatar.alt" 
-                  :title="person.section_panel_person_avatar.title"
+          <client-only>
+            <div
+              v-swiper="swiperOptionsObject"
+              class="swiper-container"
+              :loadtheme="false"
+            >
+              <div class="swiper-wrapper">
+                <div
+                  v-for="(person, index) in frontPageData.section_panel_person"
+                  :key="index" 
+                  class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 border-less-height"
+                  :class="String.prototype.concat('',
+                                                  ' ', (index < (frontPageData.section_panel_person.length - 1) ? 'border-b' : ''),
+                                                  ' ', (index < (frontPageData.section_panel_person.length - 2) ? '' : 'tablet:border-b-0'),
+                                                  ' ', (index < (frontPageData.section_panel_person.length - 3) ? '' : 'desktop:border-b-0'),
+                                                  ' ', ((index % 3 == 0 || index == 0 || index == 13 || index == 12 || index == 14) ? 'tablet:border-l' : ''),
+                                                  ' ', ((index == 8 || index == 11 || index == 12) ? '' : 'tablet:border-r'),
+                                                  ' ')
+                  "
                 >
-                <h3 class="text-xl mb-1 font-semibold font-heading">
-                  {{ person.section_panel_person_name }}
-                </h3>
-                <span class="block font-bold">{{ person.section_panel_person_office }}</span>
-                <span class="block">{{ person.section_panel_person_company }}</span>
-                <read-more>
-                  <p class="mt-4 text-gray-900 leading-relaxed">
-                    {{ person.section_panel_person_description }}
-                  </p>
-                </read-more>
+                  <img
+                    class="w-32 mx-auto mb-4 rounded-full" 
+                    :src="person.section_panel_person_avatar.sizes.medium" 
+                    :width="person.section_panel_person_avatar.sizes['medium-width']" 
+                    :height="person.section_panel_person_avatar.sizes['medium-height']" 
+                    :alt="person.section_panel_person_avatar.alt" 
+                    :title="person.section_panel_person_avatar.title"
+                  >
+                  <h3 class="text-xl mb-1 font-semibold font-heading">
+                    {{ person.section_panel_person_name }}
+                  </h3>
+                  <span class="block font-bold">{{ person.section_panel_person_office }}</span>
+                  <span class="block">{{ person.section_panel_person_company }}</span>
+                  <read-more>
+                    <p class="mt-4 text-gray-900 leading-relaxed">
+                      {{ person.section_panel_person_description }}
+                    </p>
+                  </read-more>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="swiper-pagination"
-          />
-          <div
-            tabindex="0"
-            class="swiper-button-prev"
-            role="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="28"
-              viewBox="0 0 16 28"
-              fill="none"
+            <div
+              class="swiper-pagination"
+            />
+            <div
+              tabindex="0"
+              class="swiper-button-prev"
+              role="button"
             >
-              <path
-                d="M3.05891 14.0065L15.2265 1.83892C15.6471 1.41821 15.6471 0.736143 15.2265 0.315436C14.8057 -0.105145 14.1237 -0.105145 13.703 0.315436L0.773687 13.2447C0.353107 13.6654 0.353107 14.3475 0.773687 14.7682L13.703 27.6975C14.131 28.1109 14.8131 28.099 15.2265 27.671C15.6297 27.2534 15.6297 26.5915 15.2265 26.174L3.05891 14.0065Z"
-                fill="#9F9FA1"
-              />
-            </svg>
-          </div>
-          <div
-            tabindex="0"
-            class="swiper-button-next"
-            role="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="28"
-              viewBox="0 0 16 28"
-              fill="none"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="28"
+                viewBox="0 0 16 28"
+                fill="none"
+              >
+                <path
+                  d="M3.05891 14.0065L15.2265 1.83892C15.6471 1.41821 15.6471 0.736143 15.2265 0.315436C14.8057 -0.105145 14.1237 -0.105145 13.703 0.315436L0.773687 13.2447C0.353107 13.6654 0.353107 14.3475 0.773687 14.7682L13.703 27.6975C14.131 28.1109 14.8131 28.099 15.2265 27.671C15.6297 27.2534 15.6297 26.5915 15.2265 26.174L3.05891 14.0065Z"
+                  fill="#9F9FA1"
+                />
+              </svg>
+            </div>
+            <div
+              tabindex="0"
+              class="swiper-button-next"
+              role="button"
             >
-              <path
-                d="M12.9411 14.0065L0.77354 1.83892C0.352896 1.41821 0.352896 0.736143 0.77354 0.315436C1.19431 -0.105145 1.87632 -0.105145 2.29703 0.315436L15.2263 13.2447C15.6469 13.6654 15.6469 14.3475 15.2263 14.7682L2.29703 27.6975C1.86899 28.1109 1.18692 28.099 0.77354 27.671C0.37032 27.2534 0.37032 26.5915 0.77354 26.174L12.9411 14.0065Z"
-                fill="#9F9FA1"
-              />
-            </svg>
-          </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="28"
+                viewBox="0 0 16 28"
+                fill="none"
+              >
+                <path
+                  d="M12.9411 14.0065L0.77354 1.83892C0.352896 1.41821 0.352896 0.736143 0.77354 0.315436C1.19431 -0.105145 1.87632 -0.105145 2.29703 0.315436L15.2263 13.2447C15.6469 13.6654 15.6469 14.3475 15.2263 14.7682L2.29703 27.6975C1.86899 28.1109 1.18692 28.099 0.77354 27.671C0.37032 27.2534 0.37032 26.5915 0.77354 26.174L12.9411 14.0065Z"
+                  fill="#9F9FA1"
+                />
+              </svg>
+            </div>
+          </client-only>
         </div>
       </div>
     </section>
