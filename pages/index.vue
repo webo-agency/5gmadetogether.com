@@ -251,7 +251,10 @@
                 </div>
               </div>
 
-              <div class="swiper-scrollbar" />
+              <div class="swiper-pagination" />
+
+              <div class="swiper-button-prev" />
+              <div class="swiper-button-next" />
             </div>
           </client-only>
         </div>
@@ -333,7 +336,6 @@
         return time.concat('2021-05-27T',time.slice(0, -3),'Z');
       }
     },
-    
     data: function() {
       return {
         iframeYoutubeSrc: '',
