@@ -343,9 +343,14 @@
         swiperOptionsObject: {
           spaceBetween: 0,
           direction: 'horizontal',
-          pagination: true,
+          pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
           loop: false,
-          navigation: true,
           scrollbar: false,
           breakpoints: {  
             '320': {
