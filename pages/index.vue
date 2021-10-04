@@ -251,10 +251,19 @@
                 </div>
               </div>
 
-              <div class="swiper-pagination" />
+              <div
+                ref="paginationElRef"
+                class="swiper-pagination"
+              />
 
-              <div class="swiper-button-prev" />
-              <div class="swiper-button-next" />
+              <div
+                ref="prevElRef"
+                class="swiper-button-prev"
+              />
+              <div
+                ref="nextElRef"
+                class="swiper-button-next"
+              />
             </div>
           </client-only>
         </div>
