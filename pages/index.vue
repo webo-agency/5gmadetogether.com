@@ -252,17 +252,17 @@
               </div>
 
               <div
-                ref="paginationElRef"
                 class="swiper-pagination"
               />
-
               <div
-                ref="prevElRef"
+                tabindex="0"
                 class="swiper-button-prev"
+                role="button"
               />
               <div
-                ref="nextElRef"
+                tabindex="0"
                 class="swiper-button-next"
+                role="button"
               />
             </div>
           </client-only>
@@ -317,13 +317,8 @@
 </template>
 
 <script>  
-  import { directive } from "~/package/vue-awesome-swiper/dist/vue-awesome-swiper.js";
-
   export default {
     name: "FrontPage",
-    directives: {
-      swiper: directive,
-    },
     filters: {
       dateConvert: function (time) {
         if (!time) return ''
@@ -354,6 +349,7 @@
           direction: 'horizontal',
           pagination: {
               el: '.swiper-pagination',
+              clickable: true
             },
             navigation: {
               nextEl: '.swiper-button-next',
