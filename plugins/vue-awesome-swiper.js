@@ -7,4 +7,4 @@ Vue.use(getAwesomeSwiper(SwiperClass))
 const {Swiper, SwiperSlide} = getAwesomeSwiper(SwiperClass)
 
 // import style
-import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
