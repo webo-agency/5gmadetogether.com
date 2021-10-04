@@ -252,7 +252,7 @@
               </div>
             </div>
             <div
-              class="swiper-pagination"
+              class="swiper-pagination hidden tablet-wide:flex"
             />
             <div
               tabindex="0"
@@ -367,6 +367,8 @@
     },
     data: function() {
       return {
+        swiperIndex: 0,
+        swiperCount: 0,
         iframeYoutubeSrc: '',
         liveURL: '',
         swiperOptionsObject: {
