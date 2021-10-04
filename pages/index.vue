@@ -251,9 +251,11 @@
                 </div>
               </div>
             </div>
-            <div
-              class="swiper-pagination hidden tablet-wide:flex"
-            />
+            <div class="w-full flex items-center justify-center">
+              <div
+                class="swiper-pagination block"
+              />
+            </div>
             <div
               tabindex="0"
               class="swiper-button-prev"
@@ -376,10 +378,10 @@
           direction: 'horizontal',
           pagination: {
               el: '.swiper-pagination',
+              type: 'bullets',
               clickable: true,
-              renderCustom: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + '</span>';
-              },
+              dynamicBullets: true,
+              dynamicMainBullets: 1,
             },
             navigation: {
               nextEl: '.swiper-button-next',
