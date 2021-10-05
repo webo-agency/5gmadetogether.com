@@ -4,7 +4,6 @@ import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
 
 SwiperClass.use([Pagination, Mousewheel, Navigation, Autoplay])
 Vue.use(getAwesomeSwiper(SwiperClass))
-const {Swiper, SwiperSlide} = getAwesomeSwiper(SwiperClass)
 
 // import style
 import 'swiper/swiper.min.css'
