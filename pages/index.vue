@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <section class="py-24 tablet:py-48 px-4 phablet:px-4 text-center relative desktop:mx-16">
+    <section class="py-24 tablet:py-20 px-4 phablet:px-4 text-center relative desktop:mx-16">
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
         <picture>
           <source 
@@ -19,31 +19,32 @@
         </picture>
       </div>
 
-      <div class="w-full tablet:px-24 desktop:px-48 mr-auto">
-        <div class="relative max-w-2xl z-10 ml-0 text-left">
-          <header>
+      <div class="w-full tablet:px-24 desktop:px-36 mr-auto">
+        <div class="relative max-w-xl z-10 ml-0 text-left">
+          <header class="font-body">
             <div
-              class="text-5xl mt-2 mb-6 leading-tight font-semibold font-heading text-white"
+              class="text-5xl mt-8 mb-32 leading-tight font-semibold font-heading text-white"
               v-html="require('~/assets/logo/5g-made-together.svg?include')"
             />
             
-            <h1 class="mb-10 text-white leading-relaxed font-light uppercase text-xs phone:text-base tablet:text-2xl">
-              {{ frontPageData.hero_title }} <span class="block font-medium text-base phone:text-2xl tablet:text-4xl">{{ frontPageData.hero_subtitle }}</span>
+            <h1 class="mb-6 px-10 py-6 tracking-wide text-blue-950 font-bold text-3xl bg-primarySecond phone:text-base tablet:text-4xl">
+              {{ frontPageData.hero_title }} <span class="block font-normal text-base uppercase phone:text-2xl tablet:text-4xl">{{ frontPageData.hero_subtitle }}</span>
             </h1>
             <time
               datetime="2021-05-27T10:00Z"
-              class="block text-white mb-8 text-base phone:text-base desktop:text-xl font-bold"
+              class="block font-normal text-primarySecond mx-8 mb-8 text-base phone:text-base desktop:text-2xl"
             >{{ frontPageData.hero_time_title }}</time>
           </header>
-          <div class="flex items-start justify-start flex-col tablet:flex-row flex-wrap">
+          <div class="mx-8 flex items-start justify-start flex-col tablet:flex-row flex-wrap">
             <a
-              class="inline-block py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-white bg-primaryNormal hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
+              class="inline-block text-base font-body py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-blue-950 bg-primarySecond hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
               :href="generalData.event_url"
             >{{ generalData.event_title }}</a>
           
             <a
               v-scroll-to="'#read-more'"
-              class="inline-block py-4 px-0 tablet:px-8 mr-6 leading-none text-white underline"
+              class="inline-block text-base font-body py-2 ml-8 leading-none text-primarySecond font-medium border-b-2 border-primarySecond " 
+              
               :href="frontPageData.link_read_more"
             >{{ frontPageData.link_read_more_title }}</a>
           </div>
