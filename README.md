@@ -6,6 +6,12 @@ Conference website
 
 ## FAQ
 <details>
+  <summary>Windows - not working</summary>
+  
+  Require node v14 and administrative permission due to sharp library
+</details>
+
+<details>
   <summary>Found bug, what I can do?</summary>
   
   Thank you! 
