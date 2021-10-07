@@ -40,6 +40,7 @@ module.exports = {
           transparent: 'transparent',
           highlight: '#11C9D8',
           primaryNormal: '#00dee0',
+          primarySecond: '#39e8ea',
           primaryDark: '#02cbce',
           black: '#000',
           white: '#fff',
@@ -68,6 +69,7 @@ module.exports = {
               700: '#1d4ed8',
               800: '#1e40af',
               900: '#1e3a8a',
+              950: '#002738',
           },
       },
       spacing: {
