@@ -9,12 +9,12 @@
         {{ generalData.cta_title }}
       </h2>
       <a
-        class="text-white uppercase inline-block py-4 px-8 leading-none bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow"
+        class="text-blue-950 uppercase inline-block py-4 px-8 leading-none bg-primaryNormal hover:bg-primaryDark font-semibold rounded shadow"
         :href="generalData.event_url"
       >{{ generalData.cta_button.cta_button_title }}</a>
     </div>
 
-    <div class="absolute desktop:rounded-t w-full h-full inset-0 z-0 bg-blue-200">
+    <div class="absolute desktop:rounded-t w-full h-full inset-0 z-0 bg-blue-200 overlay">
       <picture>
         <source
           :srcSet="generalData.cta_background.url"

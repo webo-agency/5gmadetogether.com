@@ -58,6 +58,7 @@
     @apply w-full;
     @apply h-full;
     @apply opacity-70;
+    @apply inset-0;
     background-color: theme('colors.black');
 }
 
