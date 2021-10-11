@@ -6,7 +6,7 @@
   >
     <nav class="flex flex-wrap items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
       <div class="navbar-menu flex flex-wrap order-1 desktop:order-1 flex-row items-center">
-        <span class="block mb-4">{{ generalData.header_text_before }}</span> <img
+        <span class="block mb-4">{{ generalData.header_text_before }}</span> <nuxt-img
           v-for="(logo, index) in generalData.header_logo"
           :key="index"
           class="h-auto w-32 mx-4 mb-4 max-w-full"
@@ -15,7 +15,7 @@
           :alt="`${logo.header_logo_image.alt}`"
           :height="`${logo.header_logo_image.sizes['post-thumbnail-height']}`"
           :width="`${logo.header_logo_image.sizes['post-thumbnail-width']}`"
-        >
+        />
       </div>
       <div class="navbar-menu block order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
         <a 

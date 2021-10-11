@@ -165,7 +165,9 @@ export default [
   },
   {
     src: '@nuxt/image',
-    options: {}
+    options: {
+      domains: [`${process.env.API_URL}`]
+    }
   },
   { 
     src: '@aceforth/nuxt-optimized-images',
