@@ -76,6 +76,14 @@
     z-index: 10;
 }
 
+@screen tablet-wide{
+  .swiper-button-prev,
+  .swiper-button-next{
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .swiper-button-prev svg path,
 .swiper-button-next svg path{
     @apply transition;
