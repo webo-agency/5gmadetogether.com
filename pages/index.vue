@@ -1,8 +1,13 @@
 <template>
   <div class="w-full">
     <section class="py-24 tablet:py-20 px-4 phablet:px-4 text-center relative desktop:mx-16">
-      <div class="absolute w-full h-full inset-0 z-auto bg-blue-200">
-        <picture>
+      <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
+        <nuxt-picture
+          :src="frontPageData.hero_background.url"
+          class="block overflow-hidden absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
+          :alt="frontPageData.hero_background.alt"
+          :title="frontPageData.hero_background.title"
+        >
           <source 
             :srcSet="frontPageData.hero_background.url.slice(0, -4).concat('.webp')"
             type="image/webp"
@@ -16,7 +21,7 @@
             :srcset="frontPageData.hero_background.url" 
             alt=""
           >
-        </picture>
+        </nuxt-picture>
       </div>
 
       <div class="w-full tablet:px-24 desktop:px-36 mr-auto">
@@ -179,25 +184,14 @@
         <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           {{ frontPageData.section_live_title }}
         </h2>
-        <div class="mx-auto aspect-w-16 aspect-h-9 shadow-2xl mb-12">
-          <a
-            v-show="!iframeYoutubeSrc"
-            :href="frontPageData.section_live_link"
-            class="absolute inset-0 z-50"
-          >
-            <img
-              :src="frontPageData.section_live_thumbnail" 
-              class="w-full h-full object-cover"
-              alt="Youtube"
-            >
-          </a>
-          <iframe
-            v-view="youtubeUpdateSrc"
-            class="mx-auto w-full h-full rounded"
-            width="100%"
-            height="100%"
-            :src="iframeYoutubeSrc"
-            title="YouTube video player"
+        <div class="flex mx-auto shadow-2xl mb-12">
+          <LazyYoutube 
+            :src="frontPageData.section_live_link" 
+            iframe-class="mx-auto w-full h-full rounded"
+            max-width="100%"
+            aspect-ratio="16:9"
+            thumbnail-quality="maxres"
+            :custom-title="frontPageData.section_live_title"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           />
