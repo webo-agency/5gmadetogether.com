@@ -75,7 +75,9 @@
             <div class="phablet:p-2">
               <nuxt-picture
                 class="phablet:rounded shadow h-auto object-cover"
-                src="/img/coference_5g_made_together_is-wireless_2021.jpeg" 
+                src="/img/coference_5g_made_together_is-wireless_2021.jpeg"
+                width="478" 
+                height="319"
               />
             </div>
           </div>
