@@ -171,7 +171,7 @@
             iframe-class="mx-auto w-full h-full rounded"
             max-width="100%"
             aspect-ratio="16:9"
-            thumbnail-quality="maxres"
+            thumbnail-quality="default"
             :custom-title="frontPageData.section_live_title"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
