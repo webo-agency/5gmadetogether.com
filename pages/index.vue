@@ -73,21 +73,10 @@
         <div class="desktop:w-1/2 phablet:px-4">
           <div class="flex flex-wrap phablet:-m-2">
             <div class="phablet:p-2">
-              <picture>
-                <source
-                  :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg?webp')"
-                  type="image/webp"
-                >
-                <source
-                  :srcSet="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')"
-                  type="image/jpeg"
-                >
-                <img 
-                  class="phablet:rounded shadow h-auto object-cover"
-                  :srcset="require('~/assets/img/coference_5g_made_together_is-wireless_2021.jpeg')" 
-                  alt=""
-                >
-              </picture>
+              <nuxt-picture
+                class="phablet:rounded shadow h-auto object-cover"
+                src="/img/coference_5g_made_together_is-wireless_2021.jpeg" 
+              />
             </div>
           </div>
         </div>
@@ -157,24 +146,14 @@
         </div>
        
         <div class="absolute inset-0 overflow-hidden overlay">
-          <picture>
-            <source
-              :srcSet="frontPageData.section_count_background.url.slice(0, -4).concat('.webp')"
-              type="image/webp"
-            >
-            <source
-              :srcSet="frontPageData.section_count_background.url"
-              type="image/jpeg"
-            >
-            <img 
-              class="absolute w-full object-cover h-full rounded"
-              :srcset="frontPageData.section_count_background.url"
-              :alt="frontPageData.section_count_background.alt"
-              :title="frontPageData.section_count_background.title"
-              :width="frontPageData.section_count_background.width"
-              :height="frontPageData.section_count_background.height"
-            >
-          </picture>
+          <nuxt-picture
+            class="flex absolute w-full object-cover h-full rounded"
+            :src="frontPageData.section_count_background.url"
+            :alt="frontPageData.section_count_background.alt"
+            :title="frontPageData.section_count_background.title"
+            :width="frontPageData.section_count_background.width"
+            :height="frontPageData.section_count_background.height"
+          />
         </div>
       </div>
     </section>
