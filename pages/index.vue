@@ -9,6 +9,7 @@
           :title="frontPageData.hero_background.title"
           sizes="sm:768px md:1247px lg:1552px"
           quality="60"
+          format="webp"
         />
       </div>
 
@@ -68,6 +69,7 @@
                 height="319"
                 sizes="sm:478px md:478px lg:478px"
                 quality="70"
+                format="webp"
               />
             </div>
           </div>
@@ -147,6 +149,7 @@
             :height="frontPageData.section_count_background.height"
             sizes="sm:768px md:1247px lg:1552px"
             quality="60"
+            format="webp"
           />
         </div>
       </div>
@@ -163,7 +166,7 @@
             iframe-class="mx-auto w-full h-full rounded"
             max-width="100%"
             aspect-ratio="16:9"
-            thumbnail-quality="high"
+            thumbnail-quality="maxres"
             :custom-title="frontPageData.section_live_title"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -207,6 +210,7 @@
                     :title="person.section_panel_person_avatar.title"
                     sizes="sm:128px md:128px lg:128px"
                     quality="70"
+                    format="webp"
                   />
                   <h3 class="text-xl mb-1 font-semibold font-heading">
                     {{ person.section_panel_person_name }}
