@@ -15,7 +15,7 @@
           :alt="logo.header_logo_image.alt"
           :height="logo.header_logo_image.sizes['post-thumbnail-height']"
           :width="logo.header_logo_image.sizes['post-thumbnail-width']"
-          sizes="sm:128px md:128px lg:128px"
+          sizes="sm:128px md:256px lg:256px"
           quality="60"
         />
       </div>
