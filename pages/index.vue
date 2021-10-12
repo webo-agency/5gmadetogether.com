@@ -206,8 +206,8 @@
                                                   ' ')
                   "
                 >
-                  <nuxt-img
-                    class="w-32 mx-auto mb-4 rounded-full" 
+                  <nuxt-picture
+                    class="block overflow-hidden w-32 mx-auto mb-4 rounded-full" 
                     :src="person.section_panel_person_avatar.sizes.medium" 
                     :width="person.section_panel_person_avatar.sizes['medium-width']" 
                     :height="person.section_panel_person_avatar.sizes['medium-height']" 
