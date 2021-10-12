@@ -7,8 +7,8 @@
           class="block overflow-hidden absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
           :alt="frontPageData.hero_background.alt"
           :title="frontPageData.hero_background.title"
-          sizes="sm:100vw md:50vw lg:1024px"
-          quality="70"
+          sizes="sm:100vw md:1247px lg:1552px"
+          quality="60"
         />
       </div>
 
@@ -66,6 +66,8 @@
                 src="/img/coference_5g_made_together_is-wireless_2021.jpeg"
                 width="478" 
                 height="319"
+                sizes="sm:478 md:478 lg:478"
+                quality="70"
               />
             </div>
           </div>
