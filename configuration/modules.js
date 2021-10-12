@@ -166,7 +166,10 @@ export default [
   {
     src: '@nuxt/image',
     options: {
-      domains: [`${process.env.API_URL}`]
+      domains: [`${process.env.API_URL.replace(/(^\w+:|^)\/\//, '')}`],
+      alias: {
+        api: `${process.env.API_URL}`
+      }
     }
   },
   { 

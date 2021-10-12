@@ -7,6 +7,7 @@
           class="block overflow-hidden absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
           :alt="frontPageData.hero_background.alt"
           :title="frontPageData.hero_background.title"
+          sizes="sm:100vw md:50vw lg:1024px"
         />
       </div>
 
@@ -199,6 +200,7 @@
                     :height="person.section_panel_person_avatar.sizes['medium-height']" 
                     :alt="person.section_panel_person_avatar.alt" 
                     :title="person.section_panel_person_avatar.title"
+                    sizes="sm:128px md:128px lg:128px"
                   />
                   <h3 class="text-xl mb-1 font-semibold font-heading">
                     {{ person.section_panel_person_name }}
