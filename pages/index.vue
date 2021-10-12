@@ -7,21 +7,7 @@
           class="block overflow-hidden absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
           :alt="frontPageData.hero_background.alt"
           :title="frontPageData.hero_background.title"
-        >
-          <source 
-            :srcSet="frontPageData.hero_background.url.slice(0, -4).concat('.webp')"
-            type="image/webp"
-          >
-          <source
-            :srcSet="frontPageData.hero_background.url"
-            type="image/jpeg"
-          >
-          <img 
-            class="absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
-            :srcset="frontPageData.hero_background.url" 
-            alt=""
-          >
-        </nuxt-picture>
+        />
       </div>
 
       <div class="w-full tablet:px-24 desktop:px-36 mr-auto">
