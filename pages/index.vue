@@ -9,7 +9,7 @@
           :title="frontPageData.hero_background.title"
           sizes="sm:768px md:1247px lg:1552px"
           quality="60"
-          format="webp"
+          :modifiers="{ format: 'webp' }"
         />
       </div>
 
@@ -67,9 +67,8 @@
                 src="/img/coference_5g_made_together_is-wireless_2021.jpeg"
                 width="478" 
                 height="319"
-                sizes="sm:478px md:478px lg:478px"
                 quality="70"
-                format="webp"
+                :modifiers="{ format: 'webp' }"
               />
             </div>
           </div>
@@ -150,6 +149,7 @@
             sizes="sm:768px md:1247px lg:1552px"
             quality="60"
             format="webp"
+            :modifiers="{ format: 'webp' }"
           />
         </div>
       </div>
@@ -208,9 +208,9 @@
                     :height="person.section_panel_person_avatar.sizes['medium-height']" 
                     :alt="person.section_panel_person_avatar.alt" 
                     :title="person.section_panel_person_avatar.title"
-                    sizes="sm:128px md:128px lg:128px"
-                    quality="70"
-                    format="webp"
+                    sizes="sm:128px md:256px lg:256px"
+                    quality="60"
+                    :modifiers="{ format: 'webp' }"
                   />
                   <h3 class="text-xl mb-1 font-semibold font-heading">
                     {{ person.section_panel_person_name }}
