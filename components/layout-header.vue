@@ -15,6 +15,8 @@
           :alt="logo.header_logo_image.alt"
           :height="logo.header_logo_image.sizes['post-thumbnail-height']"
           :width="logo.header_logo_image.sizes['post-thumbnail-width']"
+          sizes="sm:128px md:128px lg:128px"
+          quality="60"
         />
       </div>
       <div class="navbar-menu block order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
