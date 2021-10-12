@@ -8,6 +8,7 @@
           :alt="frontPageData.hero_background.alt"
           :title="frontPageData.hero_background.title"
           sizes="sm:100vw md:50vw lg:1024px"
+          quality="70"
         />
       </div>
 
@@ -142,6 +143,7 @@
             :title="frontPageData.section_count_background.title"
             :width="frontPageData.section_count_background.width"
             :height="frontPageData.section_count_background.height"
+            quality="70"
           />
         </div>
       </div>
@@ -201,6 +203,7 @@
                     :alt="person.section_panel_person_avatar.alt" 
                     :title="person.section_panel_person_avatar.title"
                     sizes="sm:128px md:128px lg:128px"
+                    quality="70"
                   />
                   <h3 class="text-xl mb-1 font-semibold font-heading">
                     {{ person.section_panel_person_name }}
