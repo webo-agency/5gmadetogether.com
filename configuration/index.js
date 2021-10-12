@@ -41,7 +41,8 @@ export default {
    */
   modules: module.default,
   gtm: {
-    id: 'GTM-WKQLB65'
+    id: 'GTM-WKQLB65',
+    scriptDefer: true,
   },
   image: {
     domains: [API_URL]
