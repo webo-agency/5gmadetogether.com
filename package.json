@@ -33,7 +33,7 @@
     "@nuxtjs/toast": "3.3.1",
     "@tailwindcss/aspect-ratio": "0.3.0",
     "acorn-dynamic-import": "4.0.0",
-    "axios": "0.22.0",
+    "axios": "0.23.0",
     "babel-polyfill": "6.26.0",
     "cookie-universal-nuxt": "2.1.5",
     "core-js": "3.18.2",
