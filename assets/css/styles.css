@@ -66,8 +66,6 @@ picture img{
   width: 100%;
 }
 
-<<<<<<< Updated upstream
-=======
 .banner img{
   height: 100%;
   width: auto;
@@ -83,7 +81,6 @@ picture img{
 
 }
 
->>>>>>> Stashed changes
 .swiper-button-prev,
 .swiper-button-next{
     position: absolute;
