@@ -4,6 +4,7 @@
     "bungcip.better-toml",
     "coenraads.bracket-pair-colorizer",
     "bradlc.vscode-tailwindcss",
-    "csstools.postcss"
+    "csstools.postcss",
+    "xyz.local-history"
   ]
 }

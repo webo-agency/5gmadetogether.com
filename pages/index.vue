@@ -64,9 +64,11 @@
             <div class="phablet:p-2">
               <nuxt-picture
                 class="phablet:rounded shadow h-auto object-cover"
-                src="/img/coference_5g_made_together_is-wireless_2021.jpeg"
-                width="478" 
-                height="319"
+                :src="frontPageData.page_image_additionall.url"
+                :title="frontPageData.page_image_additionall.title"
+                :alt="frontPageData.page_image_additionall.alt"
+                :width="frontPageData.page_image_additionall.width" 
+                :height="frontPageData.page_image_additionall.height"
                 quality="70"
                 :modifiers="{ format: 'webp' }"
               />
@@ -140,14 +142,14 @@
        
         <div class="absolute inset-0 overflow-hidden overlay">
           <nuxt-picture
-            class="flex absolute w-full object-cover h-full rounded"
+            class="flex absolute w-full object-cover h-full rounded banner"
             :src="frontPageData.section_count_background.url"
             :alt="frontPageData.section_count_background.alt"
             :title="frontPageData.section_count_background.title"
             :width="frontPageData.section_count_background.width"
             :height="frontPageData.section_count_background.height"
-            sizes="sm:768px md:1247px lg:1552px"
-            quality="60"
+            sizes="sm:1552px md:1552px lg:1552px"
+            quality="100"
             format="webp"
             :modifiers="{ format: 'webp' }"
           />
