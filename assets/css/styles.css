@@ -66,6 +66,24 @@ picture img{
   width: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+.banner img{
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+
+@screen tablet-wide{
+
+  .banner img{
+    height: auto;
+    float: right;
+  }
+
+}
+
+>>>>>>> Stashed changes
 .swiper-button-prev,
 .swiper-button-next{
     position: absolute;
