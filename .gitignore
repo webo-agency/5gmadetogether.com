@@ -109,3 +109,6 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# vsc plugin History folder 
+.history
