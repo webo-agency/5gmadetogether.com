@@ -4,7 +4,7 @@
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
         <nuxt-picture
           :src="frontPageData.hero_background.url"
-          class="block overflow-hidden absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
+          class="block overflow-hidden absolute desktop:rounded h-full inset-0 z-auto object-cover banner" 
           :alt="frontPageData.hero_background.alt"
           :title="frontPageData.hero_background.title"
           sizes="sm:768px md:1247px lg:1552px"
@@ -17,7 +17,7 @@
         <div class="relative max-w-xl z-10 ml-0 text-left">
           <header class="font-body">
             <div
-              class="text-5xl mt-8 mb-32 leading-tight font-semibold font-heading text-white "
+              class="text-5xl mt-8 mb-32 leading-tight font-semibold font-heading text-white"
               v-html="require('~/assets/logo/5g-made-together.svg?include')"
             />
             
