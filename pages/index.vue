@@ -190,7 +190,7 @@
               />
             </svg>
           </a>
-          <LazyYoutube 
+          <!-- <LazyYoutube 
             :src="frontPageData.section_live_link" 
             iframe-class="mx-auto w-full h-full rounded"
             max-width="100%"
@@ -199,7 +199,7 @@
             :custom-title="frontPageData.section_live_title"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          />
+          /> -->
         </div>
       </div>
     </section>
