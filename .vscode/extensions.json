@@ -3,6 +3,8 @@
     "formulahendry.auto-close-tag",
     "bungcip.better-toml",
     "coenraads.bracket-pair-colorizer",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "xyz.local-history"
   ]
 }

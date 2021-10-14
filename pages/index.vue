@@ -4,7 +4,7 @@
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
         <nuxt-picture
           :src="frontPageData.hero_background.url"
-          class="block overflow-hidden absolute desktop:rounded w-full h-full inset-0 z-auto object-cover" 
+          class="block overflow-hidden absolute desktop:rounded h-full inset-0 z-auto object-cover banner" 
           :alt="frontPageData.hero_background.alt"
           :title="frontPageData.hero_background.title"
           sizes="sm:768px md:1247px lg:1552px"
@@ -21,23 +21,23 @@
               v-html="require('~/assets/logo/5g-made-together.svg?include')"
             />
             
-            <h1 class="mb-6 px-10 py-6 tracking-wide text-blue-950 font-bold text-3xl bg-primarySecond phone:text-base tablet:text-4xl">
-              {{ frontPageData.hero_title }} <span class="block font-normal text-base uppercase phone:text-2xl tablet:text-4xl">{{ frontPageData.hero_subtitle }}</span>
+            <h1 class="mb-6 px-10 py-6 tracking-wide text-blue-950 font-bold text-3xl bg-primarySecond phone:text-base text-center phablet:text-left tablet:text-4xl">
+              {{ frontPageData.hero_title }} <span class="block font-normal text-base text-center phablet:text-left uppercase phone:text-2xl tablet:text-4xl">{{ frontPageData.hero_subtitle }}</span>
             </h1>
             <time
               datetime="2021-05-27T10:00Z"
-              class="block font-normal text-primarySecond mx-8 mb-8 text-base phone:text-base desktop:text-2xl"
+              class="block font-normal text-primarySecond mx-8 mb-8 text-base text-center phablet:text-left phone:text-base desktop:text-2xl"
             >{{ frontPageData.hero_time_title }}</time>
           </header>
-          <div class="mx-8 flex items-start justify-start flex-col tablet:flex-row flex-wrap">
+          <div class="mx-8 flex items-start justify-start flex-col phablet:flex-row flex-wrap">
             <a
-              class="inline-block text-base font-body py-4 w-full phone:w-auto phone:px-14 tablet:px-8 mr-6 leading-none text-blue-950 bg-primarySecond hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
+              class="inline-block text-base font-body py-4 w-full phone:w-auto phone:px-14 phone:mx-auto phablet:px-8 phablet:mr-6 phablet:ml-0 leading-none text-blue-950 bg-primarySecond hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
               :href="generalData.event_url"
             >{{ generalData.event_title }}</a>
           
             <a
               v-scroll-to="'#read-more'"
-              class="inline-block text-base font-body py-2 ml-8 leading-none text-primarySecond font-medium border-b-2 border-primarySecond " 
+              class="inline-block text-base font-body py-2 mx-auto phablet:ml-8 leading-none text-primarySecond font-medium border-b-2 border-primarySecond hover:text-primaryDark" 
               
               :href="frontPageData.link_read_more"
             >{{ frontPageData.link_read_more_title }}</a>
@@ -64,9 +64,11 @@
             <div class="phablet:p-2">
               <nuxt-picture
                 class="phablet:rounded shadow h-auto object-cover"
-                src="/img/coference_5g_made_together_is-wireless_2021.jpeg"
-                width="478" 
-                height="319"
+                :src="frontPageData.page_image_additionall.url"
+                :title="frontPageData.page_image_additionall.title"
+                :alt="frontPageData.page_image_additionall.alt"
+                :width="frontPageData.page_image_additionall.width" 
+                :height="frontPageData.page_image_additionall.height"
                 quality="70"
                 :modifiers="{ format: 'webp' }"
               />
@@ -140,14 +142,14 @@
        
         <div class="absolute inset-0 overflow-hidden overlay">
           <nuxt-picture
-            class="flex absolute w-full object-cover h-full rounded"
+            class="flex absolute w-full object-cover h-full rounded banner"
             :src="frontPageData.section_count_background.url"
             :alt="frontPageData.section_count_background.alt"
             :title="frontPageData.section_count_background.title"
             :width="frontPageData.section_count_background.width"
             :height="frontPageData.section_count_background.height"
-            sizes="sm:768px md:1247px lg:1552px"
-            quality="60"
+            sizes="sm:1552px md:1552px lg:1552px"
+            quality="100"
             format="webp"
             :modifiers="{ format: 'webp' }"
           />
