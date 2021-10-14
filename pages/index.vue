@@ -175,7 +175,7 @@
             >
             <svg
               height="80px"
-              class="absolute inset-0 m-auto w-"
+              class="absolute inset-0 m-auto z-60 pointer-events-none"
               viewBox="0 -77 512.00213 512"
               width="100px"
               xmlns="http://www.w3.org/2000/svg"
@@ -190,16 +190,16 @@
               />
             </svg>
           </a>
-          <!-- <LazyYoutube 
+          <LazyYoutube 
             :src="frontPageData.section_live_link" 
-            iframe-class="mx-auto w-full h-full rounded"
+            iframe-class="mx-auto w-full h-full rounded z-0"
             max-width="100%"
             aspect-ratio="16:9"
             thumbnail-quality="maxres"
             :custom-title="frontPageData.section_live_title"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          /> -->
+          />
         </div>
       </div>
     </section>
