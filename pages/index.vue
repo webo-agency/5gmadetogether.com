@@ -162,7 +162,18 @@
         <h2 class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center">
           {{ frontPageData.section_live_title }}
         </h2>
-        <div class="flex mx-auto shadow-2xl mb-12">
+        <div class="flex mx-auto shadow-2xl mb-12 relative">
+          <a
+            v-show="!iframeYoutubeSrc"
+            :href="frontPageData.section_live_link"
+            class="absolute inset-0 z-50 "
+          >
+            <img
+              :src="frontPageData.section_live_thumbnail" 
+              class="w-full h-full object-cover"
+              alt="Youtube"
+            >
+          </a>
           <LazyYoutube 
             :src="frontPageData.section_live_link" 
             iframe-class="mx-auto w-full h-full rounded"
