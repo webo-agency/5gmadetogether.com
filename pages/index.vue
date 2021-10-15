@@ -31,13 +31,13 @@
           </header>
           <div class="mx-8 flex items-start justify-start flex-col phablet:flex-row flex-wrap">
             <a
-              class="inline-block text-base font-body py-4 w-full phone:w-auto phone:px-14 phone:mx-auto phablet:px-8 phablet:mr-6 phablet:ml-0 leading-none text-blue-950 bg-primarySecond hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
+              class="hidden text-base font-body py-4 w-full phone:w-auto phone:px-14 phone:mx-auto phablet:px-8 phablet:mr-6 phablet:ml-0 leading-none text-blue-950 bg-primarySecond hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
               :href="generalData.event_url"
             >{{ generalData.event_title }}</a>
           
             <a
               v-scroll-to="'#read-more'"
-              class="inline-block text-base font-body py-2 mx-auto phablet:ml-8 leading-none text-primarySecond font-medium border-b-2 border-primarySecond hover:text-primaryDark" 
+              class="inline-block text-base font-body py-2 mx-auto phablet:ml-0 leading-none text-primarySecond font-medium border-b-2 border-primarySecond hover:text-primaryDark" 
               
               :href="frontPageData.link_read_more"
             >{{ frontPageData.link_read_more_title }}</a>

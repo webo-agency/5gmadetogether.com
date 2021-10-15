@@ -21,7 +21,7 @@
           :modifiers="{ format: 'webp' }"
         />
       </div>
-      <div class="navbar-menu block order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
+      <div class="navbar-menu hidden order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
         <a 
           class="inline-block py-4 px-2 phone:px-8 leading-none text-white text-xs phone:text-base bg-primaryNormal hover:bg-primaryDark font-semibold rounded shadow my-4 desktop:my-0 w-full phone:w-48 tablet:w-auto text-center w-max-full" 
           :href="generalData.event_url"
