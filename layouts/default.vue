@@ -17,6 +17,7 @@
 
 <script>
   export default {
+    name: "DefaultLayout",
     head: {},
     mounted() {       
       const gdprCookie = this.$cookies.get('gdpr');
