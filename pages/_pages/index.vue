@@ -35,7 +35,7 @@
   };
 
   export default {
-    name: "Page",
+    name: "DefaultPage",
     async asyncData ({ app , error, params, payload }) {
 
       if (payload && payload.data && payload.data.acf && payload.data.acf.page_title && payload.data.acf.page_image) {
