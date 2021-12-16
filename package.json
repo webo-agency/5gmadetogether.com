@@ -36,7 +36,7 @@
     "axios": "0.24.0",
     "babel-polyfill": "6.26.0",
     "cookie-universal-nuxt": "2.1.5",
-    "core-js": "3.19.3",
+    "core-js": "3.20.0",
     "lodash": "4.17.21",
     "lqip-loader": "2.2.1",
     "normalize.css": "8.0.1",
