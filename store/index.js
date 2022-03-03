@@ -36,7 +36,7 @@ export const actions = {
     await WPAPI.discover( `${env.API_URL}${env.API_AFFIX}` ).then(function(wp){
       return Promise.all([
         new Promise((resolve) => {
-          wp.namespace( 'acf/v3' ).options().id('options').then(function(data){
+          wp.namespace( 'acf/v2' ).options().then(function(data){
             filterData(data);
             dispatch('general/init', data.acf);
             resolve();
