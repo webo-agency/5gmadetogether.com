@@ -51,7 +51,7 @@
     "postcss-nested": "5.0.6",
     "postcss-responsive-type": "1.0.0",
     "responsive-loader": "2.3.0",
-    "sharp": "0.30.3",
+    "sharp": "0.30.4",
     "sqip-loader": "1.0.0",
     "swiper": "6.8.4",
     "tailwindcss-aspect-ratio": "3.0.0",
