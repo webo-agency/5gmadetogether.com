@@ -60,7 +60,7 @@
     "vue-awesome-swiper": "file:package/vue-awesome-swiper",
     "vue-check-view": "0.3.0",
     "vue-count-to": "1.0.13",
-    "vue-lazytube": "^1.0.2",
+    "vue-lazytube": "^1.1.1",
     "vue-resize-directive": "1.2.0",
     "vue-scrollto": "2.20.0",
     "vue2-animate": "2.1.4",
