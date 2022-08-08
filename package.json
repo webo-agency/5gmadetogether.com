@@ -104,7 +104,7 @@
     "postcss": "8.4.12",
     "postcss-functions": "4.0.2",
     "puppeteer": "13.5.2",
-    "vue-svg-inline-loader": "2.1.2"
+    "vue-svg-inline-loader": "2.1.5"
   },
   "overrides": {
     "wpapi": {
