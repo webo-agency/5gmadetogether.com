@@ -1,36 +1,10 @@
 <template>
-  <component
+ <component
     :is="mainTag"
     :class="mainClass"
     class="container"
   >
-    <!-- <nav class="flex flex-wrap items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
-      <div class="navbar-menu flex flex-wrap order-1 desktop:order-1 flex-row items-center">
-        <span class="block mb-4">{{ generalData.header_text_before }}</span> <nuxt-img
-          v-for="(logo, index) in generalData.header_logo"
-          :key="index"
-          class="h-auto w-32 mx-4 mb-4 max-w-full"
-          :src="logo.header_logo_image.sizes['post-thumbnail']"
-          :title="logo.header_logo_image.title"
-          :alt="logo.header_logo_image.alt"
-          :height="logo.header_logo_image.sizes['post-thumbnail-height']"
-          :width="logo.header_logo_image.sizes['post-thumbnail-width']"
-          sizes="sm:128px md:256px lg:256px"
-          quality="60"
-          format="webp"
-          :modifiers="{ format: 'webp' }"
-        />
-      </div>
-      <div class="navbar-menu hidden order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
-        <a 
-          class="inline-block py-4 px-2 phone:px-8 leading-none text-white text-xs phone:text-base bg-primaryNormal hover:bg-primaryDark font-semibold rounded shadow my-4 desktop:my-0 w-full phone:w-48 tablet:w-auto text-center w-max-full" 
-          :href="generalData.event_url"
-        >
-          {{ generalData.event_title }}
-        </a>
-      </div>
-    </nav> -->
-<nav class="flex items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
+    <nav class="flex items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
         <svg width="150" height="43" viewBox="0 0 150 43" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M50.2723 20.9277L48.4417 31.1337H45.9115L47.0575 24.7222L43.6343 31.1337H41.4465L40.3153 24.7368L39.1693 31.1337H36.6094L38.44 20.9277H41.5507L43.1283 28.037L47.1766 20.9277H50.2723Z" fill="#002738"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M50.4282 20.9673L50.2722 20.7808H47.0842L43.1938 27.6127C43.1938 27.6127 41.6777 20.7808 41.6777 20.7808H38.3072L36.4531 31.1172L36.6092 31.3038H39.3018L40.3141 25.6532C40.3141 25.6532 41.3133 31.3038 41.3133 31.3038H43.7293L46.7247 25.6935C46.7247 25.6934 45.7552 31.1173 45.7552 31.1173L45.9113 31.3038H48.5742L50.4282 20.9673V20.9673ZM50.0826 21.0979L48.3088 30.9867C48.3088 30.9867 46.1008 30.9867 46.1008 30.9867C46.1008 30.9867 47.2134 24.7617 47.2134 24.7617L46.9175 24.6591L43.5391 30.9867C43.5391 30.9867 41.5793 30.9867 41.5793 30.9867C41.5793 30.9867 40.4713 24.7208 40.4713 24.7208L40.1591 24.7204L39.0365 30.9867C39.0365 30.9867 36.7987 30.9867 36.7987 30.9867C36.7987 30.9867 38.5725 21.0979 38.5725 21.0979H41.4232C41.4233 21.0979 42.9733 28.0829 42.9733 28.0829L43.2659 28.127L47.2686 21.0979L50.0826 21.0979V21.0979Z" fill="#002738"/>
@@ -76,28 +50,81 @@
 </template>
 
 <script>
+import { useScroll, useMediaQuery } from "@vueuse/core";
+import { computed } from "@vue/composition-api";
+import CustomLink from "./custom-link.vue";
 export default {
-  name: "LayoutHeader",
+  name: "LayoutNavbar",
   props: {
-    mainTag: {
-      type: String,
-      default: "header",
-      required: false
+    menu: {
+      type: Array,
     },
-    mainClass: {
-      type: String,
-      default: "",
-      required: false
+    socials: Array,
+    clutchLink: String,
+  },
+  data() {
+    return {
+      isTransparent: true,
+      mobileExpanded: false,
+      popUpData: null,
+      popUpActive: false,
+      popUpHover: false,
+      hoverItem: "",
+      pointerPosition: 0,
+    };
+  },
+  setup() {
+    const scroll = useScroll(globalThis.window);
+    let show = true;
+    let isVisible = computed(() => {
+      if (scroll.directions.top || scroll.y.value < 40) {
+        show = true;
+      } else if (scroll.directions.bottom) {
+        show = false;
+      }
+      return show;
+    });
+    let underTreshold = computed(() => scroll.y.value < 170);
+    const isLargeScreen = useMediaQuery("(min-width: 1248px)");
+
+    return {
+      isLargeScreen: isLargeScreen,
+      isVisible: isVisible,
+      underTreshold: underTreshold,
+      scrollPositionY: scroll.y,
+    };
+  },
+
+  mounted() {
+    if (globalThis.window.scrollY < 300) {
+      this.isTransparent = true;
+    } else {
+      this.isTransparent = false;
+    }
+  },
+  watch: {
+    isLargeScreen(value) {
+      if (value) {
+        this.mobileExpanded = false;
+      }
+    },
+    underTreshold(value) {
+      this.isTransparent = value;
+    },
+
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
-  computed: {
-    generalData() {
-      return this.$store.getters['general/getData']
-    },
-  },
+  components: { CustomLink },
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 
 </style>
