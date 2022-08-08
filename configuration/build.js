@@ -1,11 +1,25 @@
 import { join } from 'path'
 
 export default {
-  publicPath: "/static/",
+  publicPath: '/static/',
   extractCSS: true,
   cssSourceMap: false,
+  standalone: true,
   babel: {
     plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+  },
+  extend(config) {
+    config.externals = [
+      {
+        encoding: 'encoding',
+      },
+    ]
+
+    config.module.rules.push({
+      test: /\.mjs$/,
+      include: /node_modules/,
+      type: 'javascript/auto',
+    })
   },
   postcss: {
     plugins: {
@@ -15,7 +29,7 @@ export default {
       'postcss-nested': {},
       'postcss-responsive-type': {},
       'postcss-preset-env': {},
-      'cssnano': { preset: 'default' }
+      cssnano: { preset: 'default' },
     },
   },
   html: {
@@ -31,13 +45,13 @@ export default {
       removeRedundantAttributes: true,
       trimCustomFragments: true,
       useShortDoctype: true,
-      removeComments: true
-    }
+      removeComments: true,
+    },
   },
   terser: {
     parallel: true,
     cache: false,
     sourceMap: false,
-    extractComments: false
-  }
+    extractComments: false,
+  },
 }
