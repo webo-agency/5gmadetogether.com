@@ -32,6 +32,8 @@
     "@nuxtjs/tailwindcss": "5.0.2",
     "@nuxtjs/toast": "3.3.1",
     "@tailwindcss/aspect-ratio": "0.4.0",
+    "@vue/composition-api": "^1.4.9",
+    "@vueuse/core": "^9.1.0",
     "acorn-dynamic-import": "4.0.0",
     "axios": "0.26.1",
     "babel-polyfill": "6.26.0",
