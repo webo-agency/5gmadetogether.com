@@ -1,8 +1,9 @@
 <template>
   <div class="w-full">
     <section
-      class="py-24 tablet:py-20 px-4 phablet:px-4 text-center relative desktop:mx-16"
+      class="py-24 tablet:py-20 px-4 phablet:px-4 text-center relative"
     >
+    <!-- 5g image banenr -->
       <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
         <nuxt-picture
           :src="frontPageData.hero_background.url"
