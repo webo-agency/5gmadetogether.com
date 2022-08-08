@@ -1,9 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen bg-backgroundDark min-w-container w-full">
-    <LayoutHeader
-      main-class="flex-0-auto"
-      main-tag="header"
-      dark-theme
+    <LayoutNavbar
     />
     <main class="relative flex flex-row flex-auto break-all bg-white phone:break-normal phone:break-words w-full">
       <nuxt />
