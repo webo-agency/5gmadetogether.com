@@ -1,33 +1,7 @@
 <template>
   <div>
-    <!-- <nav class="flex flex-wrap items-center justify-between pt-4 tablet:sticky top-0 z-50 bg-white">
-      <div class="navbar-menu flex flex-wrap order-1 desktop:order-1 flex-row items-center">
-        <span class="block mb-4">{{ generalData.header_text_before }}</span> <nuxt-img
-          v-for="(logo, index) in generalData.header_logo"
-          :key="index"
-          class="h-auto w-32 mx-4 mb-4 max-w-full"
-          :src="logo.header_logo_image.sizes['post-thumbnail']"
-          :title="logo.header_logo_image.title"
-          :alt="logo.header_logo_image.alt"
-          :height="logo.header_logo_image.sizes['post-thumbnail-height']"
-          :width="logo.header_logo_image.sizes['post-thumbnail-width']"
-          sizes="sm:128px md:256px lg:256px"
-          quality="60"
-          format="webp"
-          :modifiers="{ format: 'webp' }"
-        />
-      </div>
-      <div class="navbar-menu hidden order-4 desktop:order-3 lg:text-right w-full phone:w-auto mb-4 mx-auto phablet:mr-0 tablet:mx-0">
-        <a 
-          class="inline-block py-4 px-2 phone:px-8 leading-none text-white text-xs phone:text-base bg-primaryNormal hover:bg-primaryDark font-semibold rounded shadow my-4 desktop:my-0 w-full phone:w-48 tablet:w-auto text-center w-max-full" 
-          :href="generalData.event_url"
-        >
-          {{ generalData.event_title }}
-        </a>
-      </div>
-    </nav> -->
-    <nav class="w-full bg-white">
-      <div class="w-4/5 mx-auto flex items-center justify-between pt-4 top-0 z-50">
+    <nav class="w-full fixed z-50 text-[#002738]" :class="{'bg-white':!isTransparent}">
+      <div class="w-4/5 mx-auto flex items-center justify-between py-4 top-0 z-50">
         <svg width="150" height="43" viewBox="0 0 150 43" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M50.2723 20.9277L48.4417 31.1337H45.9115L47.0575 24.7222L43.6343 31.1337H41.4465L40.3153 24.7368L39.1693 31.1337H36.6094L38.44 20.9277H41.5507L43.1283 28.037L47.1766 20.9277H50.2723Z" fill="#002738"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M50.4282 20.9673L50.2722 20.7808H47.0842L43.1938 27.6127C43.1938 27.6127 41.6777 20.7808 41.6777 20.7808H38.3072L36.4531 31.1172L36.6092 31.3038H39.3018L40.3141 25.6532C40.3141 25.6532 41.3133 31.3038 41.3133 31.3038H43.7293L46.7247 25.6935C46.7247 25.6934 45.7552 31.1173 45.7552 31.1173L45.9113 31.3038H48.5742L50.4282 20.9673V20.9673ZM50.0826 21.0979L48.3088 30.9867C48.3088 30.9867 46.1008 30.9867 46.1008 30.9867C46.1008 30.9867 47.2134 24.7617 47.2134 24.7617L46.9175 24.6591L43.5391 30.9867C43.5391 30.9867 41.5793 30.9867 41.5793 30.9867C41.5793 30.9867 40.4713 24.7208 40.4713 24.7208L40.1591 24.7204L39.0365 30.9867C39.0365 30.9867 36.7987 30.9867 36.7987 30.9867C36.7987 30.9867 38.5725 21.0979 38.5725 21.0979H41.4232C41.4233 21.0979 42.9733 28.0829 42.9733 28.0829L43.2659 28.127L47.2686 21.0979L50.0826 21.0979V21.0979Z" fill="#002738"/>
@@ -56,14 +30,14 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87282 14.6L5.31917 10.4621H18.3636L17.595 14.7291H8.39863L7.09098 18.4562L7.10072 18.4482C8.47595 17.3095 10.0619 16.9947 11.329 16.9947C15.5106 16.9947 17.2789 19.1465 17.2789 22.4686C17.2789 22.5299 17.2779 22.5922 17.2759 22.6558C17.3172 22.4984 17.3544 22.3452 17.3746 22.2354C17.8156 19.841 20.5498 14.7291 26.6809 14.7291C27.9481 14.7291 29.5905 14.9517 30.9657 16.0901C32.5165 17.374 32.7362 19.3746 32.7359 20.6514L28.0509 20.6501C28.0554 20.1706 27.8505 18.6631 25.8939 18.7241C23.1665 18.8092 22.1517 21.4895 21.9895 24.3165C21.9041 25.8035 22.7967 27.3967 24.5824 27.3967C25.3559 27.3967 27.0028 27.3379 27.7056 25.6795H25.5701L26.1901 22.2354H32.734L31.15 30.9838H28.0499L28.1878 29.4682H28.119C28.119 29.4682 27.2806 30.5247 25.4593 31.0994C23.6377 31.6737 20.2707 31.5713 18.4159 29.3073C17.4429 28.1198 17.0299 26.7038 17.03 25.2834C17.03 24.9834 17.0393 24.5944 17.0501 24.2433C16.7509 25.48 16.1481 26.8458 15.1841 28.0224C13.7674 29.7516 11.2794 31.3666 7.27444 31.4071C5.59896 31.4238 3.40741 31.1495 1.9095 30.0259C0.512134 28.9777 -0.264409 27.1702 0.0821522 24.7152H5.1109C4.99526 26.9698 7.15854 27.2692 8.2408 27.2692C10.0265 27.2692 12.0819 25.7289 12.0819 23.3179C12.0819 20.7073 10.2031 20.5808 9.09016 20.5808C7.13272 20.5808 6.53689 21.4134 5.78867 22.1676H1.2176L3.87276 14.6H3.87282ZM37.3827 12.6258C35.4627 11.2892 29.4084 5.81613 20.13 14.1753C27.607 8.33746 33.9295 14.1972 34.3979 14.6218C35.3513 13.9807 36.7547 13.0398 37.3827 12.6258H37.3827ZM43.4129 8.80166C40.5371 6.58454 30.9696 1.0292 20.908 12.0431C29.7104 3.71571 38.2355 11.2234 39.0366 11.789C40.1673 11.0285 42.6687 9.29264 43.4129 8.80166ZM51.9972 3.73903C48.8685 1.18758 41.2501 -1.70987 32.9897 1.24971C29.0506 2.66105 24.9046 5.40268 21.3545 10.2201C25.5836 5.95665 29.11 4.48739 32.6068 4.1192C39.4092 3.40289 44.7142 7.54735 45.3759 8.01453C46.7892 7.0635 51.0662 4.35289 51.9971 3.73901L51.9972 3.73903Z" fill="#002738"/>
           <path d="M35.4749 37.7802V37.7793H49.4947V38.9686L23.8198 38.9696L20.0153 42.8074H0V41.618H19.4754L23.2797 37.7802H35.4748H35.4749Z" fill="#002738"/>
         </svg>
-        <div class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-body font-medium">
+        <div class="flex justify-between space-x-5 desktop:space-x-[50px] text text-base font-body font-medium text-[#002738]">
           <h3>About</h3>
           <h3>Explore</h3>
           <h3>Speakers</h3>
           <h3>Agenda</h3>
         </div>
         <div class="flex items-center">
-          <a href="" class="mr-[12px] border-b-[2px] border-b-[#002738] text-base font-body font-medium">Register now</a>
+          <a href="" class="mr-[12px] border-b-[2px] border-b-[#002738] text-base font-body font-medium text-[#002738">Register now</a>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.25 3.75L10.3562 4.62063L15.0937 9.375H2.5V10.625H15.0937L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z" fill="#002738"/>
           </svg>
