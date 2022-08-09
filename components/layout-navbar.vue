@@ -32,14 +32,14 @@
           <path d="M35.4749 37.7802V37.7793H49.4947V38.9686L23.8198 38.9696L20.0153 42.8074H0V41.618H19.4754L23.2797 37.7802H35.4748H35.4749Z" fill="#002738"/>
           </svg>
         </div>
-        <div class="flex justify-between space-x-5 desktop:space-x-[50px] text text-base font-body font-semibold text-[#002738]">
-          <CustomLink  :title="'About'"></CustomLink>
-          <CustomLink  :title="'Explore'"></CustomLink>
-          <CustomLink  :title="'Speakers'"></CustomLink>
-          <CustomLink  :title="'Agenda'"></CustomLink>
+        <div class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-semibold text-[#002738]">
+          <CustomLink :url="''" :title="'About'"></CustomLink>
+          <CustomLink :url="''" :title="'Explore'"></CustomLink>
+          <CustomLink :url="''" :title="'Speakers'"></CustomLink>
+          <CustomLink :url="''" :title="'Agenda'"></CustomLink>
         </div>
         <div class="flex items-center">
-          <CustomLink  :title="'Register now'" class="mr-[12px] border-b-[2px] border-b-[#002738] text-base font-body font-semibold text-[#002738]"></CustomLink>
+          <CustomLink  :title="'Register now'" class="mr-[12px] border-b-[2px] border-b-[#002738] text-base font-semibold text-[#002738]"></CustomLink>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.25 3.75L10.3562 4.62063L15.0937 9.375H2.5V10.625H15.0937L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z" fill="#002738"/>
           </svg>

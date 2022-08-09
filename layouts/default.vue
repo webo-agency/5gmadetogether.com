@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-backgroundDark min-w-container w-full">
+  <div class="flex flex-col min-h-screen bg-backgroundDark min-w-container w-full font-body">
     <LayoutNavbar/>
     <!-- To do te klasy tak byly przedtem-->
     <main>

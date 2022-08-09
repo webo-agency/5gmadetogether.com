@@ -1,55 +1,32 @@
 <template>
   <div class="w-full">
-    <section
-      class="relative py-24 tablet:py-20 px-4 phablet:px-4 text-center"
-    >
-    <!-- 5g image banner -->
-      <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
-        <nuxt-picture
-          :src="frontPageData.hero_background.url"
-          class="block overflow-hidden absolute desktop:rounded h-full inset-0 z-auto object-cover banner"
-          :alt="frontPageData.hero_background.alt"
-          :title="frontPageData.hero_background.title"
-          sizes="sm:768px md:1247px lg:1552px"
-          quality="60"
-          :modifiers="{ format: 'webp' }"
-        />
-      </div>
-<!-- Banner inner -->
-      <div class="w-full tablet:px-24 desktop:px-36 mr-auto">
-        <div class="relative max-w-xl z-10 ml-0 text-left">
-          <header class="font-body">
+    <section class="flex items-end min-h-[880px] px-4 phablet:px-4 text-center bg-no-repeat bg-cover" style="background-image: url(/img/banner.png)">
+      <div class=" w-full mb-8 z-10 text-left ">
+          <header class="max-w-3xl ml-52 mb-6 text-left">
             <h1
-              class="mb-6 px-10 py-6 tracking-wide text-white font-bold text-3xl bg-[#002738] phone:text-base text-center phablet:text-left tablet:text-4xl">
+              class="px-10 py-8 tracking-wide leading-tight text-white font-medium text-[50px] min-w-full bg-[#002738] ">
               Open RAN for Beyond 5G Wireless Networks:
-              <span class="block font-normal text-base text-center phablet:text-left uppercase phone:text-2xl tablet:text-4xl">CHALLENGES AND VISIONS</span>
+              <span class="font-hairline text-[50px] text-center">CHALLENGES AND VISIONS</span>
             </h1>
-            <span class="mx-8 text-[#002738]">Online conference</span>
+          <div class="px-10 mt-4">
+            <span class="text-[#002738] font-medium">Online conference</span>
             <time
               datetime="2021-05-27T10:00Z"
-              class="block font-normal text-[#002738] mx-8 mb-8 text-base text-center phablet:text-left phone:text-base desktop:text-2xl">
+              class="block font-semibold text-[#002738] text-[20px] text-left">
               October 14th, 2021 | 9:00 AM - 3:00 PM CEST
             </time>
-          </header>
-          <div
-            class="mx-8 flex items-start justify-start flex-col phablet:flex-row flex-wrap"
-          >
-            <a
-              class="hidden text-base font-body py-4 w-full phone:w-auto phone:px-14 phone:mx-auto phablet:px-8 phablet:mr-6 phablet:ml-0 leading-none text-blue-950 bg-primarySecond hover:bg-primaryDark font-semibold rounded shadow text-center mb-4 tablet:mb-0"
-              :href="generalData.event_url"
-            >
-              {{ generalData.event_title }}
-            </a>
-
-            <a
-              v-scroll-to="'#read-more'"
-              class="inline-block text-base font-body py-2 mx-auto phablet:ml-0 leading-none text-primarySecond font-medium border-b-2 border-primarySecond hover:text-primaryDark"
-              :href="frontPageData.link_read_more"
-            >
-              {{ frontPageData.link_read_more_title }}
-            </a>
+            <div class="flex justify-start items-center mt-8 space-x-16">
+              <CustomLink>
+                  <button class="px-6 py-[13px] bg-[#39E8EA] rounded-lg shadow-lg font-medium">Register now
+                  <svg class="inline ml-4" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.25 0.75L8.35625 1.62063L13.0938 6.375L0.5 6.375V7.625L13.0938 7.625L8.35625 12.3581L9.25 13.25L15.5 7L9.25 0.75Z" fill="#002738"/>
+                  </svg>
+                </button>
+              </CustomLink>
+              <CustomLink :title="'Read more'" class="pr-4 border-b-[2px] border-b-[#002738] font-medium"/>
+            </div>
           </div>
-        </div>
+          </header>
       </div>
     </section>
 
@@ -471,6 +448,8 @@ import {
 import 'swiper/swiper.min.css'
 import 'swiper/modules/grid/grid.min.css'
 import About from '~/components/About.vue'
+import CustomLink from '~/components/custom-link.vue'
+// import CustomLink from '~/components/custom-link.vue'
 
 export default {
     name: "FrontPage",
@@ -605,7 +584,7 @@ export default {
             }
         },
     },
-    components: { About }
+    components: { About, CustomLink, CustomLink }
 }
 </script>
 

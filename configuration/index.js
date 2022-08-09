@@ -30,7 +30,7 @@ export default {
     CONTEXT: process.env.CONTEXT,
     API_URL: API_URL,
     API_AFFIX: API_AFFIX,
-    GOOGLE_FONTS: 'Poppins:wght@300;400;500;700&display=swap',
+    GOOGLE_FONTS: 'Poppins:300,400,500,700',
   },
   globalName: process.env.NAME,
   components: true,
