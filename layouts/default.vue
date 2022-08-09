@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen bg-backgroundDark min-w-container w-full">
     <LayoutNavbar/>
     <!-- To do te klasy tak byly przedtem-->
-    <main class="relative flex flex-row flex-auto break-all bg-white phone:break-normal phone:break-words w-full">
+    <main>
       <nuxt />
     </main>
     <LayoutFooter/>

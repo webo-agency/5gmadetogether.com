@@ -1,10 +1,10 @@
 <template>
   <div class="w-full">
     <section
-      class="py-24 tablet:py-20 px-4 phablet:px-4 text-center relative"
+      class="relative py-24 tablet:py-20 px-4 phablet:px-4 text-center"
     >
-    <!-- 5g image banenr -->
-      <!-- <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
+    <!-- 5g image banner -->
+      <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
         <nuxt-picture
           :src="frontPageData.hero_background.url"
           class="block overflow-hidden absolute desktop:rounded h-full inset-0 z-auto object-cover banner"
@@ -14,31 +14,21 @@
           quality="60"
           :modifiers="{ format: 'webp' }"
         />
-      </div> -->
-
+      </div>
+<!-- Banner inner -->
       <div class="w-full tablet:px-24 desktop:px-36 mr-auto">
         <div class="relative max-w-xl z-10 ml-0 text-left">
           <header class="font-body">
-            <div
-              class="text-5xl mt-8 mb-32 leading-tight font-semibold font-heading text-white"
-              v-html="require('~/assets/logo/5g-made-together.svg?include')"
-            />
-
             <h1
-              class="mb-6 px-10 py-6 tracking-wide text-blue-950 font-bold text-3xl bg-primarySecond phone:text-base text-center phablet:text-left tablet:text-4xl"
-            >
-              {{ frontPageData.hero_title }}
-              <span
-                class="block font-normal text-base text-center phablet:text-left uppercase phone:text-2xl tablet:text-4xl"
-              >
-                {{ frontPageData.hero_subtitle }}
-              </span>
+              class="mb-6 px-10 py-6 tracking-wide text-white font-bold text-3xl bg-[#002738] phone:text-base text-center phablet:text-left tablet:text-4xl">
+              Open RAN for Beyond 5G Wireless Networks:
+              <span class="block font-normal text-base text-center phablet:text-left uppercase phone:text-2xl tablet:text-4xl">CHALLENGES AND VISIONS</span>
             </h1>
+            <span class="mx-8 text-[#002738]">Online conference</span>
             <time
               datetime="2021-05-27T10:00Z"
-              class="block font-normal text-primarySecond mx-8 mb-8 text-base text-center phablet:text-left phone:text-base desktop:text-2xl"
-            >
-              {{ frontPageData.hero_time_title }}
+              class="block font-normal text-[#002738] mx-8 mb-8 text-base text-center phablet:text-left phone:text-base desktop:text-2xl">
+              October 14th, 2021 | 9:00 AM - 3:00 PM CEST
             </time>
           </header>
           <div
@@ -63,7 +53,9 @@
       </div>
     </section>
 
-    <section id="read-more" class="container pt-12 phablet:py-12">
+<!-- About the conference -->
+
+    <!-- <section id="read-more" class="container pt-12 phablet:py-12">
       <div class="flex flex-wrap phablet:-mx-4">
         <div class="w-full desktop:w-1/2 phablet:px-4 mb-8 desktop:mb-0">
           <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
@@ -87,7 +79,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <About/>
 
     <section class="desktop:mx-16 py-8">
       <div class="py-24 text-left relative">
@@ -477,145 +470,142 @@ import {
 
 import 'swiper/swiper.min.css'
 import 'swiper/modules/grid/grid.min.css'
+import About from '~/components/About.vue'
 
 export default {
-  name: 'FrontPage',
-  filters: {
-    dateConvert: function (time) {
-      if (!time) return ''
-
-      time = time
-        .toString()
-        .match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time]
-
-      if (time.length > 1) {
-        // If time format correct
-        time = time.slice(1) // Remove full string match value
-        time[5] = +time[0] < 12 ? 'AM' : 'PM' // Set AM/PM
-        time[0] = +time[0] % 12 || 12 // Adjust hours
-      }
-
-      time[3] = ' ' //remove seconds
-
-      return time.join('')
+    name: "FrontPage",
+    filters: {
+        dateConvert: function (time) {
+            if (!time)
+                return "";
+            time = time
+                .toString()
+                .match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+            if (time.length > 1) {
+                // If time format correct
+                time = time.slice(1); // Remove full string match value
+                time[5] = +time[0] < 12 ? "AM" : "PM"; // Set AM/PM
+                time[0] = +time[0] % 12 || 12; // Adjust hours
+            }
+            time[3] = " "; //remove seconds
+            return time.join("");
+        },
+        dateStandardConvert: function (time) {
+            if (!time)
+                return "";
+            return time.concat("2021-05-27T", time.slice(0, -3), "Z");
+        },
     },
-    dateStandardConvert: function (time) {
-      if (!time) return ''
-      return time.concat('2021-05-27T', time.slice(0, -3), 'Z')
-    },
-  },
-  data: function () {
-    return {
-      swiperIndex: 0,
-      swiperCount: 0,
-      iframeYoutubeSrc: '',
-      liveURL: '',
-      swiperOptionsObject: {
-        modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],
-        spaceBetween: 0,
-        direction: 'horizontal',
-        grid: {
-          fill: 'column',
-          rows: 2,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
-          dynamicBullets: true,
-          dynamicMainBullets: 1,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: false,
-        scrollbar: false,
-        breakpoints: {
-          '320': {
-            slidesPerView: 1,
-            grid: {
-              fill: 'column',
-              rows: 1,
+    data: function () {
+        return {
+            swiperIndex: 0,
+            swiperCount: 0,
+            iframeYoutubeSrc: "",
+            liveURL: "",
+            swiperOptionsObject: {
+                modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],
+                spaceBetween: 0,
+                direction: "horizontal",
+                grid: {
+                    fill: "column",
+                    rows: 2,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
+                    clickable: true,
+                    dynamicBullets: true,
+                    dynamicMainBullets: 1,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                loop: false,
+                scrollbar: false,
+                breakpoints: {
+                    "320": {
+                        slidesPerView: 1,
+                        grid: {
+                            fill: "column",
+                            rows: 1,
+                        },
+                    },
+                    "1024": {
+                        slidesPerView: 3,
+                        grid: {
+                            fill: "row",
+                            rows: 2,
+                        },
+                    },
+                },
             },
-          },
-          '1024': {
-            slidesPerView: 3,
-            grid: {
-              fill: 'row',
-              rows: 2,
-            },
-          },
+        };
+    },
+    async fetch({ app, store }) {
+        await app.$wp
+            .namespace("wuxt")
+            .v1()
+            .frontPage()
+            .then(function (data) {
+            store.commit("homepage/save", data);
+        });
+    },
+    head() {
+        return {
+            title: this.frontPageData.head_tags_title,
+            meta: this.frontPageData.head_tags_meta,
+            script: this.frontPageData.head_tags_script,
+            link: this.frontPageData.head_tags_link,
+        };
+    },
+    computed: {
+        frontPageData() {
+            return this.$store.getters["homepage/getData"];
         },
-      },
-    }
-  },
-  async fetch({ app, store }) {
-    await app.$wp
-      .namespace('wuxt')
-      .v1()
-      .frontPage()
-      .then(function (data) {
-        store.commit('homepage/save', data)
-      })
-  },
-  head() {
-    return {
-      title: this.frontPageData.head_tags_title,
-      meta: this.frontPageData.head_tags_meta,
-      script: this.frontPageData.head_tags_script,
-      link: this.frontPageData.head_tags_link,
-    }
-  },
-  computed: {
-    frontPageData() {
-      return this.$store.getters['homepage/getData']
+        generalData() {
+            return this.$store.getters["general/getData"];
+        },
     },
-    generalData() {
-      return this.$store.getters['general/getData']
+    created() {
+        this.liveURL = this.frontPageData.section_live_embed;
     },
-  },
-  created() {
-    this.liveURL = this.frontPageData.section_live_embed
-  },
-  mounted() {
-    this.$data.swiper = new Swiper('#carousel', this.swiperOptionsObject)
-  },
-  methods: {
-    updateLiveURL() {
-      return this.liveURL
+    mounted() {
+        this.$data.swiper = new Swiper("#carousel", this.swiperOptionsObject);
     },
-    youtubeUpdateSrc() {
-      this.iframeYoutubeSrc = this.liveURL
+    methods: {
+        updateLiveURL() {
+            return this.liveURL;
+        },
+        youtubeUpdateSrc() {
+            this.iframeYoutubeSrc = this.liveURL;
+        },
+        viewMinutCount(e) {
+            if (e.type == "enter") {
+                this.$refs.countMinute.start();
+            }
+            if (e.type == "exit") {
+                this.$refs.countMinute.reset();
+            }
+        },
+        viewPrelegentCount(e) {
+            if (e.type == "enter") {
+                this.$refs.countPrelegent.start();
+            }
+            if (e.type == "exit") {
+                this.$refs.countPrelegent.reset();
+            }
+        },
+        viewDebateCount(e) {
+            if (e.type == "enter") {
+                this.$refs.countDebate.start();
+            }
+            if (e.type == "exit") {
+                this.$refs.countDebate.reset();
+            }
+        },
     },
-    viewMinutCount(e) {
-      if (e.type == 'enter') {
-        this.$refs.countMinute.start()
-      }
-
-      if (e.type == 'exit') {
-        this.$refs.countMinute.reset()
-      }
-    },
-    viewPrelegentCount(e) {
-      if (e.type == 'enter') {
-        this.$refs.countPrelegent.start()
-      }
-
-      if (e.type == 'exit') {
-        this.$refs.countPrelegent.reset()
-      }
-    },
-    viewDebateCount(e) {
-      if (e.type == 'enter') {
-        this.$refs.countDebate.start()
-      }
-
-      if (e.type == 'exit') {
-        this.$refs.countDebate.reset()
-      }
-    },
-  },
+    components: { About }
 }
 </script>
 
