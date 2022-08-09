@@ -1,6 +1,6 @@
 <template>
-    <section class="flex items-end min-h-[880px] px-4 phablet:px-4 text-center bg-no-repeat bg-cover" style="background-image: url(/img/banner.png)">
-      <div class=" w-full mb-8 z-10 text-left ">
+    <section class="flex w-full items-end min-h-[880px] px-4 phablet:px-4 text-center bg-no-repeat bg-cover" style="background-image: url(/img/banner.png)">
+      <div class=" w-full mb-8 z-10 text-left container">
           <header class="max-w-3xl ml-52 mb-6 text-left">
             <h1
               class="px-10 py-8 tracking-wide leading-tight text-white font-medium text-[50px] min-w-full bg-[#002738] ">

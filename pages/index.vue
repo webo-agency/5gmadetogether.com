@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <Banner/>
-    <About/>
+    <!-- <About/> -->
 <!-- About the conference -->
 
     <!-- <section id="read-more" class="container pt-12 phablet:py-12">
