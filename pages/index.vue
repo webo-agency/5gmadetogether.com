@@ -4,7 +4,7 @@
       class="py-24 tablet:py-20 px-4 phablet:px-4 text-center relative"
     >
     <!-- 5g image banenr -->
-      <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
+      <!-- <div class="absolute w-full h-full inset-0 z-auto bg-blue-950">
         <nuxt-picture
           :src="frontPageData.hero_background.url"
           class="block overflow-hidden absolute desktop:rounded h-full inset-0 z-auto object-cover banner"
@@ -14,7 +14,7 @@
           quality="60"
           :modifiers="{ format: 'webp' }"
         />
-      </div>
+      </div> -->
 
       <div class="w-full tablet:px-24 desktop:px-36 mr-auto">
         <div class="relative max-w-xl z-10 ml-0 text-left">
@@ -216,7 +216,7 @@
           <a
             v-show="!iframeYoutubeSrc"
             :href="frontPageData.section_live_link"
-            class="absolute inset-0 z-50"
+            class="absolute inset-0 z-40"
           >
             <img
               :src="frontPageData.section_live_thumbnail"
@@ -225,7 +225,7 @@
             />
             <svg
               height="80px"
-              class="absolute inset-0 m-auto z-60 pointer-events-none"
+              class="absolute inset-0 m-auto z-40 pointer-events-none"
               viewBox="0 -77 512.00213 512"
               width="100px"
               xmlns="http://www.w3.org/2000/svg"
