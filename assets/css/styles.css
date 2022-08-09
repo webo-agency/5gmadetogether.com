@@ -128,56 +128,6 @@ picture img{
 .swiper-button-next{
     right: 30px;
 }
-/* 
-.swiper-pagination{
-    position: absolute;
-    text-align: center;
-    transition: .3s opacity;
-    transform: translate3d(0,0,0);
-    z-index: 10;
-    overflow: hidden;
-    font-size: 0;
-    bottom: 0;
-    left: 50%;
-}
-
-.swiper-pagination-bullet{
-    width: 8px;
-    height: 8px;
-    display: inline-block;
-    background: #000;
-    @apply cursor-pointer;
-    @apply rounded-full;
-    @apply transition;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active-prev-prev,
-.swiper-pagination-bullet.swiper-pagination-bullet-active-prev,
-.swiper-pagination-bullet.swiper-pagination-bullet-active,
-.swiper-pagination-bullet.swiper-pagination-bullet-active-next,
-.swiper-pagination-bullet.swiper-pagination-bullet-active-next{
-    background-color: #0f0;
-    @apply rounded-full;
-}
-
-.swiper-pagination-bullet-active{
-    transform: scale(1.333);
-    @apply bg-primaryNormal;
-}
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
 
   .swiper-pagination {
     position: absolute;

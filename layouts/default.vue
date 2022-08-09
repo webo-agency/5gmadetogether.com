@@ -1,14 +1,11 @@
 <template>
   <div class="flex flex-col min-h-screen bg-backgroundDark min-w-container w-full">
-    <LayoutNavbar
-    />
+    <LayoutNavbar/>
+    <!-- To do te klasy tak byly przedtem-->
     <main class="relative flex flex-row flex-auto break-all bg-white phone:break-normal phone:break-words w-full">
       <nuxt />
     </main>
-    <LayoutFooter
-      main-class="mt-auto bg-white flex-0-auto bg-backgroundDark"
-      main-tag="footer"
-    />
+    <LayoutFooter/>
   </div>
 </template>
 

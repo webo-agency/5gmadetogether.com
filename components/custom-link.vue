@@ -60,17 +60,17 @@ export default {
     urlFormatted() {
       let formattedUrl = this.url
         .replace(this.$config.API_URL, "")
-        .replace("https://www.webo.agency", "");
+        .replace("https://5gmadetogether.com", "");
       return formattedUrl;
     },
     isExternalCheck() {
       var r = new RegExp("^(?:[a-z+]+:)?//", "i");
-      if (!this.url.includes("https://www.webo.agency")) {
+      if (!this.url.includes("https://5gmadetogether.com")) {
         return true;
       }
       var urlCheck = this.url
         .replace(this.$config.API_URL, "")
-        .replace("https://www.webo.agency", "");
+        .replace("https://5gmadetogether.com", "");
       if (r.test(urlCheck)) {
         return true;
       }
