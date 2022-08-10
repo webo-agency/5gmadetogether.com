@@ -1,5 +1,5 @@
 <template>
-    <section class="flex w-full items-end min-h-[880px] text-center bg-no-repeat bg-cover" style="background-image: url(/img/banner.png)">
+    <section class="flex w-full items-end min-h-[880px] mb-36 text-center bg-no-repeat bg-cover" style="background-image: url(/img/banner.png)">
       <div class="container mb-8 z-10 text-left">
           <header class="max-w-3xl mb-6 text-left">
             <h1

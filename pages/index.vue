@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <Banner/>
-    <!-- <About/> -->
+    <AboutConference/>
 <!-- About the conference -->
 
     <!-- <section id="read-more" class="container pt-12 phablet:py-12">
@@ -426,7 +426,7 @@ import {
 
 import 'swiper/swiper.min.css'
 import 'swiper/modules/grid/grid.min.css'
-import About from '~/components/About.vue'
+import AboutConference from '~/components/AboutConference.vue'
 import CustomLink from '~/components/custom-link.vue'
 import Banner from '../components/Banner.vue'
 // import CustomLink from '~/components/custom-link.vue'
@@ -564,7 +564,7 @@ export default {
             }
         },
     },
-    components: { About, CustomLink, CustomLink, Banner }
+    components: { AboutConference, CustomLink, CustomLink, Banner }
 }
 </script>
 
