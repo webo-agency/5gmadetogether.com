@@ -3,34 +3,9 @@
     <Banner/>
     <AboutConference/>
     <TopicsCovered/>
-<!-- About the conference -->
 
-    <!-- <section id="read-more" class="container pt-12 phablet:py-12">
-      <div class="flex flex-wrap phablet:-mx-4">
-        <div class="w-full desktop:w-1/2 phablet:px-4 mb-8 desktop:mb-0">
-          <div class="flex flex-col h-full tablet:py-8 tablet:pr-8 rounded">
-            <div class="content" v-html="frontPageData.content.rendered" />
-          </div>
-        </div>
-        <div class="desktop:w-1/2 phablet:px-4">
-          <div class="flex flex-wrap phablet:-m-2">
-            <div class="phablet:p-2">
-              <nuxt-picture
-                class="phablet:rounded shadow h-auto object-cover"
-                :src="frontPageData.page_image_additionall.url"
-                :title="frontPageData.page_image_additionall.title"
-                :alt="frontPageData.page_image_additionall.alt"
-                :width="frontPageData.page_image_additionall.width"
-                :height="frontPageData.page_image_additionall.height"
-                quality="70"
-                :modifiers="{ format: 'webp' }"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-   
+
+
 <!-- Conference in numbers -->
 
     <section class="desktop:mx-16 py-8">
@@ -132,6 +107,7 @@
           </div>
         </div>
 
+<!-- Tlo -->
         <div class="absolute inset-0 overflow-hidden overlay">
           <nuxt-picture
             class="flex absolute w-full object-cover h-full rounded banner"
