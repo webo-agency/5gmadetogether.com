@@ -10,14 +10,19 @@
                 </div>
                 <h3 class="ml-[7.5rem] text-[35px] font-medium max-w-[33rem] leading-snug">Discover challanges and visions of 5G wireless network</h3>
           </div>
+            <div class="container mt-[4rem]">
+                <div class="ml-28">
+                    <p class="leading-relaxed">Among the leading experts from the world of science and business, we want to talk about the future of telecommunications and what awaits us after 5G. Work on the next generations of telecommunications standards is underway in many places around the world – with this event we want to give the opportunity to meet and talk to those who develop technologies and those who will implement and commercialize them.</p>
+                </div>
+            </div>
             <div class="absolute top-0 left-16 z-0">
                 <img src="../static/img/About.png" alt="">
             </div>
             <div class="absolute top-[6.5rem] left-40 z-0">
                 <img src="../static/img/Conference.png" alt="">
             </div>
+
         </div>
-        <p class="w-full text-basel leading-relaxed mt-[4rem] mx-auto max-w-4xl">Among the leading experts from the world of science and business, we want to talk about the future of telecommunications and what awaits us after 5G. Work on the next generations of telecommunications standards is underway in many places around the world – with this event we want to give the opportunity to meet and talk to those who develop technologies and those who will implement and commercialize them.</p>
     </section>
 </template>
 <script>
