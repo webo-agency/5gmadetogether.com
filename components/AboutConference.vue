@@ -12,7 +12,7 @@
           </div>
             <div class="container mt-[4rem]">
                 <div class="ml-28">
-                    <p class="leading-relaxed">Among the leading experts from the world of science and business, we want to talk about the future of telecommunications and what awaits us after 5G. Work on the next generations of telecommunications standards is underway in many places around the world – with this event we want to give the opportunity to meet and talk to those who develop technologies and those who will implement and commercialize them.</p>
+                    <p class="leading-relaxed text-[#002738]">Among the leading experts from the world of science and business, we want to talk about the future of telecommunications and what awaits us after 5G. Work on the next generations of telecommunications standards is underway in many places around the world – with this event we want to give the opportunity to meet and talk to those who develop technologies and those who will implement and commercialize them.</p>
                 </div>
             </div>
             <div class="absolute top-0 left-16 z-0">
