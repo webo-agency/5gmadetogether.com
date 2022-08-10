@@ -16,18 +16,18 @@
                         <div class="text-[25px] font-semibold uppercase">topics covered</div> 
                     </div>
                     <!--Pojedyncza linijka tematow ! Do zamiany na komponent -->
-                        <div class="flex justify-between items-center mt-12 pb-4 border-b border-b-[#F3F3F3]">
+                        <div class="flex justify-between items-center mt-6 pb-4 border-b border-b-[#F3F3F3]">
                             <div class="flex justify-start items-center space-x-10">
                                 <div class="text-2xl text-[#F7F9F9] font-bold strokeme ml-2">01</div>
                                 <div class="text-[#002738] font-semibold">Wireless network management </div>
                             </div>
-                            <div class="relative w-4 h-4 shrink-0 grow-0">
-                                <span class="absolute top-[6px]">
+                            <div class="relative w-4 h-4 shrink-0 grow-0 cursor-pointer" @click="rotateCross()" >
+                                <span class="absolute top-[6px] transition-all duration-500" :class="{'rotate-180':crossExpanded}">
                                     <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="14" height="2" fill="#39E8EA"/>
                                     </svg>
                                 </span>
-                                <span class="absolute left-[6px] ">
+                                <span class="absolute left-[6px] transition-all duration-500" :class="{'rotate-90':crossExpanded}">
                                     <svg width="2" height="14" viewBox="0 0 2 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="2" width="14" height="2" transform="rotate(90 2 0)" fill="#39E8EA"/>
                                     </svg>
@@ -35,7 +35,6 @@
                             </div>
                         </div>
                         <!--  -->
-                        
                 </div>
             </div>
         </div>
@@ -47,7 +46,13 @@
 export default {
     data(){
         return{
-
+            crossExpanded: false
+        }
+    },
+    methods: {
+        rotateCross(){
+            this.crossExpanded = !this.crossExpanded
+            console.log(1)
         }
     }
 }
