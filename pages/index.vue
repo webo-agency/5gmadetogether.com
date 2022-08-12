@@ -5,6 +5,7 @@
     <TopicsCovered/>
     <ConferenceNumbers/>
     <YoutubePlayer/>
+    <KeynoteSpeakers/>
 
 <!-- Video section -->
 <!-- <section class="container py-12 text-center">
@@ -291,6 +292,7 @@ import Banner from '../components/Banner.vue'
 import TopicsCovered from '../components/TopicsCovered.vue'
 import ConferenceNumbers from '../components/ConferenceNumbers.vue'
 import YoutubePlayer from '../components/YoutubePlayer.vue'
+import KeynoteSpeakers from '../components/KeynoteSpeakers.vue'
 // import CustomLink from '~/components/custom-link.vue'
 
 export default {
@@ -426,7 +428,7 @@ export default {
             }
         },
     },
-    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer }
+    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers }
 }
 </script>
 

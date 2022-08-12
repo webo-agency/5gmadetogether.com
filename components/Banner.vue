@@ -15,7 +15,7 @@
               October 14th, 2021 | 9:00 AM - 3:00 PM CEST
             </time>
             <div class="flex justify-start items-center mt-8 space-x-16">
-              <CustomLink>
+              <CustomLink :url="'/'">
                   <button class="px-6 py-[13px] bg-[#39E8EA] rounded-lg shadow-lg font-medium">Register now
                   <svg class="inline ml-4" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.25 0.75L8.35625 1.62063L13.0938 6.375L0.5 6.375V7.625L13.0938 7.625L8.35625 12.3581L9.25 13.25L15.5 7L9.25 0.75Z" fill="#002738"/>
