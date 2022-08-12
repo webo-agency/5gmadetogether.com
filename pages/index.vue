@@ -3,138 +3,13 @@
     <Banner/>
     <AboutConference/>
     <TopicsCovered/>
-
-
-
-<!-- Conference in numbers -->
-
-    <section class="desktop:mx-16 py-8">
-      <div class="py-24 text-left relative">
-        <div class="container title">
-          <h2 class="text-white z-50 relative">
-            {{ frontPageData.section_count_title }}
-          </h2>
-        </div>
-
-        <div class="container flex flex-wrap relative z-50">
-          <div class="desktop:w-1/3 desktop:pr-4 mb-6 relative">
-            <h3
-              class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl"
-            >
-              <count-to
-                ref="countMinute"
-                v-view.once="viewMinutCount"
-                :start-val="0"
-                :end-val="
-                  parseInt(
-                    frontPageData.section_count_block_first.block_first_count,
-                  )
-                "
-                :duration="3000"
-                :autoplay="false"
-                :suffix="
-                  ' ' +
-                  frontPageData.section_count_block_first
-                    .block_first_count_prefix
-                "
-              />
-            </h3>
-            <p class="text-white leading-relaxed">
-              {{
-                frontPageData.section_count_block_first.block_first_description
-              }}
-            </p>
-          </div>
-
-          <div class="desktop:w-1/3 desktop:px-4 mb-6 relative">
-            <h3
-              class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl"
-            >
-              <count-to
-                ref="countPrelegent"
-                v-view.once="viewPrelegentCount"
-                :start-val="0"
-                :end-val="
-                  parseInt(
-                    frontPageData.section_count_block_second.block_second_count,
-                  )
-                "
-                :duration="3000"
-                :autoplay="false"
-                :suffix="
-                  ' ' +
-                  frontPageData.section_count_block_second
-                    .block_second_count_prefix
-                "
-              />
-            </h3>
-            <p class="text-white leading-relaxed">
-              {{
-                frontPageData.section_count_block_second
-                  .block_second_description
-              }}
-            </p>
-          </div>
-
-          <div class="desktop:w-1/3 desktop:pl-4 mb-6 relative">
-            <h3
-              class="text-highlight text-xl my-3 font-semibold font-heading phone:text-4xl"
-            >
-              <count-to
-                ref="countDebate"
-                v-view.once="viewDebateCount"
-                class="text-highlight"
-                :start-val="0"
-                :end-val="
-                  parseInt(
-                    frontPageData.section_count_block_third.block_third_count,
-                  )
-                "
-                :duration="3000"
-                :autoplay="false"
-                :suffix="
-                  ' ' +
-                  frontPageData.section_count_block_third
-                    .block_third_count_prefix
-                "
-              />
-            </h3>
-            <p class="text-white leading-relaxed">
-              {{
-                frontPageData.section_count_block_third.block_third_description
-              }}
-            </p>
-          </div>
-        </div>
-
-<!-- Tlo -->
-        <div class="absolute inset-0 overflow-hidden overlay">
-          <nuxt-picture
-            class="flex absolute w-full object-cover h-full rounded banner"
-            :src="frontPageData.section_count_background.url"
-            :alt="frontPageData.section_count_background.alt"
-            :title="frontPageData.section_count_background.title"
-            :width="frontPageData.section_count_background.width"
-            :height="frontPageData.section_count_background.height"
-            sizes="sm:1552px md:1552px lg:1552px"
-            quality="100"
-            format="webp"
-            :modifiers="{ format: 'webp' }"
-          />
-        </div>
-      </div>
-    </section>
-
+    <ConferenceNumbers/>
+    <YoutubePlayer/>
 
 <!-- Video section -->
-    <section class="container py-12 text-center">
-      <div class="">
-        <h2
-          class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center"
-        >
-          {{ frontPageData.section_live_title }}
-        </h2>
-        <div class="flex mx-auto shadow-2xl mb-12 relative">
+<!-- <section class="container py-12 text-center">
+  <div class="flex mx-auto shadow-2xl mb-12 relative">
+
           <a
             v-show="!iframeYoutubeSrc"
             :href="frontPageData.section_live_link"
@@ -162,6 +37,8 @@
               />
             </svg>
           </a>
+
+          
           <LazyYoutube
             :src="frontPageData.section_live_link"
             iframe-class="mx-auto w-full h-full rounded z-0"
@@ -171,14 +48,19 @@
             :custom-title="frontPageData.section_live_title"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          />
-        </div>
-      </div>
-    </section>
+            >
+          <template #button>
+            <div class="bg-contain bg-no-repeat w-full h-full" style="background-image: url(/img/playbutton.png)">
+            </div>
+          </template>
+          </LazyYoutube>
+  </div>
+</section> -->
 
 
 <!-- Swiper section -->
-    <section
+
+    <!-- <section
       class="desktop:mx-16 bg-gray-100 relative py-8 text-center rounded"
     >
       <div class="container flex flex-wrap justify-around">
@@ -290,7 +172,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
 <!-- Agenda section -->
@@ -407,6 +289,8 @@ import AboutConference from '~/components/AboutConference.vue'
 import CustomLink from '~/components/custom-link.vue'
 import Banner from '../components/Banner.vue'
 import TopicsCovered from '../components/TopicsCovered.vue'
+import ConferenceNumbers from '../components/ConferenceNumbers.vue'
+import YoutubePlayer from '../components/YoutubePlayer.vue'
 // import CustomLink from '~/components/custom-link.vue'
 
 export default {
@@ -542,7 +426,7 @@ export default {
             }
         },
     },
-    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered }
+    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer }
 }
 </script>
 

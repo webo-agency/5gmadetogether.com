@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="w-full z-50 text-[#002738]">
+    <!-- <footer class="w-full z-50 text-[#002738]">
         <div class="w-4/5 mx-auto flex items-center justify-between py-4 top-0 z-50">
           <svg width="150" height="43" viewBox="0 0 150 43" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50.2723 20.9277L48.4417 31.1337H45.9115L47.0575 24.7222L43.6343 31.1337H41.4465L40.3153 24.7368L39.1693 31.1337H36.6094L38.44 20.9277H41.5507L43.1283 28.037L47.1766 20.9277H50.2723Z" fill="#002738"/>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </div>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
