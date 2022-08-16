@@ -1,6 +1,14 @@
 <template>
     <section class="container py-12 text-center">
         <div @click.once="handleClick('playVideo', 'youtubeLazyVideo')" class="relative flex justify-center items-center mx-auto shadow-2xl mb-12">
+
+            <img
+              v-show="playerActive"
+              :src="'/img/test.png'"
+              class="absolute z-30 w-full h-full top-0 right-0 object-cover"
+              alt="Youtube"
+            />
+
         <div v-if="playerActive" class="absolute right-0 top-0 z-30 bg-[#F7F9F9] w-[484px] desktop:h-[180px]">
             <!-- To do watch to live -->
             <div class="relative flex flex-col items-start justify-center h-[180px] ml-16">
@@ -13,22 +21,14 @@
                     <h3 class="ml-12 text-[35px] font-medium leading-snug">Watch live here</h3>
             </div>
         </div>
-        <button v-if="playVisible" class="absolute z-50">
+        <button v-if="playVisible" class="absolute z-30">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50" cy="50" r="47.5" stroke="white" stroke-width="5"/>
                 <path d="M35.6089 25.0737L78.7825 49.9999L35.6089 74.9262L35.6089 25.0737Z" fill="white"/>
             </svg>
         </button>
-          <!-- <a
-            :href="''"
-            class="absolute inset-0 z-40"
-          >
-            <img
-              :src=""
-              class="w-full h-full object-cover"
-              alt="Youtube"
-            />
-          </a> -->
+
+
         <LazyYoutube
             ref="youtubeLazyVideo"
             :src="youtubeLink"

@@ -61,7 +61,7 @@
 
 <!-- Swiper section -->
 
-    <!-- <section
+    <section
       class="desktop:mx-16 bg-gray-100 relative py-8 text-center rounded"
     >
       <div class="container flex flex-wrap justify-around">
@@ -74,39 +74,10 @@
           <div id="carousel" class="swiper">
             <div class="swiper-wrapper">
               <div
+                class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 border-less-height"
+
                 v-for="(person, index) in frontPageData.section_panel_person"
                 :key="index"
-                class="swiper-slide p-8 mb-4 border-l-0 tablet:border-b-0 border-less-height"
-                :class="
-                  String.prototype.concat(
-                    '',
-                    ' ',
-                    index < frontPageData.section_panel_person.length - 1
-                      ? 'border-b'
-                      : '',
-                    ' ',
-                    index < frontPageData.section_panel_person.length - 2
-                      ? ''
-                      : 'tablet:border-b-0',
-                    ' ',
-                    index < frontPageData.section_panel_person.length - 3
-                      ? ''
-                      : 'desktop:border-b-0',
-                    ' ',
-                    index % 3 == 0 ||
-                      index == 0 ||
-                      index == 13 ||
-                      index == 12 ||
-                      index == 14
-                      ? 'tablet:border-l'
-                      : '',
-                    ' ',
-                    index == 8 || index == 11 || index == 12
-                      ? ''
-                      : 'tablet:border-r',
-                    ' ',
-                  )
-                "
               >
                 <nuxt-picture
                   class="block overflow-hidden w-32 mx-auto mb-4 rounded-full"
@@ -140,9 +111,12 @@
               </div>
             </div>
           </div>
+
           <div class="w-full flex items-center justify-center">
             <div class="swiper-pagination block" />
           </div>
+
+          
           <div tabindex="0" class="swiper-button-prev" role="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -157,6 +131,8 @@
               />
             </svg>
           </div>
+
+
           <div tabindex="0" class="swiper-button-next" role="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -173,11 +149,12 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
 
 <!-- Agenda section -->
-    <section id="agenda" class="container py-12">
+
+    <!-- <section id="agenda" class="container py-12">
       <div class="max-w-3xl mx-auto">
         <h2
           class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center"
@@ -270,7 +247,8 @@
           </li>
         </ol>
       </div>
-    </section>
+    </section> -->
+
   </div>
 </template>
 
