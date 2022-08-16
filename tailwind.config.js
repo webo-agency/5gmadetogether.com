@@ -34,6 +34,8 @@ module.exports = {
         'desktop': '1248px',
         'desktop-wide': '1440px',
         'full-hd': '1680px',
+        'desktop-large': '2000px',
+
       },
       colors: {
           current: 'currentColor',
@@ -549,9 +551,6 @@ module.exports = {
           },
           '@screen desktop': {
             maxWidth: '1440px',
-          },
-          '@screen full-hd': {
-            // maxWidth: '1920px',
           },
         }
       })

@@ -6,6 +6,7 @@
     <ConferenceNumbers/>
     <YoutubePlayer/>
     <KeynoteSpeakers/>
+    <SpeakersSwiper/>
 
 <!-- Video section -->
 <!-- <section class="container py-12 text-center">
@@ -61,7 +62,7 @@
 
 <!-- Swiper section -->
 
-    <section
+    <!-- <section
       class="desktop:mx-16 bg-gray-100 relative py-8 text-center rounded"
     >
       <div class="container flex flex-wrap justify-around">
@@ -149,105 +150,8 @@
           </div>
         </div>
       </div>
-    </section>
-
-
-<!-- Agenda section -->
-
-    <!-- <section id="agenda" class="container py-12">
-      <div class="max-w-3xl mx-auto">
-        <h2
-          class="text-3xl font-medium font-heading mb-8 flex flex-row items-center uppercase z-50 relative w-full text-center justify-center"
-        >
-          {{ frontPageData.section_agenda_title }}
-        </h2>
-
-        <ol>
-          <li
-            v-for="(appointment,
-            index) in frontPageData.section_agenda_appointment"
-            :key="index"
-            v-view.once
-            class="flex flex-row flex-wrap mb-2 pb-2 text-gray-900"
-            :class="
-              String.prototype.concat(
-                '',
-                ' ',
-                appointment.section_agenda_appointment_border &&
-                  index < frontPageData.section_agenda_appointment.length - 1
-                  ? 'animate-border border-b'
-                  : '',
-                ' ',
-                !appointment.section_agenda_appointment_title
-                  ? 'tablet:flex-nowrap'
-                  : '',
-                ' ',
-              )
-            "
-          >
-            <span
-              v-if="
-                appointment.section_agenda_appointment_time != '' &&
-                !appointment.section_agenda_appointment_time_end
-              "
-              class="block time-dash flex-none uppercase"
-            >
-              <time
-                :datetime="
-                  appointment.section_agenda_appointment_time
-                    | dateStandardConvert
-                "
-              >
-                {{ appointment.section_agenda_appointment_time | dateConvert }}
-              </time>
-            </span>
-            <span
-              v-if="
-                appointment.section_agenda_appointment_time != '' &&
-                appointment.section_agenda_appointment_time_end
-              "
-              class="block time-dash flex-none w-48 uppercase"
-            >
-              <time
-                :datetime="
-                  appointment.section_agenda_appointment_time
-                    | dateStandardConvert
-                "
-              >
-                {{ appointment.section_agenda_appointment_time | dateConvert }}
-              </time>
-              &nbsp;-&nbsp;
-              <time
-                :datetime="
-                  appointment.section_agenda_appointment_time_end
-                    | dateStandardConvert
-                "
-              >
-                {{
-                  appointment.section_agenda_appointment_time_end | dateConvert
-                }}
-              </time>
-            </span>
-            <span
-              v-if="appointment.section_agenda_appointment_title != ''"
-              class="block mb-1 uppercase"
-            >
-              {{ appointment.section_agenda_appointment_title }}
-            </span>
-            <span
-              v-if="appointment.section_agenda_appointment_topic != ''"
-              class="block mb-1 agenda-content"
-              :class="
-                appointment.section_agenda_appointment_title
-                  ? 'ml-0 phablet:ml-28'
-                  : ''
-              "
-              v-html="appointment.section_agenda_appointment_topic"
-            />
-          </li>
-        </ol>
-      </div>
     </section> -->
+
 
   </div>
 </template>
@@ -271,6 +175,7 @@ import TopicsCovered from '../components/TopicsCovered.vue'
 import ConferenceNumbers from '../components/ConferenceNumbers.vue'
 import YoutubePlayer from '../components/YoutubePlayer.vue'
 import KeynoteSpeakers from '../components/KeynoteSpeakers.vue'
+import SpeakersSwiper from '../components/SpeakersSwiper.vue'
 // import CustomLink from '~/components/custom-link.vue'
 
 export default {
@@ -406,7 +311,7 @@ export default {
             }
         },
     },
-    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers }
+    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers, SpeakersSwiper }
 }
 </script>
 
