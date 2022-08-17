@@ -6,10 +6,8 @@
                     <div class="relative swiper h-full">
                         <div class="swiper-wrapper flex h-full">
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <!-- <div class="relative bg-gradient-to-t from-[#F7F9F9] to-[#002738] content-[''] inset-0 w-full h-full z-40">
-                                    </div> -->
                                     <nuxt-picture
-                                    class="relative block after:content-[''] after:bg-gradient-to-t from-[#F7F9F9] to-[#002738] w-full h-full z-40 inset-0 "
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Mark.png'"
                                     width="282px"
                                     height="350px"
@@ -27,12 +25,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Filipe.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -40,12 +38,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Katherine.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -53,12 +51,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Marta.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -66,12 +64,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Robert.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -79,12 +77,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Katherine.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -92,12 +90,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Katherine.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -105,12 +103,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Katherine.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -118,12 +116,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Katherine.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
@@ -131,12 +129,12 @@
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
                                     <nuxt-picture
-                                    class=""
+                                    class="relative block after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
                                     :src="'/img/Katherine.png'"
                                     width="282px"
                                     height="350px"
                                     />
-                                    <div class="font-semibold text-base">Professor</div>
+                                    <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
                                 </div>
