@@ -3,19 +3,21 @@
         <div class="transition duration-500">
             <div class="relative container">
                 <div class="relative h-full w-screen overflow-hidden">
-                    <div class="swiper w-full h-full">
+                    <div class="relative swiper h-full">
                         <div class="swiper-wrapper flex h-full">
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
-                                    class=""
+                                    <!-- <div class="relative bg-gradient-to-t from-[#F7F9F9] to-[#002738] content-[''] inset-0 w-full h-full z-40">
+                                    </div> -->
+                                    <nuxt-picture
+                                    class="relative block after:content-[''] after:bg-gradient-to-t from-[#F7F9F9] to-[#002738] w-full h-full z-40 inset-0 "
                                     :src="'/img/Mark.png'"
-                                    width="280px"
+                                    width="282px"
                                     height="350px"
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
                                     <div class="border my-5 "></div>
-                                    <div class="max-w-xs text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
                                     <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
                                         <rect x="13" y="19" width="14" height="2" fill="#002738"/>
@@ -24,9 +26,10 @@
                                 </div>
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Filipe.png'"
+                                    width="282px"
                                     height="350px"
                                     />
                                     <div class="font-semibold text-base">Professor</div>
@@ -36,7 +39,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Katherine.png'"
                                     width="282px"
@@ -49,7 +52,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Marta.png'"
                                     width="282px"
@@ -62,7 +65,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Robert.png'"
                                     width="282px"
@@ -75,7 +78,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Katherine.png'"
                                     width="282px"
@@ -88,7 +91,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Katherine.png'"
                                     width="282px"
@@ -101,7 +104,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Katherine.png'"
                                     width="282px"
@@ -114,7 +117,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Katherine.png'"
                                     width="282px"
@@ -127,7 +130,7 @@
 
 
                                 <div class="swiper-slide w-1/6 max-w-[280px]">
-                                    <nuxt-img
+                                    <nuxt-picture
                                     class=""
                                     :src="'/img/Katherine.png'"
                                     width="282px"
@@ -146,7 +149,6 @@
                                     <circle cx="20" cy="20" r="19.5" fill="#39E8EA" fill-opacity="0.25" stroke="#39E8EA"/>
                                     <path d="M20.75 14L19.8562 14.8706L24.5938 19.625H12V20.875H24.5938L19.8562 25.6081L20.75 26.5L27 20.25L20.75 14Z" fill="#39E8EA"/>
                                 </svg>
-
                             </div>
                     </div>
                 </div>
@@ -215,20 +217,12 @@ export default{
 }
 
 
-
-.readMoreButton svg ,
-.readMoreButton svg path,
-.readMoreButton svg circle{
-    @apply transition;
-}
-
-
-.readMoreButton:hover svg ,
-.readMoreButton:hover svg path,
-.readMoreButton:hover svg circle{
-    fill: red;
-    
+@media all and (min-width: 2200px) {
+    .swiper-button-next{
+        left:65%;
+        top: 25%;
+        z-index: 10;
+    }
 }
 
 </style>
-
