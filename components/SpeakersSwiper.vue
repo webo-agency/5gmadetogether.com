@@ -14,7 +14,7 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="border my-5 "></div>
+                                    <div class="border my-5"></div>
                                     <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
                                     <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
@@ -32,7 +32,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -45,7 +51,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -58,7 +70,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -71,7 +89,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -84,7 +108,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -97,7 +127,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -110,7 +146,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -123,7 +165,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
 
 
@@ -136,7 +184,13 @@
                                     />
                                     <div class="mt-4 font-semibold text-base">Professor</div>
                                     <div class=" font-normal text-base">University of Oslo, Norway</div>
-                                    <div class="max-w-xs border-t-2 border-t-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat et officiis, voluptas aut totam ex non accusantium eos! Optio modi voluptatum et rem, officiis sunt!</div>
+                                    <div class="border my-5"></div>
+                                    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+                                    <svg class="mt-4" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" stroke="#002738"/>
+                                        <rect x="13" y="19" width="14" height="2" fill="#002738"/>
+                                        <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
+                                    </svg>
                                 </div>
                         </div>
                             <div class="swiper-pagination"></div>
