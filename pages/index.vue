@@ -6,7 +6,7 @@
     <ConferenceNumbers/>
     <YoutubePlayer/>
     <KeynoteSpeakers/>
-    <SpeakersSwiper/>
+    <SwiperSpeakers/>
   </div>
 </template>
 
@@ -19,8 +19,7 @@ import TopicsCovered from '../components/TopicsCovered.vue'
 import ConferenceNumbers from '../components/ConferenceNumbers.vue'
 import YoutubePlayer from '../components/YoutubePlayer.vue'
 import KeynoteSpeakers from '../components/KeynoteSpeakers.vue'
-import SpeakersSwiper from '../components/SpeakersSwiper.vue'
-// import CustomLink from '~/components/custom-link.vue'
+import SwiperSpeakers from '../components/SwiperSpeakers.vue'
 
 export default {
     name: "FrontPage",
@@ -56,8 +55,7 @@ export default {
             store.commit("homepage/save", data);
         });
     },
-
-    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers, SpeakersSwiper }
+    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers, SwiperSpeakers }
 }
 </script>
 
