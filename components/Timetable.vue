@@ -25,6 +25,7 @@
                     </div>
 
                     <!-- Wiersze tabeli-->
+                    <!-- Opening -->
                     <div class="flex justify-center items-center px-10 py-6 space-x-12 w-full bg-[#FFFFFF]">
                         <div class="flex items-center shrink-0 space-x-5">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,17 +40,17 @@
 
                     <div class="flex flex-col">
                         <!-- Pojedynczy wiersz kolumny -->
-                        <div class="py-8 border-b">
+                        <div class="py-8 border-b group">
                             <div class="flex space-x-12">
                                 <div class="flex items-start shrink-0 space-x-5">
-                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
-                                        <path d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F"/>
+                                    <svg class="group-hover:text-[#39E8EA] transition duration-300" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="fill-current" d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
+                                        <path class="fill-current" d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F" />
                                     </svg>
-                                    <div class="font-medium mt-[6px]">09:10 AM - 9:30 AM</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]">09:10 AM - 9:30 AM</div>
                                 </div>
                                 <div class="flex flex-col jusitfy-center space-y-2">
-                                    <div class="font-medium mt-[5px] pb-4">5G MADE TOGETHER - PARTNERS</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4">5G MADE TOGETHER - PARTNERS</div>
                                     <div class="font-medium">Jeremy Foy<span class="font-normal">(IBM Global Business Services, Hungary)</span></div>
                                     <div class="font-medium">Patrycja Sokalska-Pomacho<span class="font-normal">(Microsoft)</span></div>
                                     <div class="font-medium">Sherif Sedkey<span class="font-normal">(VMware)</span></div>
@@ -58,49 +59,49 @@
                         </div>
                         <!--  -->
 
-                        <div class="py-8 border-b">
+                        <div class="py-8 border-b group">
                             <div class="flex space-x-12">
                                 <div class="flex items-start shrink-0 space-x-5">
-                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
-                                        <path d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F"/>
+                                    <svg class="group-hover:text-[#39E8EA] transition duration-300" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="fill-current" d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
+                                        <path class="fill-current" d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F" />
                                     </svg>
-                                    <div class="font-medium mt-[6px]">09:30 AM - 9:40 AM</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]">09:30 AM - 9:40 AM</div>
                                 </div>
                                 <div class="flex flex-col jusitfy-center space-y-2">
-                                    <div class="font-medium mt-[5px] pb-4">5G MADE TOGETHER - PARTNERS</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4">5G MADE TOGETHER - PARTNERS</div>
                                     <div class="font-medium">Adam Flizikowski<span class="font-normal">(IS-Wireless, Poland)</span></div>
                                 </div>
                             </div>  
                         </div>
 
-                        <div class="py-8 border-b">
+                        <div class="py-8 border-b group">
                             <div class="flex space-x-12">
                                 <div class="flex items-start shrink-0 space-x-5">
-                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
-                                        <path d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F"/>
+                                    <svg class="group-hover:text-[#39E8EA] transition duration-300" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="fill-current" d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
+                                        <path class="fill-current" d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F" />
                                     </svg>
-                                    <div class="font-medium mt-[6px]">09:40 AM - 10:00 AM</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]">09:40 AM - 10:00 AM</div>
                                 </div>
                                 <div class="flex flex-col jusitfy-center space-y-2">
-                                    <div class="font-medium mt-[5px] pb-4">BEYOND 5G - WHERE ARE WE HEADING IN OPEN-RAN NETWORKS </div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4">BEYOND 5G - WHERE ARE WE HEADING IN OPEN-RAN NETWORKS </div>
                                     <div class="font-medium">John S. Vardakas<span class="font-normal">(Iquadrat, Spain)</span></div>
                                 </div>
                             </div>  
                         </div>
 
-                        <div class="py-8 border-b">
+                        <div class="py-8 border-b group">
                             <div class="flex space-x-12">
                                 <div class="flex items-start shrink-0 space-x-5">
-                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
-                                        <path d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F"/>
+                                    <svg class="group-hover:text-[#39E8EA] transition duration-300" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="fill-current" d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
+                                        <path class="fill-current" d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F" />
                                     </svg>
-                                    <div class="font-medium mt-[6px]">09:40 AM - 10:00 AM</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]">09:40 AM - 10:00 AM</div>
                                 </div>
                                 <div class="flex flex-col jusitfy-center space-y-2">
-                                    <div class="font-medium mt-[5px] pb-4">PANEL I: SECURITY CHALLANGES IN BEYOND 5G</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4">PANEL I: SECURITY CHALLANGES IN BEYOND 5G</div>
                                     <div class="font-medium">Jordi Mongay Batalla<span class="font-normal">(Warsaw University of Technology, Poland)</span></div>
                                     <div class="font-medium">Ahmad Ijaz<span class="font-normal">(VTT Technical Research Centre of Finland)</span></div>
                                     <div class="font-medium">Elżbieta Andrukiewicz<span class="font-normal">(National Institute of Telecommunications, Poland)</span></div>
@@ -110,17 +111,17 @@
                             </div>  
                         </div>
 
-                        <div class="py-8" :class="{lastBorder: isExpanded}">
+                        <div class="py-8 group" :class="{lastBorder: isExpanded}">
                             <div class="flex space-x-12">
                                 <div class="flex items-start shrink-0 space-x-5">
-                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
-                                        <path d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F"/>
+                                    <svg class="group-hover:text-[#39E8EA] transition duration-300" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="fill-current" d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
+                                        <path class="fill-current" d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F" />
                                     </svg>
-                                    <div class="font-medium mt-[6px]">09:40 AM - 10:00 AM</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]">09:40 AM - 10:00 AM</div>
                                 </div>
                                 <div class="flex flex-col jusitfy-center space-y-2">
-                                    <div class="font-medium mt-[5px] pb-4">PANEL II: CENTRAL AND EASTERN EUROPE APPROACH TO BEYOND 5G NETWORKS</div>
+                                    <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4">PANEL II: CENTRAL AND EASTERN EUROPE APPROACH TO BEYOND 5G NETWORKS</div>
                                     <div class="font-medium">Adam Flizikowski<span class="font-normal">(IS-Wireless, Poland)</span></div>
                                     <div class="font-medium">Viktor Melnyk<span class="font-normal">(John Paul II Catholic University of Lublin, Poland)</span></div>
                                     <div class="font-medium">Arturas Medeisis<span class="font-normal">(Vilnius Gediminas Technical University, Lithuania)</span></div>
@@ -131,17 +132,17 @@
                         </div>
 
                         <div v-if="isExpanded">
-                            <div class="py-8">
+                            <div class="py-8 group">
                                 <div class="flex space-x-12">
                                     <div class="flex items-start shrink-0 space-x-5">
-                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
-                                            <path d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F"/>
+                                        <svg class="group-hover:text-[#39E8EA] transition duration-300" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="fill-current" d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z" fill="#00212F"/>
+                                            <path class="fill-current" d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z" fill="#00212F" />
                                         </svg>
-                                        <div class="font-medium mt-[6px]">10:00 AM - 11:00 AM</div>
+                                        <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]">10:00 AM - 11:00 AM</div>
                                     </div>
                                     <div class="flex flex-col jusitfy-center space-y-2">
-                                        <div class="font-medium mt-[5px] pb-4">PANEL I: SECURITY CHALLANGES IN BEYOND 5G</div>
+                                        <div class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4">PANEL I: SECURITY CHALLANGES IN BEYOND 5G</div>
                                         <div class="font-medium">Test<span class="font-normal">(Warsaw University of Technology, Poland)</span></div>
                                         <div class="font-medium">Test<span class="font-normal">(VTT Technical Research Centre of Finland)</span></div>
                                         <div class="font-medium">Test<span class="font-normal">(National Institute of Telecommunications, Poland)</span></div>
