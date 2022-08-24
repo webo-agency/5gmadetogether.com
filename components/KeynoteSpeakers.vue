@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="mb-36">
+    <section id="about" class="mb-24">
             <div class="relative pt-12 container">
             <div class="relative flex flex-col justify-start z-10">
                 <div class="flex items-center space-x-2 ml-[4.5rem]">

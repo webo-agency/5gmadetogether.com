@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full pb-60 overflow-hidden">
+    <div class="w-full pb-40 overflow-hidden">
         <div class="container">
             <div class="h-full w-screen">
-                <div class="relative swiper h-full">
-                    <div class="swiper-wrapper flex h-full">
+                <div class="relative swiper h-full" >
+                    <div class="swiper-wrapper flex h-full mb-12" >
                         <div class="swiper-slide w-1/6 max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
@@ -41,11 +41,11 @@
                             <SpeakerProfile/>
                         </div>
                         <!-- Pusty div ktory zalatwia problemy ucinajacego ostatniego kafelka spowodowanego tym ze slideperview sa ustawione na auto -->
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 max-w-[120px]">
                             <div></div>
                         </div>
                         </div>
-                         <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-pagination"></div>
                         <div class="swiper-button-next cursor-pointer">
                         <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20" cy="20" r="19.5" fill="#39E8EA" fill-opacity="0.25" stroke="#39E8EA"/>
@@ -85,16 +85,12 @@ export default{
                 direction: "horizontal",
                 pagination: {
                     el: ".swiper-pagination",
-                    type: "bullets",
-                    clickable: true,
-                    dynamicBullets: true,
-                    dynamicMainBullets: 1,
+                    type: "progressbar",
                 },
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
-                scrollbar: false,
                 slidesPerView: "auto",
             },
         };
@@ -132,5 +128,8 @@ export default{
 .activebutton{
     @apply scale-110
 }
+
+
+
 
 </style>
