@@ -16,9 +16,9 @@
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 40L31 -1.35505e-06L43 -1.87959e-06L12 40L0 40Z" fill="#39E8EA"/>
                     </svg>
-                    <h5 class="text-[12px] font-medium leading-snug">Explore <span class="text-[#39E8EA]">- </span> </h5>
+                    <h5 class="text-[12px] font-medium leading-snug mt-3">Explore <span class="text-[#39E8EA]">- </span> </h5>
                 </div>
-                    <h3 class="ml-12 text-[35px] font-medium leading-snug">Watch live here</h3>
+                    <h3 class="ml-[3.1rem] text-[35px] font-medium leading-snug">Watch live here</h3>
             </div>
         </div>
         <button v-if="playVisible" class="absolute z-30">

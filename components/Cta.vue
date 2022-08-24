@@ -187,7 +187,7 @@
                             <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 40L31 -1.35505e-06L43 -1.87959e-06L12 40L0 40Z" fill="#39E8EA"/>
                             </svg>
-                            <h5 class="text-white text-[12px] leading-snug mt-4">BECOME A PART OF <span class="text-[#39E8EA]">5G MADE TOGETHER -</span> </h5>
+                            <h5 class="text-white text-[12px] leading-snug mt-3">BECOME A PART OF <span class="text-[#39E8EA]">5G MADE TOGETHER -</span> </h5>
                         </div>
                         <h3 class="text-white ml-[3.1rem] pb-8 text-[35px] font-medium max-w-[33rem] leading-none">Join the conference</h3>
                     </div>
@@ -199,7 +199,7 @@
                     <div>9:00 AM - 3:00 PM CEST</div>
                 </div>
                 <!-- Button -->
-                <div class="relative flex items-center space-x-2 px-6 py-2 bg-[#39E8EA] rounded-full shadow-lg">
+                <div class="relative flex items-center space-x-2 px-6 py-2 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer">
                     <div>Register now</div>
                     <div>
                         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
