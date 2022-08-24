@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full overflow-hidden py-10">
+    <div class="w-full overflow-hidden py-10 mb-64">
         <div class="container">
             <div class="relative ml-72 full-hd:ml-12">
                 <!-- Tlo -->
