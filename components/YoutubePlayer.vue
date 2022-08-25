@@ -9,7 +9,7 @@
               alt="Youtube"
             />
 
-        <div v-if="playerActive" class="absolute right-0 top-0 z-30 bg-[#F7F9F9] w-[484px] desktop:h-[180px]">
+        <div v-if="playerActive" class="absolute right-0 -top-16 z-30 bg-[#F7F9F9] w-[484px] desktop:h-[180px]">
             <!-- To do watch to live -->
             <div class="relative flex flex-col items-start justify-center h-[180px] ml-16">
                 <div class="flex items-center space-x-2">

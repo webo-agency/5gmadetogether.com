@@ -15,10 +15,10 @@
             <div class="ml-6 text-[#FFFFFF] uppercase">Mark Sadowsky</div>
         </div>
     </div>
-    <div class="mt-4 font-semibold text-base">Professor</div>
-    <div class=" font-normal text-base">University of Oslo, Norway</div>
+    <div class="mt-4 font-semibold text-base mx-2">Professor</div>
+    <div class=" font-normal text-base mx-2">University of Oslo, Norway</div>
     <div class="border my-5"></div>
-    <div class="max-w-xs text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
+    <div class="max-w-xs text-left mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
     <svg @click="toggleProfile()" @mouseover="isHovered = true" @mouseleave="isHovered = false" 
         :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']" 
         class="mt-4 w-8 h-8  transition duration-500" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
