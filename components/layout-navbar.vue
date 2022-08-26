@@ -62,16 +62,16 @@
             <path d="M35.4749 37.7802V37.7793H49.4947V38.9686L23.8198 38.9696L20.0153 42.8074H0V41.618H19.4754L23.2797 37.7802H35.4748H35.4749Z" fill="white"/>
           </svg>
         </div>
-        <div class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-semibold"
+        <div class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-medium"
         :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#00212F]']">
-          <CustomLink class="py-8 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'/'" :title="'About'"></CustomLink>
-          <CustomLink class="py-8 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'/'" :title="'Explore'"></CustomLink>
-          <CustomLink class="py-8 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'/'" :title="'Speakers'"></CustomLink>
-          <CustomLink class="py-8 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'/'" :title="'Agenda'"></CustomLink>
+          <CustomLink class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'https://5gmadetogether.com/#about'" :title="'About'"></CustomLink>
+          <CustomLink class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'https://5gmadetogether.com/#topics'" :title="'Explore'"></CustomLink>
+          <CustomLink class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'https://5gmadetogether.com/#speakers'" :title="'Speakers'"></CustomLink>
+          <CustomLink class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]" :url="'https://5gmadetogether.com/#agenda'" :title="'Agenda'"></CustomLink>
         </div>
         <div class="flex items-center border-b-[2px] border-b-[#002738]"
         :class="[isTransparent ? 'border-b-[#FFFFFF]' : 'border-b-[#002738]']">
-          <CustomLink :url="'/'" :title="'Register now'" class="mr-[12px] text-base font-semibold"
+          <CustomLink :url="'/'" :title="'Register now'" class="mr-[12px] text-base font-medium"
           :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#002738]']"></CustomLink>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
           :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#002738]']">

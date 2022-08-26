@@ -59,7 +59,7 @@ export default {
             store.commit("homepage/save", data);
         });
     },
-    components: { AboutConference, CustomLink, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers, SwiperSpeakers, Timetable, Cta }
+    components: { AboutConference, CustomLink, Banner, TopicsCovered, ConferenceNumbers, YoutubePlayer, KeynoteSpeakers, SwiperSpeakers, Timetable, Cta }
 }
 </script>
 

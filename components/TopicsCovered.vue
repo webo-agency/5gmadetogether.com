@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full overflow-hidden text-[#002738]">
+    <div id="topics" class="w-full overflow-hidden text-[#002738]">
         <div class="container ">
             <div class="relative mr-96">
             <div class="absolute top-0 left-full h-full w-[880px]" style="background-image: url(/img/topics.png); background-repeat: no-repeat;"></div>
