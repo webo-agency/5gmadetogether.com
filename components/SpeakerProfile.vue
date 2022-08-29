@@ -17,7 +17,7 @@
     </div>
     <div class="mt-4 font-semibold text-base mx-2">Professor</div>
     <div class=" font-normal text-base mx-2">University of Oslo, Norway</div>
-    <div class="border my-5"></div>
+    <div class="border-b-[1px] my-5"></div>
     <div class="max-w-xs text-left mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio numquam accusamus quidem fugiat.</div>
     <svg @click="toggleProfile()" @mouseover="isHovered = true" @mouseleave="isHovered = false" 
         :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']" 
@@ -35,7 +35,7 @@
             <div class="ml-6 text-xl font-medium">Mark Sadowsky</div>
             <div class="mt-4 font-semibold text-base">Professor</div>
             <div class=" font-normal text-base">University of Oslo, Norway</div>
-            <div class="my-5 border"></div>
+            <div class="my-5 border-b-[1px]"></div>
             <div class="text-[13px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
         <svg @click="toggleProfile()" @mouseover="isHovered = true" @mouseleave="isHovered = false" 
