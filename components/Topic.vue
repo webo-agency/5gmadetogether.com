@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="border-b-[2px] border-b-[#EDF1F1]" :class="[isExpanded ? 'border-b-transparent' : 'border-current']">
+        <div class="border-b-[1px] border-b-[#EDF1F1]" :class="[isExpanded ? 'border-b-transparent' : 'border-current']">
             <div @mouseover="isHovered = true" @mouseleave="isHovered = false"
             :class="[isHovered ? 'bg-[#FFFFFF]' : isExpanded ? 'bg-[#FFFFFF]' : 'bg-[#F6F8F8]']"
             class="flex justify-between items-center mt-6 py-4 text-[#00212F] transition duration-500">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div v-if="isExpanded"
-        class="border-b-[2px] border-b-[#EDF1F1]">
+        class="border-b-[1px] border-b-[#EDF1F1]">
             <div class="ml-[100px] py-5 font-light text-[#00212F]">e.g. RAN Disaggregation, Micro-service Oriented Architecture, Telemetry Aggregation and Processing, Multi-agent Management, Big Data Analytics, Zero-touch Service Management, etc.</div>
         </div>
     </div>
