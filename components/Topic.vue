@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="border-b-[1px] border-b-[#EDF1F1]" :class="[isExpanded ? 'border-b-transparent' : 'border-current']">
+        <div class="border-b-[1px] border-b-[#EDF1F1]" :class="[isExpanded ? 'border-b-transparent' : isHovered ? 'border-b-transparent' : 'border-current']">
             <div @mouseover="isHovered = true" @mouseleave="isHovered = false"
             :class="[isHovered ? 'bg-[#FFFFFF]' : isExpanded ? 'bg-[#FFFFFF]' : 'bg-[#F6F8F8]']"
             class="flex justify-between items-center mt-6 py-4 text-[#00212F] transition duration-500">
@@ -13,9 +13,9 @@
                 <svg @click="expand()"
                     :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']" 
                     class="mr-5 w-10 h-10  transition duration-500" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="19.5" class="stroke-current"/>
-                    <rect x="13" y="19" width="14" height="2" class="fill-current"/>
-                    <rect x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" class="fill-current"/>
+                    <circle class="stroke-current" cx="20" cy="20" r="19" stroke="#002738" stroke-width="2"/>
+                    <rect class="fill-current" x="13" y="19" width="14" height="2" fill="#002738"/>
+                    <rect class="fill-current" x="21" y="13" width="14" height="2" transform="rotate(90 21 13)" fill="#002738"/>
                 </svg>
             </div>
             <div v-else>
