@@ -4,44 +4,44 @@
             <div class="h-full w-screen">
                 <div class="relative swiper h-full" >
                     <div class="swiper-wrapper flex h-full mb-12" >
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[200px] max-w-[280px]">
                             <SpeakerProfile/>
                         </div>
                         <!-- Pusty div ktory zalatwia problemy ucinajacego ostatniego kafelka spowodowanego tym ze slideperview sa ustawione na auto -->
-                        <div class="swiper-slide w-1/6 max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[10px] max-w-[280px]">
                             <div></div>
                         </div>
                         </div>
@@ -117,10 +117,16 @@ export default{
     z-index: 10;
 }
 
-
-@media all and (min-width: 2200px) {
+@media all and (min-width: 1200px) {
     .swiper-button-next{
-        left:72%;
+        left:90%;
+        top: 25%;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .swiper-button-next{
+        left:80%;
         top: 25%;
     }
 }
