@@ -41,7 +41,7 @@
                             <SpeakerProfile/>
                         </div>
                         <!-- Pusty div ktory zalatwia problemy ucinajacego ostatniego kafelka spowodowanego tym ze slideperview sa ustawione na auto -->
-                        <div class="swiper-slide w-1/6 min-w-[10px] max-w-[280px]">
+                        <div class="swiper-slide w-1/6 min-w-[10px] max-w-[280px] invisible">
                             <div></div>
                         </div>
                         </div>
