@@ -112,3 +112,6 @@ typings/
 
 # vsc plugin History folder 
 .history
+
+# local file from Finder in macOS
+.DS_Store 
