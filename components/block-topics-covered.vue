@@ -1,6 +1,7 @@
 <template>
   <div class="relative">
-    <div class="absolute right-8 -top-48 -z-10">
+    <!-- waves should go to about section -->
+    <!-- <div class="absolute right-8 -top-48 -z-10">
       <svg
         class=" w-[550px] h-[450px]"
         width="795"
@@ -136,15 +137,13 @@
           fill="#F3F3F3"
         />
       </svg>
-    </div>
-    <div id="topics" class="w-full overflow-hidden text-[#002738]">
-      <div class="container ">
-        <div class="relative mr-96">
-          <div
-            class="absolute top-0 left-full h-full w-[880px]"
-            style="background-image: url(/img/topics.png); background-repeat: no-repeat;"
-          ></div>
-          <div class="absolute -left-12 top-1/3 z-0">
+    </div> -->
+
+    <div id="topics" class="overflow-hidden text-[#002738]">
+      <div class="contentContainer">
+        <div class="colsContainer flex desktop:flex-row flex-col">
+          <!-- vertical text left -->
+          <!-- <div class="z-0 desktop:basis-[10%]">
             <svg
               width="66"
               height="317"
@@ -157,8 +156,23 @@
                 fill="#39E8EA"
               />
             </svg>
+          </div> -->
+          <div
+            class="hidden desktop:block textContainer desktop:basis-[10%] bg-white"
+          >
+            <div class="textVertical max-w-[80px]">
+              <p
+                class="rotate-[-90deg] translate-y-[450px] translate-x-[78px] text-white text-[90px] font-bold"
+              >
+                TOPICS
+              </p>
+            </div>
           </div>
-          <div class="py-16 pl-20 pr-20 relative flex flex-col bg-[#F7F9F9]">
+
+          <!-- topic container -->
+          <div
+            class="py-16 px-5 relative flex flex-col bg-[#F7F9F9] desktop:basis-[55%]"
+          >
             <div class="relative container px-5">
               <div class="absolute scale-50 -top-4 -left-4">
                 <svg
@@ -190,6 +204,12 @@
             <Topic />
             <Topic />
           </div>
+
+          <!-- imgContainer -->
+          <div
+            class="imgRight desktop:max-w-[500px] desktop:h-auto h-[550px] desktop:basis-[35%]"
+            style="background-image: url(/img/topics.png); background-repeat: no-repeat; background-position: center; background-size: cover;"
+          ></div>
         </div>
       </div>
     </div>
@@ -197,8 +217,9 @@
 </template>
 
 <script>
-import Topic from "./Topic.vue";
+import Topic from "./component-topic.vue";
 export default {
+  components: { Topic },
   data() {
     return {
       crossExpanded: false
@@ -216,5 +237,8 @@ export default {
 <style scoped lang="postcss">
 >>> .strokeme {
   -webkit-text-stroke: 2px #002738;
+}
+.textVertical {
+  -webkit-text-stroke: 1px #39e8ea;
 }
 </style>
