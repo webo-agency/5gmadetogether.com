@@ -3,7 +3,7 @@
     <div class="relative pt-12 container">
       <!-- title container -->
       <div class="relative flex flex-col justify-start z-10">
-        <!-- subtitle shadow -->
+        <!-- title shadow -->
         <div
           class="subtitleShadow text-white desktop:text-[90px] text-[60px] font-semibold leading-[85px] absolute desktop:top-[-46px] top-[-20px] desktop:left-0 left-[-36px] z-[-1]"
         >
@@ -71,7 +71,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .subtitleShadow {
   -webkit-text-stroke: 0.5px #dddddd;
 }

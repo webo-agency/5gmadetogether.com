@@ -12,7 +12,10 @@
       <TopicsCovered />
     </PageSection>
 
-    <ConferenceNumbers />
+    <PageSection id="conferenceNumbers">
+      <ConferenceNumbers />
+    </PageSection>
+
     <YoutubePlayer />
     <KeynoteSpeakers />
     <SwiperSpeakers />
@@ -26,7 +29,7 @@ import AboutConference from "~/components/block-about-conference.vue";
 import CustomLink from "~/components/custom-link.vue";
 import Banner from "../components/block-banner.vue";
 import TopicsCovered from "../components/block-topics-covered.vue";
-import ConferenceNumbers from "../components/ConferenceNumbers.vue";
+import ConferenceNumbers from "../components/block-conference-numbers.vue";
 import YoutubePlayer from "../components/YoutubePlayer.vue";
 import KeynoteSpeakers from "../components/KeynoteSpeakers.vue";
 import SwiperSpeakers from "../components/SwiperSpeakers.vue";
