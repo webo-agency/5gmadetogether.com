@@ -147,7 +147,7 @@
     </div>
     <div class="flex flex-col">
       <div
-        class="flex justify-between items-center py-16 mx-24 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
+        class="flex justify-between items-center py-16 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
       >
         <div class="relative flex items-start ml-8 space-x-2">
           <div class="mt-3">
@@ -185,7 +185,7 @@
         </div>
       </div>
       <div
-        class="flex justify-between items-center py-16 mx-24 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
+        class="flex justify-between items-center py-16 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
       >
         <div class="relative flex items-start ml-8 space-x-2">
           <div class="mt-3">
@@ -221,7 +221,7 @@
           University Carlos III of Madrid, Virginia Tech, and more.
         </div>
       </div>
-      <div class="flex justify-between items-center py-16 mx-24">
+      <div class="flex justify-between items-center py-16">
         <div class="relative flex items-start ml-8 space-x-2">
           <div class="mt-3">
             <count-to
