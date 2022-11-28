@@ -15,8 +15,8 @@ export default {
 
 <style>
 .wrapper-menu {
-  width: 35px;
-  height: 30px;
+  width: 26px;
+  height: 20px;
   cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ export default {
 
 .open .line-menu.start {
   transform: rotate(45deg);
-  width: 40px;
+  width: 26px;
 }
 
 .line-menu.end {
@@ -51,6 +51,6 @@ export default {
 
 .open .line-menu.end {
   transform: rotate(-45deg);
-  width: 40px;
+  width: 26px;
 }
 </style>

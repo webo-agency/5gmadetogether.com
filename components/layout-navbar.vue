@@ -711,7 +711,9 @@
           </svg>
         </div>
         <div class="container mx-auto pt-4 top-0 z-50">
-          <div class="logo-and-hamburger flex justify-between w-full">
+          <div
+            class="logo-and-hamburger flex justify-between items-center w-full"
+          >
             <div
               v-if="!isTransparent && !mobileExpanded"
               @click="scrollToTop()"
