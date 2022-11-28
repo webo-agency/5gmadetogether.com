@@ -25,7 +25,9 @@
       <SwiperSpeakers />
     </PageSection>
 
-    <Timetable />
+    <PageSection id="timetable">
+      <Timetable />
+    </PageSection>
     <Cta />
   </div>
 </template>
@@ -39,7 +41,7 @@ import ConferenceNumbers from "../components/block-conference-numbers.vue";
 import YoutubePlayer from "../components/block-video-player.vue";
 import KeynoteSpeakers from "../components/block-keynote-speakers.vue";
 import SwiperSpeakers from "../components/block-swiper-speakers.vue";
-import Timetable from "../components/Timetable.vue";
+import Timetable from "../components/block-timetable.vue";
 import Cta from "../components/component-cta.vue";
 import PageSection from "~/components/page-section.vue";
 
