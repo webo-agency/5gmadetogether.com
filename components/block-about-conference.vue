@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="mb-36">
+  <div id="about" class="mb-36">
     <div class="relative pt-12 container">
       <!-- title container -->
       <div class="relative flex flex-col justify-start z-10">
@@ -55,7 +55,7 @@
         <img src="/static/img/Conference.png" alt="" />
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

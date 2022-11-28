@@ -16,9 +16,15 @@
       <ConferenceNumbers />
     </PageSection>
 
-    <YoutubePlayer />
-    <KeynoteSpeakers />
-    <SwiperSpeakers />
+    <PageSection id="videoPlayer">
+      <YoutubePlayer />
+    </PageSection>
+
+    <PageSection id="speakersSwiper">
+      <KeynoteSpeakers />
+      <SwiperSpeakers />
+    </PageSection>
+
     <Timetable />
     <Cta />
   </div>
@@ -30,9 +36,9 @@ import CustomLink from "~/components/custom-link.vue";
 import Banner from "../components/block-banner.vue";
 import TopicsCovered from "../components/block-topics-covered.vue";
 import ConferenceNumbers from "../components/block-conference-numbers.vue";
-import YoutubePlayer from "../components/YoutubePlayer.vue";
-import KeynoteSpeakers from "../components/KeynoteSpeakers.vue";
-import SwiperSpeakers from "../components/SwiperSpeakers.vue";
+import YoutubePlayer from "../components/block-video-player.vue";
+import KeynoteSpeakers from "../components/block-keynote-speakers.vue";
+import SwiperSpeakers from "../components/block-swiper-speakers.vue";
 import Timetable from "../components/Timetable.vue";
 import Cta from "../components/component-cta.vue";
 import PageSection from "~/components/page-section.vue";

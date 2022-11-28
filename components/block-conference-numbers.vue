@@ -1,5 +1,5 @@
 <template>
-  <div class="relative container py-32">
+  <div class="relative container py-32 overflow-hidden">
     <div class="absolute -z-10">
       <svg
         class="w-[450px]"
