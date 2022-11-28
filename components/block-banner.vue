@@ -257,7 +257,7 @@
 
 <script>
 export default {
-  name: "Banner"
+  name: "BlockBanner"
 };
 </script>
 

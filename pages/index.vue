@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <PageSection id="heroBanner">
-      <Banner />
+      <BlockBanner />
     </PageSection>
 
     <PageSection id="aboutConference">
@@ -26,7 +26,7 @@
     </PageSection>
 
     <PageSection id="timetable">
-      <Timetable />
+      <BlockTimetable />
     </PageSection>
 
     <PageSection id="cta">
@@ -38,13 +38,13 @@
 <script>
 import AboutConference from "~/components/block-about-conference.vue";
 import CustomLink from "~/components/custom-link.vue";
-import Banner from "../components/block-banner.vue";
+import BlockBanner from "../components/block-banner.vue";
 import TopicsCovered from "../components/block-topics-covered.vue";
 import ConferenceNumbers from "../components/block-conference-numbers.vue";
 import YoutubePlayer from "../components/block-video-player.vue";
 import KeynoteSpeakers from "../components/block-keynote-speakers.vue";
 import SwiperSpeakers from "../components/block-swiper-speakers.vue";
-import Timetable from "../components/block-timetable.vue";
+import BlockTimetable from "../components/block-timetable.vue";
 import Cta from "../components/component-cta.vue";
 import PageSection from "~/components/page-section.vue";
 
@@ -83,13 +83,13 @@ export default {
   components: {
     AboutConference,
     CustomLink,
-    Banner,
+    BlockBanner,
     TopicsCovered,
     ConferenceNumbers,
     YoutubePlayer,
     KeynoteSpeakers,
     SwiperSpeakers,
-    Timetable,
+    BlockTimetable,
     Cta,
     PageSection
   }

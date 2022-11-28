@@ -490,7 +490,7 @@
 import { useMediaQuery } from "@vueuse/core";
 
 export default {
-  name: "Timetable",
+  name: "BlockTimetable",
   setup() {
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");
 
