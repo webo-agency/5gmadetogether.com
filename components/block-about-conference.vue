@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="mb-36">
-    <div class="relative pt-12 container">
+    <div class="relative pt-12 container overflow-hidden">
       <!-- title container -->
       <div class="relative flex flex-col justify-start z-10">
         <!-- title shadow -->

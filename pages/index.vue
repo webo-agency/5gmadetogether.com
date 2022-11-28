@@ -28,7 +28,10 @@
     <PageSection id="timetable">
       <Timetable />
     </PageSection>
-    <Cta />
+
+    <PageSection id="cta">
+      <Cta />
+    </PageSection>
   </div>
 </template>
 

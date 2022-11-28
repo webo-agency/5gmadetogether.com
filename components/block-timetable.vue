@@ -25,13 +25,15 @@
         </div>
 
         <!-- Content right -->
-        <div class="right-col relative flex flex-col px-20 py-16 bg-[#F7F9F9]">
+        <div
+          class="right-col relative flex flex-col desktop:px-20 px-5 py-16 bg-[#F7F9F9]"
+        >
           <!-- Nagłówek -->
           <div class="relative flex flex-col justify-start z-10">
             <div class="flex items-center space-x-2">
               <svg
                 width="43"
-                height="40"
+                :height="isLargeScreen ? 40 : 20"
                 viewBox="0 0 43 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +48,7 @@
               </h5>
             </div>
             <h3
-              class="ml-[3.1rem] pb-8 text-[35px] font-medium max-w-[33rem] leading-none"
+              class="ml-[3.1rem] pb-8 desktop:text-[35px] text-[26px] font-medium max-w-[33rem] leading-none"
             >
               Events Timetable
             </h3>
@@ -55,9 +57,9 @@
           <!-- Wiersze tabeli-->
           <!-- Opening -->
           <div
-            class="flex justify-center items-center px-10 py-6 space-x-12 w-full bg-[#FFFFFF]"
+            class="flex flex-wrap justify-between items-center desktop:px-10 py-6 desktop:space-x-12 w-full bg-[#FFFFFF]"
           >
-            <div class="flex items-center shrink-0 space-x-5">
+            <div class="basis-[40%] desktop:space-x-5 flex items-center">
               <svg
                 width="35"
                 height="35"
@@ -74,10 +76,10 @@
                   fill="#00212F"
                 />
               </svg>
-              <div class="font-medium ">09:00 AM</div>
+              <div class="font-medium ml-[10px]">09:00 AM</div>
             </div>
-            <div class="font-medium">OPENING</div>
-            <div class="font-medium">
+            <div class="font-medium basis-[25%]">OPENING</div>
+            <div class="font-medium mx-auto desktop:text-[16px] text-[14px]">
               Sławomir Pierzyk <span class="font-normal">(Is-Wireless)</span>
             </div>
           </div>
@@ -85,8 +87,8 @@
           <div class="flex flex-col">
             <!-- Pojedynczy wiersz kolumny -->
             <div class="py-8 border-b group">
-              <div class="flex space-x-12">
-                <div class="flex items-start shrink-0 space-x-5">
+              <div class="flex flex-wrap desktop:space-x-12">
+                <div class="flex items-start shrink-0 desktop:space-x-5">
                   <svg
                     class="group-hover:text-[#39E8EA] transition duration-300"
                     width="35"
@@ -107,14 +109,16 @@
                     />
                   </svg>
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
                   >
                     09:10 AM - 9:30 AM
                   </div>
                 </div>
-                <div class="flex flex-col jusitfy-center space-y-2">
+                <div
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                >
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
                   >
                     5G MADE TOGETHER - PARTNERS
                   </div>
@@ -483,8 +487,17 @@
 </template>
 
 <script>
+import { useMediaQuery } from "@vueuse/core";
+
 export default {
   name: "Timetable",
+  setup() {
+    const isLargeScreen = useMediaQuery("(min-width: 1248px)");
+
+    return {
+      isLargeScreen
+    };
+  },
   data() {
     return {
       isExpanded: false,
