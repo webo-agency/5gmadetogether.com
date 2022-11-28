@@ -1,8 +1,17 @@
 <template>
   <div class="w-full">
-    <Banner />
-    <AboutConference />
-    <TopicsCovered />
+    <PageSection id="heroBanner">
+      <Banner />
+    </PageSection>
+
+    <PageSection id="aboutConference">
+      <AboutConference />
+    </PageSection>
+
+    <PageSection id="topicsCovered">
+      <TopicsCovered />
+    </PageSection>
+
     <ConferenceNumbers />
     <YoutubePlayer />
     <KeynoteSpeakers />
@@ -16,13 +25,14 @@
 import AboutConference from "~/components/block-about-conference.vue";
 import CustomLink from "~/components/custom-link.vue";
 import Banner from "../components/block-banner.vue";
-import TopicsCovered from "../components/TopicsCovered.vue";
+import TopicsCovered from "../components/block-topics-covered.vue";
 import ConferenceNumbers from "../components/ConferenceNumbers.vue";
 import YoutubePlayer from "../components/YoutubePlayer.vue";
 import KeynoteSpeakers from "../components/KeynoteSpeakers.vue";
 import SwiperSpeakers from "../components/SwiperSpeakers.vue";
 import Timetable from "../components/Timetable.vue";
 import Cta from "../components/component-cta.vue";
+import PageSection from "~/components/page-section.vue";
 
 export default {
   name: "FrontPage",
@@ -66,7 +76,8 @@ export default {
     KeynoteSpeakers,
     SwiperSpeakers,
     Timetable,
-    Cta
+    Cta,
+    PageSection
   }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section
+  <div
     class="flex w-full items-end h-[100vh] mb-36 text-center bg-no-repeat bg-cover"
     style="background-image: url(/img/banner.png)"
   >
@@ -252,7 +252,7 @@
         </div>
       </header>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
