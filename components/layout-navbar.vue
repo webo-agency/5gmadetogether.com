@@ -1389,7 +1389,7 @@
 import { useScroll, useMediaQuery } from "@vueuse/core";
 import { computed } from "@vue/composition-api";
 import CustomLink from "./custom-link.vue";
-import HamburgerBtn from "./HamburgerBtn.vue";
+import HamburgerBtn from "./btn-hamburger.vue";
 export default {
   name: "LayoutNavbar",
   props: {

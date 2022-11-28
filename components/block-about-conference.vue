@@ -1,11 +1,20 @@
 <template>
   <section id="about" class="mb-36">
     <div class="relative pt-12 container">
+      <!-- title container -->
       <div class="relative flex flex-col justify-start z-10">
-        <div class="flex items-center space-x-2 ml-[4.5rem]">
+        <!-- subtitle shadow -->
+        <div
+          class="subtitleShadow text-white desktop:text-[90px] text-[60px] font-semibold leading-[85px] absolute desktop:top-[-46px] top-[-20px] desktop:left-0 left-[-36px] z-[-1]"
+        >
+          <p class="shadowText uppercase">ABOUT THE</p>
+          <p class="shadowText2 uppercase ml-[70px]">CONFERENCE</p>
+        </div>
+
+        <div class="flex items-center space-x-2 desktop:ml-[4.5rem]">
           <svg
             width="43"
-            height="40"
+            :height="isLargeScreen ? '40' : '26'"
             viewBox="0 0 43 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,14 +29,15 @@
           </h5>
         </div>
         <h3
-          class="ml-[7.5rem] text-[35px] font-medium max-w-[33rem] leading-snug"
+          class="desktop:ml-[7.5rem] ml-[2rem] desktop:text-[35px] text-[26px] font-medium max-w-[33rem] leading-[42px]"
         >
           Discover challanges and visions of 5G wireless network
         </h3>
       </div>
+      <!-- desc -->
       <div class="container mt-[4rem]">
-        <div class="ml-28">
-          <p class="leading-relaxed text-[#002738] max-w-2xl">
+        <div class="desktop:ml-28">
+          <p class="leading-[28px] font-light text-[#002738] max-w-2xl">
             Among the leading experts from the world of science and business, we
             want to talk about the future of telecommunications and what awaits
             us after 5G. Work on the next generations of telecommunications
@@ -47,4 +57,22 @@
     </div>
   </section>
 </template>
-<script></script>
+
+<script>
+import { useMediaQuery } from "@vueuse/core";
+
+export default {
+  name: "AboutConference",
+  setup() {
+    const isLargeScreen = useMediaQuery("(min-width: 1248px)");
+
+    return { isLargeScreen };
+  }
+};
+</script>
+
+<style>
+.subtitleShadow {
+  -webkit-text-stroke: 0.5px #dddddd;
+}
+</style>
