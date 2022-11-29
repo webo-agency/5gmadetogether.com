@@ -1376,7 +1376,7 @@
             </div>
             <!-- Button -->
             <button
-              class="relative w-[190px] flex items-center space-x-2 px-6 py-3 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer"
+              class="relative w-[195px] flex items-center space-x-2 px-6 py-3 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer"
             >
               <div>Register now</div>
               <div>
