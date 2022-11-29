@@ -1,6 +1,6 @@
 <template>
-  <div class="tablet-small:container py-12 text-center">
-    <div class="tablet-small:hidden">
+  <div class="tablet:container py-12 text-center">
+    <div class="tablet:hidden">
       <div class="z-30 bg-[#F7F9F9] w-full h-full">
         <div
           class="relative flex flex-col items-start justify-center h-[180px] desktop:ml-16 ml-5"
