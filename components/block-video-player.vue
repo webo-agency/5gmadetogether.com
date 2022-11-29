@@ -1,5 +1,5 @@
 <template>
-  <div class=" tablet-small:container py-12 text-center">
+  <div class="tablet-small:container py-12 text-center">
     <div class="tablet-small:hidden">
       <div class="z-30 bg-[#F7F9F9] w-full h-full">
         <div
@@ -23,7 +23,7 @@
             </h5>
           </div>
           <h3
-            class="ml-[3.1rem] desktop:text-[35px] text-[26px] font-medium leading-snug"
+            class="ml-[3.1rem] text-[35px text-[26px] font-medium leading-snug"
           >
             Watch live here
           </h3>
@@ -62,7 +62,7 @@
       </div>
       <div v-if="playerActive">
         <div
-          class="hidden tablet-small:block absolute right-0 -top-16 z-30 bg-[#F7F9F9] w-[484px] desktop:h-[180px]"
+          class="hidden tablet:block absolute right-0 -top-16 z-30 bg-[#F7F9F9] w-[484px] desktop:h-[180px]"
         >
           <div
             class="relative flex flex-col items-start justify-center h-[180px] ml-16"
@@ -70,7 +70,7 @@
             <div class="flex items-center space-x-2">
               <svg
                 width="43"
-                height="40"
+                :height="isLargeScreen ? 40 : 25"
                 viewBox="0 0 43 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,9 @@
                 Explore <span class="text-[#39E8EA]">- </span>
               </h5>
             </div>
-            <h3 class="ml-[3.1rem] text-[35px] font-medium leading-snug">
+            <h3
+              class="ml-[3.1rem] desktop:text-[35px] tablet:text-[30px] font-medium leading-snug"
+            >
               Watch live here
             </h3>
           </div>

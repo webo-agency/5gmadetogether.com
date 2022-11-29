@@ -1,6 +1,8 @@
 <template>
   <div class="relative container py-32 overflow-hidden">
-    <div class="absolute -z-10">
+    <div
+      class="absolute desktop:top-[40px] tablet:top-[140px] top-[210px] tablet:left-[30px] -z-10"
+    >
       <svg
         class="w-[450px]"
         width="611"
@@ -137,24 +139,21 @@
         />
       </svg>
     </div>
-    <div class="relative mb-16 mx-auto max-w-md">
+    <div class="relative mb-16 tablet:mx-auto max-w-md">
       <!-- title shadow -->
       <div
-        class="subtitleShadow text-white desktop:text-[90px] text-[60px] font-semibold leading-[85px] absolute desktop:top-[-20px] top-[-20px] desktop:left-[-75px] left-[-36px] z-[-1]"
+        class="subtitleShadow text-white desktop:text-[90px] tablet:text-[75px] text-[60px] font-semibold leading-[85px] absolute desktop:top-[-20px] top-[-20px] desktop:left-[-75px] left-[-36px] z-[-1]"
       >
         <p class="shadowText uppercase">Numbers</p>
       </div>
       <!-- title -->
-      <div class="relative font-medium desktop:text-[35px] text-[26px] z-10">
-        Conference <br class="desktop:hidden" />in numbers
-      </div>
-      <div class="absolute -left-20 -top-2 z-0">
-        <img src="/static/img/Numbers.png" alt="" />
+      <div class="relative font-medium tablet:text-[35px] text-[26px] z-10">
+        Conference <br class="tablet:hidden" />in numbers
       </div>
     </div>
 
     <!-- numbers -->
-    <div class="countersContainer flex flex-col desktop:mx-[90px]">
+    <div class="countersContainer flex flex-col tablet:mx-[90px]">
       <div
         class="flex desktop:flex-row flex-col justify-between desktop:items-center py-8 gap-12 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
       >
@@ -168,7 +167,7 @@
               :duration="3000"
               :autoplay="true"
               :prefix="'+'"
-              class="block text-6xl font-medium leading-[30px]"
+              class="block desktop:text-[68px] tablet:text-[55px] text-[45px] font-medium leading-[30px]"
             />
           </div>
           <div class="absolute scale-50 -top-4 -left-10 ">
@@ -187,7 +186,7 @@
           </div>
           <div class="font-medium">MINUTES</div>
         </div>
-        <div class="max-w-xl font-light">
+        <div class="desktop:max-w-xl font-light">
           The debate and presentations about the latest trends in building
           telecommunications networks: ML/AI, Edge and cloud RAN, Security and
           more.
@@ -206,7 +205,7 @@
               :end-val="30"
               :duration="3000"
               :autoplay="true"
-              class="text-5xl font-medium leading-[30px]"
+              class="desktop:text-[68px] tablet:text-[55px] text-[45px] font-medium leading-[30px]"
             />
           </div>
           <div class="absolute scale-50 -top-4 -left-10 ">
@@ -225,7 +224,7 @@
           </div>
           <div class="font-medium">SPEAKERS</div>
         </div>
-        <div class="max-w-xl font-light">
+        <div class="desktop:max-w-xl font-light">
           Top figures from universities and R&D centers leading the
           telecommunication revolution. It includes King's College London,
           University Carlos III of Madrid, Virginia Tech, and more.
@@ -243,7 +242,7 @@
               :end-val="1"
               :duration="3000"
               :autoplay="true"
-              class="text-5xl font-medium leading-[30px]"
+              class="desktop:text-[68px] tablet:text-[55px] text-[45px] font-medium leading-[30px]"
             />
           </div>
           <div class="absolute scale-50 -top-4 -left-10 ">
@@ -262,7 +261,7 @@
           </div>
           <div class="font-medium">Target</div>
         </div>
-        <div class="max-w-xl font-light">
+        <div class="desktop:max-w-xl font-light">
           The target of the conference is to bring together top R&D and business
           representatives and discuss the future of telecommunications.
         </div>

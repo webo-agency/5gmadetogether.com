@@ -1193,7 +1193,7 @@
     </div>
     <div class="relative bg-[#F7F9F9] overflow-hidden">
       <div
-        class="imgBg relative w-full min-h-[450px] bg-cover bg-no-repeat desktop:mb-24 mb-[450px] z-50"
+        class="imgBg relative w-full min-h-[450px] bg-cover bg-no-repeat tablet-wide:mb-[150px] mb-[450px]"
         style="background-image: url(/img/cta.png); background-position: center;"
       >
         <!-- cta desktop -->
@@ -1375,8 +1375,8 @@
               <div>9:00 AM - 3:00 PM CEST</div>
             </div>
             <!-- Button -->
-            <div
-              class="relative flex items-center space-x-2 px-6 py-2 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer"
+            <button
+              class="relative w-[190px] flex items-center space-x-2 px-6 py-3 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer"
             >
               <div>Register now</div>
               <div>
@@ -1393,7 +1393,7 @@
                   />
                 </svg>
               </div>
-            </div>
+            </button>
           </div>
         </div>
 
@@ -1539,7 +1539,7 @@
             </svg>
           </div>
           <div
-            class="flex desktop:flex-row flex-col space-x-[42px] p-[105px_0px]"
+            class="flex desktop:flex-row flex-col space-x-[42px] tablet:p-[75px_0px] p-[90px_0px]"
           >
             <!-- Naglowek -->
             <div>
@@ -1557,13 +1557,13 @@
                       fill="#39E8EA"
                     />
                   </svg>
-                  <h5 class="text-white text-[12px] leading-[35px] mt-4">
+                  <h5 class="text-white text-[12px] leading-[35px]">
                     BECOME A PART OF
                     <span class="text-[#39E8EA]">5G MADE TOGETHER -</span>
                   </h5>
                 </div>
                 <h3
-                  class="text-white ml-[42px] pb-8 desktop:text-[35px] text-[26px] font-medium max-w-[33rem] leading-none"
+                  class="text-white ml-[42px] pb-8 tablet:text-[35px] text-[26px] font-medium max-w-[33rem] leading-none"
                 >
                   Join the conference
                 </h3>
@@ -1576,8 +1576,8 @@
               <div>9:00 AM - 3:00 PM CEST</div>
             </div>
             <!-- Button -->
-            <div
-              class="relative w-[180px] flex items-center space-x-2 px-6 py-3.5 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer"
+            <button
+              class="relative w-[180px] flex items-center space-x-2 px-6 py-3 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer"
             >
               <div>Register now</div>
               <div>
@@ -1594,7 +1594,7 @@
                   />
                 </svg>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>

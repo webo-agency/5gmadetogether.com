@@ -5,7 +5,7 @@
       <div class="relative flex flex-col justify-start z-10">
         <!-- title shadow -->
         <div
-          class="subtitleShadow text-white desktop:text-[90px] text-[60px] font-semibold leading-[85px] absolute desktop:top-[-46px] top-[-20px] desktop:left-0 left-[-36px] z-[-1]"
+          class="subtitleShadow text-white desktop:text-[90px] tablet:text-[75px] text-[60px] font-semibold leading-[85px] absolute desktop:top-[-54px] tablet:top-[-54px] top-[-45px] desktop:left-0 left-[-36px] z-[-1]"
         >
           <p class="shadowText uppercase">ABOUT THE</p>
           <p class="shadowText2 uppercase ml-[70px]">CONFERENCE</p>
@@ -24,12 +24,12 @@
               fill="#39E8EA"
             />
           </svg>
-          <h5 class="text-[12px] font-medium leading-snug mt-3">
+          <h5 class="text-[14px] font-medium leading-snug mt-3">
             ABOUT THE <span class="text-[#39E8EA]">CONFERENCE - </span>
           </h5>
         </div>
         <h3
-          class="desktop:ml-[7.5rem] ml-[2rem] desktop:text-[35px] text-[26px] font-medium max-w-[33rem] leading-[42px]"
+          class="desktop:ml-[7.5rem] ml-[2rem] desktop:text-[35px] tablet:text-[30px] text-[26px] font-medium max-w-[33rem] leading-[42px]"
         >
           Discover challanges and visions of 5G wireless network
         </h3>

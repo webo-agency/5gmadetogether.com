@@ -364,7 +364,7 @@
 
       <!-- bg for expanded mobile menu -->
       <div
-        class="relative px-5 tablet:px-10 transition-all duration-500 overflow-hidden"
+        class="relative container transition-all duration-500 overflow-hidden"
         :class="[
           {
             'bg-[#002738] text-white shadow-lg shadow-gray-dark/[0.02]': mobileExpanded
@@ -710,7 +710,7 @@
             />
           </svg>
         </div>
-        <div class="container mx-auto pt-4 top-0 z-50">
+        <div class="pt-4 top-0 z-50">
           <div
             class="logo-and-hamburger flex justify-between items-center w-full"
           >

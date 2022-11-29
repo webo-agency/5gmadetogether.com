@@ -3,10 +3,10 @@
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
       <div class="container">
         <div
-          class="flex flex-col desktop:flex-row desktop:justify-between justify-center items-center gap-y-[40px] py-12 w-full"
+          class="flex flex-col tablet-wide:flex-row tablet:justify-between gap-y-[40px] py-12 w-full"
         >
           <div
-            class="flex flex-col desktop:flex-row desktop:space-x-8 gap-y-[30px]"
+            class="flex flex-col tablet:flex-row tablet:space-x-8 gap-y-[30px]"
           >
             <div class="relative flex flex-col justify-center z-10">
               <div class="flex items-center space-x-2">
@@ -57,7 +57,7 @@
               >
             </div>
           </div>
-          <div>
+          <div class="logoFooter ml-[25px]">
             <svg
               width="211"
               height="60"
@@ -199,7 +199,7 @@
           </div>
         </div>
         <div
-          class="flex desktop:flex-row flex-col justify-between desktop:items-center w-full mx-auto py-6 px-12 bg-[#FFFFFF]"
+          class="flex desktop:flex-row flex-col justify-between desktop:items-center w-full mx-auto py-6 pl-[25px] bg-[#FFFFFF]"
         >
           <!-- rwd issue -->
           <div

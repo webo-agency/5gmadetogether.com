@@ -63,7 +63,7 @@
         class="desktop:max-w-[800px] max-w-[400px] text-left text-[#FFFFFF] desktop:bg-[#002738]"
       >
         <div
-          class="desktop:px-10 px-0 pt-8 tracking-wide leading-snug font-medium desktop:text-[50px] text-[25px] min-w-full"
+          class="desktop:px-10 px-0 pt-8 tracking-wide leading-snug font-medium desktop:text-[50px] tablet:text-[35px] text-[25px] min-w-full"
         >
           Open RAN for Beyond 5G Wireless networks
           <span class="text-[#39E8EA]"> —</span>

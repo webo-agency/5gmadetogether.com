@@ -1,14 +1,14 @@
 <template>
   <div id="agenda" class="w-full overflow-hidden py-10 mb-52">
-    <div class="desktop:container">
-      <div class="relative desktop:ml-72 full-hd:ml-12">
+    <div class="tablet-wide:container">
+      <div class="relative desktop:ml-72 tablet-wide:ml-60 full-hd:ml-12">
         <!-- Tlo left -->
         <div
-          class="left-col desktop:absolute desktop:top-0 desktop:right-full desktop:h-full desktop:w-[510px] h-[550px] desktop:bg-top bg-center "
-          style="background-image: url(/img/Lecturer.png); background-repeat: no-repeat; object-fit: fill;"
+          class="left-col tablet-wide:absolute tablet-wide:top-0 tablet-wide:right-full tablet-wide:h-full desktop:w-[510px] tablet-wide:w-[385px] h-[550px] tablet-wide:bg-top bg-center "
+          style="background-image: url(/img/Lecturer.png); background-repeat: no-repeat;     background-size: cover;    background-position: center 35%;"
         >
           <!-- Napis -->
-          <div class="absolute top-72 -right-[3%] desktop:block hidden z-0">
+          <div class="absolute top-72 -right-[3%] tablet-wide:block hidden z-0">
             <svg
               width="66"
               height="372"
@@ -43,12 +43,12 @@
                   fill="#39E8EA"
                 />
               </svg>
-              <h5 class="text-[12px] font-medium leading-snug mt-3">
+              <h5 class="text-[14px] font-medium leading-snug mt-3">
                 CONFERENCE <span class="text-[#39E8EA]">AGENDA - </span>
               </h5>
             </div>
             <h3
-              class="ml-[3.1rem] pb-8 desktop:text-[35px] text-[26px] font-medium max-w-[33rem] leading-none"
+              class="ml-[3.1rem] pb-8 desktop:text-[35px] tablet:text-[30px] text-[26px] font-medium max-w-[33rem] leading-none"
             >
               Events Timetable
             </h3>
@@ -117,7 +117,7 @@
                   </div>
                 </div>
                 <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
                 >
                   <div
                     class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
@@ -173,7 +173,7 @@
                   </div>
                 </div>
                 <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
                 >
                   <div
                     class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
@@ -220,7 +220,7 @@
                   </div>
                 </div>
                 <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
                 >
                   <div
                     class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
@@ -267,7 +267,7 @@
                   </div>
                 </div>
                 <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
                 >
                   <div
                     class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
@@ -334,7 +334,7 @@
                   </div>
                 </div>
                 <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
                 >
                   <div
                     class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
@@ -403,7 +403,7 @@
                     </div>
                   </div>
                   <div
-                    class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                    class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
                   >
                     <div
                       class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"

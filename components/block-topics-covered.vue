@@ -141,7 +141,7 @@
 
     <div id="topics" class="overflow-hidden text-[#002738]">
       <div class="contentContainer">
-        <div class="colsContainer flex desktop:flex-row flex-col">
+        <div class="colsContainer flex tablet:flex-row flex-col">
           <!-- vertical text left -->
           <!-- <div class="z-0 desktop:basis-[10%]">
             <svg
@@ -158,11 +158,11 @@
             </svg>
           </div> -->
           <div
-            class="hidden desktop:block textContainer desktop:basis-[10%] bg-white"
+            class="relative hidden tablet:block textContainer tablet:basis-[10%] bg-white"
           >
-            <div class="textVertical max-w-[80px]">
+            <div class="textVertical max-w-[80px] h-full ">
               <p
-                class="rotate-[-90deg] translate-y-[450px] translate-x-[78px] text-white text-[90px] font-bold"
+                class="rotate-[-90deg] text-white text-[90px] font-bold absolute top-[290px] right-[-150px]"
               >
                 TOPICS
               </p>
@@ -171,7 +171,7 @@
 
           <!-- topic container -->
           <div
-            class="py-16 px-5 relative flex flex-col bg-[#F7F9F9] desktop:basis-[55%]"
+            class="py-16 px-5 relative flex flex-col bg-[#F7F9F9] tablet:basis-[55%]"
           >
             <div class="relative container px-5">
               <div class="absolute scale-50 -top-4 -left-4">
@@ -207,7 +207,7 @@
 
           <!-- imgContainer -->
           <div
-            class="imgRight desktop:max-w-[500px] desktop:h-auto h-[550px] desktop:basis-[35%]"
+            class="imgRight desktop:max-w-[500px] desktop:h-auto h-[550px] tablet:basis-[35%]"
             style="background-image: url(/img/topics.png); background-repeat: no-repeat; background-position: center; background-size: cover;"
           ></div>
         </div>
