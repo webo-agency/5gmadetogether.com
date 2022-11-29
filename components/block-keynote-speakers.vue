@@ -32,12 +32,6 @@
           Speakers at 5G Made Together Conference
         </h3>
       </div>
-      <div class="absolute top-8 left-16 z-0">
-        <img src="/static/img/Keynote.png" alt="keynote" />
-      </div>
-      <div class="absolute top-[8.5rem] left-40 z-0">
-        <img src="/static/img/Speakers.png" alt="speakers" />
-      </div>
     </div>
   </div>
 </template>

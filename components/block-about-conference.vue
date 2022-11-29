@@ -48,12 +48,6 @@
           </p>
         </div>
       </div>
-      <div class="absolute top-0 left-16 z-0">
-        <img src="/static/img/About.png" alt="" />
-      </div>
-      <div class="absolute top-[6.5rem] left-40 z-0">
-        <img src="/static/img/Conference.png" alt="" />
-      </div>
     </div>
   </div>
 </template>
