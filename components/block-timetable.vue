@@ -57,7 +57,7 @@
           <!-- Wiersze tabeli-->
           <!-- Opening -->
           <div
-            class="flex flex-wrap justify-between items-center desktop:px-10 py-6 desktop:space-x-12 w-full bg-[#FFFFFF]"
+            class="flex desktop:flex-nowrap flex-wrap justify-between items-center desktop:px-10 py-6 desktop:space-x-12 w-full bg-[#FFFFFF]"
           >
             <div class="basis-[40%] desktop:space-x-5 flex items-center">
               <svg
@@ -87,7 +87,9 @@
           <div class="flex flex-col">
             <!-- Pojedynczy wiersz kolumny -->
             <div class="py-8 border-b group">
-              <div class="flex flex-wrap desktop:space-x-12">
+              <div
+                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
+              >
                 <div class="flex items-start shrink-0 desktop:space-x-5">
                   <svg
                     class="group-hover:text-[#39E8EA] transition duration-300"
@@ -141,8 +143,10 @@
             <!--  -->
 
             <div class="py-8 border-b group">
-              <div class="flex space-x-12">
-                <div class="flex items-start shrink-0 space-x-5">
+              <div
+                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
+              >
+                <div class="flex items-start shrink-0 desktop:space-x-5">
                   <svg
                     class="group-hover:text-[#39E8EA] transition duration-300"
                     width="35"
@@ -163,14 +167,16 @@
                     />
                   </svg>
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
                   >
                     09:30 AM - 9:40 AM
                   </div>
                 </div>
-                <div class="flex flex-col jusitfy-center space-y-2">
+                <div
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                >
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
                   >
                     5G MADE TOGETHER - PARTNERS
                   </div>
@@ -184,8 +190,10 @@
             </div>
 
             <div class="py-8 border-b group">
-              <div class="flex space-x-12">
-                <div class="flex items-start shrink-0 space-x-5">
+              <div
+                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
+              >
+                <div class="flex items-start shrink-0 desktop:space-x-5">
                   <svg
                     class="group-hover:text-[#39E8EA] transition duration-300"
                     width="35"
@@ -206,14 +214,16 @@
                     />
                   </svg>
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
                   >
                     09:40 AM - 10:00 AM
                   </div>
                 </div>
-                <div class="flex flex-col jusitfy-center space-y-2">
+                <div
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                >
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
                   >
                     BEYOND 5G - WHERE ARE WE HEADING IN OPEN-RAN NETWORKS
                   </div>
@@ -227,8 +237,10 @@
             </div>
 
             <div class="py-8 border-b group">
-              <div class="flex space-x-12">
-                <div class="flex items-start shrink-0 space-x-5">
+              <div
+                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
+              >
+                <div class="flex items-start shrink-0 desktop:space-x-5">
                   <svg
                     class="group-hover:text-[#39E8EA] transition duration-300"
                     width="35"
@@ -249,14 +261,16 @@
                     />
                   </svg>
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
                   >
                     09:40 AM - 10:00 AM
                   </div>
                 </div>
-                <div class="flex flex-col jusitfy-center space-y-2">
+                <div
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                >
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
                   >
                     PANEL I: SECURITY CHALLANGES IN BEYOND 5G
                   </div>
@@ -290,8 +304,10 @@
             </div>
 
             <div class="py-8 group" :class="{ lastBorder: isExpanded }">
-              <div class="flex space-x-12">
-                <div class="flex items-start shrink-0 space-x-5">
+              <div
+                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
+              >
+                <div class="flex items-start shrink-0 desktop:space-x-5">
                   <svg
                     class="group-hover:text-[#39E8EA] transition duration-300"
                     width="35"
@@ -312,14 +328,16 @@
                     />
                   </svg>
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
                   >
                     09:40 AM - 10:00 AM
                   </div>
                 </div>
-                <div class="flex flex-col jusitfy-center space-y-2">
+                <div
+                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                >
                   <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4"
+                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
                   >
                     PANEL II: CENTRAL AND EASTERN EUROPE APPROACH TO BEYOND 5G
                     NETWORKS
@@ -357,8 +375,8 @@
 
             <div v-if="isExpanded">
               <div class="py-8 group">
-                <div class="flex space-x-12">
-                  <div class="flex items-start shrink-0 space-x-5">
+                <div class="flex flex-wrap desktop:space-x-12">
+                  <div class="flex items-start shrink-0 desktop:space-x-5">
                     <svg
                       class="group-hover:text-[#39E8EA] transition duration-300"
                       width="35"
@@ -379,14 +397,16 @@
                       />
                     </svg>
                     <div
-                      class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px]"
+                      class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
                     >
                       10:00 AM - 11:00 AM
                     </div>
                   </div>
-                  <div class="flex flex-col jusitfy-center space-y-2">
+                  <div
+                    class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px]"
+                  >
                     <div
-                      class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[5px] pb-4"
+                      class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
                     >
                       PANEL I: SECURITY CHALLANGES IN BEYOND 5G
                     </div>

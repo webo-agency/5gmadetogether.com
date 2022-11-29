@@ -30,7 +30,7 @@
     </PageSection>
 
     <PageSection id="cta">
-      <Cta />
+      <BlockCta />
     </PageSection>
   </div>
 </template>
@@ -45,7 +45,7 @@ import YoutubePlayer from "../components/block-video-player.vue";
 import KeynoteSpeakers from "../components/block-keynote-speakers.vue";
 import SwiperSpeakers from "../components/block-swiper-speakers.vue";
 import BlockTimetable from "../components/block-timetable.vue";
-import Cta from "../components/component-cta.vue";
+import BlockCta from "../components/block-cta.vue";
 import PageSection from "~/components/page-section.vue";
 
 export default {
@@ -90,7 +90,7 @@ export default {
     KeynoteSpeakers,
     SwiperSpeakers,
     BlockTimetable,
-    Cta,
+    BlockCta,
     PageSection
   }
 };

@@ -2,8 +2,12 @@
   <div>
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
       <div class="container">
-        <div class="flex flex-wrap justify-between py-16 w-full">
-          <div class="flex space-x-8">
+        <div
+          class="flex flex-col desktop:flex-row desktop:justify-between justify-center items-center gap-y-[40px] py-12 w-full"
+        >
+          <div
+            class="flex flex-col desktop:flex-row desktop:space-x-8 gap-y-[30px]"
+          >
             <div class="relative flex flex-col justify-center z-10">
               <div class="flex items-center space-x-2">
                 <svg
@@ -24,7 +28,7 @@
               </div>
               <a
                 :href="'mailto:' + 'r.sanecki@is-wireless.com'"
-                class="ml-[1.9rem] text-[13px] font-medium leading-snug"
+                class="ml-[1.9rem] text-[16px] font-medium leading-snug"
                 >r.sanecki@is-wireless.com</a
               >
             </div>
@@ -48,7 +52,7 @@
               </div>
               <a
                 :href="'mailto:' + 'media@is-wireless.com'"
-                class="ml-[1.9rem]  text-[13px] font-medium leading-snug"
+                class="ml-[1.9rem]  text-[16px] font-medium leading-snug"
                 >media@is-wireless.com</a
               >
             </div>
@@ -195,14 +199,18 @@
           </div>
         </div>
         <div
-          class="flex justify-between items-center w-full mx-auto py-6 px-12 bg-[#FFFFFF]"
+          class="flex desktop:flex-row flex-col justify-between desktop:items-center w-full mx-auto py-6 px-12 bg-[#FFFFFF]"
         >
           <!-- rwd issue -->
-          <div class="flex flex-wrap space-x-6 py-3 font-medium">
+          <div
+            class="flex desktop:flex-row flex-col desktop:space-x-6 gap-y-[30px] desktop:py-3 py-4 font-medium"
+          >
             <div>ABOUT THE CONFERENCE</div>
             <div>PRIVACY POLICY</div>
             <div>ORGANIZER</div>
           </div>
+
+          <!-- socials -->
           <div class="flex items-center space-x-4">
             <div>
               <svg

@@ -105,7 +105,7 @@
 
 <script>
 export default {
-  name: "Topic",
+  name: "ComponentTopic",
   data() {
     return {
       isExpanded: false,

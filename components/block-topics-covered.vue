@@ -217,9 +217,9 @@
 </template>
 
 <script>
-import Topic from "./component-topic.vue";
+import ComponentTopic from "./component-topic.vue";
 export default {
-  components: { Topic },
+  components: { ComponentTopic },
   data() {
     return {
       crossExpanded: false
