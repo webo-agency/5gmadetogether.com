@@ -195,14 +195,14 @@
 
             <!--Pojedyncza linijka tematow do dodania przekazywanie danych i wyswietlenie v-forem-->
 
-            <Topic />
-            <Topic />
-            <Topic />
-            <Topic />
-            <Topic />
-            <Topic />
-            <Topic />
-            <Topic />
+            <ComponentTopic />
+            <ComponentTopic />
+            <ComponentTopic />
+            <ComponentTopic />
+            <ComponentTopic />
+            <ComponentTopic />
+            <ComponentTopic />
+            <ComponentTopic />
           </div>
 
           <!-- imgContainer -->

@@ -1460,7 +1460,7 @@ export default {
       this.mobileExpanded = !this.mobileExpanded;
     }
   },
-  components: { CustomLink, CustomLink, CustomLink, CustomLink, HamburgerBtn }
+  components: { CustomLink, HamburgerBtn }
 };
 </script>
 

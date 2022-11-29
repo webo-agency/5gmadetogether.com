@@ -37,7 +37,6 @@
 
 <script>
 import AboutConference from "~/components/block-about-conference.vue";
-import CustomLink from "~/components/custom-link.vue";
 import BlockBanner from "../components/block-banner.vue";
 import TopicsCovered from "../components/block-topics-covered.vue";
 import ConferenceNumbers from "../components/block-conference-numbers.vue";
@@ -82,7 +81,6 @@ export default {
   },
   components: {
     AboutConference,
-    CustomLink,
     BlockBanner,
     TopicsCovered,
     ConferenceNumbers,
