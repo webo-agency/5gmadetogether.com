@@ -44,7 +44,7 @@
             standards is underway in many places around the world – with this
             event we want to give the opportunity to meet and talk to those who
             develop technologies and those who will implement and commercialize
-            them.
+            them. Topics covered:
           </p>
         </div>
       </div>

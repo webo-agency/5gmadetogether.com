@@ -3,8 +3,15 @@
     <div class="container">
       <div class="h-full w-screen">
         <div class="relative swiper h-full">
-          <div class="swiper-wrapper flex h-full mb-16">
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
+          <ul class="swiper-wrapper flex h-full mb-16">
+            <li
+              class="swiper-slide min-w-[260px] max-w-[280px]"
+              v-for="(speaker, index) in speakersData"
+              :key="index"
+            >
+              <SpeakerProfile :speaker="speaker"></SpeakerProfile>
+            </li>
+            <!-- <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
               <SpeakerProfile />
             </div>
             <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
@@ -39,20 +46,18 @@
             </div>
             <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
               <SpeakerProfile />
-            </div>
+            </div> -->
             <!-- Pusty div ktory zalatwia problemy ucinajacego ostatniego kafelka spowodowanego tym ze slideperview sa ustawione na auto -->
             <div
               class="swiper-slide w-1/6 min-w-[10px] max-w-[280px] invisible"
             >
               <div></div>
             </div>
-          </div>
+          </ul>
           <div class="swiper-pagination"></div>
 
-          <div
-            class="swiper-button-prev cursor-pointer "
-            :class="{ showPrevBtn: 'block' }"
-          >
+          <div class="btnPrevContainer" :class="{ test2: showPrevBtn }"></div>
+          <div class="swiper-button-prev cursor-pointer">
             <svg
               width="40"
               height="40"
@@ -119,18 +124,22 @@ import SpeakerProfile from "./component-speaker-profile.vue";
 
 export default {
   name: "SwiperSpeakers",
+  props: {
+    speakersData: Array
+  },
   data() {
     return {
       counter: 0,
-      showPrevBtn: false,
+      showPrevBtn: true,
       isHovered: false,
       profileDefault: true,
       swiperOptionsObject: {
-        // on: {
-        //   slideChange: function() {
-        //     console.log("test");
-        //   }
-        // },
+        on: {
+          slideChange: function() {
+            this.showPrevBtn = !this.showPrevBtn;
+            console.log("test", this.showPrevBtn);
+          }
+        },
         modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],
         spaceBetween: 16,
         direction: "horizontal",
@@ -160,6 +169,13 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.swiper-button-prev {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+.swiper-button-disabled {
+  opacity: 0;
+}
 .swiper-button-next {
   position: absolute;
   left: 87%;

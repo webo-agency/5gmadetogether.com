@@ -8,7 +8,7 @@
       <nuxt-picture
         :class="{ activebutton: isHovered }"
         class="relative block transition-all duration-500  after:pointer-events-none after:content-[''] after:bg-gradient-to-t after:to-[#F7F9F9]/20 after:from-[#002738]/40 after:w-full after:h-full after:z-40 after:inset-0 after:absolute"
-        :src="'/img/Mark.png'"
+        :src="`${speaker.img}`"
         width="282px"
         height="350px"
       />
@@ -30,15 +30,18 @@
             fill="#39E8EA"
           />
         </svg>
-        <div class="ml-6 text-[#FFFFFF] uppercase">Mark Sadowsky</div>
+        <div class="ml-6 text-[#FFFFFF] uppercase">
+          {{ speaker.name }}
+        </div>
       </div>
     </div>
-    <div class="mt-4 font-semibold text-base mx-2">Professor</div>
-    <div class=" font-normal text-base mx-2">University of Oslo, Norway</div>
+    <div class="mt-4 font-semibold text-base mx-2">
+      {{ speaker.academicTitle }}
+    </div>
+    <div class=" font-normal text-base mx-2">{{ speaker.experience }}</div>
     <div class="border-b-[1px] my-5"></div>
     <div class="max-w-xs text-left font-light mx-2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-      distinctio numquam accusamus quidem fugiat.
+      {{ speaker.shortDesc }}
     </div>
     <svg
       @click="toggleProfile()"
@@ -79,18 +82,14 @@
           fill="#39E8EA"
         />
       </svg>
-      <div class="ml-6 text-xl font-medium">Mark Sadowsky</div>
-      <div class="mt-4 font-semibold text-base">Professor</div>
-      <div class="font-light text-base">University of Oslo, Norway</div>
+      <div class="ml-6 text-xl font-medium">{{ speaker.name }}</div>
+      <div class="mt-4 font-semibold text-base">
+        {{ speaker.academicTitle }}
+      </div>
+      <div class="font-light text-base">{{ speaker.experience }}.</div>
       <div class="my-5 border-b-[1px]"></div>
       <div class="text-[13px]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        {{ speaker.fullDesc }}
       </div>
     </div>
     <svg
@@ -112,8 +111,13 @@
 </template>
 
 <script>
+import { stringify } from "querystring";
+
 export default {
   name: "SpeakerProfile",
+  props: {
+    speaker: Object
+  },
   data() {
     return {
       isHovered: false,

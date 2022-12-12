@@ -194,15 +194,11 @@
             </div>
 
             <!--Pojedyncza linijka tematow do dodania przekazywanie danych i wyswietlenie v-forem-->
-
-            <ComponentTopic />
-            <ComponentTopic />
-            <ComponentTopic />
-            <ComponentTopic />
-            <ComponentTopic />
-            <ComponentTopic />
-            <ComponentTopic />
-            <ComponentTopic />
+            <ul>
+              <li v-for="(topic, index) in topicsData" :key="index">
+                <ComponentTopic :topic="topic" />
+              </li>
+            </ul>
           </div>
 
           <!-- imgContainer -->
@@ -220,6 +216,9 @@
 import ComponentTopic from "./component-topic.vue";
 export default {
   components: { ComponentTopic },
+  props: {
+    topicsData: Array
+  },
   data() {
     return {
       crossExpanded: false

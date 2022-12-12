@@ -37,7 +37,7 @@
           >
             01
           </div>
-          <div>Wireless network management</div>
+          <div>{{ topic.title }}</div>
         </div>
         <div v-if="!isExpanded">
           <svg
@@ -95,9 +95,7 @@
     </div>
     <div v-if="isExpanded" class="border-b-[1px] border-b-[#EDF1F1]">
       <div class="ml-[100px] py-5 font-light text-[#00212F]">
-        e.g. RAN Disaggregation, Micro-service Oriented Architecture, Telemetry
-        Aggregation and Processing, Multi-agent Management, Big Data Analytics,
-        Zero-touch Service Management, etc.
+        {{ topic.description }}
       </div>
     </div>
   </div>
@@ -106,6 +104,9 @@
 <script>
 export default {
   name: "ComponentTopic",
+  props: {
+    topic: Object
+  },
   data() {
     return {
       isExpanded: false,
