@@ -207,8 +207,8 @@
 
           <!-- imgContainer -->
           <div
-            class="imgRight desktop:max-w-[500px] desktop:h-auto h-[550px] tablet:basis-[35%]"
-            style="background-image: url(/img/topics.png); background-repeat: no-repeat; background-position: center; background-size: cover;"
+            class="imgRight desktop:max-w-[500px] tablet:h-[800px] h-[600px] tablet:basis-[35%]"
+            style="background-image: url(/img/topics.png); background-repeat: no-repeat; background-position: top;"
           ></div>
         </div>
       </div>
@@ -240,5 +240,11 @@ export default {
 }
 .textVertical {
   -webkit-text-stroke: 1px #39e8ea;
+}
+
+@media (max-width: 768px) {
+  .imgRight {
+    background-size: cover;
+  }
 }
 </style>

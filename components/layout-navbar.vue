@@ -303,21 +303,25 @@
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             :url="'https://5gmadetogether.com/#about'"
             :title="'About'"
+            :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             :url="'https://5gmadetogether.com/#topics'"
             :title="'Explore'"
+            :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             :url="'https://5gmadetogether.com/#speakers'"
             :title="'Speakers'"
+            :class="[showSpeakers ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             :url="'https://5gmadetogether.com/#agenda'"
             :title="'Agenda'"
+            :class="[showAgenda ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
         </div>
         <div
@@ -1407,7 +1411,8 @@ export default {
       popUpActive: false,
       popUpHover: false,
       hoverItem: "",
-      pointerPosition: 0
+      pointerPosition: 0,
+      showSection: false
     };
   },
   setup() {
@@ -1421,6 +1426,31 @@ export default {
       }
       return show;
     });
+
+    let showSection;
+    showSection = false;
+    let showAbout = computed(() => {
+      if (scroll.y.value > 500 && scroll.y.value < 1000) {
+        showSection = true;
+        return (showSection = true);
+      }
+    });
+    let showExplore = computed(() => {
+      if (scroll.y.value > 1100 && scroll.y.value < 2000) {
+        return (showSection = true);
+      }
+    });
+    let showSpeakers = computed(() => {
+      if (scroll.y.value > 3700 && scroll.y.value < 4600) {
+        return (showSection = true);
+      }
+    });
+    let showAgenda = computed(() => {
+      if (scroll.y.value > 4600 && scroll.y.value < 6300) {
+        return (showSection = true);
+      }
+    });
+
     let underTreshold = computed(() => scroll.y.value < 170);
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");
 
@@ -1428,7 +1458,11 @@ export default {
       isLargeScreen: isLargeScreen,
       isVisible: isVisible,
       underTreshold: underTreshold,
-      scrollPositionY: scroll.y
+      scrollPositionY: scroll.y,
+      showAbout: showAbout,
+      showExplore: showExplore,
+      showSpeakers: showSpeakers,
+      showAgenda: showAgenda
     };
   },
 
@@ -1443,8 +1477,10 @@ export default {
     isLargeScreen(value) {
       if (value) {
         this.mobileExpanded = false;
+        // console.log(globalThis.window.scrollY);
       }
     },
+
     underTreshold(value) {
       this.isTransparent = value;
     }

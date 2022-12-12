@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex w-full items-end h-[100vh] mb-36 text-center bg-no-repeat bg-cover"
+    class="flex w-full items-end h-[100vh] mb-24 text-center bg-no-repeat bg-cover"
     style="background-image: url(/img/banner.png)"
   >
     <!-- light bg on mobile -->

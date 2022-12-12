@@ -4,8 +4,8 @@
       <div class="relative desktop:ml-72 tablet-wide:ml-60 full-hd:ml-12">
         <!-- Tlo left -->
         <div
-          class="left-col tablet-wide:absolute tablet-wide:top-0 tablet-wide:right-full tablet-wide:h-full desktop:w-[510px] tablet-wide:w-[385px] h-[550px] tablet-wide:bg-top bg-center "
-          style="background-image: url(/img/Lecturer.png); background-repeat: no-repeat;     background-size: cover;    background-position: center 35%;"
+          class="left-col tablet-wide:absolute tablet-wide:top-0 tablet-wide:right-full tablet-wide:h-[960px] desktop:w-[510px] tablet-wide:w-[385px] h-[550px] tablet-wide:bg-top bg-center "
+          style="background-image: url(/img/Lecturer.png); background-repeat: no-repeat; background-size: cover; background-position: center 35%;"
         >
           <!-- Napis -->
           <div class="absolute top-72 -right-[3%] tablet-wide:block hidden z-0">
@@ -57,9 +57,11 @@
           <!-- Wiersze tabeli-->
           <!-- Opening -->
           <div
-            class="flex desktop:flex-nowrap flex-wrap justify-between items-center desktop:px-10 py-6 desktop:space-x-12 w-full bg-[#FFFFFF]"
+            class="flex items-center desktop:flex-nowrap flex-wrap py-6 desktop:space-x-12 bg-[#FFFFFF]"
           >
-            <div class="basis-[40%] desktop:space-x-5 flex items-center">
+            <div
+              class="flex items-center justify-end shrink-0 desktop:space-x-5 w-[205px]"
+            >
               <svg
                 width="35"
                 height="35"
@@ -76,11 +78,16 @@
                   fill="#00212F"
                 />
               </svg>
-              <div class="font-medium ml-[10px]">09:00 AM</div>
+              <div class="font-medium ml-[10px]">
+                09:00 AM
+              </div>
             </div>
-            <div class="font-medium basis-[25%]">OPENING</div>
-            <div class="font-medium mx-auto desktop:text-[16px] text-[14px]">
-              Sławomir Pierzyk <span class="font-normal">(Is-Wireless)</span>
+            <div class="font-medium space-y-2 ml-[45px] w-[420px]">
+              <span class="mr-[60px]">
+                OPENING
+              </span>
+              Sławomir Pierzyk
+              <span class="font-normal">(Is-Wireless)</span>
             </div>
           </div>
 
@@ -535,5 +542,11 @@ export default {
 <style lang="postcss" scoped>
 .lastBorder {
   @apply border-b;
+}
+
+@media (max-width: 768px) {
+  .left-col {
+    background-size: cover;
+  }
 }
 </style>

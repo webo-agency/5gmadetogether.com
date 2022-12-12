@@ -41,7 +41,7 @@
       />
       <img
         :src="'/img/yt-background.png'"
-        class="absolute z-0 w-full h-full top-24"
+        class="absolute z-[-1] w-full h-full top-24"
       />
       <div
         class="absolute hidden tablet-small:block z-0 mobile:scale-[30%] tablet:scale-50 tablet:-top-20 tablet-wide:scale-[65%] desktop:scale-75 desktop-wide:scale-100 desktop:top-24 -left-12"

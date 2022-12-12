@@ -3,7 +3,7 @@
     <div class="container">
       <div class="h-full w-screen">
         <div class="relative swiper h-full">
-          <div class="swiper-wrapper flex h-full mb-12">
+          <div class="swiper-wrapper flex h-full mb-16">
             <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
               <SpeakerProfile />
             </div>
@@ -48,6 +48,33 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
+
+          <div
+            class="swiper-button-prev cursor-pointer "
+            :class="{ showPrevBtn: 'block' }"
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="rotate-180"
+            >
+              <circle
+                cx="20"
+                cy="20"
+                r="19.5"
+                fill="#39E8EA"
+                fill-opacity="0.25"
+                stroke="#39E8EA"
+              />
+              <path
+                d="M20.75 14L19.8562 14.8706L24.5938 19.625H12V20.875H24.5938L19.8562 25.6081L20.75 26.5L27 20.25L20.75 14Z"
+                fill="#39E8EA"
+              />
+            </svg>
+          </div>
           <div class="swiper-button-next cursor-pointer">
             <svg
               width="40"
@@ -94,9 +121,16 @@ export default {
   name: "SwiperSpeakers",
   data() {
     return {
+      counter: 0,
+      showPrevBtn: false,
       isHovered: false,
       profileDefault: true,
       swiperOptionsObject: {
+        // on: {
+        //   slideChange: function() {
+        //     console.log("test");
+        //   }
+        // },
         modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],
         spaceBetween: 16,
         direction: "horizontal",
@@ -112,6 +146,7 @@ export default {
       }
     };
   },
+
   mounted() {
     this.$data.swiper = new Swiper(".swiper", this.swiperOptionsObject);
   },
@@ -142,6 +177,27 @@ export default {
 @media all and (min-width: 1500px) {
   .swiper-button-next {
     left: 80%;
+    top: 25%;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 1%;
+  top: 25%;
+  z-index: 10;
+}
+
+@media all and (min-width: 1200px) {
+  .swiper-button-prev {
+    left: 1%;
+    top: 25%;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .swiper-button-prev {
+    left: 1%;
     top: 25%;
   }
 }

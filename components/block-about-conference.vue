@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="mb-36">
+  <div id="about" class="mb-36 pt-16">
     <div class="relative pt-12 container overflow-hidden">
       <!-- title container -->
       <div class="relative flex flex-col justify-start z-10">
