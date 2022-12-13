@@ -196,7 +196,9 @@
             <!--Pojedyncza linijka tematow do dodania przekazywanie danych i wyswietlenie v-forem-->
             <ul>
               <li v-for="(topic, index) in topicsData" :key="index">
-                <ComponentTopic :topic="topic" :index="index" />
+                <EffectAppear>
+                  <ComponentTopic :topic="topic" :index="index" />
+                </EffectAppear>
               </li>
             </ul>
           </div>
@@ -214,8 +216,9 @@
 
 <script>
 import ComponentTopic from "./component-topic.vue";
+import EffectAppear from "./effect-appear.vue";
 export default {
-  components: { ComponentTopic },
+  components: { ComponentTopic, EffectAppear },
   props: {
     topicsData: Array,
     index: Number
