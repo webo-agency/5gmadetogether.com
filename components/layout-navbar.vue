@@ -1312,6 +1312,7 @@
           >
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
+              @click.native="toggleMobile()"
               :url="'https://5gmadetogether.com/#about'"
               :title="'About'"
               :class="[
@@ -1322,6 +1323,7 @@
             ></CustomLink>
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-100 opacity-0"
+              @click.native="toggleMobile()"
               :url="'https://5gmadetogether.com/#topics'"
               :title="'Explore'"
               :class="[
@@ -1332,6 +1334,7 @@
             ></CustomLink>
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-150 opacity-0"
+              @click.native="toggleMobile()"
               :url="'https://5gmadetogether.com/#speakers'"
               :title="'Speakers'"
               :class="[
@@ -1342,6 +1345,7 @@
             ></CustomLink>
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-150 delay-150 opacity-0"
+              @click.native="toggleMobile()"
               :url="'https://5gmadetogether.com/#agenda'"
               :title="'Agenda'"
               :class="[
@@ -1364,6 +1368,7 @@
                 :url="'/'"
                 :title="'Register now'"
                 class="mr-[12px] font-medium border-b-[2px]"
+                @click.native="toggleMobile()"
               ></CustomLink>
 
               <!-- arrof for register -->
