@@ -54,8 +54,6 @@ export default {
     isVisible(value) {
       if (value) {
         this.visited = true;
-      } else {
-        // this.visited = false;
       }
     }
   },

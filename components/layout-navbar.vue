@@ -302,14 +302,14 @@
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             @click.native="scrollToSection('about')"
-            :url="'http://localhost:3000/#aboutConference'"
+            :url="'http://localhost:3000/#about'"
             :title="'About'"
             :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             @click.native="scrollToSection('explore')"
-            :url="'http://localhost:3000/#topicsCovered'"
+            :url="'http://localhost:3000/#topics'"
             :title="'Explore'"
             :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
@@ -1412,6 +1412,7 @@ export default {
     socials: Array,
     clutchLink: String
   },
+  components: { CustomLink, HamburgerBtn },
   data() {
     return {
       isTransparent: true,
@@ -1506,19 +1507,14 @@ export default {
       this.mobileExpanded = !this.mobileExpanded;
     },
     scrollToSection(section) {
-      switch (section) {
-        case "about":
-          this.scrollToY(800);
-          break;
-        case "explore":
-          this.scrollToY(1300);
-          break;
-        case "speakers":
-          this.scrollToY(3900);
-          break;
-        case "timetable":
-          this.scrollToY(5400);
-          break;
+      if (section === "about") {
+        this.scrollToY(700);
+      } else if (section === "explore") {
+        this.scrollToY(1300);
+      } else if (section === "speakers") {
+        this.scrollToY(3900);
+      } else if (section === "agenda") {
+        this.scrollToY(5100);
       }
     },
     scrollToY(y) {
@@ -1527,8 +1523,7 @@ export default {
         behavior: "smooth"
       });
     }
-  },
-  components: { CustomLink, HamburgerBtn }
+  }
 };
 </script>
 

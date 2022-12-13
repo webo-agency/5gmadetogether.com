@@ -57,10 +57,10 @@
           <!-- Wiersze tabeli-->
           <!-- Opening -->
           <div
-            class="flex items-center desktop:flex-nowrap flex-wrap py-6 desktop:space-x-12 bg-[#FFFFFF]"
+            class="flex items-center desktop:flex-nowrap py-6 desktop:space-x-12 bg-[#FFFFFF]"
           >
             <div
-              class="flex items-center justify-end shrink-0 desktop:space-x-5 w-[205px]"
+              class="flex items-center justify-end shrink-0 desktop:space-x-5 desktop:w-[205px] w-[195px]"
             >
               <svg
                 width="35"
@@ -82,12 +82,16 @@
                 09:00 AM
               </div>
             </div>
-            <div class="font-medium space-y-2 ml-[45px] w-[420px]">
+            <div
+              class="font-medium space-y-2 ml-[42px] w-[420px] flex flex-wrap items-center"
+            >
               <span class="mr-[60px]">
                 OPENING
               </span>
-              Sławomir Pierzyk
-              <span class="font-normal">(Is-Wireless)</span>
+              <div class="lecuturer">
+                <span>Sławomir Pierzyk</span>
+                <span class="font-normal">(Is-Wireless)</span>
+              </div>
             </div>
           </div>
 
