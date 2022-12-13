@@ -303,71 +303,75 @@
         >
           <!-- checking scroll behaviour -->
           <li
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
             @click="scrollToSection('about')"
-            :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[showAbout ? 'border-b-[3px] border-b-primarySecond' : '']"
           >
             About
           </li>
           <li
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
             @click="scrollToSection('explore')"
-            :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[
+              showExplore ? 'border-b-[3px] border-b-primarySecond' : ''
+            ]"
           >
             Explore
           </li>
           <li
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
             @click="scrollToSection('speakers')"
-            :class="[showSpeakers ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[
+              showSpeakers ? 'border-b-[3px] border-b-primarySecond' : ''
+            ]"
           >
             Speakers
           </li>
           <li
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
             @click="scrollToSection('agenda')"
-            :class="[showAgenda ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[showAgenda ? 'border-b-[3px] border-b-primarySecond' : '']"
           >
             Agenda
           </li>
           <!-- <CustomLink
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
+            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('about')"
             :url="'http://localhost:3000/#about'"
             :title="'About'"
-            :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[showAbout ? 'border-b-[3px] border-b-primarySecond' : '']"
           >
           </CustomLink>
           <CustomLink
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
+            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('explore')"
             :url="'http://localhost:3000/#topics'"
             :title="'Explore'"
-            :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[showExplore ? 'border-b-[3px] border-b-primarySecond' : '']"
           ></CustomLink>
           <CustomLink
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
+            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('speakers')"
             :url="'http://localhost:3000/#speakers'"
             :title="'Speakers'"
-            :class="[showSpeakers ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[showSpeakers ? 'border-b-[3px] border-b-primarySecond' : '']"
           ></CustomLink>
           <CustomLink
-            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
+            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('agenda')"
             :url="'http://localhost:3000/#agenda'"
             :title="'Agenda'"
-            :class="[showAgenda ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+            :class="[showAgenda ? 'border-b-[3px] border-b-primarySecond' : '']"
           ></CustomLink> -->
         </ul>
         <div
-          class="flex items-center border-b-[2px] border-b-[#002738]"
+          class="group flex items-center border-b-[2px] border-b-[#002738] transition duration-300 hover:text-primarySecond hover:border-primarySecond"
           :class="[isTransparent ? 'border-b-[#FFFFFF]' : 'border-b-[#002738]']"
         >
           <CustomLink
-            :url="'/'"
+            :url="'http://localhost:3000/'"
             :title="'Register now'"
-            class="mr-[12px] text-base font-medium"
+            class="mr-[12px] text-base font-medium transition duration-200 hover:text-primarySecond border-transparent cursor-pointer"
             :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#002738]']"
           ></CustomLink>
           <svg
@@ -376,6 +380,7 @@
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="group-hover:text-primarySecond transition duration-200"
             :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#002738]']"
           >
             <path
@@ -1347,7 +1352,7 @@
             :class="[]"
           >
             <CustomLink
-              class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
+              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
               @click.native="toggleMobile()"
               :url="'http://localhost:3000/#about'"
               :title="'About'"
@@ -1358,7 +1363,7 @@
               ]"
             ></CustomLink>
             <CustomLink
-              class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-100 opacity-0"
+              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-100 opacity-0"
               @click.native="toggleMobile()"
               :url="'http://localhost:3000/#topics'"
               :title="'Explore'"
@@ -1369,7 +1374,7 @@
               ]"
             ></CustomLink>
             <CustomLink
-              class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-150 opacity-0"
+              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-150 opacity-0"
               @click.native="toggleMobile()"
               :url="'http://localhost:3000/#speakers'"
               :title="'Speakers'"
@@ -1380,7 +1385,7 @@
               ]"
             ></CustomLink>
             <CustomLink
-              class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-150 delay-150 opacity-0"
+              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-150 delay-150 opacity-0"
               @click.native="toggleMobile()"
               :url="'http://localhost:3000/#agenda'"
               :title="'Agenda'"
