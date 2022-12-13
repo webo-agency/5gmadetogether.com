@@ -1,8 +1,9 @@
 <template>
   <div>
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
+      <!-- cookies modal -->
       <div
-        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[250px] bg-primaryNormal z-[30] rounded text-center"
+        class="hidden cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[250px] bg-primaryNormal z-[30] rounded text-center"
         :class="{ hidden: isAccept }"
       >
         <div class="coockies-header text-[18px]">
@@ -226,13 +227,21 @@
           <ul
             class="flex desktop:flex-row flex-col desktop:space-x-6 gap-y-[30px] desktop:py-3 py-4 font-medium"
           >
-            <li>
+            <li
+              class="hover:text-primarySecond transition ease-in-out duration-150"
+            >
               <a href="#aboutConference">
                 ABOUT THE CONFERENCE
               </a>
             </li>
-            <li><a href="#">PRIVACY POLICY</a></li>
-            <li>
+            <li
+              class="hover:text-primarySecond transition ease-in-out duration-150"
+            >
+              <a href="#">PRIVACY POLICY</a>
+            </li>
+            <li
+              class="hover:text-primarySecond transition ease-in-out duration-150"
+            >
               <CustomLink
                 :url="'https://www.is-wireless.com/'"
                 :title="'ORGANIZER'"
@@ -253,17 +262,19 @@
                 href="https://www.linkedin.com/company/is-wireless/"
                 target="_blank"
                 rel="external"
+                class="group"
               >
                 <svg
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
-                  fill="none"
+                  fill=""
                   xmlns="http://www.w3.org/2000/svg"
+                  class="transition ease-in-out duration-150"
                 >
                   <path
                     d="M0.371613 20H4.08774V6.125H0.371613V20ZM2.22968 0C0.990968 0 0 1 0 2.25C0 3.5 0.990968 4.5 2.22968 4.5C3.46839 4.5 4.45935 3.5 4.45935 2.25C4.45935 1 3.46839 0 2.22968 0ZM10.4052 8.25V6.125H6.68903V20H10.4052V12.875C10.4052 8.875 15.4839 8.625 15.4839 12.875V20H19.2V11.5C19.2 4.75 12.1394 5 10.4052 8.25Z"
-                    fill="#00212F"
+                    fill=""
                   />
                 </svg>
               </a>
@@ -278,12 +289,13 @@
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
-                  fill="none"
+                  fill=""
                   xmlns="http://www.w3.org/2000/svg"
+                  class="transition ease-in-out duration-150"
                 >
                   <path
                     d="M0 15.125V3.625C0 2.8625 0.302901 2.13123 0.842068 1.59207C1.38124 1.0529 2.1125 0.75 2.875 0.75H20.125C20.8875 0.75 21.6188 1.0529 22.1579 1.59207C22.6971 2.13123 23 2.8625 23 3.625V15.125C23 15.8875 22.6971 16.6188 22.1579 17.1579C21.6188 17.6971 20.8875 18 20.125 18H2.875C2.1125 18 1.38124 17.6971 0.842068 17.1579C0.302901 16.6188 0 15.8875 0 15.125ZM9.76062 5.19619C9.65315 5.11967 9.52669 5.0742 9.3951 5.06478C9.2635 5.05535 9.13186 5.08233 9.01457 5.14275C8.89729 5.20317 8.7989 5.29471 8.73019 5.40733C8.66147 5.51996 8.62508 5.64932 8.625 5.78125V12.9688C8.62508 13.1007 8.66147 13.23 8.73019 13.3427C8.7989 13.4553 8.89729 13.5468 9.01457 13.6072C9.13186 13.6677 9.2635 13.6946 9.3951 13.6852C9.52669 13.6758 9.65315 13.6303 9.76062 13.5538L14.7919 9.96006C14.885 9.89357 14.961 9.8058 15.0134 9.70403C15.0658 9.60227 15.0931 9.48946 15.0931 9.375C15.0931 9.26054 15.0658 9.14773 15.0134 9.04597C14.961 8.9442 14.885 8.85642 14.7919 8.78994L9.76062 5.19619Z"
-                    fill="#00212F"
+                    fill=""
                   />
                 </svg>
               </a>
@@ -314,4 +326,8 @@ export default {
 };
 </script>
 
-<style lang="postcss"></style>
+<style lang="postcss">
+svg:hover {
+  fill: #39e8ea;
+}
+</style>

@@ -225,11 +225,11 @@
           >
             <CustomLink :url="'/'">
               <button
-                class="desktop:inline-block block px-6 py-[13px] mb-8 text-[#002738] bg-[#39E8EA] rounded-full shadow-lg font-medium"
+                class="group desktop:inline-block block px-6 py-[13px] mb-8 text-[#002738] bg-[#39E8EA] rounded-full shadow-lg font-medium hover:scale-[1.04] transition ease-out duration-200"
               >
                 Register now
                 <svg
-                  class="inline ml-4"
+                  class="inline ml-2 group-hover:translate-x-[10px] transition ease-out duration-200"
                   width="16"
                   height="14"
                   viewBox="0 0 16 14"
