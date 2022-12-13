@@ -295,17 +295,49 @@
             />
           </svg>
         </div>
-        <div
+
+        <!-- changed to ul -->
+        <ul
           class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-medium"
           :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#00212F]']"
         >
-          <CustomLink
+          <!-- checking scroll behaviour -->
+          <li
+            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            @click="scrollToSection('about')"
+            :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+          >
+            About
+          </li>
+          <li
+            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            @click="scrollToSection('explore')"
+            :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+          >
+            Explore
+          </li>
+          <li
+            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            @click="scrollToSection('speakers')"
+            :class="[showSpeakers ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+          >
+            Speakers
+          </li>
+          <li
+            class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px] cursor-pointer"
+            @click="scrollToSection('agenda')"
+            :class="[showAgenda ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
+          >
+            Agenda
+          </li>
+          <!-- <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             @click.native="scrollToSection('about')"
             :url="'http://localhost:3000/#about'"
             :title="'About'"
             :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
-          ></CustomLink>
+          >
+          </CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
             @click.native="scrollToSection('explore')"
@@ -326,8 +358,8 @@
             :url="'http://localhost:3000/#agenda'"
             :title="'Agenda'"
             :class="[showAgenda ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
-          ></CustomLink>
-        </div>
+          ></CustomLink> -->
+        </ul>
         <div
           class="flex items-center border-b-[2px] border-b-[#002738]"
           :class="[isTransparent ? 'border-b-[#FFFFFF]' : 'border-b-[#002738]']"
