@@ -76,7 +76,7 @@
 
   <!-- full desc without img -->
   <div v-else>
-    <div class="py-6 px-2 bg-[#F7F9F9] h-[640px]">
+    <div class="py-6 px-2 bg-[#F7F9F9]">
       <svg
         class="absolute"
         width="22"
