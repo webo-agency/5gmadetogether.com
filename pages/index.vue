@@ -147,6 +147,146 @@
                 'Adam Flizikowski holds the position of R&D expert within the company and leads the R&D team.',
               fullDesc:
                 'Adam Flizikowski holds the position of R&D expert within the company and leads the R&D team. He has 20 years of commercial experience in wireless systems (incl. LTE, WiMAX, and recently also 5G) and especially topics of RRM techniques (admission, congestion). He is leading the research team of ISRD, he also manages the ECSEL JU project called BRAINE (AI/ML supported micro edge DC) where he deals with workload prediction/placement. He holds MSc from telecommunications and currently pursues his PhD on admission control in future wireless systems. He is author (and co-author) of more than 70 papers from different topics around wireless communications, cyber security and adaptive multimedia systems.'
+            },
+            {
+              img: '/img/speakers/md-arifur-Rahman.webp',
+              name: 'Md Arifur Rahman',
+              academicTitle: 'R&D Expert',
+              experience: 'IS-Wireless, Poland',
+              shortDesc:
+                'Md Arifur Rahman is a R&D Expert working in Is-Wireless, Poland. Focusing on solving the radio resource management (RRM) problems of future wireless networks.',
+              fullDesc:
+                'Md Arifur Rahman is a R&D Expert working in Is-Wireless, Poland. Focusing on solving the radio resource management (RRM) problems of future wireless networks. Currently, he is team leader of a H2020 project called MARSAL. He holds a PhD degree in Electrical Engineering from the University of Ulsan, South Korea in 2019. Before he joins in ISRD, he works as a postdoctoral researcher at CentraleSupelec, Campus of Rennes, France and contribute in a ANR funded Enhanced Physical Layer for Cellular IoT (EPHYL) project and develop radio resource management algorithm for multi-cell NB-IoT network scenario. He was a co-supervisor of Master students in the area of cooperative relaying in NOMA techniques with 2 years of experience during his PhD degree. His current research interests include cell-free mMIMO, cloud computing in 5G networks, multi-access edge computing, virtual radio access networks, AI application in wireless communications, digital twins, and emerging technologies in wireless communications.'
+            },
+            {
+              img: '/img/speakers/sherif-sedkey.webp',
+              name: 'Sherif Sedkey',
+              academicTitle: 'VWware, Finland',
+              experience: 'IS-Wireless, Poland',
+              shortDesc:
+                'Telco Cloud RAN Technical Specialist- EMEA at VMware. Based in Espoo Finland. I started my career in 2000 at Vodafone Egypt before joining Motorola and then Nokia Networks.',
+              fullDesc:
+                'Telco Cloud RAN Technical Specialist- EMEA at VMware. Based in Espoo Finland. I started my career in 2000 at Vodafone Egypt before joining Motorola and then Nokia Networks. I held several positions as RAN Architect, RAN solutions Pre-sales across Nordic, Europe, Middle East, Africa & South-East Asia. I hold a bachelor’s degree in Communication & Electronics Engineering and is currently doing a part-time master’s degree in Business technologies.'
+            },
+            {
+              img: '/img/speakers/robert-gdowski.webp',
+              name: 'Robert Gdowski',
+              academicTitle: 'Senior researcher',
+              experience: 'IS-Wireless, Poland',
+              shortDesc:
+                'Robert currently works in IS-Wireless as a Senior R&D Engineer dealing with Network Function Virtualization and Orchestration topics.',
+              fullDesc:
+                'Robert currently works in IS-Wireless as a Senior R&D Engineer dealing with Network Function Virtualization and Orchestration topics. Previously he worked as a researcher at Industrial Technology Research Institute (ITRI) in Taiwan, focusing on architectural convergence of MEC, NFV and MANO systems. Robert obtained his Ph.D. in Electrical Engineering from National Chiao Tung University. His research interests include System Virtualization, NFV, MANO, O-RAN RIC, MEC and distributed networks.'
+            },
+            {
+              img: '/img/speakers/patrycja-sokalska-pomacho.webp',
+              name: 'Patrycja Sokalska-Pomacho',
+              academicTitle: 'Head of Sales',
+              experience: 'Microsoft, Poland',
+              shortDesc:
+                'Head of Sales in Microsoft/Azure for Operators team responsible for CEE region. Over 20 years experience in international high-tech B2B companies including Nokia and Affirmed Networks.',
+              fullDesc:
+                'Head of Sales in Microsoft/Azure for Operators team responsible for CEE region. Over 20 years experience in international high-tech B2B companies including Nokia and Affirmed Networks with focus on Sales management, operations management, marketing, pricing strategies and global projects management.'
+            },
+            {
+              img: '/img/speakers/jeremy-foy.webp',
+              name: 'Jeremy Foy',
+              academicTitle: '5G & Network Industry',
+              experience: 'IBM Consulting, Hungary',
+              shortDesc:
+                'Jeremy is an experienced telecommunications expert with a unique blend of technical acumen and business leadership to help transform carrier outcomes.',
+              fullDesc:
+                'Jeremy is an experienced telecommunications expert with a unique blend of technical acumen and business leadership to help transform carrier outcomes. He leads Business Development for IBM Consulting’s 5G and Network Transformation Unit. As a thought leader, Jeremy partners with open-minded clients to help drive innovation to achieve greater success. Working for both Fortune-500 firms and start-ups, he started his career in business operations and network services. As 3G launched, Jeremy began working across the network including transmission, NOC management, services, and open- networking.'
+            },
+            {
+              img: '/img/speakers/raimo-kantola.webp',
+              name: 'Raimo Kantola',
+              academicTitle: 'Professor',
+              experience: 'Aalto University, Finland',
+              shortDesc:
+                'Raimo Kantola is a tenured professor of Networking Technology at Aalto, Department of Communications and Networking.',
+              fullDesc:
+                'Raimo Kantola is a tenured professor of Networking Technology at Aalto, Department of Communications and Networking. After years in telecom industry, he graduated with Doctor of Technology degree in 1995 and joined Helsinki University of Technology in 1996 to become a professor. He has been Principal Investigator in many research projects on Internet and mobile networking, including 5G. Prof. Kantola’s recent research has been in Software Defined Networking, Network and System Security, Trust and Green transformation.'
+            },
+            {
+              img: '/img/speakers/ian-goetz.webp',
+              name: 'Ian Goetz',
+              academicTitle: 'Network Architect',
+              experience: 'Dell Technologies, UK',
+              shortDesc:
+                'Ian is a Network Architect in the Dell Technologies, Telecom Systems Business.',
+              fullDesc:
+                'Ian is a Network Architect in the Dell Technologies, Telecom Systems Business. He has 34 years’ experience in the mobile communications industry across operator, vendor, consulting and research roles starting in BT Research Laboratories and followed by BT Cellnet, Tellabs, IBM, Motorola, Aircom International, Juniper Networks and now Dell Technologies. He is currently working with the Dell Technologies PLM and Engineering team as well as customers, on ORAN and Telco & Edge Cloud solutions and transformation in 5G.'
+            },
+            {
+              img: '/img/speakers/john-vardakas.webp',
+              name: 'John Vardakas',
+              academicTitle: 'Senior Researcher',
+              experience: 'IQUADRAT, Spain',
+              shortDesc:
+                'John S. Vardakas received the Dipl.-Eng. in Electrical Computer Engineering from the Democritus University of Thrace, Greece, in 2004 and his Ph.D from the Electrical Computer Engineering Dept., University of Patras, Greece in 2012.',
+              fullDesc:
+                'John S. Vardakas received the Dipl.-Eng. in Electrical Computer Engineering from the Democritus University of Thrace, Greece, in 2004 and his Ph.D from the Electrical Computer Engineering Dept., University of Patras, Greece in 2012. He has authored more than 40 journal articles and 70 conference articles, while he has participated in more than 15 competitive research programs. His research interests include performance analysis and simulation of communication networks and smart grids. He is a senior member of the IEEE and a member of the Technical Chamber of Greece.'
+            },
+            {
+              img: '/img/speakers/tomasz-mach.webp',
+              name: 'Tomasz Mach',
+              academicTitle: 'Staff Engineer',
+              experience: 'Samsung R&D Institute UK',
+              shortDesc:
+                'Tomasz holds a PhD in mobile communications from the University of Surrey UK with almost 20 years of experience in the industry.',
+              fullDesc:
+                'Tomasz holds a PhD in mobile communications from the University of Surrey UK with almost 20 years of experience in the industry. It includes 3G software development, 4G systems engineering, technical marketing, pre-sales and standards development including 3GPP, ETSI, 5GAA and O-RAN. Before joining Samsung R&D UK in 2015, he worked at Orange, Motorola, Nokia, Blackberry and Cisco. He contributed to EU funded 5G R&D projects and co-authored ‘5G System Design: Architectural and Functional Considerations and Long Term Research’ book, many patents, standards contributions and research papers.'
+            },
+            {
+              img: '/img/speakers/wojciech-burakowski.webp',
+              name: 'Wojciech Burakowski',
+              academicTitle: 'Professor',
+              experience: 'Warsaw University of Technology, Poland',
+              shortDesc:
+                'Wojciech Burakowski is Full Professor position at the Institute of Telecommunications, Warsaw University of Technology and at the National Institute of Telecommunications. He leads the AAI research group (aai.tele.pw.edu.pl). Since 1990 he has been involved in several COST and EU Framework Projects.',
+              fullDesc:
+                'He is a member of Telecommunication Section of the Polish Academy of Sciences. He was a chairman and a member of many technical programme committees of national and international conferences. He is the author or co-author of about 250 papers published in books, international and national journals and conference proceedings and about 80 technical reports. He supervised 16 Ph.D. dissertations. His research areas include networks techniques for the Internet, (ATM, IP QoS, Future Internet), heterogeneous networks (fixed and wireless), network architectures, clouds (including MEC), traffic control, simulation techniques, network mechanisms and algorithms, and recently designing wide area research networks for 5G.'
+            },
+            {
+              img: '/img/speakers/janez-sterle.webp',
+              name: 'Janez Sterle',
+              academicTitle: 'Founder and the CEO',
+              experience: 'INTERNET INSTITUTE, Slovenia',
+              shortDesc:
+                'Dr. Janez Sterle is Founder and the CEO of the INTERNET INSTITUTE.',
+              fullDesc:
+                'Dr. Janez Sterle is Founder and the CEO of the INTERNET INSTITUTE. His main area of technical work concerns network and services design, planning and implementation in production networks for 4G/5G systems, NATO and PPDR enabled tactical telecommunication system. He holds various U.S. patents in the field of mobile systems and he has an established track record of H2020 research and development and production-grade projects in various industrial sectors. He cooperates closely with the respective industries, practitioners, regulatory, and legislative bodies on strategic and technical levels.'
+            },
+            {
+              img: '/img/speakers/viktor-melnyk.webp',
+              name: 'Viktor Melnyk',
+              academicTitle: 'Professor',
+              experience: 'John Paul II Catholic University of Lublin, Poland',
+              shortDesc:
+                'Viktor Melnyk is a professor at the Institute of Mathematics, IT and Landscape Architecture, John Paul II Catholic University of Lublin.',
+              fullDesc:
+                'Viktor Melnyk is a professor at the Institute of Mathematics, IT and Landscape Architecture, John Paul II Catholic University of Lublin. He was awarded the academic degrees of Philosophy Doctor in 2004, and Doctor of Technical Sciences in 2013. He has scientific, academic and hands-on experience in the field of computer systems research and design, computer data protection, cryptographic processors design and implementation, wireless sensor network security. He contributed to IP Cores design methodology and high-performance reconfigurable computer systems design methodology.'
+            },
+            {
+              img: '/img/speakers/lukasz-mendyk.webp',
+              name: 'Łukasz Mendyk',
+              academicTitle: '5G & Network Industry',
+              experience: 'Comarch, Poland',
+              shortDesc:
+                'Łukasz specializes in solutions based on the concept of intent-driven fulfillment and orchestration.',
+              fullDesc:
+                'Łukasz specializes in solutions based on the concept of intent-driven fulfillment and orchestration, as well as on innovative concepts such as software-defined networking (SDN), network function virtualization (NFV) and end-to-end orchestrion of 5G networks with O-RAN and based on distributed cloud.'
+            },
+            {
+              img: '/img/speakers/arturas-medeisis.webp',
+              name: 'Arturas Medeisis',
+              academicTitle: 'Professor',
+              experience: 'Vilnius Gediminas Technical University, Lithuania',
+              shortDesc:
+                'Arturas Medeisis received his Ph.D. in Spectrum Management from the Kaunas University of Technology in 2000.',
+              fullDesc:
+                'Arturas Medeisis received his Ph.D. in Spectrum Management from the Kaunas University of Technology in 2000. Since then he has worked in various positions in academia, national and international regulatory bodies as well as the mobile industry. His main work focus is spectrum management policies and strategic planning of the development of radiocommunications services. In his previous position as Head of RAN at Telia Lithuania, he led the deployment at the end of 2020 of first in Lithuania 5G NR pilot network in the three biggest cities.'
             }
           ]"
         />

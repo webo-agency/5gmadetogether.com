@@ -12,7 +12,7 @@
               <SpeakerProfile :speaker="speaker" />
             </li>
             <!-- Pusty div ktory zalatwia problemy ucinajacego ostatniego kafelka spowodowanego tym ze slideperview sa ustawione na auto -->
-            <div class="invisible">
+            <div class="swiper-slide min-w-[10px] max-w-[280px] invisible">
               <div></div>
             </div>
           </ul>

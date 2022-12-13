@@ -9,7 +9,7 @@
       }"
     >
       <div
-        class="container mx-auto flex items-center justify-between pt-4 top-0 z-50"
+        class="container mx-auto flex items-center justify-between pt-1 top-0 z-50"
       >
         <div
           v-if="!isTransparent"
