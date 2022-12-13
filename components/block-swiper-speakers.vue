@@ -135,6 +135,7 @@ export default {
 <style lang="postcss" scoped>
 .swiper-slide {
   width: 250px !important;
+  height: 670px !important;
 }
 .swiper-button-disabled {
   opacity: 0 !important;
