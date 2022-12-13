@@ -1349,7 +1349,7 @@
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
               @click.native="toggleMobile()"
-              :url="'https://5gmadetogether.com/#about'"
+              :url="'http://localhost:3000/#about'"
               :title="'About'"
               :class="[
                 {
@@ -1360,7 +1360,7 @@
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-100 opacity-0"
               @click.native="toggleMobile()"
-              :url="'https://5gmadetogether.com/#topics'"
+              :url="'http://localhost:3000/#topics'"
               :title="'Explore'"
               :class="[
                 {
@@ -1371,7 +1371,7 @@
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-150 opacity-0"
               @click.native="toggleMobile()"
-              :url="'https://5gmadetogether.com/#speakers'"
+              :url="'http://localhost:3000/#speakers'"
               :title="'Speakers'"
               :class="[
                 {
@@ -1382,7 +1382,7 @@
             <CustomLink
               class="py-6 hover:text-[#39E8EA] border-[#00212F] border-b-[2px] transition-opacity ease-in duration-150 delay-150 opacity-0"
               @click.native="toggleMobile()"
-              :url="'https://5gmadetogether.com/#agenda'"
+              :url="'http://localhost:3000/#agenda'"
               :title="'Agenda'"
               :class="[
                 {
