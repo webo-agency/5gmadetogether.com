@@ -55,7 +55,7 @@ export default {
       if (value) {
         this.visited = true;
       } else {
-        this.visited = false;
+        // this.visited = false;
       }
     }
   },

@@ -301,27 +301,29 @@
         >
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
-            @click="scrollToSection('about')"
-            :url="'https://5gmadetogether.com/#aboutConference'"
+            @click.native="scrollToSection('about')"
+            :url="'http://localhost:3000/#aboutConference'"
             :title="'About'"
             :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
-            @click="scrollToSection('explore')"
-            :url="'https://5gmadetogether.com/#topicsCovered'"
+            @click.native="scrollToSection('explore')"
+            :url="'http://localhost:3000/#topicsCovered'"
             :title="'Explore'"
             :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
-            :url="'https://5gmadetogether.com/#speakers'"
+            @click.native="scrollToSection('speakers')"
+            :url="'http://localhost:3000/#speakers'"
             :title="'Speakers'"
             :class="[showSpeakers ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
-            :url="'https://5gmadetogether.com/#agenda'"
+            @click.native="scrollToSection('agenda')"
+            :url="'http://localhost:3000/#agenda'"
             :title="'Agenda'"
             :class="[showAgenda ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
@@ -1504,38 +1506,20 @@ export default {
       this.mobileExpanded = !this.mobileExpanded;
     },
     scrollToSection(section) {
-      if (section === "about") {
-        window.scrollTo({
-          top: 900,
-          behavior: "smooth"
-        });
-        console.log("about");
+      switch (section) {
+        case "about":
+          this.scrollToY(800);
+          break;
+        case "explore":
+          this.scrollToY(1300);
+          break;
+        case "speakers":
+          this.scrollToY(3900);
+          break;
+        case "timetable":
+          this.scrollToY(5400);
+          break;
       }
-      // this.windowY = 0;
-      // switch (section) {
-      //   case "about":
-      //     console.log("about");
-      //     window.scrollTo({
-      //       top: 900,
-      //       behavior: "smooth"
-      //     });
-      //     // scrollToY(800);
-      //     break;
-      //   case "explore":
-      //     console.log("explore");
-      //     scrollToY(1600);
-      //     break;
-      //   case "speakers":
-      //     console.log("speakers");
-      //     scrollToY(2400);
-      //     break;
-      //   case "timetable":
-      //     console.log("timetable");
-      //     scrollToY(3600);
-      //     break;
-      //   default:
-      //     console.log("default");
-      // }
     },
     scrollToY(y) {
       window.scrollTo({

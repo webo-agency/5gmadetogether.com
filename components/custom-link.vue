@@ -60,17 +60,17 @@ export default {
     urlFormatted() {
       let formattedUrl = this.url
         .replace(this.$config.API_URL, "")
-        .replace("https://5gmadetogether.com", "");
+        .replace("http://localhost:3000", "");
       return formattedUrl;
     },
     isExternalCheck() {
       var r = new RegExp("^(?:[a-z+]+:)?//", "i");
-      if (!this.url.includes("https://5gmadetogether.com")) {
+      if (!this.url.includes("http://localhost:3000")) {
         return true;
       }
       var urlCheck = this.url
         .replace(this.$config.API_URL, "")
-        .replace("https://5gmadetogether.com", "");
+        .replace("http://localhost:3000", "");
       if (r.test(urlCheck)) {
         return true;
       }
