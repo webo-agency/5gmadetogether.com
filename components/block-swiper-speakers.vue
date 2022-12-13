@@ -135,6 +135,9 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.swiper-slide {
+  width: 250px !important;
+}
 .swiper-button-disabled {
   opacity: 0 !important;
 }
