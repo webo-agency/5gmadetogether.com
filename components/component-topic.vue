@@ -35,7 +35,7 @@
             ]"
             class="py-2 px-3 rounded-full bg-[#FFFFFF] transition duration-500"
           >
-            01
+            {{ indexZeroFill() }}
           </div>
           <div>{{ topic.title }}</div>
         </div>
@@ -105,7 +105,8 @@
 export default {
   name: "ComponentTopic",
   props: {
-    topic: Object
+    topic: Object,
+    index: Number
   },
   data() {
     return {
@@ -116,6 +117,13 @@ export default {
   methods: {
     expand() {
       this.isExpanded = !this.isExpanded;
+    },
+    indexZeroFill() {
+      if (this.index < 9) {
+        return `0${this.index + 1}`;
+      } else {
+        return `${this.index + 1}`;
+      }
     }
   }
 };

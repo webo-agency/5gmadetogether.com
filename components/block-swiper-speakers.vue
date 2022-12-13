@@ -5,48 +5,12 @@
         <div class="relative swiper h-full">
           <ul class="swiper-wrapper flex h-full mb-16">
             <li
-              class="swiper-slide min-w-[260px] max-w-[280px] desktop:h-[640px]"
+              class="swiper-slide w-[240px] desktop:h-[640px]"
               v-for="(speaker, index) in speakersData"
               :key="index"
             >
-              <SpeakerProfile :speaker="speaker"></SpeakerProfile>
+              <SpeakerProfile :speaker="speaker" />
             </li>
-            <!-- <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div>
-            <div class="swiper-slide w-1/6 min-w-[260px] max-w-[280px]">
-              <SpeakerProfile />
-            </div> -->
             <!-- Pusty div ktory zalatwia problemy ucinajacego ostatniego kafelka spowodowanego tym ze slideperview sa ustawione na auto -->
             <div
               class="swiper-slide w-1/6 min-w-[10px] max-w-[280px] invisible"
@@ -129,7 +93,6 @@ export default {
   },
   data() {
     return {
-      counter: 0,
       showPrevBtn: true,
       isHovered: false,
       profileDefault: true,
