@@ -1,6 +1,28 @@
 <template>
   <div>
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
+      <div
+        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[250px] bg-primaryNormal z-[30] rounded text-center"
+        :class="{ hidden: isAccept }"
+      >
+        <div class="coockies-header text-[18px]">
+          <p>Ciasteczka</p>
+        </div>
+        <p class="text-[14px] font-light mb-[12px]">
+          Używamy ciasteczek do działania strony i poprawy komfortu użytkownika
+        </p>
+        <button
+          class="hover:bg-[#002738] hover:text-white  p-2.5 rounded-full"
+          @click="hideCookies"
+        >
+          Akceptuje
+        </button>
+        <a
+          href="#"
+          class="hover:bg-[#002738] hover:text-white p-2.5 rounded-full text-[14px]"
+          >Czytaj więcej</a
+        >
+      </div>
       <div class="container">
         <div
           class="flex flex-col tablet-wide:flex-row tablet:justify-between gap-y-[40px] py-12 w-full"
@@ -278,7 +300,17 @@
 import CustomLink from "./custom-link.vue";
 export default {
   name: "LayoutFooter",
-  components: { CustomLink }
+  components: { CustomLink },
+  data() {
+    return {
+      isAccept: false
+    };
+  },
+  methods: {
+    hideCookies() {
+      this.isAccept = true;
+    }
+  }
 };
 </script>
 
