@@ -5,7 +5,7 @@
         <div class="relative swiper h-full">
           <ul class="swiper-wrapper flex h-full mb-16">
             <li
-              class="swiper-slide min-w-[260px] max-w-[280px]"
+              class="swiper-slide min-w-[260px] max-w-[280px] desktop:h-[640px]"
               v-for="(speaker, index) in speakersData"
               :key="index"
             >
