@@ -3,13 +3,15 @@
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
       <!-- cookies modal -->
       <div
-        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[250px] bg-primaryNormal z-[30] rounded text-center"
+        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[270px] bg-primaryNormal z-[30] rounded text-center"
         :class="{ hidden: isAccept }"
       >
         <div class="coockies-header text-[18px]">
           <p>Ciasteczka</p>
         </div>
-        <p class="text-[14px] font-light mb-[12px]">
+        <p
+          class="text-[14px] font-light pb-[8px] mb-[8px] border-b-[2px] border-b-[#00273820]"
+        >
           Używamy ciasteczek do działania strony i poprawy komfortu użytkownika
         </p>
         <button

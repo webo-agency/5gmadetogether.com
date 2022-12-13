@@ -100,7 +100,6 @@ export default {
         on: {
           slideChange: function() {
             this.showPrevBtn = !this.showPrevBtn;
-            console.log("test", this.showPrevBtn);
           }
         },
         modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],

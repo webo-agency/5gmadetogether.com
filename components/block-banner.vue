@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex w-full items-end h-[100vh] mb-24 text-center bg-no-repeat bg-cover"
+    class="flex w-full items-end h-[100vh] mb-12 text-center bg-no-repeat bg-cover"
     style="background-image: url(/img/banner.png)"
   >
     <!-- light bg on mobile -->
@@ -8,57 +8,34 @@
       class="heroBgBlurMobile desktop:hidden absolute top-0 left-0 bg-[rgba(0,39,56,0.7)] h-[100vh] w-full"
     ></div>
     <div class="relative container mb-24 z-10 text-left">
-      <!-- <div class="absolute bottom-0 right-5 cursor-pointer">
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="20"
-            cy="20"
-            r="19"
-            transform="rotate(90 20 20)"
-            fill="#39E8EA"
-            fill-opacity="0.15"
-            stroke="#39E8EA"
-            stroke-width="2"
-          />
-          <path
-            d="M26 20.75L25.1294 19.8562L20.375 24.5937L20.375 12L19.125 12L19.125 24.5937L14.3919 19.8562L13.5 20.75L19.75 27L26 20.75Z"
-            fill="#39E8EA"
-          />
-        </svg>
-      </div> -->
-      <CustomLink
-        :url="'https://5gmadetogether.com/#about'"
-        class="absolute bottom-0 right-5 cursor-pointer"
-      >
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="20"
-            cy="20"
-            r="19"
-            transform="rotate(90 20 20)"
-            fill="#39E8EA"
-            fill-opacity="0.15"
-            stroke="#39E8EA"
-            stroke-width="2"
-          />
-          <path
-            d="M26 20.75L25.1294 19.8562L20.375 24.5937L20.375 12L19.125 12L19.125 24.5937L14.3919 19.8562L13.5 20.75L19.75 27L26 20.75Z"
-            fill="#39E8EA"
-          />
-        </svg>
-      </CustomLink>
+      <!-- scroll down mobile -->
+      <div class="absolute bottom-0 right-5 cursor-pointer">
+        <button @click="scrollToSection()">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="20"
+              cy="20"
+              r="19"
+              transform="rotate(90 20 20)"
+              fill="#39E8EA"
+              fill-opacity="0.15"
+              stroke="#39E8EA"
+              stroke-width="2"
+            />
+            <path
+              d="M26 20.75L25.1294 19.8562L20.375 24.5937L20.375 12L19.125 12L19.125 24.5937L14.3919 19.8562L13.5 20.75L19.75 27L26 20.75Z"
+              fill="#39E8EA"
+            />
+          </svg>
+        </button>
+      </div>
+
       <header
         class="desktop:max-w-[800px] max-w-[400px] text-left text-[#FFFFFF] desktop:bg-[#002738]"
       >
@@ -256,8 +233,18 @@
 </template>
 
 <script>
+// import { useScroll, useMediaQuery } from "@vueuse/core";
 export default {
-  name: "BlockBanner"
+  name: "BlockBanner",
+  methods: {
+    scrollToSection() {
+      window.scrollTo({
+        top: 800,
+        behavior: "smooth"
+      });
+      console.log("scroll");
+    }
+  }
 };
 </script>
 
