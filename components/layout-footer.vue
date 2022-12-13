@@ -3,7 +3,7 @@
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
       <!-- cookies modal -->
       <div
-        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[270px] bg-primaryNormal z-[30] rounded text-center"
+        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[270px] bg-primaryNormal z-[30] rounded-xl  text-center"
         :class="{ hidden: isAccept }"
       >
         <div class="coockies-header text-[18px]">

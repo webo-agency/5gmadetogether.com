@@ -41,17 +41,17 @@ export default {
     url: {
       type: String,
       required: true,
-      default: "/",
+      default: "/"
     },
     title: {
       type: String,
-      required: false,
+      required: false
     },
     isExternal: {
       type: Boolean,
-      default: false,
+      default: false
     },
-    activeClass: String,
+    activeClass: String
   },
   computed: {
     hasDefaultSlot() {
@@ -80,7 +80,7 @@ export default {
       return !this.url.includes("tel:") && !this.url.includes("mailto:")
         ? "_blank"
         : "";
-    },
-  },
+    }
+  }
 };
 </script>

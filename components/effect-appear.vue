@@ -1,7 +1,7 @@
 <template>
   <div
     ref="container"
-    class="transition duration-500"
+    class="transition duration-700"
     :class="{ 'opacity-0 translate-y-2.5': !visited }"
     :style="{ 'transition-delay': delay + 'ms' }"
   >
@@ -54,6 +54,8 @@ export default {
     isVisible(value) {
       if (value) {
         this.visited = true;
+      } else {
+        this.visited = false;
       }
     }
   },

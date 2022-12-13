@@ -242,7 +242,6 @@ export default {
         top: 800,
         behavior: "smooth"
       });
-      console.log("scroll");
     }
   }
 };

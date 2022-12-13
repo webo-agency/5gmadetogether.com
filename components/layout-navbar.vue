@@ -301,13 +301,15 @@
         >
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
-            :url="'https://5gmadetogether.com/#about'"
+            @click="scrollToSection('about')"
+            :url="'https://5gmadetogether.com/#aboutConference'"
             :title="'About'"
             :class="[showAbout ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-[#39E8EA] hover:border-b-[3px] hover:border-b-[#39E8EA] border-transparent border-b-[3px]"
-            :url="'https://5gmadetogether.com/#topics'"
+            @click="scrollToSection('explore')"
+            :url="'https://5gmadetogether.com/#topicsCovered'"
             :title="'Explore'"
             :class="[showExplore ? 'border-b-[3px] border-b-[#39E8EA]' : '']"
           ></CustomLink>
@@ -714,7 +716,7 @@
             />
           </svg>
         </div>
-        <div class="pt-4 top-0 z-50">
+        <div class="z-50 mt-[8px]">
           <div
             class="logo-and-hamburger flex justify-between items-center w-full"
           >
@@ -1417,7 +1419,8 @@ export default {
       popUpHover: false,
       hoverItem: "",
       pointerPosition: 0,
-      showSection: false
+      showSection: false,
+      windowY: 0
     };
   },
   setup() {
@@ -1499,6 +1502,46 @@ export default {
     },
     toggleMobile() {
       this.mobileExpanded = !this.mobileExpanded;
+    },
+    scrollToSection(section) {
+      if (section === "about") {
+        window.scrollTo({
+          top: 900,
+          behavior: "smooth"
+        });
+        console.log("about");
+      }
+      // this.windowY = 0;
+      // switch (section) {
+      //   case "about":
+      //     console.log("about");
+      //     window.scrollTo({
+      //       top: 900,
+      //       behavior: "smooth"
+      //     });
+      //     // scrollToY(800);
+      //     break;
+      //   case "explore":
+      //     console.log("explore");
+      //     scrollToY(1600);
+      //     break;
+      //   case "speakers":
+      //     console.log("speakers");
+      //     scrollToY(2400);
+      //     break;
+      //   case "timetable":
+      //     console.log("timetable");
+      //     scrollToY(3600);
+      //     break;
+      //   default:
+      //     console.log("default");
+      // }
+    },
+    scrollToY(y) {
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
+      });
     }
   },
   components: { CustomLink, HamburgerBtn }

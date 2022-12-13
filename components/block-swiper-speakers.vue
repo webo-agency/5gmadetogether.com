@@ -5,7 +5,7 @@
         <div class="relative swiper h-full">
           <ul class="swiper-wrapper flex h-full mb-16">
             <li
-              class="swiper-slide w-[240px] desktop:h-[640px]"
+              class="swiper-slide w-[250px] desktop:h-[670px]"
               v-for="(speaker, index) in speakersData"
               :key="index"
             >
@@ -21,7 +21,9 @@
           <div class="swiper-pagination"></div>
 
           <div class="btnPrevContainer" :class="{ test2: showPrevBtn }"></div>
-          <div class="swiper-button-prev cursor-pointer">
+          <div
+            class="swiper-button-prev cursor-pointer absolute left-[20px] top-[28%] z-[1]"
+          >
             <svg
               width="40"
               height="40"
@@ -44,7 +46,9 @@
               />
             </svg>
           </div>
-          <div class="swiper-button-next cursor-pointer">
+          <div
+            class="swiper-button-next cursor-pointer absolute tablet:right-[100px] right-[50px] top-[28%] z-[1]"
+          >
             <svg
               width="40"
               height="40"
@@ -131,53 +135,12 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.swiper-button-disabled {
+  opacity: 0 !important;
+}
 .swiper-button-prev {
   opacity: 1;
   transition: all 0.3s ease-out;
-}
-.swiper-button-disabled {
-  opacity: 0;
-}
-.swiper-button-next {
-  position: absolute;
-  left: 87%;
-  top: 25%;
-  z-index: 10;
-}
-
-@media all and (min-width: 1200px) {
-  .swiper-button-next {
-    left: 90%;
-    top: 25%;
-  }
-}
-
-@media all and (min-width: 1500px) {
-  .swiper-button-next {
-    left: 80%;
-    top: 25%;
-  }
-}
-
-.swiper-button-prev {
-  position: absolute;
-  left: 1%;
-  top: 25%;
-  z-index: 10;
-}
-
-@media all and (min-width: 1200px) {
-  .swiper-button-prev {
-    left: 1%;
-    top: 25%;
-  }
-}
-
-@media all and (min-width: 1500px) {
-  .swiper-button-prev {
-    left: 1%;
-    top: 25%;
-  }
 }
 
 .activebutton {

@@ -1,5 +1,5 @@
 <template>
-  <div id="agenda" class="w-full overflow-hidden py-10 mb-52">
+  <div id="agenda" class="w-full overflow-hidden pb-10 mb-52">
     <div class="tablet-wide:container">
       <div class="relative desktop:ml-72 tablet-wide:ml-60 full-hd:ml-12">
         <!-- Tlo left -->
