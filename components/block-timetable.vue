@@ -95,225 +95,20 @@
               <span class="font-normal">(Is-Wireless)</span>
             </div>
           </div>
+
+          <ul class="flex flex-col">
+            <li
+              v-for="(item, index) in timetableData"
+              :key="index"
+              class="py-8 border-b group"
+            >
+              <TimetableLecture :item="item"></TimetableLecture>
+            </li>
+          </ul>
+
+          <!-- ul template -->
           <div class="flex flex-col">
-            <!-- Pojedynczy wiersz kolumny -->
-            <div class="py-8 border-b group">
-              <div
-                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
-              >
-                <div class="flex items-start shrink-0 desktop:space-x-5">
-                  <svg
-                    class="group-hover:text-[#39E8EA] transition duration-300"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 35 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="fill-current"
-                      d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z"
-                      fill="#00212F"
-                    />
-                    <path
-                      class="fill-current"
-                      d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z"
-                      fill="#00212F"
-                    />
-                  </svg>
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
-                  >
-                    09:10 AM - 9:30 AM
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
-                >
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
-                  >
-                    5G MADE TOGETHER - PARTNERS
-                  </div>
-                  <div class="font-medium">
-                    Jeremy Foy<span class="font-normal"
-                      >(IBM Global Business Services, Hungary)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Patrycja Sokalska-Pomacho<span class="font-normal"
-                      >(Microsoft)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Sherif Sedkey<span class="font-normal">(VMware)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-
-            <div class="py-8 border-b group">
-              <div
-                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
-              >
-                <div class="flex items-start shrink-0 desktop:space-x-5">
-                  <svg
-                    class="group-hover:text-[#39E8EA] transition duration-300"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 35 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="fill-current"
-                      d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z"
-                      fill="#00212F"
-                    />
-                    <path
-                      class="fill-current"
-                      d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z"
-                      fill="#00212F"
-                    />
-                  </svg>
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
-                  >
-                    09:30 AM - 9:40 AM
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
-                >
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
-                  >
-                    5G MADE TOGETHER - PARTNERS
-                  </div>
-                  <div class="font-medium">
-                    Adam Flizikowski<span class="font-normal"
-                      >(IS-Wireless, Poland)</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="py-8 border-b group">
-              <div
-                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
-              >
-                <div class="flex items-start shrink-0 desktop:space-x-5">
-                  <svg
-                    class="group-hover:text-[#39E8EA] transition duration-300"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 35 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="fill-current"
-                      d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z"
-                      fill="#00212F"
-                    />
-                    <path
-                      class="fill-current"
-                      d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z"
-                      fill="#00212F"
-                    />
-                  </svg>
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
-                  >
-                    09:40 AM - 10:00 AM
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
-                >
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
-                  >
-                    BEYOND 5G - WHERE ARE WE HEADING IN OPEN-RAN NETWORKS
-                  </div>
-                  <div class="font-medium">
-                    John S. Vardakas<span class="font-normal"
-                      >(Iquadrat, Spain)</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="py-8 border-b group">
-              <div
-                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
-              >
-                <div class="flex items-start shrink-0 desktop:space-x-5">
-                  <svg
-                    class="group-hover:text-[#39E8EA] transition duration-300"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 35 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="fill-current"
-                      d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z"
-                      fill="#00212F"
-                    />
-                    <path
-                      class="fill-current"
-                      d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z"
-                      fill="#00212F"
-                    />
-                  </svg>
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
-                  >
-                    09:40 AM - 10:00 AM
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
-                >
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
-                  >
-                    PANEL I: SECURITY CHALLANGES IN BEYOND 5G
-                  </div>
-                  <div class="font-medium">
-                    Jordi Mongay Batalla<span class="font-normal"
-                      >(Warsaw University of Technology, Poland)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Ahmad Ijaz<span class="font-normal"
-                      >(VTT Technical Research Centre of Finland)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Elżbieta Andrukiewicz<span class="font-normal"
-                      >(National Institute of Telecommunications, Poland)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Raimo Kantola<span class="font-normal"
-                      >(Aalto University, Finland)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Ian Goetz<span class="font-normal"
-                      >(Dell Technologies, UK)</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <!-- li Pojedynczy wiersz kolumny -->
             <div class="py-8 group" :class="{ lastBorder: isExpanded }">
               <div
                 class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
@@ -519,12 +314,16 @@
 
 <script>
 import { useMediaQuery } from "@vueuse/core";
+import TimetableLecture from "./component-timetable-lecture.vue";
 
 export default {
   name: "BlockTimetable",
+  components: { TimetableLecture },
+  props: {
+    timetableData: Array
+  },
   setup() {
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");
-
     return {
       isLargeScreen
     };

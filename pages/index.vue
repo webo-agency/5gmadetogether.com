@@ -387,7 +387,74 @@
 
     <PageSection id="timetable">
       <EffectAppear>
-        <BlockTimetable />
+        <BlockTimetable
+          :timetableData="[
+            {
+              time: '09:10 AM - 9:30 AM',
+              title: '5G MADE TOGETHER - PARTNERS',
+              lecturers: [
+                {
+                  name: 'Jeremy Foy',
+                  company: '(IBM Global Business Services, Hungary)'
+                },
+                {
+                  name: 'Patrycja Sokalska-Pomacho',
+                  company: '(Microsoft)'
+                },
+                {
+                  name: 'Sherif Sedkey',
+                  company: '(VMware)'
+                }
+              ]
+            },
+            {
+              time: '09:30 AM - 9:40 AM',
+              title: 'CONFERENCE OUTLINE',
+              lecturers: [
+                {
+                  name: 'Adam Flizikowski',
+                  company: '(IS-Wireless, Poland)'
+                }
+              ]
+            },
+            {
+              time: '9:40 AM  -  10:00 AM',
+              title: 'Beyond 5G – where are we heading in open-RAN networks',
+              lecturers: [
+                {
+                  name: 'John S. Vardakas',
+                  company: 'Iquadrat, Spain'
+                }
+              ]
+            },
+            {
+              time: '10:00 AM  -  10:30 AM',
+              title: 'PANEL I: Security challenges in Beyond 5G',
+              lecturers: [
+                {
+                  name: 'Jordi Mongay Batalla',
+                  company: 'Warsaw University of Technology, Poland'
+                },
+                {
+                  name: 'Ahmad Ijaz',
+                  company: 'VTT Technical Research Centre of Finland'
+                },
+                {
+                  name: 'Elżbieta Andrukiewicz',
+                  company: 'National Institute of Telecommunications, Poland'
+                },
+                {
+                  name: 'Raimo Kantola',
+                  company: 'Aalto University, Finland'
+                },
+                {
+                  name: 'Ian Goetz',
+                  company: 'Dell Technologies, UK'
+                }
+              ]
+            }
+          ]"
+        />
       </EffectAppear>
     </PageSection>
 
