@@ -86,8 +86,8 @@
             </div>
 
             <div class="lecuturer pl-[30px]">
-              <span>Sławomir Pierzyk</span
-              ><span class="font-normal">(Is-Wireless)</span>
+              <span>Sławomir Pietrzyk </span>
+              <span class="font-normal">(Is-Wireless)</span>
             </div>
           </div>
 

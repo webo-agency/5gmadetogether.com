@@ -296,48 +296,14 @@
           </svg>
         </div>
 
-        <!-- changed to ul -->
         <ul
           class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-medium"
           :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#00212F]']"
         >
-          <!-- checking scroll behaviour -->
-          <li
-            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
-            @click="scrollToSection('about')"
-            :class="[showAbout ? 'border-b-[3px] border-b-primarySecond' : '']"
-          >
-            About
-          </li>
-          <li
-            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
-            @click="scrollToSection('explore')"
-            :class="[
-              showExplore ? 'border-b-[3px] border-b-primarySecond' : ''
-            ]"
-          >
-            Explore
-          </li>
-          <li
-            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
-            @click="scrollToSection('speakers')"
-            :class="[
-              showSpeakers ? 'border-b-[3px] border-b-primarySecond' : ''
-            ]"
-          >
-            Speakers
-          </li>
-          <li
-            class="py-6 transition duration-200 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px] cursor-pointer"
-            @click="scrollToSection('agenda')"
-            :class="[showAgenda ? 'border-b-[3px] border-b-primarySecond' : '']"
-          >
-            Agenda
-          </li>
-          <!-- <CustomLink
+          <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('about')"
-            :url="'http://localhost:3000/#about'"
+            :url="'http://localhost:3000/'"
             :title="'About'"
             :class="[showAbout ? 'border-b-[3px] border-b-primarySecond' : '']"
           >
@@ -345,24 +311,28 @@
           <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('explore')"
-            :url="'http://localhost:3000/#topics'"
+            :url="'http://localhost:3000/'"
             :title="'Explore'"
-            :class="[showExplore ? 'border-b-[3px] border-b-primarySecond' : '']"
+            :class="[
+              showExplore ? 'border-b-[3px] border-b-primarySecond' : ''
+            ]"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('speakers')"
-            :url="'http://localhost:3000/#speakers'"
+            :url="'http://localhost:3000/'"
             :title="'Speakers'"
-            :class="[showSpeakers ? 'border-b-[3px] border-b-primarySecond' : '']"
+            :class="[
+              showSpeakers ? 'border-b-[3px] border-b-primarySecond' : ''
+            ]"
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             @click.native="scrollToSection('agenda')"
-            :url="'http://localhost:3000/#agenda'"
+            :url="'http://localhost:3000/'"
             :title="'Agenda'"
             :class="[showAgenda ? 'border-b-[3px] border-b-primarySecond' : '']"
-          ></CustomLink> -->
+          ></CustomLink>
         </ul>
         <div
           class="group flex items-center border-b-[2px] border-b-[#002738] transition duration-300 hover:text-primarySecond hover:border-primarySecond"
@@ -1548,6 +1518,7 @@ export default {
         this.scrollToY(800);
       } else if (section === "explore") {
         this.scrollToY(1300);
+        console.log("scrolled");
       } else if (section === "speakers") {
         this.scrollToY(3900);
       } else if (section === "agenda") {
