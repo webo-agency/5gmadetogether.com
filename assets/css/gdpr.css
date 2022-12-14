@@ -11,7 +11,7 @@
   max-width: 270px;
   justify-content: space-evenly;
   padding: 16px;
-  text-decoration: center;
+  text-align: center;
 }
 
 .gdpr.toasted-container .gdpr-inner.toasted .action {

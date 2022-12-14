@@ -223,7 +223,7 @@
             <CustomLink
               :url="'https://5gmadetogether.com/#about'"
               :title="'Read more'"
-              class="pr-4 border-b border-b-[#FFFFFF] font-medium"
+              class="pr-4 border-b border-b-[#FFFFFF] hover:border-b-primarySecond hover:text-primarySecond font-medium transition duration-200 ease-out"
             />
           </div>
         </div>
