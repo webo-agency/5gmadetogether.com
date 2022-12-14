@@ -300,9 +300,34 @@
           class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-medium"
           :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#00212F]']"
         >
-          <CustomLink
+          <li
+            v-for="(item, index) in menu"
+            :key="index"
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('about')"
+            :class="[
+              showAbout === index
+                ? 'border-b-[3px] border-b-primarySecond'
+                : '',
+              showExplore === index
+                ? 'border-b-[3px] border-b-primarySecond'
+                : '',
+              showSpeakers === index
+                ? 'border-b-[3px] border-b-primarySecond'
+                : '',
+              showAgenda === index
+                ? 'border-b-[3px] border-b-primarySecond'
+                : ''
+            ]"
+          >
+            <CustomLink
+              @click.native="scrollToSection(item.title)"
+              :url="'http://localhost:3000/'"
+              :title="item.title"
+            ></CustomLink>
+          </li>
+          <!-- <CustomLink
+            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
+            @click.native="scrollToSection('About')"
             :url="'http://localhost:3000/'"
             :title="'About'"
             :class="[showAbout ? 'border-b-[3px] border-b-primarySecond' : '']"
@@ -310,7 +335,7 @@
           </CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('explore')"
+            @click.native="scrollToSection('Explore')"
             :url="'http://localhost:3000/'"
             :title="'Explore'"
             :class="[
@@ -319,7 +344,7 @@
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('speakers')"
+            @click.native="scrollToSection('Speakers')"
             :url="'http://localhost:3000/'"
             :title="'Speakers'"
             :class="[
@@ -328,11 +353,11 @@
           ></CustomLink>
           <CustomLink
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('agenda')"
+            @click.native="scrollToSection('Agenda')"
             :url="'http://localhost:3000/'"
             :title="'Agenda'"
             :class="[showAgenda ? 'border-b-[3px] border-b-primarySecond' : '']"
-          ></CustomLink>
+          ></CustomLink> -->
         </ul>
         <div
           class="group flex items-center border-b-[2px] border-b-[#002738] transition duration-300 hover:text-primarySecond hover:border-primarySecond"
@@ -1445,27 +1470,28 @@ export default {
       return show;
     });
 
-    let showSection;
-    showSection = false;
+    // let showSection;
+    // showSection = false;
     let showAbout = computed(() => {
       if (scroll.y.value > 500 && scroll.y.value < 1000) {
-        showSection = true;
-        return (showSection = true);
+        console.log("about");
+        return 0;
       }
     });
     let showExplore = computed(() => {
       if (scroll.y.value > 1100 && scroll.y.value < 2000) {
-        return (showSection = true);
+        console.log("explore");
+        return 1;
       }
     });
     let showSpeakers = computed(() => {
       if (scroll.y.value > 3700 && scroll.y.value < 4600) {
-        return (showSection = true);
+        return 2;
       }
     });
     let showAgenda = computed(() => {
       if (scroll.y.value > 4600 && scroll.y.value < 6300) {
-        return (showSection = true);
+        return 3;
       }
     });
 
@@ -1514,14 +1540,13 @@ export default {
       this.mobileExpanded = !this.mobileExpanded;
     },
     scrollToSection(section) {
-      if (section === "about") {
+      if (section === "About") {
         this.scrollToY(800);
-      } else if (section === "explore") {
-        this.scrollToY(1300);
-        console.log("scrolled");
-      } else if (section === "speakers") {
-        this.scrollToY(3900);
-      } else if (section === "agenda") {
+      } else if (section === "Explore") {
+        this.scrollToY(1400);
+      } else if (section === "Speakers") {
+        this.scrollToY(3950);
+      } else if (section === "Agenda") {
         this.scrollToY(5100);
       }
     },
