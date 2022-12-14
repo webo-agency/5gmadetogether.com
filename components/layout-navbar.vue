@@ -1545,7 +1545,7 @@ export default {
     },
     scrollToSection(section) {
       if (section === "about") {
-        this.scrollToY(700);
+        this.scrollToY(800);
       } else if (section === "explore") {
         this.scrollToY(1300);
       } else if (section === "speakers") {

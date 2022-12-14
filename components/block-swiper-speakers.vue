@@ -45,7 +45,7 @@
             </svg>
           </div>
           <div
-            class="swiper-button-next cursor-pointer absolute tablet:right-[100px] right-[50px] top-[28%] z-[1]"
+            class="swiper-button-next cursor-pointer absolute tablet:right-[130px] right-[50px] top-[28%] z-[1]"
           >
             <svg
               width="40"

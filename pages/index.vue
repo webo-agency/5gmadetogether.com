@@ -287,6 +287,67 @@
                 'Arturas Medeisis received his Ph.D. in Spectrum Management from the Kaunas University of Technology in 2000.',
               fullDesc:
                 'Arturas Medeisis received his Ph.D. in Spectrum Management from the Kaunas University of Technology in 2000. Since then he has worked in various positions in academia, national and international regulatory bodies as well as the mobile industry. His main work focus is spectrum management policies and strategic planning of the development of radiocommunications services. In his previous position as Head of RAN at Telia Lithuania, he led the deployment at the end of 2020 of first in Lithuania 5G NR pilot network in the three biggest cities.'
+            },
+            {
+              img: '/img/speakers/jordi-mongay-batalla.webp',
+              name: 'Jordi Mongay Batalla',
+              academicTitle: 'Professor',
+              experience: 'Warsaw University of Technology, Poland',
+              shortDesc:
+                'Jordi Mongay Batalla is an Associate Professor at Warsaw University of Technology.',
+              fullDesc:
+                'Jordi Mongay Batalla is an Associate Professor at Warsaw University of Technology. Jordi Mongay is a Non-CEI expert of the European Union Agency for Cybersecurity (ENISA) for 5G cybersecurity and a technical member of the European Blockchain Services Infrastructure (European Commission). He is a technical adviser of the Polish Government for 5G development and 5G cybersecurity and a technical adviser of Polish Ministry of Infrastructure for autonomous automotive. He is Member of the Polish Normalization Committee and collaborates actively with ITU-T Standardisation Groups. He is an IEEE and ACM Member.'
+            },
+            {
+              img: '/img/speakers/walter-p-nitzold.webp',
+              name: 'Walter P. Nitzold',
+              academicTitle: 'Principal Research Engineer',
+              experience: 'National Instruments in Dresden, Germany',
+              shortDesc:
+                'Walter is managing European funded research projects with scope of 5G and beyond and driving innovation therefore.',
+              fullDesc:
+                'Walter is managing European funded research projects with scope of 5G and beyond and driving innovation therefore. His research interests include statistical signal processing, channel coding, wireless communications system design, its prototyping and implications for test and measurement systems. He holds several patents in the wireless domain and is author of several technical papers at international conferences. Walter Nitzold has participated in several national and international research projects such as EXALTED, QoSMOS, LTE-M2M Special Interest Group, FAST, ORCA and PriMO-5G. He graduated from HTWK Leipzig (Dipl.-Ing.) in 2010 and TU Dresden (Ph.D.) in 2015.'
+            },
+            {
+              img: '/img/speakers/pawel-skrzypek.webp',
+              name: 'Paweł Skrzypek',
+              academicTitle: 'Chief Multi-Cloud Architect',
+              experience: 'MELODIC project, Poland',
+              shortDesc:
+                'Paweł Skrzypek is a highly experienced architect of ICT systems, with extensive knowledge of machine learning and Big Data solutions.',
+              fullDesc:
+                'Paweł Skrzypek is a highly experienced architect of ICT systems, with extensive knowledge of machine learning and Big Data solutions. Chief Multi-Cloud Architect, working on the MELODIC project and other Cloud Computing projects, focusing on multi-cloud and serverless approach.'
+            },
+            {
+              img: '/img/speakers/jordi-pérez-romero.webp',
+              name: 'Jordi Pérez-Romero',
+              academicTitle: 'Professor',
+              experience:
+                'Universitat Politècnica de Catalunya (UPC) in Barcelona, Spain',
+              shortDesc:
+                'Jordi is a Professor in the Department of Signal Theory and Communications of the Universitat Politècnica de Catalunya (UPC) in Barcelona, Spain, where he received a Ph.D. degree in 2001.',
+              fullDesc:
+                'Jordi is a Professor in the Department of Signal Theory and Communications of the Universitat Politècnica de Catalunya (UPC) in Barcelona, Spain, where he received a Ph.D. degree in 2001. His research interests are in the field of wireless communication systems, with a particular focus on radio resource management and network optimization for 4G, 5G and beyond systems, including the application of machine learning. He has published more than 250 papers in international journals and conferences and has participated in different European research projects.'
+            },
+            {
+              img: '/img/speakers/ahmad-ijaz.webp',
+              name: 'Ahmad Ijaz',
+              academicTitle: 'Research Scientist',
+              experience: 'VTT Technical Research Centre of Finland',
+              shortDesc:
+                'Ijaz Ahmad received his MSc. (2012) and PhD (2018) in Wireless Communications from the University of Oulu, Finland.',
+              fullDesc:
+                'Ijaz Ahmad received his MSc. (2012) and PhD (2018) in Wireless Communications from the University of Oulu, Finland. Currently, he is working with VTT Technical Research Centre of Finland, and is an adjunct professor at the University of Oulu, Finland. Dr. Ijaz is the recipient of several awards including the Nokia foundation, Tauno Tönning and Jorma Ollila grant awards, VTT Excellence award, and two IEEE best paper awards. He has been a visiting scientist at Aalto University, Finland and at TU Vienna, Austria. His research interests include cybersecurity, security of 5G/6G, and machine learning.'
+            },
+            {
+              img: '/img/speakers/line-mp-larsen.webp',
+              name: 'Line M.P. Larsen',
+              academicTitle: 'Photonics Engineering',
+              experience: 'DTU, Denmark',
+              shortDesc:
+                'Line M.P. Larsen received her M.Sc. Eng. Telecommunication degree from DTU in 2017. She is currently finishing her PhD studies within the Network Technologies and Service Platforms group, Photonics Engineering, DTU.',
+              fullDesc:
+                'Line M.P. Larsen received her M.Sc. Eng. Telecommunication degree from DTU in 2017. She is currently finishing her PhD studies within the Network Technologies and Service Platforms group, Photonics Engineering, DTU. She is the first author of the paper “A Survey of the Functional Splits Proposed for 5G Mobile Crosshaul Networks”. Her research interests include: functional splits, crosshaul networks, mobile network architectures, 5G and green networks; she won a Best Paper Award at GREEN2019 for the paper: “Energy-Aware Design Considerations for Ethernet-Based 5G Mobile Fronthaul Networks”.'
             }
           ]"
         />
