@@ -2,12 +2,12 @@
   <div id="agenda" class="w-full overflow-hidden pb-10 mb-52">
     <div class="tablet-wide:container">
       <div class="relative desktop:ml-72 tablet-wide:ml-60 full-hd:ml-12">
-        <!-- Tlo left -->
+        <!-- left background -->
         <div
           class="left-col tablet-wide:absolute tablet-wide:top-0 tablet-wide:right-full tablet-wide:h-[960px] desktop:w-[510px] tablet-wide:w-[385px] h-[550px] tablet-wide:bg-top bg-center "
           style="background-image: url(/img/Lecturer.png); background-repeat: no-repeat; background-size: cover; background-position: center 35%;"
         >
-          <!-- Napis -->
+          <!-- vertical text -->
           <div class="absolute top-72 -right-[3%] tablet-wide:block hidden z-0">
             <svg
               width="66"
@@ -26,9 +26,9 @@
 
         <!-- Content right -->
         <div
-          class="right-col relative flex flex-col desktop:px-20 px-5 py-16 bg-[#F7F9F9]"
+          class="right-col relative flex flex-col desktop-wide:p-20 desktop:px-14 px-5 py-16 bg-[#F7F9F9]"
         >
-          <!-- Nagłówek -->
+          <!-- header -->
           <div class="relative flex flex-col justify-start z-10">
             <div class="flex items-center space-x-2">
               <svg
@@ -54,13 +54,12 @@
             </h3>
           </div>
 
-          <!-- Wiersze tabeli-->
-          <!-- Opening -->
+          <!-- timetable opening row -->
           <div
-            class="flex items-center flex-wrap justify-center tablet:justify-start py-6 gap-y-[15px] tablet:gap-y-0 bg-[#FFFFFF]"
+            class="flex items-center flex-wrap justify-around desktop:justify-start py-6 gap-y-[15px] tablet:gap-y-0 bg-[#FFFFFF]"
           >
             <div
-              class="flex items-center desktop:justify-end justify-start shrink-0 desktop:space-x-5 desktop:w-[205px] tablet:w-[196px] w-auto"
+              class="flex desktop:basis-[36%] items-center desktop:justify-end justify-start desktop:space-x-4 space-x-2"
             >
               <svg
                 width="35"
@@ -78,21 +77,17 @@
                   fill="#00212F"
                 />
               </svg>
-              <div class="font-medium ml-[10px]">
-                09:00 AM
-              </div>
+              <div class="font-medium tablet-wide:pr-[30px]">09:00 AM</div>
             </div>
             <div
-              class="font-medium space-y-2 ml-[45px] desktop:w-[150px] w-[90px] flex flex-wrap items-center"
+              class="font-medium pl-[10px] space-y-2 flex flex-wrap items-center"
             >
-              <span>
-                OPENING
-              </span>
+              <span>OPENING</span>
             </div>
 
-            <div class="lecuturer">
-              <span>Sławomir Pierzyk</span>
-              <span class="font-normal">(Is-Wireless)</span>
+            <div class="lecuturer pl-[30px]">
+              <span>Sławomir Pierzyk</span
+              ><span class="font-normal">(Is-Wireless)</span>
             </div>
           </div>
 
@@ -102,209 +97,82 @@
               :key="index"
               class="py-8 border-b group"
             >
-              <TimetableLecture :item="item"></TimetableLecture>
+              <TimetableLecture :item="item" />
+            </li>
+
+            <!-- last visible item -->
+            <li class="py-8 group" :class="{ lastBorder: isExpanded }">
+              <TimetableLecture :item="timeTableLastItem" />
+            </li>
+
+            <!-- expanded item -->
+            <li
+              v-if="isExpanded"
+              v-for="(item, index) in expandedItems"
+              :key="index + 0.1"
+              :class="{ lastBorder: isExpanded }"
+              class="py-8 group"
+            >
+              <TimetableLecture :item="item" />
             </li>
           </ul>
 
-          <!-- ul template -->
-          <div class="flex flex-col">
-            <!-- li Pojedynczy wiersz kolumny -->
-            <div class="py-8 group" :class="{ lastBorder: isExpanded }">
-              <div
-                class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12"
+          <div class="self-center cursor-pointer">
+            <!-- expand button -->
+            <div v-if="!isExpanded">
+              <svg
+                @click="expand()"
+                @mouseover="isHovered = true"
+                @mouseleave="isHovered = false"
+                :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']"
+                class="mt-4 w-10 h-10  transition duration-500"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div class="flex items-start shrink-0 desktop:space-x-5">
-                  <svg
-                    class="group-hover:text-[#39E8EA] transition duration-300"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 35 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="fill-current"
-                      d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z"
-                      fill="#00212F"
-                    />
-                    <path
-                      class="fill-current"
-                      d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z"
-                      fill="#00212F"
-                    />
-                  </svg>
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
-                  >
-                    09:40 AM - 10:00 AM
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
-                >
-                  <div
-                    class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
-                  >
-                    PANEL II: CENTRAL AND EASTERN EUROPE APPROACH TO BEYOND 5G
-                    NETWORKS
-                  </div>
-                  <div class="font-medium">
-                    Adam Flizikowski<span class="font-normal"
-                      >(IS-Wireless, Poland)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Viktor Melnyk<span class="font-normal"
-                      >(John Paul II Catholic University of Lublin,
-                      Poland)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Arturas Medeisis<span class="font-normal"
-                      >(Vilnius Gediminas Technical University, Lithuania)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Libor Michalek<span class="font-normal"
-                      >(VSB – Technical University of Ostrava, Czech
-                      Republic)</span
-                    >
-                  </div>
-                  <div class="font-medium">
-                    Janez Sterle<span class="font-normal"
-                      >(INTERNET INSTITUTE Ltd, Slovenia)</span
-                    >
-                  </div>
-                </div>
-              </div>
+                <circle cx="20" cy="20" r="19.5" class="stroke-current" />
+                <rect
+                  x="13"
+                  y="19"
+                  width="14"
+                  height="2"
+                  class="fill-current"
+                />
+                <rect
+                  x="21"
+                  y="13"
+                  width="14"
+                  height="2"
+                  transform="rotate(90 21 13)"
+                  class="fill-current"
+                />
+              </svg>
             </div>
-
-            <div v-if="isExpanded">
-              <div class="py-8 group">
-                <div class="flex flex-wrap desktop:space-x-12">
-                  <div class="flex items-start shrink-0 desktop:space-x-5">
-                    <svg
-                      class="group-hover:text-[#39E8EA] transition duration-300"
-                      width="35"
-                      height="35"
-                      viewBox="0 0 35 35"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="fill-current"
-                        d="M17.4996 29.3996C10.9196 29.3996 5.59961 24.0796 5.59961 17.4996C5.59961 10.9196 10.9196 5.59961 17.4996 5.59961C24.0796 5.59961 29.3996 10.9196 29.3996 17.4996C29.3996 24.0796 24.0796 29.3996 17.4996 29.3996ZM17.4996 6.99961C11.6896 6.99961 6.99961 11.6896 6.99961 17.4996C6.99961 23.3096 11.6896 27.9996 17.4996 27.9996C23.3096 27.9996 27.9996 23.3096 27.9996 17.4996C27.9996 11.6896 23.3096 6.99961 17.4996 6.99961Z"
-                        fill="#00212F"
-                      />
-                      <path
-                        class="fill-current"
-                        d="M21.2098 23.5902L16.7998 19.1802V11.2002H18.1998V18.6202L22.1898 22.6102L21.2098 23.5902Z"
-                        fill="#00212F"
-                      />
-                    </svg>
-                    <div
-                      class="group-hover:text-[#39E8EA] transition duration-300 font-medium mt-[6px] ml-[10px]"
-                    >
-                      10:00 AM - 11:00 AM
-                    </div>
-                  </div>
-                  <div
-                    class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
-                  >
-                    <div
-                      class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
-                    >
-                      PANEL I: SECURITY CHALLANGES IN BEYOND 5G
-                    </div>
-                    <div class="font-medium">
-                      Test<span class="font-normal"
-                        >(Warsaw University of Technology, Poland)</span
-                      >
-                    </div>
-                    <div class="font-medium">
-                      Test<span class="font-normal"
-                        >(VTT Technical Research Centre of Finland)</span
-                      >
-                    </div>
-                    <div class="font-medium">
-                      Test<span class="font-normal"
-                        >(National Institute of Telecommunications,
-                        Poland)</span
-                      >
-                    </div>
-                    <div class="font-medium">
-                      Test<span class="font-normal"
-                        >(Aalto University, Finland)</span
-                      >
-                    </div>
-                    <div class="font-medium">
-                      Test<span class="font-normal"
-                        >(Dell Technologies, UK)</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div v-else>
+              <svg
+                @click="expand()"
+                @mouseover="isHovered = true"
+                @mouseleave="isHovered = false"
+                :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']"
+                class="mt-4 w-10 h-10  transition duration-500"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="19.5" class="stroke-current" />
+                <rect
+                  x="13"
+                  y="19"
+                  width="14"
+                  height="2"
+                  class="fill-current"
+                />
+              </svg>
             </div>
-
-            <div class="self-center">
-              <!-- Button -->
-              <div v-if="!isExpanded">
-                <svg
-                  @click="expand()"
-                  @mouseover="isHovered = true"
-                  @mouseleave="isHovered = false"
-                  :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']"
-                  class="mt-4 w-10 h-10  transition duration-500"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="20" cy="20" r="19.5" class="stroke-current" />
-                  <rect
-                    x="13"
-                    y="19"
-                    width="14"
-                    height="2"
-                    class="fill-current"
-                  />
-                  <rect
-                    x="21"
-                    y="13"
-                    width="14"
-                    height="2"
-                    transform="rotate(90 21 13)"
-                    class="fill-current"
-                  />
-                </svg>
-              </div>
-              <div v-else>
-                <svg
-                  @click="expand()"
-                  @mouseover="isHovered = true"
-                  @mouseleave="isHovered = false"
-                  :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']"
-                  class="mt-4 w-10 h-10  transition duration-500"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="20" cy="20" r="19.5" class="stroke-current" />
-                  <rect
-                    x="13"
-                    y="19"
-                    width="14"
-                    height="2"
-                    class="fill-current"
-                  />
-                </svg>
-              </div>
-            </div>
-            <!--  -->
           </div>
         </div>
       </div>
@@ -320,7 +188,9 @@ export default {
   name: "BlockTimetable",
   components: { TimetableLecture },
   props: {
-    timetableData: Array
+    timetableData: Array,
+    timeTableLastItem: Object,
+    expandedItems: Array
   },
   setup() {
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");

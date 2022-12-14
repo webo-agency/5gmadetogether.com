@@ -22,9 +22,7 @@
         ]"
         class="flex justify-between items-center mt-6 py-4 text-[#00212F] transition duration-500"
       >
-        <div
-          class="flex justify-start items-center ml-5 space-x-10 font-medium"
-        >
+        <div class="flex justify-start items-center mx-4 space-x-5 font-medium">
           <div
             :class="[
               isHovered
@@ -37,7 +35,7 @@
           >
             {{ indexZeroFill() }}
           </div>
-          <div>{{ topic.title }}</div>
+          <div class="desktop:mx-6 mx-4">{{ topic.title }}</div>
         </div>
         <div v-if="!isExpanded">
           <svg

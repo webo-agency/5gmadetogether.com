@@ -1,6 +1,8 @@
 <template>
-  <div class="flex desktop:flex-nowrap flex-wrap desktop:space-x-12">
-    <div class="flex items-start shrink-0 desktop:space-x-5">
+  <div class="flex desktop:flex-nowrap flex-wrap ">
+    <div
+      class="flex tablet-wide:basis-[36%] tablet:basis-[30%] items-start desktop:justify-end justify-start  desktop:pr-[30px] shrink-0 desktop:space-x-4"
+    >
       <svg
         class="group-hover:text-[#39E8EA] transition duration-300"
         width="35"
@@ -28,7 +30,7 @@
     </div>
 
     <div
-      class="flex flex-col jusitfy-center space-y-2 ml-[45px] dektop:text-[16px] text-[14px] w-[420px]"
+      class="flex tablet-wide:basis-[64%] tablet:basis-[70%] flex-col jusitfy-center desktop:ml-[0px] ml-[45px] desktop:pl-[10px] space-y-2 dektop:text-[16px] text-[14px] w-[420px]"
     >
       <div
         class="group-hover:text-[#39E8EA] transition duration-300 font-medium text-[16px] mt-[5px] dektop:pb-4 pb-3"
@@ -38,7 +40,7 @@
       <ul>
         <li
           v-for="(lecturer, index) in item.lecturers"
-          :key="lecturers"
+          :key="index"
           class="font-medium"
         >
           {{ lecturer.name }}

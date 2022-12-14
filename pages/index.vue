@@ -77,10 +77,7 @@
         <SwiperSpeakers
           :speakersData="[
             {
-              // img: 'wp-content-uploads-2021-09-pedro-merino-300x300.jpg',
               img: '/img/speakers/pedro-merino.webp',
-              // img:
-              //   '../assets/img/speakers/wp-content-uploads-2021-09-pedro-merino-300x300.jpg',
               name: 'Pedro Merino',
               academicTitle: 'Professor',
               experience: 'University of Malaga, Spain',
@@ -165,8 +162,7 @@
               experience: 'IS-Wireless, Poland',
               shortDesc:
                 'Telco Cloud RAN Technical Specialist- EMEA at VMware. Based in Espoo Finland. I started my career in 2000 at Vodafone Egypt before joining Motorola and then Nokia Networks.',
-              fullDesc:
-                'Telco Cloud RAN Technical Specialist- EMEA at VMware. Based in Espoo Finland. I started my career in 2000 at Vodafone Egypt before joining Motorola and then Nokia Networks. I held several positions as RAN Architect, RAN solutions Pre-sales across Nordic, Europe, Middle East, Africa & South-East Asia. I hold a bachelor’s degree in Communication & Electronics Engineering and is currently doing a part-time master’s degree in Business technologies.'
+              fullDesc: `Telco Cloud RAN Technical Specialist- EMEA at VMware. Based in Espoo Finland. I started my career in 2000 at Vodafone Egypt before joining Motorola and then Nokia Networks. I held several positions as RAN Architect, RAN solutions Pre-sales across Nordic, Europe, Middle East, Africa & South-East Asia. I hold a bachelor's degree in Communication & Electronics Engineering and is currently doing a part-time master's degree in Business technologies.`
             },
             {
               img: '/img/speakers/robert-gdowski.webp',
@@ -195,8 +191,7 @@
               experience: 'IBM Consulting, Hungary',
               shortDesc:
                 'Jeremy is an experienced telecommunications expert with a unique blend of technical acumen and business leadership to help transform carrier outcomes.',
-              fullDesc:
-                'Jeremy is an experienced telecommunications expert with a unique blend of technical acumen and business leadership to help transform carrier outcomes. He leads Business Development for IBM Consulting’s 5G and Network Transformation Unit. As a thought leader, Jeremy partners with open-minded clients to help drive innovation to achieve greater success. Working for both Fortune-500 firms and start-ups, he started his career in business operations and network services. As 3G launched, Jeremy began working across the network including transmission, NOC management, services, and open- networking.'
+              fullDesc: `Jeremy is an experienced telecommunications expert with a unique blend of technical acumen and business leadership to help transform carrier outcomes. He leads Business Development for IBM Consulting's 5G and Network Transformation Unit. As a thought leader, Jeremy partners with open-minded clients to help drive innovation to achieve greater success. Working for both Fortune-500 firms and start-ups, he started his career in business operations and network services. As 3G launched, Jeremy began working across the network including transmission, NOC management, services, and open- networking.`
             },
             {
               img: '/img/speakers/raimo-kantola.webp',
@@ -205,8 +200,7 @@
               experience: 'Aalto University, Finland',
               shortDesc:
                 'Raimo Kantola is a tenured professor of Networking Technology at Aalto, Department of Communications and Networking.',
-              fullDesc:
-                'Raimo Kantola is a tenured professor of Networking Technology at Aalto, Department of Communications and Networking. After years in telecom industry, he graduated with Doctor of Technology degree in 1995 and joined Helsinki University of Technology in 1996 to become a professor. He has been Principal Investigator in many research projects on Internet and mobile networking, including 5G. Prof. Kantola’s recent research has been in Software Defined Networking, Network and System Security, Trust and Green transformation.'
+              fullDesc: `Raimo Kantola is a tenured professor of Networking Technology at Aalto, Department of Communications and Networking. After years in telecom industry, he graduated with Doctor of Technology degree in 1995 and joined Helsinki University of Technology in 1996 to become a professor. He has been Principal Investigator in many research projects on Internet and mobile networking, including 5G. Prof. Kantola's recent research has been in Software Defined Networking, Network and System Security, Trust and Green transformation.`
             },
             {
               img: '/img/speakers/ian-goetz.webp',
@@ -216,7 +210,7 @@
               shortDesc:
                 'Ian is a Network Architect in the Dell Technologies, Telecom Systems Business.',
               fullDesc:
-                'Ian is a Network Architect in the Dell Technologies, Telecom Systems Business. He has 34 years’ experience in the mobile communications industry across operator, vendor, consulting and research roles starting in BT Research Laboratories and followed by BT Cellnet, Tellabs, IBM, Motorola, Aircom International, Juniper Networks and now Dell Technologies. He is currently working with the Dell Technologies PLM and Engineering team as well as customers, on ORAN and Telco & Edge Cloud solutions and transformation in 5G.'
+                'Ian is a Network Architect in the Dell Technologies, Telecom Systems Business. He has 34 years experience in the mobile communications industry across operator, vendor, consulting and research roles starting in BT Research Laboratories and followed by BT Cellnet, Tellabs, IBM, Motorola, Aircom International, Juniper Networks and now Dell Technologies. He is currently working with the Dell Technologies PLM and Engineering team as well as customers, on ORAN and Telco & Edge Cloud solutions and transformation in 5G.'
             },
             {
               img: '/img/speakers/john-vardakas.webp',
@@ -236,7 +230,7 @@
               shortDesc:
                 'Tomasz holds a PhD in mobile communications from the University of Surrey UK with almost 20 years of experience in the industry.',
               fullDesc:
-                'Tomasz holds a PhD in mobile communications from the University of Surrey UK with almost 20 years of experience in the industry. It includes 3G software development, 4G systems engineering, technical marketing, pre-sales and standards development including 3GPP, ETSI, 5GAA and O-RAN. Before joining Samsung R&D UK in 2015, he worked at Orange, Motorola, Nokia, Blackberry and Cisco. He contributed to EU funded 5G R&D projects and co-authored ‘5G System Design: Architectural and Functional Considerations and Long Term Research’ book, many patents, standards contributions and research papers.'
+                'Tomasz holds a PhD in mobile communications from the University of Surrey UK with almost 20 years of experience in the industry. It includes 3G software development, 4G systems engineering, technical marketing, pre-sales and standards development including 3GPP, ETSI, 5GAA and O-RAN. Before joining Samsung R&D UK in 2015, he worked at Orange, Motorola, Nokia, Blackberry and Cisco. He contributed to EU funded 5G R&D projects and co-authored 5G System Design: Architectural and Functional Considerations and Long Term Research book, many patents, standards contributions and research papers.'
             },
             {
               img: '/img/speakers/wojciech-burakowski.webp',
@@ -408,7 +402,7 @@
               ]
             },
             {
-              time: '09:30 AM - 9:40 AM',
+              time: '09:30 AM - 09:40 AM',
               title: 'CONFERENCE OUTLINE',
               lecturers: [
                 {
@@ -418,12 +412,12 @@
               ]
             },
             {
-              time: '9:40 AM  -  10:00 AM',
+              time: '09:40 AM  -  10:00 AM',
               title: 'Beyond 5G – where are we heading in open-RAN networks',
               lecturers: [
                 {
                   name: 'John S. Vardakas',
-                  company: 'Iquadrat, Spain'
+                  company: '(Iquadrat, Spain)'
                 }
               ]
             },
@@ -433,23 +427,90 @@
               lecturers: [
                 {
                   name: 'Jordi Mongay Batalla',
-                  company: 'Warsaw University of Technology, Poland'
+                  company: '(Warsaw University of Technology, Poland)'
                 },
                 {
                   name: 'Ahmad Ijaz',
-                  company: 'VTT Technical Research Centre of Finland'
+                  company: '(VTT Technical Research Centre of Finland)'
                 },
                 {
                   name: 'Elżbieta Andrukiewicz',
-                  company: 'National Institute of Telecommunications, Poland'
+                  company: '(National Institute of Telecommunications, Poland)'
                 },
                 {
                   name: 'Raimo Kantola',
-                  company: 'Aalto University, Finland'
+                  company: '(Aalto University, Finland'
                 },
                 {
                   name: 'Ian Goetz',
-                  company: 'Dell Technologies, UK'
+                  company: '(Dell Technologies, UK)'
+                }
+              ]
+            }
+          ]"
+          :timeTableLastItem="{
+            time: '09:40 AM - 10:00 AM',
+            title:
+              'PANEL II: CENTRAL AND EASTERN EUROPE APPROACH TO BEYOND 5G NETWORKS',
+            lecturers: [
+              {
+                name: 'Adam Flizikowski',
+                company: '(IS-Wireless, Poland)'
+              },
+              {
+                name: 'Viktor Melnyk',
+                company: '(John Paul II Catholic University of Lublin, Poland)'
+              },
+              {
+                name: 'Arturas Medeisis',
+                company: '(Vilnius Gediminas Technical University, Lithuania)'
+              },
+              {
+                name: 'Libor Michalek',
+                company:
+                  '(VSB – Technical University of Ostrava, Czech Republic)'
+              },
+              {
+                name: 'Janez Sterle',
+                company: '(INTERNET INSTITUTE Ltd, Slovenia)'
+              }
+            ]
+          }"
+          :expandedItems="[
+            {
+              time: '09:40 AM - 10:00 AM',
+              title:
+                'PANEL III: The main challenges of ML/AI in the Beyond 5G open-RAN networks',
+              lecturers: [
+                {
+                  name: 'Geir Horn',
+                  company: '(University of Oslo, Norway)'
+                },
+                {
+                  name: 'Osvaldo Simeone',
+                  company: `(King's College London, UK)`
+                },
+                {
+                  name: 'Paweł Skrzypek',
+                  company: '(MELODIC project, Poland)'
+                },
+                {
+                  name: 'Tomasz Mach',
+                  company: '(Samsung, UK)'
+                },
+                {
+                  name: 'Arifur Rahman',
+                  company: 'IS-Wireless, Poland'
+                }
+              ]
+            },
+            {
+              time: '11:20 AM  -  11:40 AM',
+              title: 'Core challenges in the workload placement for Beyond 5G',
+              lecturers: [
+                {
+                  name: 'Geir Horn',
+                  company: '(University of Oslo, Norway)'
                 }
               ]
             }
