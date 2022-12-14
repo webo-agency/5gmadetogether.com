@@ -60,7 +60,7 @@
             class="flex items-center flex-wrap justify-center tablet:justify-start py-6 gap-y-[15px] tablet:gap-y-0 bg-[#FFFFFF]"
           >
             <div
-              class="flex items-center justify-end shrink-0 desktop:space-x-5 desktop:w-[205px] tablet:w-[195px] w-auto"
+              class="flex items-center desktop:justify-end justify-start shrink-0 desktop:space-x-5 desktop:w-[205px] tablet:w-[196px] w-auto"
             >
               <svg
                 width="35"
@@ -83,9 +83,9 @@
               </div>
             </div>
             <div
-              class="font-medium space-y-2 ml-[42px] tablet:w-[150px] w-[90px] flex flex-wrap items-center"
+              class="font-medium space-y-2 ml-[45px] desktop:w-[150px] w-[90px] flex flex-wrap items-center"
             >
-              <span class="mr-[60px]">
+              <span>
                 OPENING
               </span>
             </div>
