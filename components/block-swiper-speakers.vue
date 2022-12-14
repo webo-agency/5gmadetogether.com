@@ -17,8 +17,6 @@
             </div>
           </ul>
           <div class="swiper-pagination"></div>
-
-          <!-- <div class="btnPrevContainer" :class="{ test2: showPrevBtn }"></div> -->
           <div
             class="swiper-button-prev cursor-pointer absolute left-[20px] top-[28%] z-[1]"
           >

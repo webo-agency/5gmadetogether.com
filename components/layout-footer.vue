@@ -1,32 +1,6 @@
 <template>
   <div>
     <footer class="w-full z-50 text-[#002738] bg-[#F7F9F9]">
-      <!-- cookies modal -->
-      <div
-        class="cookies-modal fixed bottom-0 right-0 p-4 m-4 max-w-[270px] bg-primaryNormal z-[30] rounded-xl text-center shadow-[0px_0px_15px_5px_rgba(0,0,0,0.25)]"
-        :class="{ hidden: isAccept }"
-      >
-        <div class="coockies-header text-[18px]">
-          <p>Ciasteczka</p>
-        </div>
-        <p
-          class="text-[14px] font-light pb-[8px] mb-[8px] border-b-[2px] border-b-[#00273820]"
-        >
-          Używamy ciasteczek do działania strony i poprawy komfortu użytkownika
-        </p>
-        <button
-          class="hover:bg-[#002738] hover:text-white  p-2.5 rounded-full"
-          @click="hideCookies"
-        >
-          Akceptuje
-        </button>
-        <a
-          href="#"
-          class="hover:bg-[#002738] hover:text-white p-2.5 rounded-full text-[14px]"
-          @click="hideCookies"
-          >Czytaj więcej</a
-        >
-      </div>
       <div class="container">
         <div
           class="flex flex-col tablet-wide:flex-row tablet:justify-between gap-y-[40px] py-12 w-full"

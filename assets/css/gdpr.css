@@ -1,37 +1,57 @@
-
-.gdpr.toasted-container.bottom-right{
+.gdpr.toasted-container.bottom-right {
   right: 20px;
   bottom: 20px;
 }
 
 .gdpr .gdpr-inner,
-.gdpr .gdpr-inner.toasted{
+.gdpr .gdpr-inner.toasted {
   flex-wrap: wrap;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px;
-  max-width: 13rem;
-  justify-content: space-between;
+  max-width: 270px;
+  justify-content: center;
+  padding: 16px;
+  text-decoration: center;
 }
 
-.gdpr.toasted-container .gdpr-inner.toasted .action{
+.gdpr.toasted-container .gdpr-inner.toasted .action {
   margin: 0;
 }
 
-.gdpr .gdpr-inner.toasted .primary .action, 
-.gdpr .gdpr-inner.toasted.toasted-primary .action{
-  color: #fff;
+.gdpr .gdpr-inner.toasted .primary .action,
+.gdpr .gdpr-inner.toasted.toasted-primary .action {
+  /* color: #fff; */
+  color: #000;
 }
 
-@media only screen and (max-width: 600px){
-  .gdpr.toasted-container.bottom-right{
+/* test */
+/* .gdpr.toasted-container {
+  width: 270px !important;
+} */
+.gdpr .gdpr-inner.toasted {
+  background-color: #00dee0 !important;
+  color: #000 !important;
+  width: 100% !important;
+}
+.action.ripple {
+  padding: 14px !important;
+  border-radius: 100px !important;
+}
+
+.action.ripple:hover {
+  background-color: #002738 !important;
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .gdpr.toasted-container.bottom-right {
     right: 0;
     bottom: 0;
     width: 100%;
   }
 
-
   .gdpr .gdpr-inner,
-  .gdpr .gdpr-inner.toasted{
+  .gdpr .gdpr-inner.toasted {
     max-width: none;
     flex-direction: row-reverse;
     border-radius: 0;
