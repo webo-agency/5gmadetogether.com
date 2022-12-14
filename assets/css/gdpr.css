@@ -9,7 +9,7 @@
   border-radius: 15px;
   padding: 10px;
   max-width: 270px;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 16px;
   text-decoration: center;
 }
@@ -20,7 +20,6 @@
 
 .gdpr .gdpr-inner.toasted .primary .action,
 .gdpr .gdpr-inner.toasted.toasted-primary .action {
-  /* color: #fff; */
   color: #000;
 }
 
