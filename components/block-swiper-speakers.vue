@@ -18,7 +18,7 @@
           </ul>
           <div class="swiper-pagination"></div>
 
-          <div class="btnPrevContainer" :class="{ test2: showPrevBtn }"></div>
+          <!-- <div class="btnPrevContainer" :class="{ test2: showPrevBtn }"></div> -->
           <div
             class="swiper-button-prev cursor-pointer absolute left-[20px] top-[28%] z-[1]"
           >
@@ -95,15 +95,9 @@ export default {
   },
   data() {
     return {
-      showPrevBtn: true,
       isHovered: false,
       profileDefault: true,
       swiperOptionsObject: {
-        on: {
-          slideChange: function() {
-            this.showPrevBtn = !this.showPrevBtn;
-          }
-        },
         modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],
         spaceBetween: 16,
         direction: "horizontal",
@@ -115,7 +109,8 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         },
-        slidesPerView: "auto"
+        slidesPerView: "auto",
+        slidesPerGroup: 4
       }
     };
   },

@@ -78,7 +78,7 @@
           :speakersData="[
             {
               // img: 'wp-content-uploads-2021-09-pedro-merino-300x300.jpg',
-              img: '/img/speakers/pedro-merino-300x300.jpg',
+              img: '/img/speakers/pedro-merino.webp',
               // img:
               //   '../assets/img/speakers/wp-content-uploads-2021-09-pedro-merino-300x300.jpg',
               name: 'Pedro Merino',
@@ -90,7 +90,7 @@
                 'Dr. Pedro Merino is professor at the University of Malaga (UMA). His research interests are new-generation Internet, 5G/6G networks and automated methods for software reliability. He has led more than 30 national and international research projects, most of them in collaboration with industry. He leads a 4G/5G outdoor testbed at Malaga city. Pedro Merino was the chair of the ERCIM WG on Formal Methods for Industrial Critical Systems, and member of the Executive Committee of ERCIM. He represents University of Malaga in Networld2020 ETP and 5G Industrial  Association. Pedro Merino is coordinator of EuWirelss project, technical manager of 5GENESIS project and Director of ITIS Software institute at University of Malaga.'
             },
             {
-              img: '/img/speakers/ana-g-armada-300x300.jpg',
+              img: '/img/speakers/ana-g-armada.webp',
               name: 'Ana García Armada',
               academicTitle: 'Professor',
               experience: 'University Carlos III of Madrid, Spain',
@@ -100,7 +100,7 @@
                 'Ana Garcia Armada is a Professor at University Carlos III of Madrid (UC3M), Spain. She has published more than 150 referred papers about wireless communications and she holds four patents. She serves on the editorial board of IEEE Trans. on Communications and IEEE Open Journal of the Communications Society. She is Member at Large of the Board of Governors and Director of Online Content of the IEEE Communications Society (ComSoc). She has received awards from UC3M, third place Bell Labs Prize 2014, and outstanding service award from the IEEE ComSoc Signal Processing and Communications Electronics technical committee and from the IEEE ComSoc Women in Communications Engineering standing committee.'
             },
             {
-              img: '/img/speakers/sofie-pollin-300x300.jpeg',
+              img: '/img/speakers/sofie-pollin.webp',
               name: 'Sofie Pollin',
               academicTitle: 'Professor',
               experience: 'KU Leuven, Belgium',
@@ -110,7 +110,7 @@
                 'Sofie Pollin is professor at KU Leuven focusing on wireless communication systems. Before that, she worked at imec and UC Berkeley. Her research centers around wireless networks that require networks that are ever more dense, heterogeneous, battery powered and spectrum constrained. She pioneered a 5G testbed for distributed Massive MIMO at KU Leuven, and is now leading the way towards 6G tests in multiple large EU projects.'
             },
             {
-              img: '/img/speakers/walid-saad-300x300.jpeg',
+              img: '/img/speakers/walid-saad.webp',
               name: 'Walid Saad',
               academicTitle: 'Professor',
               experience: 'Virginia Tech, USA',
@@ -120,7 +120,7 @@
                 'Walid Saad received his Ph.D from the University of Oslo in 2010. He is a Professor at the Department of Electrical and Computer Engineering at Virginia Tech, where he leads the Network sciEnce, Wireless, and Security (NEWS) laboratory. His research interests include wireless networks, machine learning, game theory, security, unmanned aerial vehicles, cyber-physical systems, and network science. He was the author/co-author of ten conference best paper awards. He is the recipient of the 2015 Fred W. Ellersick Prize from the IEEE Communications Society, and was a co-author of the 2019 and 2021 IEEE Communications Society Young Author Best Paper. Dr. Saad is a Fellow of the IEEE.'
             },
             {
-              img: '/img/speakers/osvaldo-simeone-300x300.jpeg',
+              img: '/img/speakers/osvaldo-simeone.webp',
               name: 'Osvaldo Simeone',
               academicTitle: 'Professor',
               experience: `King's College London, UK`,
@@ -128,7 +128,7 @@
               fullDesc: `Osvaldo Simeone is a Professor of Information Engineering with the Centre for Telecommunications Research at the Department of Engineering of King's College London, where he directs the King's Communications, Learning and Information Processing lab. His research interests include information theory, machine learning, wireless communications, and neuromorphic computing. He currently serves in the editorial board of the IEEE Signal Processing Magazine and is the chair of the Signal Processing for Communications and Networking Technical Committee of the IEEE Signal Processing Society. He is a co-author of two monographs, two edited books published by Cambridge University Press, and more than 150 research journal papers. He is a Fellow of the IET and of the IEEE.`
             },
             {
-              img: '/img/speakers/dmitry-lakontsev-300x300.jpeg',
+              img: '/img/speakers/dmitry-lakontsev.webp',
               name: 'Dmitry Lakontsev',
               academicTitle: 'Professor',
               experience:
@@ -139,7 +139,7 @@
                 'Dr. Dmitry Lakontsev is associate professor of the practice at Skolkovo Institute of Science and Technology (Skoltech), an expert in IT area, main specialization - wireless communications and IoT. He is the director of the new Project center Next-generation wireless and IoT (CNGW) at Skoltech. The main scope of the center is 5G/6G R&D and wireless technology perspective studies. Skoltech has a private outdoor 5G pilot zone on the territory of Innovation center Skolkovo (more than 2 square km) and 5G Open RAN laboratory. The CNGW is one of the 7 sites hosting O-RAN PlugFest 2021 and is a member of O-RAN Alliance, TIP, and 3GPP. Skoltech is now developing full-stack software for O-DU and O-CU, and software and hardware for O-RU band 78/79. Dmitry is a highly qualified manager with both academic and industry backgrounds.'
             },
             {
-              img: '/img/speakers/adam-flizikowski-300x300.jpeg',
+              img: '/img/speakers/adam-flizikowski.webp',
               name: 'Adam Flizikowski',
               academicTitle: 'Head of R&D',
               experience: 'IS-Wireless, Poland',
@@ -348,6 +348,37 @@
                 'Line M.P. Larsen received her M.Sc. Eng. Telecommunication degree from DTU in 2017. She is currently finishing her PhD studies within the Network Technologies and Service Platforms group, Photonics Engineering, DTU.',
               fullDesc:
                 'Line M.P. Larsen received her M.Sc. Eng. Telecommunication degree from DTU in 2017. She is currently finishing her PhD studies within the Network Technologies and Service Platforms group, Photonics Engineering, DTU. She is the first author of the paper “A Survey of the Functional Splits Proposed for 5G Mobile Crosshaul Networks”. Her research interests include: functional splits, crosshaul networks, mobile network architectures, 5G and green networks; she won a Best Paper Award at GREEN2019 for the paper: “Energy-Aware Design Considerations for Ethernet-Based 5G Mobile Fronthaul Networks”.'
+            },
+            {
+              img: '/img/speakers/filippo-cugini.webp',
+              name: 'Filippo Cugini',
+              academicTitle: 'Head of Research Area',
+              experience: 'CNIT, Italy',
+              shortDesc:
+                'His main research interests include theoretical and experimental studies in the field of communications and networking.',
+              fullDesc:
+                'His main research interests include theoretical and experimental studies in the field of communications and networking. He serves as Coordinator of the ECSEL BRAINE Project, an EU-funded project aiming at boosting Artificial Intelligence at the network Edge. He is co-author of 14 patents and more than 250 international publications.'
+            },
+            {
+              img: '/img/speakers/filipe-conceicao.webp',
+              name: 'Filipe Conceição',
+              academicTitle: 'Expert',
+              experience:
+                'InterDigital Future Wireless Europe Lab in London, UK',
+              shortDesc:
+                'Dr Filipe Conceição is currently an expert in the Next Generation RAN group at InterDigital Future Wireless Europe Lab in London (UK).',
+              fullDesc:
+                'Dr Filipe Conceição is currently an expert in the Next Generation RAN group at InterDigital Future Wireless Europe Lab in London (UK), where he leads on research and standardization activities pertaining to the RAN system and upper layers (3GPP RAN2/RAN3). Prior to InterDigital, He was with Nokia (Portugal) and previously an assistant professor at New University of Lisbon (Portugal). His research interests cover all aspects of future RAN including the leveraging of Artificial Intelligence techniques for Smart RAN. He received his PhD from Université Paris-Saclay in 2019.'
+            },
+            {
+              img: '/img/speakers/geir-horn.webp',
+              name: 'Geir Horn',
+              academicTitle: 'Professor',
+              experience: 'University of Oslo, Norway',
+              shortDesc:
+                'Dr. Horn has been the principal investigator and project leader of more than 17 European collaborative projects.',
+              fullDesc:
+                'Dr. Horn has been the principal investigator and project leader of more than 17 European collaborative projects. Geir is the principal investigator and leader of the MORPHEMIC project whose aim is autonomically to orchestrate and optimize applications across Cloud providers and from the core Cloud to the Edge. Geir has developed several solutions using stochastic combinatorial optimisation based on reinforcement learning and learning automata. His current research interests are on how to optimize large-scale distributed systems through adaptation, autonomic decisions, self-awareness, and emergence.'
             }
           ]"
         />
