@@ -152,7 +152,7 @@
       </div>
     </div>
 
-    <!-- numbers -->
+    <!-- numbers working -->
     <div class="countersContainer flex flex-col tablet:mx-[90px]">
       <div
         class="flex desktop:flex-row flex-col justify-between desktop:items-center py-8 gap-12 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
@@ -184,7 +184,7 @@
               />
             </svg>
           </div>
-          <div class="font-medium">MINUTES</div>
+          <div class="font-medium uppercase">MINUTES</div>
         </div>
         <div class="desktop:max-w-xl font-light">
           The debate and presentations about the latest trends in building
@@ -336,18 +336,27 @@
 </template>
 
 <script>
+import countTo from "vue-count-to";
+
 export default {
   name: "ConferenceNumbers",
+  components: { countTo },
+  props: {
+    countersData: Array
+  },
   data() {
     return {};
   },
+
   methods: {
     viewMinutCount(e) {
       if (e.type == "enter") {
         this.$refs.countMinute.start();
+        console.log("minute counter enter");
       }
       if (e.type == "exit") {
         this.$refs.countMinute.reset();
+        console.log("minute counter exit");
       }
     },
     viewPrelegentCount(e) {

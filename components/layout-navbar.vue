@@ -1415,6 +1415,7 @@ export default {
     let sectionIndexOnScroll = computed(() => {
       let scrollY = scroll.y.value;
       if (scrollY > 500 && scrollY < 1000) {
+        // console.log("about");
         return 0; // about section
       } else if (scrollY > 1100 && scrollY < 2000) {
         return 1; // explore section

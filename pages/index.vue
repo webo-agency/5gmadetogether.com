@@ -67,7 +67,33 @@
 
     <PageSection id="conferenceNumbers">
       <EffectAppear>
-        <ConferenceNumbers />
+        <ConferenceNumbers
+          :countersData="[
+            // {
+            //   countTo: 300,
+            //   unit: 'minutes',
+            //   desc:
+            //     'The debate and presentations about the latest trends in building telecommunications networks: ML/AI, Edge and cloud RAN, Security and more.',
+            //   ref: 'countMinute',
+            //   viewSetting: 'viewMinutCount'
+            // }
+            // {
+            //   countTo: 30,
+            //   unit: 'speakers',
+            //   desc: `Top figures from universities and R&D centers leading the telecommunication revolution. It includes King's College London, University Carlos III of Madrid, Virginia Tech, and more.`,
+            //   ref: 'countPrelegent',
+            //   viewSetting: 'viewPrelegentCount'
+            // },
+            // {
+            //   countTo: 1,
+            //   unit: 'target',
+            //   desc:
+            //     'The target of the conference is to bring together top R&D and business representatives and discuss the future of telecommunications.',
+            //   ref: 'countDebate',
+            //   viewSetting: 'viewDebateCount'
+            // }
+          ]"
+        />
       </EffectAppear>
     </PageSection>
 
