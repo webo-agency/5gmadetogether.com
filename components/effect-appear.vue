@@ -3,7 +3,7 @@
     <div
       v-if="secondEffect"
       ref="container"
-      class="second-effect transition duration-700"
+      class="second-effect transition duration-500"
       :class="{ 'opacity-0 -translate-y-4': !visited }"
       :style="{ 'transition-delay': delay + 'ms' }"
     >

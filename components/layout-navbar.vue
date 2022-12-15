@@ -1302,6 +1302,7 @@
           <ul
             class="mt-[50px] uppercase flex flex-col justify-between text-white font-medium "
           >
+            <!-- nav btns -->
             <li
               v-for="(item, index) in menu"
               :key="index"
@@ -1315,7 +1316,7 @@
               <EffectAppear
                 v-if="mobileExpanded"
                 :secondEffect="mobileExpanded"
-                :delay="index * 80"
+                :delay="index * 70"
               >
                 <CustomLink
                   @click.native="toggleMobile()"
@@ -1334,7 +1335,7 @@
               <EffectAppear
                 v-if="mobileExpanded"
                 :secondEffect="mobileExpanded"
-                :delay="400"
+                :delay="350"
               >
                 <div class="group flex">
                   <CustomLink
