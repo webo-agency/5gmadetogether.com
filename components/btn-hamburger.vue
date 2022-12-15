@@ -28,8 +28,6 @@ export default {
 }
 
 .open .line-menu.middle {
-  /* display: hidden;
-  opacity: 0; */
   width: 0%;
 }
 
@@ -44,7 +42,6 @@ export default {
 }
 
 .line-menu.end {
-  /* align-self: flex-end; */
   transition: transform 250ms ease;
   transform-origin: left;
 }

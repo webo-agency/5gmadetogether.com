@@ -1305,7 +1305,7 @@
             <li
               v-for="(item, index) in menu"
               :key="index"
-              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
+              class="py-6 border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
               :class="[
                 {
                   'opacity-100': mobileExpanded && !isLargeScreen
@@ -1316,6 +1316,7 @@
                 @click.native="toggleMobile()"
                 :url="item.url"
                 :title="item.title"
+                class="hover:text-primarySecond transition duration-200"
               >
               </CustomLink>
             </li>
@@ -1328,27 +1329,30 @@
                 }
               ]"
             >
-              <CustomLink
-                :url="'/'"
-                :title="'Register now'"
-                class="mr-[12px] font-medium border-b-[2px]"
-                @click.native="toggleMobile()"
-              ></CustomLink>
+              <div class="group flex">
+                <CustomLink
+                  :url="'/'"
+                  :title="'Register now'"
+                  class="inline mr-[12px] font-medium border-b-[2px] hover:border-primarySecond hover:text-primarySecond transition duration-200"
+                  @click.native="toggleMobile()"
+                ></CustomLink>
 
-              <!-- arrof for register -->
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="fill-current"
-                  d="M11.25 3.75L10.3562 4.62063L15.0937 9.375H2.5V10.625H15.0937L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z"
-                  fill="#ffffff"
-                />
-              </svg>
+                <!-- arrof for register -->
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-[10px] group-hover:text-primarySecond transition ease-out duration-200"
+                >
+                  <path
+                    class="fill-current"
+                    d="M11.25 3.75L10.3562 4.62063L15.0937 9.375H2.5V10.625H15.0937L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
             </li>
           </ul>
         </div>
@@ -1433,7 +1437,6 @@ export default {
     isLargeScreen(value) {
       if (value) {
         this.mobileExpanded = false;
-        // console.log(globalThis.window.scrollY);
       }
     },
 
