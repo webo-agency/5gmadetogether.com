@@ -40,6 +40,7 @@
 .action.ripple:hover {
   background-color: #002738 !important;
   color: #fff !important;
+  text-decoration: none !important;
 }
 
 @media only screen and (max-width: 600px) {

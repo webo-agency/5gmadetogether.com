@@ -305,16 +305,7 @@
             :key="index"
             class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
             :class="[
-              showAbout === index
-                ? 'border-b-[3px] border-b-primarySecond'
-                : '',
-              showExplore === index
-                ? 'border-b-[3px] border-b-primarySecond'
-                : '',
-              showSpeakers === index
-                ? 'border-b-[3px] border-b-primarySecond'
-                : '',
-              showAgenda === index
+              sectionIndexOnScroll === index
                 ? 'border-b-[3px] border-b-primarySecond'
                 : ''
             ]"
@@ -325,39 +316,6 @@
               :title="item.title"
             ></CustomLink>
           </li>
-          <!-- <CustomLink
-            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('About')"
-            :url="'http://localhost:3000/'"
-            :title="'About'"
-            :class="[showAbout ? 'border-b-[3px] border-b-primarySecond' : '']"
-          >
-          </CustomLink>
-          <CustomLink
-            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('Explore')"
-            :url="'http://localhost:3000/'"
-            :title="'Explore'"
-            :class="[
-              showExplore ? 'border-b-[3px] border-b-primarySecond' : ''
-            ]"
-          ></CustomLink>
-          <CustomLink
-            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('Speakers')"
-            :url="'http://localhost:3000/'"
-            :title="'Speakers'"
-            :class="[
-              showSpeakers ? 'border-b-[3px] border-b-primarySecond' : ''
-            ]"
-          ></CustomLink>
-          <CustomLink
-            class="py-6 transition duration-300 hover:text-primarySecond hover:border-b-[3px] hover:border-b-primarySecond border-transparent border-b-[3px]"
-            @click.native="scrollToSection('Agenda')"
-            :url="'http://localhost:3000/'"
-            :title="'Agenda'"
-            :class="[showAgenda ? 'border-b-[3px] border-b-primarySecond' : '']"
-          ></CustomLink> -->
         </ul>
         <div
           class="group flex items-center border-b-[2px] border-b-[#002738] transition duration-300 hover:text-primarySecond hover:border-primarySecond"
@@ -1472,25 +1430,15 @@ export default {
 
     // let showSection;
     // showSection = false;
-    let showAbout = computed(() => {
+    let sectionIndexOnScroll = computed(() => {
       if (scroll.y.value > 500 && scroll.y.value < 1000) {
         console.log("about");
         return 0;
-      }
-    });
-    let showExplore = computed(() => {
-      if (scroll.y.value > 1100 && scroll.y.value < 2000) {
-        console.log("explore");
+      } else if (scroll.y.value > 1100 && scroll.y.value < 2000) {
         return 1;
-      }
-    });
-    let showSpeakers = computed(() => {
-      if (scroll.y.value > 3700 && scroll.y.value < 4600) {
+      } else if (scroll.y.value > 3700 && scroll.y.value < 4600) {
         return 2;
-      }
-    });
-    let showAgenda = computed(() => {
-      if (scroll.y.value > 4600 && scroll.y.value < 6300) {
+      } else if (scroll.y.value > 4600 && scroll.y.value < 6300) {
         return 3;
       }
     });
@@ -1503,10 +1451,10 @@ export default {
       isVisible: isVisible,
       underTreshold: underTreshold,
       scrollPositionY: scroll.y,
-      showAbout: showAbout,
-      showExplore: showExplore,
-      showSpeakers: showSpeakers,
-      showAgenda: showAgenda
+      sectionIndexOnScroll: sectionIndexOnScroll
+      // showExplore: showExplore,
+      // showSpeakers: showSpeakers,
+      // showAgenda: showAgenda
     };
   },
 
