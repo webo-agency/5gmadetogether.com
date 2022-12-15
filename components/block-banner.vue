@@ -198,27 +198,10 @@
             October 14th, 2021 | 9:00 AM - 3:00 PM CEST
           </time>
           <div
-            class="dekstop:flex justify-start items-center mt-8 desktop:space-x-16"
+            class="buttons dekstop:flex justify-start items-center mt-8 desktop:space-x-16"
           >
             <CustomLink :url="'/'">
-              <button
-                class="group desktop:inline-block block px-6 py-[13px] mb-8 text-[#002738] bg-[#39E8EA] rounded-full shadow-lg font-medium hover:scale-[1.04] transition ease-out duration-200"
-              >
-                Register now
-                <svg
-                  class="inline ml-2 group-hover:translate-x-[10px] transition ease-out duration-200"
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.25 0.75L8.35625 1.62063L13.0938 6.375L0.5 6.375V7.625L13.0938 7.625L8.35625 12.3581L9.25 13.25L15.5 7L9.25 0.75Z"
-                    fill="#002738"
-                  />
-                </svg>
-              </button>
+              <ButtonRegister :title="'Register now'"></ButtonRegister>
             </CustomLink>
             <CustomLink
               :url="'https://5gmadetogether.com/#about'"
@@ -234,9 +217,11 @@
 
 <script>
 import CustomLink from "./custom-link.vue";
+import ButtonRegister from "./btn-register.vue";
+
 export default {
   name: "BlockBanner",
-  components: { CustomLink },
+  components: { CustomLink, ButtonRegister },
   methods: {
     scrollToSection() {
       window.scrollTo({

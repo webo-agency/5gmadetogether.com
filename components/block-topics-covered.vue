@@ -171,7 +171,7 @@
 
           <!-- topic container -->
           <div
-            class="py-16 px-5 relative flex flex-col bg-[#F7F9F9] tablet:basis-[55%]"
+            class="py-16 px-5 relative flex flex-col gap-y-[35px] bg-[#F7F9F9] tablet:basis-[55%]"
           >
             <div class="relative container px-5">
               <div class="absolute scale-50 -top-4 -left-4">

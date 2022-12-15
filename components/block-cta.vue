@@ -1375,26 +1375,9 @@
               <div>9:00 AM - 3:00 PM CEST</div>
             </div>
             <!-- Button -->
-            <button
-              class="relative group w-[195px] flex items-center space-x-2 px-6 py-3 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer hover:scale-[1.04] transition ease-out duration-200"
-            >
-              <div>Register now</div>
-              <div>
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ml-2 group-hover:translate-x-[10px] transition ease-out duration-200"
-                >
-                  <path
-                    d="M9.25 0.748047L8.35625 1.61867L13.0938 6.37305L0.5 6.37305V7.62305L13.0938 7.62305L8.35625 12.3562L9.25 13.248L15.5 6.99805L9.25 0.748047Z"
-                    fill="#002738"
-                  />
-                </svg>
-              </div>
-            </button>
+            <CustomLink class="z-[1]">
+              <ButtonRegister :title="'Register now'"></ButtonRegister>
+            </CustomLink>
           </div>
         </div>
 
@@ -1577,26 +1560,9 @@
               <div>9:00 AM - 3:00 PM CEST</div>
             </div>
             <!-- Button -->
-            <button
-              class="relative group w-[180px] flex items-center space-x-2 px-6 py-3 bg-[#39E8EA] rounded-full shadow-lg cursor-pointer hover:scale-[1.04] transition ease-out duration-200"
-            >
-              <div>Register now</div>
-              <div>
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="group-hover:translate-x-[10px] transition ease-out duration-200"
-                >
-                  <path
-                    d="M9.25 0.748047L8.35625 1.61867L13.0938 6.37305L0.5 6.37305V7.62305L13.0938 7.62305L8.35625 12.3562L9.25 13.248L15.5 6.99805L9.25 0.748047Z"
-                    fill="#002738"
-                  />
-                </svg>
-              </div>
-            </button>
+            <CustomLink>
+              <ButtonRegister :title="'Register now'"></ButtonRegister>
+            </CustomLink>
           </div>
         </div>
       </div>
@@ -1606,9 +1572,12 @@
 
 <script>
 import { useMediaQuery } from "@vueuse/core";
+import ButtonRegister from "./btn-register.vue";
+import CustomLink from "./custom-link.vue";
 
 export default {
   name: "BlockCta",
+  components: { ButtonRegister, CustomLink },
   setup() {
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");
     return {

@@ -20,7 +20,7 @@
             ? 'bg-[#FFFFFF]'
             : 'bg-[#F6F8F8]'
         ]"
-        class="flex justify-between items-center mt-6 py-4 text-[#00212F] transition duration-500"
+        class="flex justify-between items-center py-6 text-[#00212F] transition duration-500"
       >
         <div class="flex justify-start items-center mx-4 space-x-5 font-medium">
           <div

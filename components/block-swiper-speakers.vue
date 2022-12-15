@@ -26,7 +26,7 @@
               viewBox="0 0 40 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="rotate-180"
+              class="rotate-180 "
             >
               <circle
                 cx="20"
@@ -139,6 +139,12 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+svg:hover > circle {
+  fill-opacity: 1;
+}
+svg:hover > path {
+  fill: #fff;
+}
 .swiper-slide {
   width: 250px !important;
   height: 670px !important;
@@ -146,7 +152,8 @@ export default {
 .swiper-button-disabled {
   opacity: 0 !important;
 }
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-button-next {
   opacity: 1;
   transition: all 0.3s ease-out;
 }
