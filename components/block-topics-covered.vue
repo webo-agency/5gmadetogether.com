@@ -139,7 +139,7 @@
       </svg>
     </div> -->
 
-    <div id="topics" class="overflow-hidden text-[#002738]">
+    <div id="explore" class="overflow-hidden text-[#002738]">
       <div class="contentContainer">
         <div class="colsContainer flex tablet:flex-row flex-col">
           <!-- vertical text left -->

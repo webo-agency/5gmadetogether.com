@@ -31,20 +31,14 @@
         <h3
           class="desktop:ml-[7.5rem] ml-[2rem] desktop:text-[35px] tablet:text-[30px] text-[26px] font-medium max-w-[33rem] leading-[42px]"
         >
-          Discover challanges and visions of 5G wireless network
+          {{ aboutData.title }}
         </h3>
       </div>
       <!-- desc -->
       <div class="container mt-[4rem]">
         <div class="desktop:ml-28">
           <p class="leading-[28px] font-light text-[#002738] max-w-2xl">
-            Among the leading experts from the world of science and business, we
-            want to talk about the future of telecommunications and what awaits
-            us after 5G. Work on the next generations of telecommunications
-            standards is underway in many places around the world – with this
-            event we want to give the opportunity to meet and talk to those who
-            develop technologies and those who will implement and commercialize
-            them. Topics covered:
+            {{ aboutData.desc }}
           </p>
         </div>
       </div>
@@ -57,6 +51,9 @@ import { useMediaQuery } from "@vueuse/core";
 
 export default {
   name: "AboutConference",
+  props: {
+    aboutData: Object
+  },
   setup() {
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");
 
