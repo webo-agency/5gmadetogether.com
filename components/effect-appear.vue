@@ -1,11 +1,23 @@
 <template>
-  <div
-    ref="container"
-    class="transition duration-700"
-    :class="{ 'opacity-0 translate-y-2.5': !visited }"
-    :style="{ 'transition-delay': delay + 'ms' }"
-  >
-    <slot></slot>
+  <div>
+    <div
+      v-if="secondEffect"
+      ref="container"
+      class="second-effect transition duration-700"
+      :class="{ 'opacity-0 -translate-y-4': !visited }"
+      :style="{ 'transition-delay': delay + 'ms' }"
+    >
+      <slot></slot>
+    </div>
+    <div
+      v-else
+      ref="container"
+      class="first-effect transition duration-700"
+      :class="{ 'opacity-0 translate-y-2.5': !visited }"
+      :style="{ 'transition-delay': delay + 'ms' }"
+    >
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -19,7 +31,8 @@ export default {
     delay: {
       type: Number,
       default: 0
-    }
+    },
+    secondEffect: Boolean
   },
   setup() {
     const container = ref(null);

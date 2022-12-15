@@ -20,6 +20,10 @@
           title: 'Agenda',
           url: 'http://localhost:3000/#agenda'
         }
+        // {
+        //   title: 'Register now',
+        //   url: 'http://localhost:3000/'
+        // }
       ]"
     />
     <!-- To do te klasy tak byly przedtem-->

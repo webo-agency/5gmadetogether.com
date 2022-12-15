@@ -1003,7 +1003,7 @@
 
             <div
               v-if="isTransparent && mobileExpanded"
-              @click="scrollToTop()"
+              @click="scrollToTop(), toggleMobile()"
               class="cursor-pointer"
             >
               <svg
@@ -1305,18 +1305,23 @@
             <li
               v-for="(item, index) in menu"
               :key="index"
-              class="py-6 border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
+              class="py-6 border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-50 opacity-0"
               :class="[
                 {
                   'opacity-100': mobileExpanded && !isLargeScreen
                 }
               ]"
             >
-              <EffectAppear v-if="mobileExpanded" :delay="index * 80">
+              <EffectAppear
+                v-if="mobileExpanded"
+                :secondEffect="mobileExpanded"
+                :delay="index * 80"
+              >
                 <CustomLink
                   @click.native="toggleMobile()"
                   :url="item.url"
                   :title="item.title"
+                  :icon="item.icon"
                   class="hover:text-primarySecond transition duration-200"
                 >
                 </CustomLink>
@@ -1326,18 +1331,20 @@
             <li
               class="registerbtn-with-arrow py-[24px] uppercase flex items-center "
             >
-              <div class="group flex">
-                <EffectAppear v-if="mobileExpanded" :delay="400">
+              <EffectAppear
+                v-if="mobileExpanded"
+                :secondEffect="mobileExpanded"
+                :delay="400"
+              >
+                <div class="group flex">
                   <CustomLink
                     :url="'/'"
                     :title="'Register now'"
                     class="inline mr-[12px] font-medium border-b-[2px] hover:border-primarySecond hover:text-primarySecond transition duration-200"
                     @click.native="toggleMobile()"
                   ></CustomLink>
-                </EffectAppear>
 
-                <!-- arrof for register -->
-                <EffectAppear v-if="mobileExpanded" :delay="400">
+                  <!-- arrof for register -->
                   <svg
                     width="20"
                     height="20"
@@ -1352,8 +1359,8 @@
                       fill="#ffffff"
                     />
                   </svg>
-                </EffectAppear>
-              </div>
+                </div>
+              </EffectAppear>
             </li>
           </ul>
         </div>
@@ -1388,7 +1395,8 @@ export default {
       hoverItem: "",
       pointerPosition: 0,
       showSection: false,
-      windowY: 0
+      windowY: 0,
+      secondEffect: false
     };
   },
   setup() {
@@ -1455,6 +1463,7 @@ export default {
     },
     toggleMobile() {
       this.mobileExpanded = !this.mobileExpanded;
+      this.secondEffect = !this.secondEffect;
     },
     scrollToY(y) {
       window.scrollTo({
