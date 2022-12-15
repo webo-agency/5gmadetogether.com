@@ -1312,46 +1312,47 @@
                 }
               ]"
             >
-              <CustomLink
-                @click.native="toggleMobile()"
-                :url="item.url"
-                :title="item.title"
-                class="hover:text-primarySecond transition duration-200"
-              >
-              </CustomLink>
+              <EffectAppear v-if="mobileExpanded" :delay="index * 80">
+                <CustomLink
+                  @click.native="toggleMobile()"
+                  :url="item.url"
+                  :title="item.title"
+                  class="hover:text-primarySecond transition duration-200"
+                >
+                </CustomLink>
+              </EffectAppear>
             </li>
             <!-- register btn -->
             <li
-              class="registerbtn-with-arrow py-[24px] uppercase flex items-center transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
-              :class="[
-                {
-                  'opacity-100': mobileExpanded && !isLargeScreen
-                }
-              ]"
+              class="registerbtn-with-arrow py-[24px] uppercase flex items-center "
             >
               <div class="group flex">
-                <CustomLink
-                  :url="'/'"
-                  :title="'Register now'"
-                  class="inline mr-[12px] font-medium border-b-[2px] hover:border-primarySecond hover:text-primarySecond transition duration-200"
-                  @click.native="toggleMobile()"
-                ></CustomLink>
+                <EffectAppear v-if="mobileExpanded" :delay="400">
+                  <CustomLink
+                    :url="'/'"
+                    :title="'Register now'"
+                    class="inline mr-[12px] font-medium border-b-[2px] hover:border-primarySecond hover:text-primarySecond transition duration-200"
+                    @click.native="toggleMobile()"
+                  ></CustomLink>
+                </EffectAppear>
 
                 <!-- arrof for register -->
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="group-hover:translate-x-[10px] group-hover:text-primarySecond transition ease-out duration-200"
-                >
-                  <path
-                    class="fill-current"
-                    d="M11.25 3.75L10.3562 4.62063L15.0937 9.375H2.5V10.625H15.0937L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z"
-                    fill="#ffffff"
-                  />
-                </svg>
+                <EffectAppear v-if="mobileExpanded" :delay="400">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="group-hover:translate-x-[10px] group-hover:text-primarySecond transition ease-out duration-200"
+                  >
+                    <path
+                      class="fill-current"
+                      d="M11.25 3.75L10.3562 4.62063L15.0937 9.375H2.5V10.625H15.0937L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </EffectAppear>
               </div>
             </li>
           </ul>
@@ -1366,6 +1367,7 @@ import { useScroll, useMediaQuery } from "@vueuse/core";
 import { computed } from "@vue/composition-api";
 import CustomLink from "./custom-link.vue";
 import HamburgerBtn from "./btn-hamburger.vue";
+import EffectAppear from "../components/effect-appear.vue";
 export default {
   name: "LayoutNavbar",
   props: {
@@ -1375,7 +1377,7 @@ export default {
     socials: Array,
     clutchLink: String
   },
-  components: { CustomLink, HamburgerBtn },
+  components: { CustomLink, HamburgerBtn, EffectAppear },
   data() {
     return {
       isTransparent: true,
