@@ -8,8 +8,8 @@
       class="heroBgBlurMobile desktop:hidden absolute top-0 left-0 bg-[rgba(0,39,56,0.7)] h-[100vh] w-full"
     ></div>
     <div class="relative container mb-24 z-10 text-left">
-      <!-- scroll down mobile -->
-      <div class="absolute bottom-0 right-5 cursor-pointer">
+      <!-- scroll down -->
+      <div class="absolute bottom-0 right-5 cursor-pointer z-[2]">
         <button @click="scrollToSection()">
           <svg
             width="40"
@@ -224,7 +224,7 @@
               :url="'https://5gmadetogether.com/#about'"
               :title="'Read more'"
               class="pr-4 border-b border-b-[#FFFFFF] hover:border-b-primarySecond hover:text-primarySecond font-medium transition duration-200 ease-out"
-            />
+            ></CustomLink>
           </div>
         </div>
       </header>
@@ -233,9 +233,10 @@
 </template>
 
 <script>
-// import { useScroll, useMediaQuery } from "@vueuse/core";
+import CustomLink from "./custom-link.vue";
 export default {
   name: "BlockBanner",
+  components: { CustomLink },
   methods: {
     scrollToSection() {
       window.scrollTo({
