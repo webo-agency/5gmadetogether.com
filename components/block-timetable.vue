@@ -26,7 +26,7 @@
 
         <!-- Content right -->
         <div
-          class="right-col relative flex flex-col desktop-wide:p-20 desktop:px-14 px-5 py-16 bg-[#F7F9F9]"
+          class="right-col relative flex flex-col desktop-wide:p-20 desktop:px-14 px-12  py-16 bg-[#F7F9F9]"
         >
           <!-- header -->
           <div class="relative flex flex-col justify-start z-10">

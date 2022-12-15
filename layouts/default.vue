@@ -6,19 +6,19 @@
       :menu="[
         {
           title: 'About',
-          url: 'http://localhost:3000/'
+          url: 'http://localhost:3000/#about'
         },
         {
           title: 'Explore',
-          url: 'http://localhost:3000/'
+          url: 'http://localhost:3000/#explore'
         },
         {
           title: 'Speakers',
-          url: 'http://localhost:3000/'
+          url: 'http://localhost:3000/#speakers'
         },
         {
           title: 'Agenda',
-          url: 'http://localhost:3000/'
+          url: 'http://localhost:3000/#agenda'
         }
       ]"
     />

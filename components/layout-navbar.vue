@@ -295,7 +295,7 @@
             />
           </svg>
         </div>
-
+        <!-- navbar links -->
         <ul
           class="flex justify-between space-x-5 desktop:space-x-[50px] text-base font-medium"
           :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#00212F]']"
@@ -317,6 +317,7 @@
             ></CustomLink>
           </li>
         </ul>
+        <!-- Register btn -->
         <div
           class="group flex items-center border-b-[2px] border-b-[#002738] transition duration-300 hover:text-primarySecond hover:border-primarySecond"
           :class="[isTransparent ? 'border-b-[#FFFFFF]' : 'border-b-[#002738]']"
@@ -345,7 +346,6 @@
         </div>
       </div>
     </nav>
-
     <!-- nav mobile -->
     <nav
       class="nav-mobile desktop:hidden w-full fixed z-50 transition duration-500"
@@ -359,7 +359,6 @@
         class="absolute top-0 left-0 h-screen w-screen bg-black/50 pointer-events-none transition duration-500"
         :class="{ 'opacity-0': !mobileExpanded || isLargeScreen }"
       ></div>
-
       <!-- bg for expanded mobile menu -->
       <div
         class="relative container transition-all duration-500 overflow-hidden"
@@ -708,7 +707,7 @@
             />
           </svg>
         </div>
-        <div class="z-50 mt-[8px]">
+        <div class="z-[2] mt-[8px]">
           <div
             class="logo-and-hamburger flex justify-between items-center w-full"
           >
@@ -1299,58 +1298,29 @@
             ></HamburgerBtn>
           </div>
 
-          <!-- mobile menu list -->
-          <div
+          <!-- mobile navbar links -->
+          <ul
             class="mt-[50px] uppercase flex flex-col justify-between text-white font-medium "
-            :class="[]"
           >
-            <CustomLink
+            <li
+              v-for="(item, index) in menu"
+              :key="index"
               class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
-              @click.native="toggleMobile()"
-              :url="'http://localhost:3000/#about'"
-              :title="'About'"
               :class="[
                 {
                   'opacity-100': mobileExpanded && !isLargeScreen
                 }
               ]"
-            ></CustomLink>
-            <CustomLink
-              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-100 opacity-0"
-              @click.native="toggleMobile()"
-              :url="'http://localhost:3000/#topics'"
-              :title="'Explore'"
-              :class="[
-                {
-                  'opacity-100': mobileExpanded && !isLargeScreen
-                }
-              ]"
-            ></CustomLink>
-            <CustomLink
-              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-200 delay-150 opacity-0"
-              @click.native="toggleMobile()"
-              :url="'http://localhost:3000/#speakers'"
-              :title="'Speakers'"
-              :class="[
-                {
-                  'opacity-100': mobileExpanded && !isLargeScreen
-                }
-              ]"
-            ></CustomLink>
-            <CustomLink
-              class="py-6 hover:text-primarySecond border-[#00212F] border-b-[2px] transition-opacity ease-in duration-150 delay-150 opacity-0"
-              @click.native="toggleMobile()"
-              :url="'http://localhost:3000/#agenda'"
-              :title="'Agenda'"
-              :class="[
-                {
-                  'opacity-100': mobileExpanded && !isLargeScreen
-                }
-              ]"
-            ></CustomLink>
-
-            <!-- registerBtn -->
-            <div
+            >
+              <CustomLink
+                @click.native="toggleMobile()"
+                :url="item.url"
+                :title="item.title"
+              >
+              </CustomLink>
+            </li>
+            <!-- register btn -->
+            <li
               class="registerbtn-with-arrow py-[24px] uppercase flex items-center transition-opacity ease-in duration-200 delay-[50ms] opacity-0"
               :class="[
                 {
@@ -1372,7 +1342,6 @@
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#002738]']"
               >
                 <path
                   class="fill-current"
@@ -1380,8 +1349,8 @@
                   fill="#ffffff"
                 />
               </svg>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -1428,18 +1397,16 @@ export default {
       return show;
     });
 
-    // let showSection;
-    // showSection = false;
     let sectionIndexOnScroll = computed(() => {
-      if (scroll.y.value > 500 && scroll.y.value < 1000) {
-        console.log("about");
-        return 0;
-      } else if (scroll.y.value > 1100 && scroll.y.value < 2000) {
-        return 1;
-      } else if (scroll.y.value > 3700 && scroll.y.value < 4600) {
-        return 2;
-      } else if (scroll.y.value > 4600 && scroll.y.value < 6300) {
-        return 3;
+      let scrollY = scroll.y.value;
+      if (scrollY > 500 && scrollY < 1000) {
+        return 0; // about section
+      } else if (scrollY > 1100 && scrollY < 2000) {
+        return 1; // explore section
+      } else if (scrollY > 3700 && scrollY < 4600) {
+        return 2; // speakers section
+      } else if (scrollY > 4600 && scrollY < 6300) {
+        return 3; // agenda section
       }
     });
 
@@ -1452,9 +1419,6 @@ export default {
       underTreshold: underTreshold,
       scrollPositionY: scroll.y,
       sectionIndexOnScroll: sectionIndexOnScroll
-      // showExplore: showExplore,
-      // showSpeakers: showSpeakers,
-      // showAgenda: showAgenda
     };
   },
 
@@ -1487,6 +1451,12 @@ export default {
     toggleMobile() {
       this.mobileExpanded = !this.mobileExpanded;
     },
+    scrollToY(y) {
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
+      });
+    },
     scrollToSection(section) {
       if (section === "About") {
         this.scrollToY(800);
@@ -1497,12 +1467,6 @@ export default {
       } else if (section === "Agenda") {
         this.scrollToY(5100);
       }
-    },
-    scrollToY(y) {
-      window.scrollTo({
-        top: y,
-        behavior: "smooth"
-      });
     }
   }
 };
