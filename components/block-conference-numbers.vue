@@ -1,5 +1,6 @@
 <template>
   <div class="relative container py-32 overflow-hidden">
+    <!-- bg waves -->
     <div
       class="absolute desktop:top-[40px] tablet:top-[140px] top-[210px] tablet:left-[30px] -z-10"
     >
@@ -139,6 +140,7 @@
         />
       </svg>
     </div>
+
     <div class="relative mb-16 tablet:mx-auto max-w-md">
       <!-- title shadow -->
       <div
@@ -146,127 +148,12 @@
       >
         <p class="shadowText uppercase">Numbers</p>
       </div>
-      <!-- title -->
       <div class="relative font-medium tablet:text-[35px] text-[26px] z-10">
         Conference <br class="tablet:hidden" />in numbers
       </div>
     </div>
 
-    <!-- numbers working -->
-    <div class="countersContainer flex flex-col tablet:mx-[90px]">
-      <div
-        class="flex desktop:flex-row flex-col justify-between desktop:items-center py-8 gap-12 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
-      >
-        <div class="relative flex items-start ml-8 space-x-2">
-          <div class="mt-3">
-            <count-to
-              ref="countMinute"
-              v-view.once="viewMinutCount"
-              :start-val="0"
-              :end-val="300"
-              :duration="3000"
-              :autoplay="true"
-              :prefix="'+'"
-              class="block desktop:text-[68px] tablet:text-[55px] text-[45px] font-medium leading-[30px]"
-            />
-          </div>
-          <div class="absolute scale-50 -top-4 -left-10 ">
-            <svg
-              width="43"
-              height="40"
-              viewBox="0 0 43 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 40L31 -1.35505e-06L43 -1.87959e-06L12 40L0 40Z"
-                fill="#39E8EA"
-              />
-            </svg>
-          </div>
-          <div class="font-medium uppercase">MINUTES</div>
-        </div>
-        <div class="desktop:max-w-xl font-light">
-          The debate and presentations about the latest trends in building
-          telecommunications networks: ML/AI, Edge and cloud RAN, Security and
-          more.
-        </div>
-      </div>
-
-      <div
-        class="flex desktop:flex-row flex-col justify-between desktop:items-center py-8 gap-12 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
-      >
-        <div class="relative flex items-start ml-8 space-x-2">
-          <div class="mt-3">
-            <count-to
-              ref="countPrelegent"
-              v-view.once="viewPrelegentCount"
-              :start-val="0"
-              :end-val="30"
-              :duration="3000"
-              :autoplay="true"
-              class="desktop:text-[68px] tablet:text-[55px] text-[45px] font-medium leading-[30px]"
-            />
-          </div>
-          <div class="absolute scale-50 -top-4 -left-10 ">
-            <svg
-              width="43"
-              height="40"
-              viewBox="0 0 43 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 40L31 -1.35505e-06L43 -1.87959e-06L12 40L0 40Z"
-                fill="#39E8EA"
-              />
-            </svg>
-          </div>
-          <div class="font-medium">SPEAKERS</div>
-        </div>
-        <div class="desktop:max-w-xl font-light">
-          Top figures from universities and R&D centers leading the
-          telecommunication revolution. It includes King's College London,
-          University Carlos III of Madrid, Virginia Tech, and more.
-        </div>
-      </div>
-      <div
-        class="flex desktop:flex-row flex-col justify-between desktop:items-center py-8 gap-12 border-b-[#E8E8E8] border-b-[1px] hover:border-b-[#39E8EA] transition duration-500"
-      >
-        <div class="relative flex items-start ml-8 space-x-2">
-          <div class="mt-3">
-            <count-to
-              ref="countDebate"
-              v-view.once="viewDebateCount"
-              :start-val="0"
-              :end-val="1"
-              :duration="3000"
-              :autoplay="true"
-              class="desktop:text-[68px] tablet:text-[55px] text-[45px] font-medium leading-[30px]"
-            />
-          </div>
-          <div class="absolute scale-50 -top-4 -left-10 ">
-            <svg
-              width="43"
-              height="40"
-              viewBox="0 0 43 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 40L31 -1.35505e-06L43 -1.87959e-06L12 40L0 40Z"
-                fill="#39E8EA"
-              />
-            </svg>
-          </div>
-          <div class="font-medium">Target</div>
-        </div>
-        <div class="desktop:max-w-xl font-light">
-          The target of the conference is to bring together top R&D and business
-          representatives and discuss the future of telecommunications.
-        </div>
-      </div>
-    </div>
+    <CountersList :countersData="countersData" />
 
     <!-- Stary layout -->
     <!-- <div class="flex justify-center gap-12">
@@ -336,45 +223,14 @@
 </template>
 
 <script>
-import countTo from "vue-count-to";
+import CountersList from "./component-counters-list.vue";
 
 export default {
   name: "ConferenceNumbers",
-  components: { countTo },
-  props: {
-    countersData: Array
-  },
+  props: { countersData: Array },
+  components: { CountersList },
   data() {
     return {};
-  },
-
-  methods: {
-    viewMinutCount(e) {
-      if (e.type == "enter") {
-        this.$refs.countMinute.start();
-        console.log("minute counter enter");
-      }
-      if (e.type == "exit") {
-        this.$refs.countMinute.reset();
-        console.log("minute counter exit");
-      }
-    },
-    viewPrelegentCount(e) {
-      if (e.type == "enter") {
-        this.$refs.countPrelegent.start();
-      }
-      if (e.type == "exit") {
-        this.$refs.countPrelegent.reset();
-      }
-    },
-    viewDebateCount(e) {
-      if (e.type == "enter") {
-        this.$refs.countDebate.start();
-      }
-      if (e.type == "exit") {
-        this.$refs.countDebate.reset();
-      }
-    }
   }
 };
 </script>
