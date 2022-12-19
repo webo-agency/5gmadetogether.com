@@ -139,10 +139,11 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-svg:hover > circle {
+svg:hover circle {
+  transition: all 0.2s ease-out;
   fill-opacity: 1;
 }
-svg:hover > path {
+svg:hover path {
   fill: #fff;
 }
 .swiper-slide {

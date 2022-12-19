@@ -52,7 +52,7 @@
         </div>
         <div class="relative desktop:px-10 px-0 py-8">
           <!-- waves icon -->
-          <div class="absolute bottom-0 right-0 hidden desktop:block">
+          <div class="absolute bottom-0 right-0 hidden desktop:block ">
             <svg
               width="192"
               height="163"
@@ -233,4 +233,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="postcss" scoped>
+svg:hover > circle {
+  transition: all 0.2s ease-out;
+  fill-opacity: 1;
+}
+svg:hover > path {
+  fill: #fff;
+}
+</style>
