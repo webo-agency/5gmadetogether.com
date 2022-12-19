@@ -193,7 +193,7 @@
           }}</span>
           <time
             datetime="2021-05-27T10:00Z"
-            class="block font-medium desktop:text-[20px] text-[16px] text-left"
+            class="block font-medium tablet:text-[20px] text-[16px] text-left"
           >
             <span>{{ bannerData.date }}</span>
             <span class="mx-3">|</span>
