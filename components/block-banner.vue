@@ -195,13 +195,18 @@
             datetime="2021-05-27T10:00Z"
             class="block font-medium desktop:text-[20px] text-[16px] text-left"
           >
-            {{ bannerData.date }}
+            <span>{{ bannerData.date }}</span>
+            <span class="mx-3">|</span>
+            <span class="desktop:inline block">{{ bannerData.time }}</span>
           </time>
           <div
             class="buttons dekstop:flex justify-start items-center mt-8 desktop:space-x-16"
           >
             <CustomLink :url="'/'">
-              <ButtonRegister :title="'Register now'"></ButtonRegister>
+              <ButtonRegister
+                :title="'Register now'"
+                class="mb-[30px]"
+              ></ButtonRegister>
             </CustomLink>
             <CustomLink
               :url="'https://5gmadetogether.com/#about'"

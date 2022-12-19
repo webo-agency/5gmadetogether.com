@@ -6,7 +6,8 @@
           title1: 'Open RAN for Beyond 5G Wireless networks',
           title2: 'CHALLENGES AND VISIONS',
           confType: 'Online conference',
-          date: 'October 14th, 2021 | 9:00 AM - 3:00 PM CEST'
+          date: 'October 14th, 2021',
+          time: '9:00 AM - 3:00 PM CEST'
         }"
       />
     </PageSection>

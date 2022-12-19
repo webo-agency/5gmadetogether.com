@@ -1375,7 +1375,7 @@
               <div>{{ ctaData.time }}</div>
             </div>
             <!-- Button -->
-            <CustomLink class="z-[1]">
+            <CustomLink :url="'/'" class="z-[1]">
               <ButtonRegister :title="'Register now'"></ButtonRegister>
             </CustomLink>
           </div>
@@ -1560,7 +1560,7 @@
               <div>{{ ctaData.time }}</div>
             </div>
             <!-- Button -->
-            <CustomLink>
+            <CustomLink :url="'/'">
               <ButtonRegister :title="'Register now'"></ButtonRegister>
             </CustomLink>
           </div>
