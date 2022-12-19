@@ -1,7 +1,14 @@
 <template>
   <div class="w-full">
     <PageSection id="heroBanner">
-      <BlockBanner />
+      <BlockBanner
+        :bannerData="{
+          title1: 'Open RAN for Beyond 5G Wireless networks',
+          title2: 'CHALLENGES AND VISIONS',
+          confType: 'Online conference',
+          date: 'October 14th, 2021 | 9:00 AM - 3:00 PM CEST'
+        }"
+      />
     </PageSection>
 
     <PageSection id="aboutConference">
@@ -547,7 +554,13 @@
 
     <PageSection id="cta">
       <EffectAppear>
-        <BlockCta />
+        <BlockCta
+          :ctaData="{
+            confType: 'Online conference',
+            date: 'October 14th, 2021',
+            time: '9:00 AM - 3:00 PM CEST'
+          }"
+        />
       </EffectAppear>
     </PageSection>
   </div>

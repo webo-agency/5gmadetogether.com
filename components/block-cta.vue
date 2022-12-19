@@ -1370,9 +1370,9 @@
             </div>
             <!-- Info -->
             <div class="flex flex-col text-white">
-              <div class="text-[13px] mb-2">Online conference</div>
-              <div>October 14th, 2021</div>
-              <div>9:00 AM - 3:00 PM CEST</div>
+              <div class="text-[13px] mb-2">{{ ctaData.confType }}</div>
+              <div>{{ ctaData.date }}</div>
+              <div>{{ ctaData.time }}</div>
             </div>
             <!-- Button -->
             <CustomLink class="z-[1]">
@@ -1555,9 +1555,9 @@
             </div>
             <!-- Info -->
             <div class="flex flex-col text-white mb-[30px]">
-              <div class="text-[13px] mb-2">Online conference</div>
-              <div>October 14th, 2021</div>
-              <div>9:00 AM - 3:00 PM CEST</div>
+              <div class="text-[13px] mb-2">{{ ctaData.confType }}</div>
+              <div>{{ ctaData.date }}</div>
+              <div>{{ ctaData.time }}</div>
             </div>
             <!-- Button -->
             <CustomLink>
@@ -1578,6 +1578,9 @@ import CustomLink from "./custom-link.vue";
 export default {
   name: "BlockCta",
   components: { ButtonRegister, CustomLink },
+  props: {
+    ctaData: Object
+  },
   setup() {
     const isLargeScreen = useMediaQuery("(min-width: 1248px)");
     return {

@@ -42,11 +42,11 @@
         <div
           class="desktop:px-10 px-0 pt-8 tracking-wide leading-snug font-medium desktop:text-[50px] tablet:text-[35px] text-[25px] min-w-full"
         >
-          Open RAN for Beyond 5G Wireless networks
+          {{ bannerData.title1 }}
           <span class="text-[#39E8EA]"> —</span>
           <span
             class="font-hairline desktop:text-[50px] text-[25px] text-center"
-            >CHALLENGES AND VISIONS</span
+            >{{ bannerData.title2 }}</span
           >
           <div class="mt-4 border-b-[#001C28] border-b"></div>
         </div>
@@ -188,14 +188,14 @@
               />
             </svg>
           </div>
-          <span class="desktop:text-[16px] text-[14px] font-medium"
-            >Online conference</span
-          >
+          <span class="desktop:text-[16px] text-[14px] font-medium">{{
+            bannerData.confType
+          }}</span>
           <time
             datetime="2021-05-27T10:00Z"
             class="block font-medium desktop:text-[20px] text-[16px] text-left"
           >
-            October 14th, 2021 | 9:00 AM - 3:00 PM CEST
+            {{ bannerData.date }}
           </time>
           <div
             class="buttons dekstop:flex justify-start items-center mt-8 desktop:space-x-16"
@@ -221,6 +221,9 @@ import ButtonRegister from "./btn-register.vue";
 
 export default {
   name: "BlockBanner",
+  props: {
+    bannerData: Object
+  },
   components: { CustomLink, ButtonRegister },
   methods: {
     scrollToSection() {
