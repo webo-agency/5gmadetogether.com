@@ -92,7 +92,7 @@
       </div>
     </div>
     <div v-if="isExpanded" class="border-b-[1px] border-b-[#EDF1F1]">
-      <div class="ml-[100px] py-5 font-light text-[#00212F]">
+      <div class="tablet:ml-[75px] ml-[18px] py-5 font-light text-[#00212F]">
         {{ topic.description }}
       </div>
     </div>
