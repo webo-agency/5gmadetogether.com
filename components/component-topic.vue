@@ -37,7 +37,7 @@
           </div>
           <div class="desktop:mx-6 mx-4">{{ topic.title }}</div>
         </div>
-        <div v-if="!isExpanded">
+        <div v-if="!isExpanded" class="cursor-pointer">
           <svg
             @click="expand()"
             :class="[isHovered ? 'text-[#39E8EA]' : 'text-[#002738]']"
@@ -75,7 +75,7 @@
             />
           </svg>
         </div>
-        <div v-else>
+        <div v-else class="cursor-pointer">
           <svg
             @click="expand()"
             class="mr-5 w-10 h-10"
