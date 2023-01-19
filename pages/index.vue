@@ -414,7 +414,7 @@
     </PageSection>
 
     <PageSection id="timetable">
-      <EffectAppear>
+      <EffectAppear :effectAppearYValue="0.1">
         <BlockTimetable
           :timetableData="[
             {

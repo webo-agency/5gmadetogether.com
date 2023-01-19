@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full pb-40 overflow-hidden">
+  <div class="w-full pb-20 overflow-hidden">
     <div class="container">
       <div class="h-full w-screen">
         <div class="relative swiper h-full">

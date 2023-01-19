@@ -32,9 +32,13 @@ export default {
       type: Number,
       default: 0
     },
-    secondEffect: Boolean
+    secondEffect: Boolean,
+    effectAppearYValue: {
+      type: Number,
+      default: 0.25
+    }
   },
-  setup() {
+  setup(props) {
     const container = ref(null);
     const {
       x,
@@ -48,7 +52,9 @@ export default {
     } = useElementBounding(container);
     const windowHeight = useWindowSize().height;
     const isVisible = computed(() => {
-      return y.value < windowHeight.value - height.value * 0.25;
+      return (
+        y.value < windowHeight.value - height.value * props.effectAppearYValue
+      );
     });
     return {
       container,

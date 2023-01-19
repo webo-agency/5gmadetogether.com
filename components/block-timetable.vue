@@ -97,7 +97,9 @@
               :key="index"
               class="py-8 border-b group"
             >
-              <TimetableLecture :item="item" />
+              <EffectAppear>
+                <TimetableLecture :item="item" />
+              </EffectAppear>
             </li>
 
             <!-- last visible item -->
@@ -183,10 +185,11 @@
 <script>
 import { useMediaQuery } from "@vueuse/core";
 import TimetableLecture from "./component-timetable-lecture.vue";
+import EffectAppear from "./effect-appear.vue";
 
 export default {
   name: "BlockTimetable",
-  components: { TimetableLecture },
+  components: { TimetableLecture, EffectAppear },
   props: {
     timetableData: Array,
     timeTableLastItem: Object,
