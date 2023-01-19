@@ -31,7 +31,7 @@
                 ? 'text-[#39E8EA]'
                 : 'text-[#002738]'
             ]"
-            class="py-2 px-3 rounded-full bg-[#FFFFFF] transition duration-500"
+            class="w-[40px] flex justify-center items-center py-2 px-3 rounded-full bg-[#FFFFFF] transition duration-500"
           >
             {{ indexZeroFill() }}
           </div>
