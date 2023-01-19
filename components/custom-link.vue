@@ -78,7 +78,7 @@ export default {
     },
     targetSet() {
       return !this.url.includes("tel:") && !this.url.includes("mailto:")
-        ? "_blank"
+        ? "_self"
         : "";
     }
   }
