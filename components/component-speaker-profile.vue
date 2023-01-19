@@ -75,8 +75,8 @@
   </div>
 
   <!-- full desc without img -->
-  <div v-else>
-    <div class="py-6 px-2 bg-[#F7F9F9] h-auto">
+  <div v-else clas>
+    <div class="py-6 px-2 bg-[#F7F9F9] h-[623px] overflow-y-auto">
       <svg
         class="absolute"
         width="22"

@@ -5,7 +5,7 @@
         <div class="relative swiper h-full">
           <ul class="swiper-wrapper flex h-full mb-16">
             <li
-              class="swiper-slide w-[250px] desktop:h-[670px]"
+              class="swiper-slide w-[250px] desktop:h-[630px]"
               v-for="(speaker, index) in speakersData"
               :key="index"
             >
@@ -148,7 +148,7 @@ svg:hover path {
 }
 .swiper-slide {
   width: 250px !important;
-  height: 670px !important;
+  height: 630px !important;
 }
 .swiper-button-disabled {
   opacity: 0 !important;
