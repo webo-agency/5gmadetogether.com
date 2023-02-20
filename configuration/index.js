@@ -88,10 +88,10 @@ export default {
           .filter(f => f.asType === "script" && f.file === "runtime.js")
           .map(
             f =>
-              `<${publicPath}${f.file}>; rel=preload; crossorigin=disabled; as=${f.asType}`
+              `<${publicPath}${f.file}>; rel=preload; crossorigin=anonymous; as=${f.asType}`
           )
     },
-    crossorigin: "disabled"
+    crossorigin: "anonymous"
   },
   /*
    ** Generate SSR
@@ -116,7 +116,6 @@ export default {
             {
               method: "post",
               headers: {
-                "Content-Type": "application/json",
                 "Access-Control-Allow-Origin": "*"
               }
             }

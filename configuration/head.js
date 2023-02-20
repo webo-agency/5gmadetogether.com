@@ -9,11 +9,15 @@ export default {
   },
   script: [
     // { src: `https://polyfill.io/v3/polyfill.min.js?features=${features}&flags=gated`, body: true, async: true, defer: true  },
+    {
+      crossorigin: false
+    }
   ],
   link: [
     {
       rel: "preconnect",
-      href: "https://fonts.gstatic.com"
+      href: "https://fonts.gstatic.com",
+      crossorigin: false
     }
   ]
 };

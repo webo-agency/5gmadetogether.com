@@ -223,21 +223,21 @@ export default [
       gzip: true
     }
   },
-  {
-    src: "nuxt-magpie",
-    options: {
-      baseUrl: `${process.env.API_URL}/wp-content`,
-      path: "/files",
-      extensions: ["jpg", "jpeg", "gif", "png", "webp", "svg", "xml"]
-    }
-  },
-  {
-    src: "wp-nuxt",
-    options: {
-      discover: true,
-      endpoint: `${process.env.API_URL}${process.env.API_AFFIX}`
-    }
-  },
+  // {
+  //   src: "nuxt-magpie",
+  //   options: {
+  //     baseUrl: `${process.env.API_URL}/wp-content`,
+  //     path: "/files",
+  //     extensions: ["jpg", "jpeg", "gif", "png", "webp", "svg", "xml"]
+  //   }
+  // },
+  // {
+  //   src: "wp-nuxt",
+  //   options: {
+  //     discover: true,
+  //     endpoint: `${process.env.API_URL}${process.env.API_AFFIX}`
+  //   }
+  // },
   {
     src: "vue-scrollto/nuxt",
     options: {
