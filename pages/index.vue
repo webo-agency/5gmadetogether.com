@@ -603,15 +603,15 @@ export default {
     }
   },
 
-  async fetch({ app, store }) {
-    await app.$wp
-      .namespace("wuxt")
-      .v1()
-      .frontPage()
-      .then(function(data) {
-        store.commit("homepage/save", data);
-      });
-  },
+  // async fetch({ app, store }) {
+  //   await app.$wp
+  //     .namespace("wuxt")
+  //     .v1()
+  //     .frontPage()
+  //     .then(function(data) {
+  //       store.commit("homepage/save", data);
+  //     });
+  // },
   components: {
     AboutConference,
     BlockBanner,
