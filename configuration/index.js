@@ -1,15 +1,15 @@
-require('dotenv').config()
+require("dotenv").config();
 
-import * as module from './modules.js'
-import * as head from './head.js'
-import * as plugins from './plugins.js'
-import * as generate from './generate.js'
-import * as css from './css.js'
-import * as manifest from './manifest.js'
-import * as build from './build.js'
-import * as axios from 'axios'
+import * as module from "./modules.js";
+import * as head from "./head.js";
+import * as plugins from "./plugins.js";
+import * as generate from "./generate.js";
+import * as css from "./css.js";
+import * as manifest from "./manifest.js";
+import * as build from "./build.js";
+import * as axios from "axios";
 
-process.noDeprecation = true
+process.noDeprecation = true;
 
 // const features = [
 //   'fetch',
@@ -22,15 +22,15 @@ process.noDeprecation = true
 //   'HTMLDocument',
 //   'JSON',
 // ].join('%2C');
-const API_URL = process.env.API_URL
-const API_AFFIX = process.env.API_AFFIX
+const API_URL = process.env.API_URL;
+const API_AFFIX = process.env.API_AFFIX;
 
 export default {
   env: {
     CONTEXT: process.env.CONTEXT,
     API_URL: API_URL,
     API_AFFIX: API_AFFIX,
-    GOOGLE_FONTS: 'Poppins:300,400,500,600,700',
+    GOOGLE_FONTS: "Poppins:300,400,500,600,700"
   },
   globalName: process.env.NAME,
   components: true,
@@ -41,14 +41,14 @@ export default {
    */
   modules: module.default,
   gtm: {
-    id: 'GTM-WKQLB65',
-    scriptDefer: true,
+    id: "GTM-WKQLB65",
+    scriptDefer: true
   },
   image: {
-    domains: [API_URL],
+    domains: [API_URL]
   },
   wp: {
-    sitemap: false,
+    sitemap: false
   },
   /*
    ** Plugins - scripts on all pages
@@ -58,7 +58,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: './components/loading.vue',
+  loading: "./components/loading.vue",
   /*
    ** Customize manifest.json
    */
@@ -67,8 +67,8 @@ export default {
    * ServiceWorker
    */
   workbox: {
-    globPatterns: ['**/*.{js,css,html,png}'],
-    dev: false,
+    globPatterns: ["**/*.{js,css,html,png}"],
+    dev: false
   },
   /*
    ** Build configuration
@@ -79,26 +79,26 @@ export default {
    */
   render: {
     compressor: {
-      level: 9,
+      level: 9
     },
     http2: {
       push: true,
       pushAssets: (req, res, publicPath, preloadFiles) =>
         preloadFiles
-          .filter((f) => f.asType === 'script' && f.file === 'runtime.js')
+          .filter(f => f.asType === "script" && f.file === "runtime.js")
           .map(
-            (f) =>
-              `<${publicPath}${f.file}>; rel=preload; crossorigin=anonymous; as=${f.asType}`,
-          ),
+            f =>
+              `<${publicPath}${f.file}>; rel=preload; crossorigin=disabled; as=${f.asType}`
+          )
     },
-    crossorigin: 'anonymous',
+    crossorigin: "disabled"
   },
   /*
    ** Generate SSR
    */
   generate: generate.default,
-  target: 'static',
-  buildModules: ['@nuxt/image'],
+  target: "static",
+  buildModules: ["@nuxt/image"],
   telemetry: false,
   hooks: {
     generate: {
@@ -108,20 +108,21 @@ export default {
             process.env.DISCORD_NOTIFY,
             JSON.stringify({
               // the username to be displayed
-              username: 'Cloudflare Pages',
+              username: "Cloudflare Pages",
               // contents of the message to be sent
-              content: 'Site deployed!',
+              content: "Site deployed!"
               // embeds to be sent
             }),
             {
-              method: 'post',
+              method: "post",
               headers: {
-                'Content-Type': 'application/json',
-              },
-            },
-          )
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+              }
+            }
+          );
         }
-      },
-    },
-  },
-}
+      }
+    }
+  }
+};
