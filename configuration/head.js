@@ -13,8 +13,7 @@ export default {
   link: [
     {
       rel: "preconnect",
-      href: "https://fonts.gstatic.com",
-      crossorigin: false
+      href: "https://fonts.gstatic.com"
     }
   ]
 };
