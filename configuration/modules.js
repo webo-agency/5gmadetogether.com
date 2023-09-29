@@ -84,51 +84,6 @@ export default [
     // options: {}
   },
   {
-    src: "cookie-universal-nuxt"
-    // options: { alias: process.env.NAME }
-  },
-  {
-    src: "@nuxtjs/toast",
-    options: {
-      position: "bottom-right",
-      register: [
-        // Register custom toasts
-        {
-          name: "gdpr",
-          message:
-            "<span class=\"w-full text-center mb-2 leading-tight text-[14px]\">This website uses cookies to improve your experience. <br/> We'll assume you're ok with this, but you can opt-out if you wish.</span>",
-          options: {
-            type: "",
-            theme: "",
-            containerClass: "gdpr",
-            className: "gdpr-inner",
-            fitToScreen: true,
-            position: "bottom-right",
-            singleton: true,
-            action: [
-              {
-                text: "Read more",
-                href: "/privacy-policy"
-              },
-              {
-                text: "Accept",
-                class:
-                  "uppercase inline-block py-2 px-4 leading-none bg-blue-600 hover:bg-blue-700 font-semibold rounded shadow",
-                onClick: (e, toastObject) => {
-                  window.$nuxt.$cookies.set("gdpr", {
-                    path: "/",
-                    maxAge: 60 * 60 * 24 * 7
-                  });
-                  toastObject.goAway(0);
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  },
-  {
     src: "nuxt-compress",
     options: {
       gzip: {
