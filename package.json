@@ -82,8 +82,8 @@
     "lint": "eslint --ext .js,.vue .",
     "lint-fix": "eslint --ext .js,.vue . --fix",
     "precommit": "npm run lint",
-    "deploy-test": "cross-env NODE_ENV=production node --inspect-brk node_modules/.bin/nuxt generate -m",
-    "deploy": "nuxt generate"
+    "deploy-test": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider node --inspect-brk node_modules/.bin/nuxt generate -m",
+    "deploy": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider nuxt generate"
   },
   "engines": {
     "node": ">=8.0.0",
