@@ -211,7 +211,7 @@
             <CustomLink
               :url="'#aboutConference'"
               :title="'Read more'"
-              class="pr-4 border-b border-b-[#FFFFFF] hover:border-b-primarySecond hover:text-primarySecond font-medium transition duration-200 ease-out"
+              class="!hidden pr-4 border-b border-b-[#FFFFFF] hover:border-b-primarySecond hover:text-primarySecond font-medium transition duration-200 ease-out"
             ></CustomLink>
           </div>
         </div>
