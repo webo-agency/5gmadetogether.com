@@ -202,9 +202,9 @@
           <div
             class="buttons dekstop:flex justify-start items-center mt-8 desktop:space-x-16"
           >
-            <CustomLink :url="'/'">
+            <CustomLink :url="'/#aboutConference'">
               <ButtonRegister
-                :title="'Register now'"
+                :title="'Read more'"
                 class="mb-[30px]"
               ></ButtonRegister>
             </CustomLink>

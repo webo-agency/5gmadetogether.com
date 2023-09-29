@@ -1375,8 +1375,8 @@
               <div>{{ ctaData.time }}</div>
             </div>
             <!-- Button -->
-            <CustomLink :url="'/'" class="z-[1]">
-              <ButtonRegister :title="'Register now'"></ButtonRegister>
+            <CustomLink :url="'/#aboutConference'" class="z-[1]">
+              <ButtonRegister :title="'Read more'"></ButtonRegister>
             </CustomLink>
           </div>
         </div>
@@ -1560,8 +1560,8 @@
               <div>{{ ctaData.time }}</div>
             </div>
             <!-- Button -->
-            <CustomLink :url="'/'">
-              <ButtonRegister :title="'Register now'"></ButtonRegister>
+            <CustomLink :url="'/#aboutConference'">
+              <ButtonRegister :title="'Read more'"></ButtonRegister>
             </CustomLink>
           </div>
         </div>

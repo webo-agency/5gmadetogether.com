@@ -323,8 +323,8 @@
           :class="[isTransparent ? 'border-b-[#FFFFFF]' : 'border-b-[#002738]']"
         >
           <CustomLink
-            :url="'http://localhost:3000/'"
-            :title="'Register now'"
+            :url="'/#aboutConference'"
+            :title="'Read more'"
             class="mr-[12px] text-base font-medium transition duration-200 hover:text-primarySecond border-transparent cursor-pointer"
             :class="[isTransparent ? 'text-[#FFFFFF]' : 'text-[#002738]']"
           ></CustomLink>
@@ -1339,8 +1339,8 @@
               >
                 <div class="group flex">
                   <CustomLink
-                    :url="'/'"
-                    :title="'Register now'"
+                    :url="'/#aboutConference'"
+                    :title="'Read more'"
                     class="inline mr-[12px] font-medium border-b-[2px] hover:border-primarySecond hover:text-primarySecond transition duration-200"
                     @click.native="toggleMobile()"
                   ></CustomLink>
