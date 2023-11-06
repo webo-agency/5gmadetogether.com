@@ -40,12 +40,9 @@ export default {
    ** Modulesc
    */
   modules: module.default,
-  gtm: {
-    id: "GTM-WKQLB65",
-    scriptDefer: true
-  },
   image: {
-    domains: [API_URL]
+    domains: [API_URL],
+    format: 'webp'
   },
   wp: {
     sitemap: false

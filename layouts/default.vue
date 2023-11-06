@@ -40,11 +40,5 @@ export default {
     LayoutFooter
   },
   head: {},
-  mounted() {
-    const gdprCookie = this.$cookies.get("gdpr");
-    if (!gdprCookie) {
-      this.$toast.global.gdpr();
-    }
-  }
 };
 </script>

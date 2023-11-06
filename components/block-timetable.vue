@@ -4,11 +4,20 @@
       <div class="relative desktop:ml-72 tablet-wide:ml-60 full-hd:ml-12">
         <!-- left background -->
         <div
-          class="left-col tablet-wide:absolute tablet-wide:top-0 tablet-wide:right-full tablet-wide:h-[960px] desktop:w-[510px] tablet-wide:w-[385px] h-[550px] tablet-wide:bg-top bg-center "
-          style="background-image: url(/img/Lecturer.png); background-repeat: no-repeat; background-size: cover; background-position: center 35%;"
+          class="tablet-wide:absolute tablet-wide:top-0 tablet-wide:right-full tablet-wide:h-[960px] desktop:w-[510px] tablet-wide:w-[385px] h-[400px]"
         >
+          <nuxt-picture
+            :src="'/img/Lecturer.png'"
+            class="tablet-wide:absolute inset-0 "
+            :imgAttrs="{class: 'w-full h-full object-cover phone-wide:object-[0_35%] tablet-wide:object-center'}"
+            alt="Lecturer"
+            width="517"
+            height="1000"
+            loading="lazy"
+          />
+          
           <!-- vertical text -->
-          <div class="absolute top-72 -right-[3%] tablet-wide:block hidden z-0">
+          <div class="absolute top-72 -right-[3%] tablet-wide:block hidden z-10">
             <svg
               width="66"
               height="372"
@@ -220,9 +229,4 @@ export default {
   @apply border-b;
 }
 
-@media (max-width: 768px) {
-  .left-col {
-    background-size: cover;
-  }
-}
 </style>

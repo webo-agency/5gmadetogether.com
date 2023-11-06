@@ -203,11 +203,19 @@
             </ul>
           </div>
 
-          <!-- imgContainer -->
           <div
-            class="imgRight desktop:max-w-[500px] tablet:h-[800px] h-[600px] tablet:basis-[35%]"
-            style="background-image: url(/img/topics.png); background-repeat: no-repeat; background-position: top;"
-          ></div>
+            class="imgRight desktop:max-w-[800px] tablet:h-[800px] h-[600px] tablet:basis-[35%]"
+          >
+            <nuxt-picture
+              class="w-full h-full"
+              :imgAttrs="{class: 'w-full h-full object-cover object-top'}"
+              src='/img/topics.png'
+              width="800"
+              height="800"
+              alt="Conference crowd"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -223,17 +231,6 @@ export default {
     topicsData: Array,
     index: Number
   },
-  data() {
-    return {
-      crossExpanded: false
-    };
-  },
-  methods: {
-    rotateCross() {
-      this.crossExpanded = !this.crossExpanded;
-      console.log(1);
-    }
-  }
 };
 </script>
 
@@ -245,9 +242,4 @@ export default {
   -webkit-text-stroke: 1px #39e8ea;
 }
 
-@media (max-width: 768px) {
-  .imgRight {
-    background-size: cover;
-  }
-}
 </style>

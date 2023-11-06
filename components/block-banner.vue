@@ -1,15 +1,23 @@
 <template>
   <div
-    class="flex w-full items-end h-[100vh] mb-12 text-center bg-no-repeat bg-cover"
-    style="background-image: url(/img/banner.png)"
+    class="relative flex w-full items-end h-[100vh] mb-12 text-center"
   >
+      <nuxt-picture
+        class="absolute inset-0 z-0"
+        :imgAttrs="{class: 'w-full h-full object-cover'}"
+        src='/img/banner.png'
+        width="1920"
+        height="951"
+        alt="5G Banner"
+        format="webp"
+      />
     <!-- light bg on mobile -->
     <div
-      class="heroBgBlurMobile desktop:hidden absolute top-0 left-0 bg-[rgba(0,39,56,0.7)] h-[100vh] w-full"
+      class="desktop:hidden absolute z-10 top-0 left-0 bg-[rgba(0,39,56,0.7)] h-[100vh] w-full"
     ></div>
-    <div class="relative container mb-24 z-10 text-left">
+    <div class="relative container mb-24 z-20 text-left">
       <!-- scroll down -->
-      <div class="absolute bottom-0 right-5 cursor-pointer z-[2]">
+      <div class="absolute bottom-0 right-5 cursor-pointer">
         <button @click="scrollToSection()">
           <svg
             width="40"

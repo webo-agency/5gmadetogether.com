@@ -33,15 +33,24 @@
     <div
       class="relative flex justify-center items-center mx-auto shadow-2xl mb-12"
     >
-      <img
+      <nuxt-picture
         v-show="playerActive"
         :src="'/img/test.png'"
-        class="absolute z-30 w-full h-full top-0 right-0 object-cover"
+        class="absolute z-30 w-full h-full top-0 right-0 object-cover bg-blue-950"
+        :imgAttrs="{class: 'w-full h-full object-cover'}"
         alt="Youtube"
+        width="1312"
+        height="738"
+        loading="lazy"
       />
-      <img
+      <nuxt-picture
         :src="'/img/yt-background.png'"
         class="absolute z-[-1] w-full h-full top-24"
+        :imgAttrs="{class: 'w-full h-full object-cover'}"
+        alt="Youtube"
+        width="1312"
+        height="738"
+        loading="lazy"
       />
       <div
         class="absolute hidden tablet-small:block z-0 mobile:scale-[30%] tablet:scale-50 tablet:-top-20 tablet-wide:scale-[65%] desktop:scale-75 desktop-wide:scale-100 desktop:top-24 -left-12"

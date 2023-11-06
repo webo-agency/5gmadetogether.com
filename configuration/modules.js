@@ -108,10 +108,6 @@ export default [
     }
   },
   {
-    src: "@nuxtjs/gtm",
-    options: {}
-  },
-  {
     src: "@nuxtjs/tailwindcss",
     options: {
       jit: false
