@@ -11,6 +11,8 @@
         :src="`${speaker.img}`"
         width="282px"
         height="350px"
+        :alt="speaker.name"
+        loading="lazy"
       />
       <div
         @mouseover="isHovered = true"
