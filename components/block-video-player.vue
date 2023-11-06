@@ -141,7 +141,7 @@
         iframe-class="mx-auto w-full h-full rounded z-0"
         max-width="100%"
         aspect-ratio="16:9"
-        thumbnail-quality="maxres"
+        thumbnail-quality="medium"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       >
