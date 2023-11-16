@@ -10,6 +10,7 @@
         height="951"
         alt="5G Banner"
         format="webp"
+        loading="eager"
       />
     <!-- light bg on mobile -->
     <div
