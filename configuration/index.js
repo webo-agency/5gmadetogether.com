@@ -75,6 +75,7 @@ export default {
    ** Render loop
    */
   render: {
+    resourceHints: false,
     compressor: {
       level: 9
     },

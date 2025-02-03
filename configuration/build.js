@@ -2,7 +2,7 @@ import { join } from 'path'
 
 export default {
   publicPath: '/static/',
-  extractCSS: true,
+  extractCSS: false,
   cssSourceMap: false,
   standalone: true,
   babel: {
