@@ -122,27 +122,27 @@ export default [
       }
     }
   },
-  {
-    src: "@aceforth/nuxt-optimized-images",
-    options: {
-      inlineImageLimit: 1000,
-      handleImages: ["jpeg", "png", "svg", "webp", "gif"],
-      optimizeImages: true,
-      optimizeImagesInDev: false,
-      defaultImageLoader: "img-loader",
-      mozjpeg: {
-        quality: 70
-      },
-      optipng: false,
-      pngquant: {
-        speed: 7,
-        quality: [0.65, 0.8]
-      },
-      webp: {
-        quality: 70
-      }
-    }
-  },
+  // {
+  //   src: "@aceforth/nuxt-optimized-images",
+  //   options: {
+  //     inlineImageLimit: 1000,
+  //     handleImages: ["jpeg", "png", "svg", "webp", "gif"],
+  //     optimizeImages: true,
+  //     optimizeImagesInDev: false,
+  //     defaultImageLoader: "img-loader",
+  //     mozjpeg: {
+  //       quality: 70
+  //     },
+  //     optipng: false,
+  //     pngquant: {
+  //       speed: 7,
+  //       quality: [0.65, 0.8]
+  //     },
+  //     webp: {
+  //       quality: 70
+  //     }
+  //   }
+  // },
   {
     src: "@nuxtjs/robots",
     options: {

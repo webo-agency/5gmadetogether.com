@@ -23,3 +23,19 @@
     top: 0;
   }
   
+
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 3000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .svg-enter-animation path {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: dash 4s ease-in-out 0.5s forwards;
+  }

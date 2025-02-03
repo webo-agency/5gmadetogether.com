@@ -11,6 +11,7 @@
         :src="`${speaker.img}`"
         width="282px"
         height="350px"
+        format="webp"
         :alt="speaker.name"
         loading="lazy"
       />
