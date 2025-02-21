@@ -55,11 +55,9 @@
         stroke="#39E8EA" stroke-width="3" stroke-miterlimit="2" />
     </svg>
 
-    <!-- light bg on mobile -->
     <div class="desktop:hidden absolute z-10 bg-[rgba(0,39,56,0.7)] inset-0"></div>
 
     <div class="relative container mb-24 z-20 text-left">
-      <!-- scroll down -->
       <div class="absolute bottom-0 right-5 cursor-pointer">
         <button class="scroll-btn" @click="scrollToSection()">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
